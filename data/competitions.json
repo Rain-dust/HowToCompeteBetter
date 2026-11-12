@@ -12,7 +12,7 @@
     "time": "80-180人时",
     "budget": "S-M",
     "fact": "2026有企业命题、创业实践、OPC创客、AI专项四类。OPC明确鼓励AI参与从设计到市场的流程。",
-    "rule": "OPC的开放表述是本报告最接近“agent承担主要电脑工作”的实证；企业命题和D类仍须核对平台、数据与辅助工具限制。",
+    "rule": "OPC鼓励AI参与流程，属于规则许可依据；本轮没有取得OPC独立学生Agent获奖闭环。企业题、创业实践另核。",
     "codex": "需求拆解、前后端、数据处理、自动化测试、部署、文档和演示脚本均适配。按赛题指定模型或平台实现产品，开发工具和产品模型分开核对。",
     "human": "挑真实需求，访谈用户，验证输出，解释架构；路演本人完成。B类还需要真实运营成效。",
     "deliver": "一个闭环小工具：上传材料→处理→可核验结果→导出；附源代码、部署说明、测试和AI过程记录。",
@@ -23,7 +23,6 @@
       "opc_region",
       "fwwb_end"
     ],
-    "ranking": "夯",
     "tool_route": [
       "W",
       "P",
@@ -36,8 +35,6 @@
     ],
     "detail": {
       "id": "N01",
-      "rank": "03",
-      "tier": "夯",
       "title": "服创大赛：OPC / 企业命题",
       "verdict": "要 AI 承担大部分电脑工作，先研究 OPC。",
       "tools": [
@@ -61,7 +58,10 @@
         "fwwb_end",
         "tool_slide"
       ]
-    }
+    },
+    "editorial_rank": 11,
+    "feedback_sources": "X23、X24、T19",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N02",
@@ -86,7 +86,6 @@
       "softwarecup",
       "softwarecup_q"
     ],
-    "ranking": "强·有条件",
     "tool_route": [
       "W",
       "P"
@@ -98,8 +97,6 @@
     ],
     "detail": {
       "id": "N02",
-      "rank": "08",
-      "tier": "强·有条件",
       "title": "中国软件杯：挑纯软件命题",
       "verdict": "Codex 能承担大块工程工作；别一上来选硬件。",
       "tools": [
@@ -122,7 +119,10 @@
         "software_case",
         "software_case_ai"
       ]
-    }
+    },
+    "editorial_rank": 5,
+    "feedback_sources": "F12、F13、X19、X21、X38",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N03",
@@ -147,7 +147,6 @@
       "swinnovation",
       "observe"
     ],
-    "ranking": "夯·有条件",
     "tool_route": [
       "W",
       "P"
@@ -159,8 +158,6 @@
     ],
     "detail": {
       "id": "N03",
-      "rank": "05",
-      "tier": "夯·有条件",
       "title": "全国大学生软件创新大赛",
       "verdict": "现在能开工；选最小、最完整的 AI 应用。",
       "tools": [
@@ -182,7 +179,10 @@
         "tool_front",
         "tool_test"
       ]
-    }
+    },
+    "editorial_rank": 14,
+    "feedback_sources": "原目录N03",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N04",
@@ -207,10 +207,12 @@
       "c4ai",
       "index26"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W＋P",
     "playbook": "人工智能创意赛：按任务做 AI 应用；先实现一个核心场景、对照测试，再录演示。外部开发工具条款待逐题核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 16,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N05",
@@ -235,10 +237,12 @@
       "c4aigc",
       "c4aigc_detail"
     ],
-    "ranking": "强",
     "tool_route": "G＋V＋P",
     "playbook": "AIGC 创新赛：用规定设备/模型完成创作；Codex 编排代码、素材与视频。2026 有 vivo 蓝心/手机等要求，不能随意换成纯 Web。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N06",
@@ -263,10 +267,12 @@
       "mobile",
       "mobile_platform"
     ],
-    "ranking": "中",
     "tool_route": "W＋P",
     "playbook": "移动应用创新赛：走 Apple 平台的真实 App，优先轻量离线功能。Codex 写 Swift/界面后，用真实设备测试；Mac/设备门槛另算。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N07",
@@ -291,10 +297,12 @@
       "network",
       "network_fee"
     ],
-    "ranking": "中",
     "tool_route": "W＋P",
     "playbook": "网络技术挑战赛：做可运行网络应用并测性能；需要网络环境或终端的题，把环境先搭通。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N08",
@@ -319,10 +327,12 @@
       "bigdata",
       "index26"
     ],
-    "ranking": "中",
     "tool_route": "D",
     "playbook": "大数据挑战赛：先跑官方基线、固定验证集，再迭代特征/模型；R&D-Agent 需适配任务。算力和分项工具限制先核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N09",
@@ -347,7 +357,6 @@
       "aic",
       "aic_sc"
     ],
-    "ranking": "强·有条件",
     "tool_route": [
       "W",
       "P"
@@ -359,8 +368,6 @@
     ],
     "detail": {
       "id": "N09",
-      "rank": "06",
-      "tier": "强·有条件",
       "title": "AIC：智能体互联主题赛",
       "verdict": "有明确省级证书，但必须接通指定平台。",
       "tools": [
@@ -383,7 +390,10 @@
         "tool_front",
         "tool_test"
       ]
-    }
+    },
+    "editorial_rank": 15,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N10",
@@ -408,7 +418,6 @@
       "cmit",
       "cmit_home"
     ],
-    "ranking": "夯",
     "tool_route": [
       "W",
       "G",
@@ -422,8 +431,6 @@
     ],
     "detail": {
       "id": "N10",
-      "rank": "02",
-      "tier": "夯",
       "title": "数媒竞赛：Web/游戏/可视化",
       "verdict": "交一个真正能用、能演示的小作品。",
       "tools": [
@@ -448,7 +455,10 @@
         "tool_test",
         "tool_remotion"
       ]
-    }
+    },
+    "editorial_rank": 12,
+    "feedback_sources": "X25、X41",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N11",
@@ -473,7 +483,6 @@
       "ncda_rules",
       "ncda_aigc"
     ],
-    "ranking": "夯·有条件",
     "tool_route": [
       "G",
       "W",
@@ -486,8 +495,6 @@
     ],
     "detail": {
       "id": "N11",
-      "rank": "04",
-      "tier": "夯·有条件",
       "title": "NCDA：只优先看代码交互类",
       "verdict": "会用 Codex，就优先做“能玩的作品”。",
       "tools": [
@@ -510,7 +517,10 @@
         "ncda_aigc",
         "tool_art"
       ]
-    }
+    },
+    "editorial_rank": 13,
+    "feedback_sources": "X28、X29、X42",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N12",
@@ -535,10 +545,12 @@
       "goodidea",
       "goodidea_home"
     ],
-    "ranking": "强",
     "tool_route": "G＋V",
     "playbook": "好创意：挑 AIGC、代码视觉、短片等作品分项；选主题→生成/编排→人工选稿→交过程。指定类别规则分别执行。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N13",
@@ -562,10 +574,12 @@
     "keys": [
       "ada"
     ],
-    "ranking": "中",
     "tool_route": "G＋V＋P",
     "playbook": "大广赛：围绕当届真实品牌命题，做海报或视频；AI 技术类别优先。工具会做画面，策略与品牌理解仍要你定。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N14",
@@ -590,10 +604,12 @@
       "milan",
       "milan_grade"
     ],
-    "ranking": "中",
     "tool_route": "G＋V",
     "playbook": "米兰设计周作品展：优先允许 AIGC 的分项；做系列视觉或交互展示。对照类别交设计过程，不按母赛名称推定任意 AI 可用。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N15",
@@ -618,10 +634,12 @@
       "robotcreative",
       "robotcreative_home"
     ],
-    "ranking": "强",
     "tool_route": "G＋V＋P",
     "playbook": "智能机器人创意：优先主题一 AIGC 等不要求实物的方向；概念→视觉/视频→设计说明。别把其他实物主题也按这个成本估算。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 18,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N16",
@@ -646,10 +664,12 @@
       "craic",
       "craic_rules"
     ],
-    "ranking": "中",
     "tool_route": "Codex＋官方 SDK；P",
     "playbook": "CRAIC：有经验再选熟悉的仿真分项；先基准策略，再批量回放、比较失败率。未核到专用获奖 skill。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N17",
@@ -674,10 +694,12 @@
       "raicom",
       "raicom_design"
     ],
-    "ranking": "中",
     "tool_route": "W＋P / 官方 SDK",
     "playbook": "RAICOM：优先设计/应用作品分项；做软件主流程与验收。竞技机器人分项按平台改策略，和设计分项分开。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 19,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N18",
@@ -703,7 +725,6 @@
       "rst_official",
       "observe"
     ],
-    "ranking": "中",
     "tool_route": [
       "P"
     ],
@@ -714,8 +735,6 @@
     ],
     "detail": {
       "id": "N18",
-      "rank": "中档",
-      "tier": "中",
       "title": "RST：你有经验，可以继续打",
       "verdict": "把现有仿真经验交给 Codex，比从零换赛更划算。",
       "tools": [
@@ -736,7 +755,10 @@
         "rst_official",
         "rst_cert"
       ]
-    }
+    },
+    "editorial_rank": 3,
+    "feedback_sources": "U01、X16",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N19",
@@ -761,10 +783,12 @@
       "ican_pdf",
       "ican_ai"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W＋P",
     "playbook": "iCAN：优先 AI 挑战/应用软件分支，做可跑原型＋效果验证。设备命题另算；外部 agent 权限以该分支细则为准。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N20",
@@ -789,10 +813,12 @@
       "3chuang",
       "3chuang_next"
     ],
-    "ranking": "中",
     "tool_route": "B＋W＋P（组合）",
     "playbook": "三创赛：先有真实电商场景、用户与运营记录，再做产品和商业材料。B 的三创专用项仍在开发队列，不能当已上线。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 20,
+    "feedback_sources": "F15",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N21",
@@ -817,10 +843,12 @@
       "survey_ai",
       "survey_next"
     ],
-    "ranking": "中",
     "tool_route": "Codex 数据脚本＋P",
     "playbook": "正大杯市调：你取得真实调查数据，Codex 清洗、分析、画图，再做报告。暂无已核实的端到端专用获奖 skill；核心调研不能省。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 24,
+    "feedback_sources": "F16、T29",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N22",
@@ -845,7 +873,6 @@
       "cumcm_ai",
       "cumcm_rules"
     ],
-    "ranking": "夯",
     "tool_route": [
       "M2",
       "M1"
@@ -857,8 +884,6 @@
     ],
     "detail": {
       "id": "N22",
-      "rank": "01",
-      "tier": "夯",
       "title": "数模国赛 CUMCM",
       "verdict": "只盯省奖，先把这条路线跑熟。",
       "tools": [
@@ -881,7 +906,10 @@
         "tool_mathmodel",
         "tool_mma"
       ]
-    }
+    },
+    "editorial_rank": 1,
+    "feedback_sources": "X31、X44、T05、F02、U01",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N23",
@@ -906,10 +934,12 @@
       "stats_notice",
       "stats_ai"
     ],
-    "ranking": "拉·本目标",
     "tool_route": "只用允许的代码/校对环节",
     "playbook": "统计建模：2026 限制直接生成核心选题、假设、框架、问卷设计和论文正文。通用数模 skill 不能原样全流程套。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 4,
+    "feedback_sources": "F07、F08、X36、T29、R02",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N24",
@@ -933,10 +963,12 @@
     "keys": [
       "energy"
     ],
-    "ranking": "拉·本目标",
     "tool_route": "不采用 AI 自动成品路线",
     "playbook": "能源经济：2026/第 13 届通知禁止提交 AI 自动生成作品。已有真实研究可参赛；和本指南的省力路线不匹配。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 25,
+    "feedback_sources": "F19",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N25",
@@ -961,10 +993,12 @@
       "ielean",
       "ielean_rules"
     ],
-    "ranking": "中",
     "tool_route": "Codex 仿真/优化＋P",
     "playbook": "工业工程与精益管理：拿真实流程数据→做仿真/调度→比较改进前后。缺企业/车间数据时成本明显上升。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N26",
@@ -988,10 +1022,12 @@
     "keys": [
       "logistics"
     ],
-    "ranking": "中",
     "tool_route": "Codex 优化/仿真＋P",
     "playbook": "物流设计：读官方案例，做网络/仓配优化和仿真报告。大部分计算能交给代码，物流约束与方案落地自己核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N27",
@@ -1016,10 +1052,12 @@
       "ciscn",
       "ciscn_qualification"
     ],
-    "ranking": "中",
     "tool_route": "W＋P",
     "playbook": "信息安全作品赛：做防护、分析、检测类系统，明确威胁模型和测试；工具权限按作品赛核，不套 CTF 规则。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N28",
@@ -1044,10 +1082,12 @@
       "huawei",
       "huawei_manual"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W＋指定华为平台＋P",
     "playbook": "华为 ICT 创新赛：先用 AgentArts/ModelEngine 等规定平台搭可运行应用，再以测试证据证明价值；创新赛不套实践赛省赛链。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 17,
+    "feedback_sources": "F14",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N29",
@@ -1072,10 +1112,12 @@
       "business",
       "business_platform"
     ],
-    "ranking": "中",
     "tool_route": "B＋P（通用材料组合）",
     "playbook": "商业精英作品分支：先拿真实品牌授权/案例资料，再做方案与路演。B 的商业精英专用项未核到现成版。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N30",
@@ -1099,10 +1141,12 @@
     "keys": [
       "innovation"
     ],
-    "ranking": "中",
     "tool_route": "B＋W＋P",
     "playbook": "中国国际大学生创新大赛：已有原型和用户证据再入场；B 选互联网+子项组织真实材料，P 做答辩。只会生成 BP 时性价比低。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 21,
+    "feedback_sources": "F20",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N31",
@@ -1128,10 +1172,12 @@
       "challenge_science",
       "policy_neu"
     ],
-    "ranking": "中",
     "tool_route": "B＋P",
     "playbook": "挑战杯大挑：已有论文、调查或发明再用 challenge-cup 子项，按本校栏目整理证据与申报书，最后演练质询。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 22,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N32",
@@ -1156,10 +1202,12 @@
       "challenge_startup",
       "challenge"
     ],
-    "ranking": "中",
     "tool_route": "B＋P（适配组合）",
     "playbook": "挑战杯小挑：创业计划要真实需求、验证与财务假设。用商业计划子项改当届小挑模板，不能误用大挑科技作品模板。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 23,
+    "feedback_sources": "原目录",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N33",
@@ -1184,10 +1232,12 @@
       "energyreduce",
       "energyreduce_next"
     ],
-    "ranking": "中",
     "tool_route": "Codex 数据/原型＋P",
     "playbook": "节能减排：先有真实测量或实验，再建模型和展示改进。尚未核到专用现成 skill；不能把节能数据交给模型编。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N34",
@@ -1212,10 +1262,12 @@
       "3d_ai",
       "policy_neu"
     ],
-    "ranking": "中",
     "tool_route": "G＋V＋P（部分覆盖）",
     "playbook": "3D 大赛 AI 专项：按指定平台做三维作品、过程与展示；G/V 只管概念和展示，CAD/三维工程需对应软件，不能包办。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N35",
@@ -1239,10 +1291,12 @@
     "keys": [
       "icbc"
     ],
-    "ranking": "中",
     "tool_route": "W＋P",
     "playbook": "工行杯金融科技：做一个小而可验证的金融服务原型；接口、数据和合规场景按题目，不用虚构金融指标。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N36",
@@ -1268,10 +1322,12 @@
       "observe",
       "index26"
     ],
-    "ranking": "中",
     "tool_route": "Codex 测试工程；W 仅 Web 部分",
     "playbook": "软件测试大赛：优先明确允许 AI 的评测/助手分项。网页测试 skill 不等于移动测试、测评机考或所有分项都可套用。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N37",
@@ -1296,10 +1352,12 @@
       "iot",
       "iot26"
     ],
-    "ranking": "中",
     "tool_route": "W＋嵌入式工程＋P",
     "playbook": "物联网设计：软件界面/云端交给 Codex，硬件联调和真实测量留给有经验队友；从零买设备不适合本次省力目标。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N38",
@@ -1323,10 +1381,12 @@
     "keys": [
       "4c"
     ],
-    "ranking": "拉·Codex 直用",
     "tool_route": "先换合规 AI 工具",
     "playbook": "计算机设计 4C：2026 设指定 AI 工具名单，Codex 不在名单。即使技术上能写完整作品，也不能直接据此走参赛全流程。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 2,
+    "feedback_sources": "U01、X01、X05、X06、F03-F06、F21",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N39",
@@ -1350,10 +1410,12 @@
     "keys": [
       "game"
     ],
-    "ranking": "中",
     "tool_route": "Codex＋官方对战框架",
     "playbook": "计算机博弈：复现基线→自我对弈/固定对手→性能与胜率回归。暂无核实的通用保奖 skill，算法和算力可能是瓶颈。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "N40",
@@ -1377,10 +1439,12 @@
     "keys": [
       "blue_design"
     ],
-    "ranking": "强",
     "tool_route": "G＋V",
     "playbook": "蓝桥视觉艺术：按视觉作品类提交并标 AI 使用；平面选 canvas-design，动效选 Remotion。和蓝桥算法机考分开。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E01",
@@ -1397,7 +1461,6 @@
       "teddy_prov",
       "index26"
     ],
-    "ranking": "强·有条件",
     "tool_route": [
       "D",
       "W",
@@ -1410,8 +1473,6 @@
     ],
     "detail": {
       "id": "E01",
-      "rank": "13",
-      "tier": "强·有条件",
       "title": "泰迪杯：数据题与问数应用",
       "verdict": "有数模底子，值得从“论文”升级到“可用系统”。",
       "tools": [
@@ -1435,7 +1496,10 @@
         "teddy_prize",
         "tool_rdagent"
       ]
-    }
+    },
+    "editorial_rank": 10,
+    "feedback_sources": "F10、F11",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E02",
@@ -1449,7 +1513,6 @@
     "keys": [
       "mathorcup_ai"
     ],
-    "ranking": "强",
     "tool_route": [
       "M1"
     ],
@@ -1460,8 +1523,6 @@
     ],
     "detail": {
       "id": "E02",
-      "rank": "07",
-      "tier": "强",
       "title": "MathorCup（你说的“妈妈杯”）",
       "verdict": "适合复用数模流水线；先看学校认不认。",
       "tools": [
@@ -1483,7 +1544,10 @@
         "mathorcup_alias",
         "tool_mma_entry"
       ]
-    }
+    },
+    "editorial_rank": 7,
+    "feedback_sources": "F09",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E03",
@@ -1497,10 +1561,12 @@
     "keys": [
       "huashu"
     ],
-    "ranking": "中",
     "tool_route": "M1",
     "playbook": "华数杯：用内置华数模板跑建模、代码、论文；先取得当届 AI 章程。国内赛/国际赛分开，本次未核清全部 AI 条款。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E04",
@@ -1514,10 +1580,12 @@
     "keys": [
       "shuwei"
     ],
-    "ranking": "中",
     "tool_route": "M1",
     "playbook": "数维杯：切数维模板，跑求解、图表与论文，按 2026 AI 规定留详情。先核学校认可，再决定是否当热身赛。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E05",
@@ -1531,10 +1599,12 @@
     "keys": [
       "electric"
     ],
-    "ranking": "强·有条件",
     "tool_route": "M2",
     "playbook": "电工杯：用 diangong 竞赛包，先核工程单位/约束，再做求解和敏感性；2026 不收报名费，AI 权限另核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": 9,
+    "feedback_sources": "F17、X44",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E06",
@@ -1548,7 +1618,6 @@
     "keys": [
       "mcmicm"
     ],
-    "ranking": "夯·另列",
     "tool_route": [
       "M3",
       "M2"
@@ -1560,8 +1629,6 @@
     ],
     "detail": {
       "id": "E06",
-      "rank": "境外首选",
-      "tier": "夯·另列",
       "title": "美赛 MCM/ICM",
       "verdict": "想要“有获奖实绩的 agent”，先看 MM-Agent。",
       "tools": [
@@ -1584,7 +1651,10 @@
         "tool_mmexpert",
         "tool_mmresearch"
       ]
-    }
+    },
+    "editorial_rank": 6,
+    "feedback_sources": "F18",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E07",
@@ -1599,10 +1669,12 @@
       "apmcm",
       "apmcm_platform"
     ],
-    "ranking": "中",
     "tool_route": "M1",
     "playbook": "APMCM：选 APMCM 英文模板，跑模型与复现；2026 比赛 11 月 26-30 日，报名至 25 日。先核当届 AI 使用权限。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E08",
@@ -1616,10 +1688,12 @@
     "keys": [
       "bdci"
     ],
-    "ranking": "中",
     "tool_route": "D；Codex 负责适配",
     "playbook": "CCF BDCI：用本地任务描述、指标与数据适配 R&D-Agent，再复现基线/迭代；真实榜单强竞争，不是省奖捷径。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E09",
@@ -1634,10 +1708,12 @@
       "tianchi",
       "index26"
     ],
-    "ranking": "中",
     "tool_route": "D 或 Codex；按具体题",
     "playbook": "天池是平台入口，不是一项统一级别比赛。选定高校/大模型具体赛题后再配工具，API、外部数据和评测分别核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E10",
@@ -1651,10 +1727,12 @@
     "keys": [
       "simulation"
     ],
-    "ranking": "中",
     "tool_route": "M1＋仿真工具（组合）",
     "playbook": "仿真建模应用挑战赛：建基线仿真→参数扫描→结果报告；M1 仅迁移建模流程，没有核到赛事专用包和开放 AI 全流程条款。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E11",
@@ -1670,10 +1748,12 @@
       "observe",
       "index26"
     ],
-    "ranking": "中",
     "tool_route": "W/D；仅作品分支",
     "playbook": "计算机能力挑战赛：先分清作品提交与限时机考；作品按开发或数据路线，现场机考的工具许可不能默认沿用。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "E12",
@@ -1687,10 +1767,12 @@
     "keys": [
       "iscc"
     ],
-    "ranking": "中",
     "tool_route": "W＋安全测试＋P",
     "playbook": "ISCC：只看创新作品等分支，做真实防护/检测系统。没有核到可跨分支通用的专用 agent；不把 CTF 和作品赛混用。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "G01",
@@ -1699,7 +1781,6 @@
       "huawei_model",
       "huawei_model_uni"
     ],
-    "ranking": "强·另列",
     "tool_route": [
       "M4",
       "M1"
@@ -1711,8 +1792,6 @@
     ],
     "detail": {
       "id": "G01",
-      "rank": "研究生",
-      "tier": "强·另列",
       "title": "华为杯中国研究生数学建模",
       "verdict": "研赛专用路线有；本科普通队别报错。",
       "tools": [
@@ -1734,7 +1813,10 @@
         "huawei_model_uni",
         "tool_anticipate"
       ]
-    }
+    },
+    "editorial_rank": 27,
+    "feedback_sources": "待补",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P01",
@@ -1748,10 +1830,12 @@
     "keys": [
       "p_sc_agent"
     ],
-    "ranking": "强·平台限定",
     "tool_route": "W＋P；女娲 OS",
     "playbook": "先在女娲 OS 做一个能运行的任务 agent，交链接、产品报告和约 5 分钟视频。2026 总等级奖比例为提交作品的 10%，并不宽松。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P02",
@@ -1766,10 +1850,12 @@
       "p_zj_ai",
       "p_zj_ai_grade"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W / D＋P",
     "playbook": "优先教育智能体、AIGC 和软件题；先从官方基线/样例做起，再补效果对比。机器人硬件题另算。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P03",
@@ -1783,10 +1869,12 @@
     "keys": [
       "p_zj_outsource"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W＋P",
     "playbook": "选纯软件企业命题，需求→实现→测试→部署→答辩。是独立省赛，别和全国服创区域赛混为同一层级。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P04",
@@ -1800,10 +1888,12 @@
     "keys": [
       "p_zj_media"
     ],
-    "ranking": "强·有条件",
     "tool_route": "G＋V＋W",
     "playbook": "做交互、数据视觉或代码动画。2026 面向浙江及沪苏皖部分资格开放；AI 权限和第一作者资格先核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P05",
@@ -1817,10 +1907,12 @@
     "keys": [
       "p_zj_survey"
     ],
-    "ranking": "中",
     "tool_route": "Codex 数据脚本＋P",
     "playbook": "先拿真实受访者与抽样方案，后做清洗分析；没有调研渠道不适合省力目标。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P06",
@@ -1834,10 +1926,12 @@
     "keys": [
       "p_ah_ai"
     ],
-    "ranking": "强·有条件",
     "tool_route": "W / D＋P",
     "playbook": "先选可提前交作品的 AI/数据分项，跑官方基线并保留复现。现场实操分项工具和联网限制另核。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P07",
@@ -1851,10 +1945,12 @@
     "keys": [
       "p_sd_data"
     ],
-    "ranking": "中",
     "tool_route": "D / W＋P",
     "playbook": "按五个分项挑数据/应用题，不按母赛笼统报名。含市调山东赛区，与正大杯省赛不重复记收益。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P08",
@@ -1868,10 +1964,12 @@
     "keys": [
       "p_sd_twin"
     ],
-    "ranking": "中",
     "tool_route": "Codex 脚本＋指定仿真软件",
     "playbook": "在官方工业软件里做产线/AGV 模型，批量仿真比较节拍与调度。已有平台经验再优先。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P09",
@@ -1886,10 +1984,12 @@
       "p_js_4c",
       "p_js_4c_tools"
     ],
-    "ranking": "拉·Codex 直用",
     "tool_route": "换规则允许的工具",
     "playbook": "江苏计算机设计省赛：2026 也有限定 AI 工具表；对应 4C 链条，不额外算一项新竞赛。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P10",
@@ -1904,10 +2004,12 @@
       "p_sc_4c",
       "4c"
     ],
-    "ranking": "拉·Codex 直用",
     "tool_route": "换规则允许的工具",
     "playbook": "四川计算机设计/4C 省赛入口：先核同一赛事链的 AI 表、校推名额和国赛资格。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P11",
@@ -1922,10 +2024,12 @@
       "p_gd_4c",
       "4c"
     ],
-    "ranking": "拉·Codex 直用",
     "tool_route": "换规则允许的工具",
     "playbook": "广东计算机设计：本专科及国赛去向分开看；以 4C 国赛为目标须遵守国赛工具要求。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P12",
@@ -1940,10 +2044,12 @@
       "p_ln_4c",
       "4c"
     ],
-    "ranking": "拉·Codex 直用",
     "tool_route": "换规则允许的工具",
     "playbook": "辽宁计算机设计：本科省赛与国赛衔接，使用工具范围按当届省/国赛要求。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P13",
@@ -1957,10 +2063,12 @@
     "keys": [
       "p_north"
     ],
-    "ranking": "强",
     "tool_route": "W＋P",
     "playbook": "华北五省计算机应用：优先大模型智能体分项，做真实应用并明示 AI 生成与本人创新；跨省区域赛不自动等于全国奖。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   },
   {
     "id": "P14",
@@ -1974,9 +2082,11 @@
     "keys": [
       "p_hn_media"
     ],
-    "ranking": "中",
     "tool_route": "G＋V＋W",
     "playbook": "湖南数媒：优先作品提交类。先分清作品赛和现场限时创作，后者的联网与 AI 权限必须单独查。",
-    "detail": null
+    "detail": null,
+    "editorial_rank": null,
+    "feedback_sources": "本轮未补独立Agent参赛反馈",
+    "estimates_note": "工时与预算为编辑估算，未由本轮学生样本统计验证"
   }
 ]

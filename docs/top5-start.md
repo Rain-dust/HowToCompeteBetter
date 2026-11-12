@@ -1,119 +1,125 @@
-# 前五名比赛的 GitHub 和 Codex 指令
+# 前五名：GitHub、安装和开打指令
 
-把完整比赛资料放进项目的 inputs/，先复制安装指令，再复制开打指令。规则资料核查截至 2026-11-10；工具链接与安装文档于 2026-11-12 复核。
+将赛题、附件、评分表和当届规则放进 `inputs/`。以下均是复制给Codex的自然语言指令；本轮核对了仓库入口与说明，未把静态核查写成端到端实测。
 
-## 01 全国大学生数学建模竞赛
+## 1. 全国大学生数学建模竞赛
 
-高教社杯 / CUMCM · 专用数模工作流
+数模专用技能；先模型与检验，后论文。
 
-- [主选：mathmodel-skill](https://github.com/handsomeZR-netizen/mathmodel-skill)
-- [备选：MathModelAgent](https://github.com/jihe520/MathModelAgent)
+[主选：mathmodel-skill](https://github.com/handsomeZR-netizen/mathmodel-skill) · [分阶段备选：MathModeling-skills](https://github.com/zhnnky329/MathModeling-skills) · [另一套：MathModelAgent](https://github.com/jihe520/MathModelAgent)
 
-### 安装指令
+**先看：** 2026国赛允许AI工具，核心模型与分析须由队员主导核验。
 
-```text
-请从 https://github.com/handsomeZR-netizen/mathmodel-skill 安装 mathmodel-skill 到当前项目的 .agents/skills/mathmodel-skill，保留整个仓库的脚本、竞赛包和模板结构。先读 README，在隔离环境补齐所需 Python 库，检查 Pandoc 和 XeLaTeX，运行 scripts/doctor.py --competition cumcm。已有同名技能则先核对版本并复用。完成后报告安装路径、commit 和检查结果。
-```
-
-### 开打指令
+**安装，复制给Codex：**
 
 ```text
-使用 $mathmodel-skill，开始 CUMCM 项目。当前 inputs/ 中有完整赛题、原始附件和当届规则。先检查数据并比较选题，给出候选模型和验证方案；队伍确定模型后，运行基线、改进与误差/灵敏度检验，再按实际结果组织论文。交付 PDF、源码、图表、可复现支撑包和 AI工具使用详情.pdf，按规则逐项列出需要队员核验的内容。
+请按 https://github.com/handsomeZR-netizen/mathmodel-skill 的 Codex 安装说明，把整个仓库装到当前项目 .agents/skills/mathmodel-skill，保留全部竞赛包、脚本、模板与入口。阅读 README 和 SKILL.md，用隔离环境补齐依赖，检查 Pandoc 与 XeLaTeX，运行 scripts/doctor.py --competition cumcm。已有同名目录先核对复用，记录 commit 和检查结果。确认当前会话能发现 mathmodel-skill。
 ```
 
-应拿到：编译成功的论文、能重跑的代码、支撑包与 AI 使用详情。
-
-二选一即可。备选安装要保留 skills/ 下的兄弟目录；实际入口名是 $1start-mathmodel。
-
-## 02 全国大学生数字媒体科技作品及创意竞赛
-
-优先 Web / 游戏 / 可视化 · 组合工作流
-
-- [开发界面与测试：Anthropic Skills](https://github.com/anthropics/skills)
-- [视频与代码动画：Remotion Skills](https://github.com/remotion-dev/skills)
-
-### 安装指令
+**开打，复制给Codex：**
 
 ```text
-请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 的完整目录到当前项目 .agents/skills，并配置 Playwright 及其浏览器。再从 https://github.com/remotion-dev/skills 按 README 为当前 Codex 安装 remotion-best-practices 及必需资源；检查 Node.js 和渲染环境。已有技能则复用。完成一次最小网页测试和短视频渲染，报告路径、commit 与实际产物。
+使用 $mathmodel-skill 开始 CUMCM。inputs/ 中有赛题、附件和当届规则。先做数据审计、题意与约束清单，比较两条可验证模型路线，队员确定核心方案后再求解。对每问交付可运行基线、改进、误差和灵敏度检验；图表与结论必须对应真实输出。最后编译论文和支撑包，生成 AI 使用声明与 AI工具使用详情.pdf。提交前列出未通过的核验项，不把生成完成当作验收通过。
 ```
 
-### 开打指令
+**交付：** 论文PDF、可复现代码与环境、图表、支撑包、AI使用记录。
+
+**已有证据：** X31：Codex省一自述，杯赛不明；X44：GPT国赛省一自述；T05：Codex校赛返工。均不是本技能保证获奖的证明。
+
+## 2. 中国大学生计算机设计大赛
+
+通用开发技能组合；优先软件、数据与交互。
+
+[界面与浏览器测试技能](https://github.com/anthropics/skills) · [可选视频制作](https://github.com/remotion-dev/skills)
+
+**先看：** 2026组委会限定15款工具或自主知识产权工具；未查到Codex获准依据。历史亲测不覆盖当届权限。
+
+**安装，复制给Codex：**
 
 ```text
-我要参加全国大学生数字媒体科技作品及创意竞赛，选 Web/游戏/可视化作品方向。当届规则、评分标准与我的选题在 inputs/。先核参赛类别并比较 3 个可交付方案，再选一个只含单一核心交互的方案实施。用 $frontend-design 完成作品，$webapp-testing 测主流程和异常输入；用 $remotion-best-practices 制作演示。交付可运行作品、源码、测试截图、视频、说明与 AI 工具使用说明。
+请从 https://github.com/anthropics/skills 将 skills/frontend-design 和 skills/webapp-testing 两个完整目录安装到当前项目 .agents/skills/。保留脚本和资源，按 SKILL.md 建隔离依赖并配置 Playwright 浏览器。已有技能先核对并复用。用最小网页做一次主流程测试，报告安装路径、commit、实际截图与缺失依赖。安装后在此项目重开会话或确认技能已被发现。
 ```
 
-应拿到：可运行作品＋浏览器验收证据＋视频＋创作与 AI 过程说明。
-
-这是通用工具组合，主体开发由 Codex 完成。先放入当届规则、评分标准、题目/创意和合法素材。
-
-## 03 中国大学生服务外包创新创业大赛
-
-优先 OPC 创客类；企业命题另按题目 · 组合工作流
-
-- [开发与浏览器验收：Anthropic Skills](https://github.com/anthropics/skills)
-- [答辩与可编辑 PPT：SlideMuse](https://github.com/helloo1568/slidemuse)
-
-### 安装指令
+**开打，复制给Codex：**
 
 ```text
-请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 完整目录到当前项目 .agents/skills，配置 Playwright 浏览器测试。再读取 https://github.com/helloo1568/slidemuse 的 README，按 install.py --client codex 的当前用法安装并自检；使用隔离依赖，已有技能则复用。核对图像生成与 PPTX 导出条件，报告安装路径、commit 和最小验收结果。
+我要做中国大学生计算机设计大赛软件作品。inputs/ 有当届规程、赛道要求和真实需求。先输出工具权限与评分项对照表：2026规程限制AI工具范围，不能默认Codex在名单内。用于赛前练习，或确认当前参赛范围允许后，用 $frontend-design 完成一个单一核心功能的可运行系统；用 $webapp-testing 测正常、空输入和异常场景。交付实际运行视频、源码、部署说明和过程材料；演示必须来自同一版本，别只做PPT。
 ```
 
-### 开打指令
+**交付：** 可运行作品、完整源码、部署入口、测试截图、真实演示和说明。
+
+**已有证据：** U01作者亲测Codex省奖；X01有材料制作过程；X05/X06提供未获奖的反例。
+
+## 3. 先进机器人及仿真技术大赛
+
+RST没有核到可信专用获奖skill；Codex直接读赛项与平台。
+
+[创新软件作品可用技能](https://github.com/anthropics/skills) · [可替代Codex的独立编程agent：Cline](https://github.com/cline/cline)
+
+**先看：** 两个案例是不同赛项。X16图片中的Cline课程例子不能证明其比赛使用Cline；也不能扩到硬件竞技。
+
+**安装，复制给Codex：**
 
 ```text
-我要参加中国大学生服务外包创新创业大赛 OPC 创客类。inputs/ 有当届手册、评分要求和我的真实需求/用户资料。先做要求、功能、测试、演示对应表；用 $frontend-design 和 Codex 实现一个完整小产品，再用 $webapp-testing 验收并部署。根据真实试用反馈迭代，生成产品报告和演示脚本；最后用 $slidemuse 做答辩 PPT。缺失的用户或运营数据列为待补，保留开发与 AI 使用记录。
+请从 https://github.com/anthropics/skills 将 skills/frontend-design 和 skills/webapp-testing 两个完整目录安装到当前项目 .agents/skills/。保留脚本和资源，按 SKILL.md 建隔离依赖并配置 Playwright 浏览器。已有技能先核对并复用。用最小网页做一次主流程测试，报告安装路径、commit、实际截图与缺失依赖。安装后在此项目重开会话或确认技能已被发现。 RST仿真项目另按 inputs/ 的官方平台与SDK说明配置编译器、依赖和启动命令，先编译并运行官方基线，保存版本和截图。Cline是另一套独立agent，无需安装到Codex技能目录。
 ```
 
-应拿到：可用产品＋实际试用记录＋产品报告＋演示与 PPT。
-
-2026 OPC 不走区域赛。开发/测试/PPT 是现成工具组合，本次未核到可直接套用的 OPC 专用获奖 skill。
-
-## 04 未来设计师·全国高校数字艺术设计大赛
-
-NCDA · 优先创意编程；AIGC 类按独立要求
-
-- [交互与视觉创作：Anthropic Skills](https://github.com/anthropics/skills)
-- [视频/动态作品：Remotion Skills](https://github.com/remotion-dev/skills)
-
-### 安装指令
+**开打，复制给Codex：**
 
 ```text
-请从 https://github.com/anthropics/skills 将 skills/algorithmic-art、skills/frontend-design、skills/webapp-testing 的完整目录安装到当前项目 .agents/skills；检查 p5.js、浏览器和 Playwright。再从 https://github.com/remotion-dev/skills 按 README 安装 remotion-best-practices 及必要资源。已有技能复用。用一个最小交互作品和一次短视频渲染验收，报告安装路径、commit 与产物。
+我要参加RST，具体届次、赛道、组别、官方规则和平台SDK已放 inputs/。先识别这是创新创业作品还是仿真竞技，不能混用评审方式。创新作品：完成一个能运行并按评分点演示的小产品；仿真：先跑官方基线、记录多次成绩，再逐项改策略，输出同环境的对照、失败回放和日志。按我的具体组别整理源码、说明、视频与答辩。官方基线未跑通前先修环境，不虚构成绩。
 ```
 
-### 开打指令
+**交付：** 对应赛项的程序/策略、实测日志与对照、视频、说明与答辩包。
+
+**已有证据：** U01：第18届创新创业前沿技术挑战组省奖；X16：第19届机器鱼仿真国一自述附证书照片，用Gemini迭代。
+
+## 4. 全国大学生统计建模大赛
+
+通用科学数据技能；制作适配高，2026正式赛限制明确。
+
+[Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills) · [统计分析入口](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/statistical-analysis) · [数据检查入口](https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/exploratory-data-analysis)
+
+**先看：** 2026禁止AI直接生成核心设计和正文；在“全程Agent直出提交”这个条件下，本届不推荐。第4名仅表示制作适配。
+
+**安装，复制给Codex：**
 
 ```text
-我要参加未来设计师·全国高校数字艺术设计大赛 NCDA。inputs/ 有当届目标类别细则、评分要求、主题和素材。先核创意编程与 AIGC 类各自要求，再选择合适类别。用 $algorithmic-art 比较 3 个原创交互机制，确定后输出 HTML/JS；用 $frontend-design 打磨界面、$webapp-testing 验收。需要动态展示时用 $remotion-best-practices。交付程序包、实际运行视频、海报、设计说明和创作过程，逐项对照当届格式。
+请从 https://github.com/K-Dense-AI/scientific-agent-skills 安装 skills/exploratory-data-analysis 与 skills/statistical-analysis 两个完整目录到当前项目 .agents/skills/，连同引用资源一起保留。按各 SKILL.md 配置独立 Python 环境，不安装无关科学栈。用本地合成CSV完成一次有缺失值、重复和分组信息的检查，报告环境、commit与结果。此安装用于赛前练习，不代表获准生成正式参赛核心内容。
 ```
 
-应拿到：可交互程序＋实际运行视频＋海报＋设计过程。
-
-主打类别是“创意编程（含游戏）”。AIGC 作品与代码交互作品的规则分开核，不能只凭母赛名称套用。
-
-## 05 全国大学生软件创新大赛
-
-从当届指定题目中选 · 组合工作流
-
-- [界面实现与验收：Anthropic Skills](https://github.com/anthropics/skills)
-- [答辩演示：SlideMuse](https://github.com/helloo1568/slidemuse)
-
-### 安装指令
+**开打，复制给Codex：**
 
 ```text
-请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 完整目录到当前项目 .agents/skills，配置 Playwright 及浏览器。再按 https://github.com/helloo1568/slidemuse 的 README 使用 install.py --client codex 安装并自检，依赖放隔离环境，已有技能复用。检查该题规定的终端、SDK 和开发环境，运行最小界面测试与 PPT 导出，报告路径、commit 和结果。
+请先读 inputs/ 的全国大学生统计建模大赛当届AI规范。2026正式赛模式只执行规则明确允许的文献检索整理、语言格式校对等环节；不要直接生成研究选题、假设、框架、调查方案或论文正文。把拟执行的数据与代码任务单独列出待核权限。赛前练习模式下，可用 $exploratory-data-analysis 和 $statistical-analysis 对合成/历史练习数据做审计、按已给方案复现与诊断，输出可重跑代码和错误记录。正式提交内容以获准范围和人工原创方案为准。
 ```
 
-### 开打指令
+**交付：** 练习复现包；正式赛的获准辅助材料、校对意见与AI使用披露。
+
+**已有证据：** F07/F08有国三和省一经验；本轮没有本赛Agent主导获奖的可靠绑定。X36有辅导关联，不能充独立证据。
+
+## 5. “中国软件杯”大学生软件设计大赛
+
+通用软件工程技能组合；挑不依赖额外硬件的题。
+
+[开发与测试技能](https://github.com/anthropics/skills) · [可选演示视频技能](https://github.com/remotion-dev/skills)
+
+**先看：** 不是每题都有省赛。平台、SDK、工具权限和现场答辩逐题核对。
+
+**安装，复制给Codex：**
 
 ```text
-我要参加全国大学生软件创新大赛。inputs/ 有当届指定赛题、评分标准、工具条款和素材。先核外部 AI 编程工具权限；逐条建立评分要求、功能、测试与演示对应表。由 Codex 完成前后端和核心逻辑，用 $frontend-design 打磨界面、$webapp-testing 验收所有评分动作和异常输入。先交一个稳定的端到端版本，再补效果对照和文档。最后用 $slidemuse 做答辩，交付源码、启动/部署说明、测试证据与演示视频。
+请从 https://github.com/anthropics/skills 将 skills/frontend-design 和 skills/webapp-testing 两个完整目录安装到当前项目 .agents/skills/。保留脚本和资源，按 SKILL.md 建隔离依赖并配置 Playwright 浏览器。已有技能先核对并复用。用最小网页做一次主流程测试，报告安装路径、commit、实际截图与缺失依赖。安装后在此项目重开会话或确认技能已被发现。
 ```
 
-应拿到：完整软件＋可复现部署＋评分覆盖测试＋答辩材料。
+**开打，复制给Codex：**
 
-若指定题要求原生移动端，换成对应原生技术栈；webapp-testing 只覆盖 Web 部分。
+```text
+我要参加中国软件杯。inputs/ 有当届题目、评分标准、规定技术栈、工具条款与原始数据。先把每个评分点写成可操作验收动作，确认数据、接口和硬件可得，再做最小端到端系统。用 $frontend-design 打磨界面，用 $webapp-testing 验证Web评分动作与异常输入；原生部分另用对应测试工具。先修稳定性再加功能，最后交源码、环境锁定、部署说明、同版本演示视频和答辩问答，保留AI开发记录。
+```
 
+**交付：** 完整系统、评分项测试矩阵、可复现部署、视频与答辩材料。
+
+**已有证据：** F12明确Claude Code做两天原型与两月完整项目，但未写奖项；X19/X21/X38有国奖自述，未写Agent制作。不能拼成同队AI国奖。
+
+项目技能目录采用官方当前说明的 `.agents/skills/`。安装后确认发现技能，必要时重开会话：[官方技能文档](https://learn.chatgpt.com/docs/build-skills)。RST/软件项目主要依靠Codex本身，通用skill不等于专门获奖agent；这里没有发现可信的RST专用获奖skill。
