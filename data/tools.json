@@ -1,0 +1,161 @@
+[
+  {
+    "id": "M1",
+    "name": "MathModelAgent",
+    "invoke": "$1start-mathmodel",
+    "repo": "https://github.com/jihe520/MathModelAgent",
+    "kind": "数模专用",
+    "use": "优先想要串起读题、求解、绘图、论文和验收的人。",
+    "outputs": "代码、结果、图表、Typst/LaTeX、PDF、验收报告。",
+    "setup": "Node.js/npm；计算所需 Python 库；Typst 或 XeLaTeX。",
+    "evidence": "有阶段文件和模板；本次未核到可归属于当前技能包的获奖实证。",
+    "keys": [
+      "tool_mma",
+      "tool_mma_entry"
+    ]
+  },
+  {
+    "id": "M2",
+    "name": "mathmodel-skill",
+    "invoke": "$mathmodel-skill",
+    "repo": "https://github.com/handsomeZR-netizen/mathmodel-skill",
+    "kind": "数模专用",
+    "use": "国赛首选之一；喜欢按阶段推进、随时断点接着做的人。",
+    "outputs": "三竞赛包、求解、稳健性、LaTeX 论文、终审与状态记录。",
+    "setup": "Python、Pandoc、TeX；先让 doctor.py 检查。",
+    "evidence": "有 Codex 说明与检查脚本。论文样本统计不是技能参赛获奖统计。",
+    "keys": [
+      "tool_mathmodel"
+    ]
+  },
+  {
+    "id": "M3",
+    "name": "MM-Agent Expert",
+    "invoke": "$mm-agent-expert",
+    "repo": "https://github.com/luckyfan-cs/mm-agent-expert",
+    "kind": "数模专用",
+    "use": "美赛优先；想要统一入口和英文建模写作的人。",
+    "outputs": "模型、可复现计算、图表、英文 LaTeX 论文。",
+    "setup": "Python 3.10+；LaTeX；默认使用宿主模型和工具。",
+    "evidence": "原 MM-Agent 论文报告辅助两队获 2025 Finalist；此技能包是后来发布的版本。",
+    "keys": [
+      "tool_mmexpert",
+      "tool_mm_paper",
+      "tool_mmresearch"
+    ]
+  },
+  {
+    "id": "M4",
+    "name": "math-modeling-skill",
+    "invoke": "$math-modeling-skill",
+    "repo": "https://github.com/anticipate218/math-modeling-skill",
+    "kind": "数模专用",
+    "use": "华为杯研赛、国赛、美赛的模型选择与提交前自查。",
+    "outputs": "模型方法资料、算法示例、模板、论文检查。",
+    "setup": "按模型安装 Python 库；按模板准备 TeX。",
+    "evidence": "有 SKILL、脚本、示例与规则入口；未核到当前包的实战奖项。",
+    "keys": [
+      "tool_anticipate"
+    ]
+  },
+  {
+    "id": "W",
+    "name": "frontend-design + webapp-testing",
+    "invoke": "$frontend-design / $webapp-testing",
+    "repo": "https://github.com/anthropics/skills",
+    "kind": "通用组合",
+    "use": "软件杯、软件创新、服创及 AI 应用：Codex 写系统，两个 skill 管界面与验收。",
+    "outputs": "可运行前后端、浏览器测试、截图与错误日志。",
+    "setup": "项目开发环境；Python Playwright 和浏览器。",
+    "evidence": "官方通用 skill 文件齐全；本文的竞赛组合是选型建议。",
+    "keys": [
+      "tool_front",
+      "tool_test"
+    ]
+  },
+  {
+    "id": "G",
+    "name": "algorithmic-art / canvas-design",
+    "invoke": "$algorithmic-art / $canvas-design",
+    "repo": "https://github.com/anthropics/skills",
+    "kind": "通用组合",
+    "use": "NCDA、数媒、好创意：代码交互选前者，静态海报选后者。",
+    "outputs": "p5.js/HTML/JS；或海报 PNG/PDF。",
+    "setup": "浏览器；静态稿按 skill 所需绘图环境。",
+    "evidence": "已核对实际 SKILL 和输出约定；没有据此宣称拿过对应竞赛奖。",
+    "keys": [
+      "tool_art",
+      "tool_canvas"
+    ]
+  },
+  {
+    "id": "V",
+    "name": "Remotion Agent Skills",
+    "invoke": "$remotion-best-practices",
+    "repo": "https://github.com/remotion-dev/skills",
+    "kind": "通用组合",
+    "use": "代码动画、科普视频、软件演示视频。",
+    "outputs": "React 动画工程、预览、视频/静帧。",
+    "setup": "Node.js/npm、Remotion 项目及渲染环境。",
+    "evidence": "维护方明确支持 Codex；本身不是数媒赛事专用 agent。",
+    "keys": [
+      "tool_remotion"
+    ]
+  },
+  {
+    "id": "B",
+    "name": "Awesome Student AI Skills",
+    "invoke": "读取根 SKILL.md，再选挑战杯/互联网+子项",
+    "repo": "https://github.com/cuic19053-hue/awesome-student-ai-skills",
+    "kind": "申报专用",
+    "use": "用已有真实成果整理挑战杯、创新大赛材料；沿用当届校模板。",
+    "outputs": "结构化材料、模拟评审、DOCX 初稿。",
+    "setup": "完整仓库；Python、python-docx 等依赖。",
+    "evidence": "有 build.py 和 DOCX 样例；README 的国赛经历未构成工具获奖因果证据。",
+    "keys": [
+      "tool_student"
+    ]
+  },
+  {
+    "id": "P",
+    "name": "SlideMuse",
+    "invoke": "$slidemuse",
+    "repo": "https://github.com/helloo1568/slidemuse",
+    "kind": "答辩专用",
+    "use": "把已完成项目变成可演示、可编辑的答辩 PPT。",
+    "outputs": "逐页内容、图片稿、可编辑 PPTX。",
+    "setup": "Python 3.10+、安装器；图像生成依赖宿主实际能力。",
+    "evidence": "有竞赛画廊与可编辑文件样例；不替代作品本体。",
+    "keys": [
+      "tool_slide"
+    ]
+  },
+  {
+    "id": "D",
+    "name": "Microsoft R&D-Agent",
+    "invoke": "rdagent data_science --competition <任务名>",
+    "repo": "https://github.com/microsoft/RD-Agent",
+    "kind": "独立 agent",
+    "use": "泰迪、BDCI、数据题：适配本地数据协议后自动迭代特征与模型。",
+    "outputs": "实验代码、特征/模型迭代、验证分数与日志。",
+    "setup": "按仓库配 Python/Docker/模型 API；算力按题目另算。",
+    "evidence": "有本地 data_science 入口与研究评测；不等于国内赛事获奖记录。",
+    "keys": [
+      "tool_rdagent"
+    ]
+  },
+  {
+    "id": "K",
+    "name": "NVIDIA Kaggle Skill",
+    "invoke": "$nvidia-kaggle-skill",
+    "repo": "https://github.com/NVIDIA/nvidia-kaggle",
+    "kind": "平台专用",
+    "use": "只针对 Kaggle。找赛、读公开方案、复现 notebook、检查提交。",
+    "outputs": "竞赛资料、复现工程及 Kaggle 平台操作。",
+    "setup": "Python 工具；账户操作需 Kaggle API 凭证。",
+    "evidence": "维护方技能和工作流可查；提交接口不能直接用于天池/泰迪。",
+    "keys": [
+      "tool_kaggle"
+    ]
+  }
+]

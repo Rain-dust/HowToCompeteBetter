@@ -1,0 +1,133 @@
+[
+  {
+    "rank": "01",
+    "id": "N22",
+    "name": "全国大学生数学建模竞赛",
+    "track": "高教社杯 / CUMCM · 专用数模工作流",
+    "repos": [
+      [
+        "主选：mathmodel-skill",
+        "https://github.com/handsomeZR-netizen/mathmodel-skill"
+      ],
+      [
+        "备选：MathModelAgent",
+        "https://github.com/jihe520/MathModelAgent"
+      ]
+    ],
+    "install": "请从 https://github.com/handsomeZR-netizen/mathmodel-skill 安装 mathmodel-skill 到当前项目的 .agents/skills/mathmodel-skill，保留整个仓库的脚本、竞赛包和模板结构。先读 README，在隔离环境补齐所需 Python 库，检查 Pandoc 和 XeLaTeX，运行 scripts/doctor.py --competition cumcm。已有同名技能则先核对版本并复用。完成后报告安装路径、commit 和检查结果。",
+    "start": "使用 $mathmodel-skill，开始 CUMCM 项目。当前 inputs/ 中有完整赛题、原始附件和当届规则。先检查数据并比较选题，给出候选模型和验证方案；队伍确定模型后，运行基线、改进与误差/灵敏度检验，再按实际结果组织论文。交付 PDF、源码、图表、可复现支撑包和 AI工具使用详情.pdf，按规则逐项列出需要队员核验的内容。",
+    "output": "应拿到：编译成功的论文、能重跑的代码、支撑包与 AI 使用详情。",
+    "note": "二选一即可。备选安装要保留 skills/ 下的兄弟目录；实际入口名是 $1start-mathmodel。",
+    "keys": [
+      "tool_mathmodel",
+      "tool_mma_entry",
+      "codex_skills"
+    ]
+  },
+  {
+    "rank": "02",
+    "id": "N10",
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "track": "优先 Web / 游戏 / 可视化 · 组合工作流",
+    "repos": [
+      [
+        "开发界面与测试：Anthropic Skills",
+        "https://github.com/anthropics/skills"
+      ],
+      [
+        "视频与代码动画：Remotion Skills",
+        "https://github.com/remotion-dev/skills"
+      ]
+    ],
+    "install": "请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 的完整目录到当前项目 .agents/skills，并配置 Playwright 及其浏览器。再从 https://github.com/remotion-dev/skills 按 README 为当前 Codex 安装 remotion-best-practices 及必需资源；检查 Node.js 和渲染环境。已有技能则复用。完成一次最小网页测试和短视频渲染，报告路径、commit 与实际产物。",
+    "start": "我要参加全国大学生数字媒体科技作品及创意竞赛，选 Web/游戏/可视化作品方向。当届规则、评分标准与我的选题在 inputs/。先核参赛类别并比较 3 个可交付方案，再选一个只含单一核心交互的方案实施。用 $frontend-design 完成作品，$webapp-testing 测主流程和异常输入；用 $remotion-best-practices 制作演示。交付可运行作品、源码、测试截图、视频、说明与 AI 工具使用说明。",
+    "output": "应拿到：可运行作品＋浏览器验收证据＋视频＋创作与 AI 过程说明。",
+    "note": "这是通用工具组合，主体开发由 Codex 完成。先放入当届规则、评分标准、题目/创意和合法素材。",
+    "keys": [
+      "tool_front",
+      "tool_test",
+      "tool_remotion",
+      "cmit_new"
+    ]
+  },
+  {
+    "rank": "03",
+    "id": "N01",
+    "name": "中国大学生服务外包创新创业大赛",
+    "track": "优先 OPC 创客类；企业命题另按题目 · 组合工作流",
+    "repos": [
+      [
+        "开发与浏览器验收：Anthropic Skills",
+        "https://github.com/anthropics/skills"
+      ],
+      [
+        "答辩与可编辑 PPT：SlideMuse",
+        "https://github.com/helloo1568/slidemuse"
+      ]
+    ],
+    "install": "请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 完整目录到当前项目 .agents/skills，配置 Playwright 浏览器测试。再读取 https://github.com/helloo1568/slidemuse 的 README，按 install.py --client codex 的当前用法安装并自检；使用隔离依赖，已有技能则复用。核对图像生成与 PPTX 导出条件，报告安装路径、commit 和最小验收结果。",
+    "start": "我要参加中国大学生服务外包创新创业大赛 OPC 创客类。inputs/ 有当届手册、评分要求和我的真实需求/用户资料。先做要求、功能、测试、演示对应表；用 $frontend-design 和 Codex 实现一个完整小产品，再用 $webapp-testing 验收并部署。根据真实试用反馈迭代，生成产品报告和演示脚本；最后用 $slidemuse 做答辩 PPT。缺失的用户或运营数据列为待补，保留开发与 AI 使用记录。",
+    "output": "应拿到：可用产品＋实际试用记录＋产品报告＋演示与 PPT。",
+    "note": "2026 OPC 不走区域赛。开发/测试/PPT 是现成工具组合，本次未核到可直接套用的 OPC 专用获奖 skill。",
+    "keys": [
+      "tool_front",
+      "tool_test",
+      "tool_slide",
+      "fwwb",
+      "opc_region"
+    ]
+  },
+  {
+    "rank": "04",
+    "id": "N11",
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "track": "NCDA · 优先创意编程；AIGC 类按独立要求",
+    "repos": [
+      [
+        "交互与视觉创作：Anthropic Skills",
+        "https://github.com/anthropics/skills"
+      ],
+      [
+        "视频/动态作品：Remotion Skills",
+        "https://github.com/remotion-dev/skills"
+      ]
+    ],
+    "install": "请从 https://github.com/anthropics/skills 将 skills/algorithmic-art、skills/frontend-design、skills/webapp-testing 的完整目录安装到当前项目 .agents/skills；检查 p5.js、浏览器和 Playwright。再从 https://github.com/remotion-dev/skills 按 README 安装 remotion-best-practices 及必要资源。已有技能复用。用一个最小交互作品和一次短视频渲染验收，报告安装路径、commit 与产物。",
+    "start": "我要参加未来设计师·全国高校数字艺术设计大赛 NCDA。inputs/ 有当届目标类别细则、评分要求、主题和素材。先核创意编程与 AIGC 类各自要求，再选择合适类别。用 $algorithmic-art 比较 3 个原创交互机制，确定后输出 HTML/JS；用 $frontend-design 打磨界面、$webapp-testing 验收。需要动态展示时用 $remotion-best-practices。交付程序包、实际运行视频、海报、设计说明和创作过程，逐项对照当届格式。",
+    "output": "应拿到：可交互程序＋实际运行视频＋海报＋设计过程。",
+    "note": "主打类别是“创意编程（含游戏）”。AIGC 作品与代码交互作品的规则分开核，不能只凭母赛名称套用。",
+    "keys": [
+      "tool_art",
+      "tool_front",
+      "tool_test",
+      "tool_remotion",
+      "ncda_rules"
+    ]
+  },
+  {
+    "rank": "05",
+    "id": "N03",
+    "name": "全国大学生软件创新大赛",
+    "track": "从当届指定题目中选 · 组合工作流",
+    "repos": [
+      [
+        "界面实现与验收：Anthropic Skills",
+        "https://github.com/anthropics/skills"
+      ],
+      [
+        "答辩演示：SlideMuse",
+        "https://github.com/helloo1568/slidemuse"
+      ]
+    ],
+    "install": "请从 https://github.com/anthropics/skills 安装 skills/frontend-design 和 skills/webapp-testing 完整目录到当前项目 .agents/skills，配置 Playwright 及浏览器。再按 https://github.com/helloo1568/slidemuse 的 README 使用 install.py --client codex 安装并自检，依赖放隔离环境，已有技能复用。检查该题规定的终端、SDK 和开发环境，运行最小界面测试与 PPT 导出，报告路径、commit 和结果。",
+    "start": "我要参加全国大学生软件创新大赛。inputs/ 有当届指定赛题、评分标准、工具条款和素材。先核外部 AI 编程工具权限；逐条建立评分要求、功能、测试与演示对应表。由 Codex 完成前后端和核心逻辑，用 $frontend-design 打磨界面、$webapp-testing 验收所有评分动作和异常输入。先交一个稳定的端到端版本，再补效果对照和文档。最后用 $slidemuse 做答辩，交付源码、启动/部署说明、测试证据与演示视频。",
+    "output": "应拿到：完整软件＋可复现部署＋评分覆盖测试＋答辩材料。",
+    "note": "若指定题要求原生移动端，换成对应原生技术栈；webapp-testing 只覆盖 Web 部分。",
+    "keys": [
+      "tool_front",
+      "tool_test",
+      "tool_slide",
+      "swinnovation"
+    ]
+  }
+]

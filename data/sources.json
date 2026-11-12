@@ -1,0 +1,1200 @@
+[
+  {
+    "key": "inspiration",
+    "title": "高性价比人生指南：原项目与许可",
+    "url": "https://github.com/eternity4719/HowToLiveBetter",
+    "type": "原项目",
+    "note": "仅借鉴问题导航、成本收益、证据与日期结构；本报告内容重新研究撰写。",
+    "accessed": "2026-11-10",
+    "id": "001"
+  },
+  {
+    "key": "cahe",
+    "title": "2023全国普通高校大学生竞赛分析报告发布：高校转载",
+    "url": "https://jwc.tsguas.edu.cn/info/1887/4998.htm",
+    "type": "高校转载",
+    "note": "核实发布机构及84项口径；不视作教育部ABC分类。",
+    "accessed": "2026-11-10",
+    "id": "002"
+  },
+  {
+    "key": "directory",
+    "title": "高校公开转载的竞赛目录（文件题名为2024）",
+    "url": "https://statics.scnu.edu.cn/pics/xsb/2025/0103/1735893141731811.pdf",
+    "type": "高校目录副本",
+    "note": "用于历史目录D对照；不是2026最新统一认定。",
+    "accessed": "2026-11-10",
+    "id": "003"
+  },
+  {
+    "key": "observe",
+    "title": "2023竞赛分析报告观察目录：高校转载",
+    "url": "https://cs.fdzcxy.edu.cn/_upload/article/files/92/04/3434b0214a5782729013f1aaf60f/1ec58b9b-7871-4406-b9fe-2f852fcf9644.pdf",
+    "type": "高校目录副本",
+    "note": "用于历史观察目录O对照。",
+    "accessed": "2026-11-10",
+    "id": "004"
+  },
+  {
+    "key": "policy_qc",
+    "title": "武汉晴川学院：学科竞赛项目及等级认定",
+    "url": "https://jw.qcuwh.edu.cn/info/1293/2210.htm",
+    "type": "高校制度",
+    "note": "A=榜单，B=观察，C含省级学术团体和知名企业赛事，实行动态认定。",
+    "accessed": "2026-11-10",
+    "id": "005"
+  },
+  {
+    "key": "policy_hz",
+    "title": "湖州师范学院2025学科竞赛分类通知",
+    "url": "https://jwc.zjhu.edu.cn/2025/0310/c3127a229536/page.htm",
+    "type": "高校制度",
+    "note": "A+、A、A-、B、C的不同定义。",
+    "accessed": "2026-11-10",
+    "id": "006"
+  },
+  {
+    "key": "policy_sw",
+    "title": "西南石油大学学科竞赛管理办法",
+    "url": "https://www.swpu.edu.cn/dean/info/3180/12781.htm",
+    "type": "高校制度",
+    "note": "A1-A4等校本分档。",
+    "accessed": "2026-11-10",
+    "id": "007"
+  },
+  {
+    "key": "policy_neu",
+    "title": "东北大学秦皇岛分校2026竞赛星级分类表",
+    "url": "https://cxcyzx.neuq.edu.cn/__local/B/13/B6/0EC54AD2C0F8BE5A64111124108_1720848A_28B95.pdf",
+    "type": "高校制度",
+    "note": "显示主体赛与专项赛可能降档。",
+    "accessed": "2026-11-10",
+    "id": "008"
+  },
+  {
+    "key": "index26",
+    "title": "普通高校大学生计算机类竞赛指数（2026版）",
+    "url": "https://www.ceracu.org.cn/nd.jsp?groupId=-1&id=288",
+    "type": "学会原文",
+    "note": "31项计算机竞赛的专题指数；不等于教育部ABC。",
+    "accessed": "2026-11-10",
+    "id": "009"
+  },
+  {
+    "key": "codex",
+    "title": "OpenAI：Code generation / Codex定位",
+    "url": "https://developers.openai.com/api/docs/guides/code-generation",
+    "type": "OpenAI官方",
+    "note": "用于核实软件开发agent定位，不作为获奖率依据。",
+    "accessed": "2026-11-10",
+    "id": "010"
+  },
+  {
+    "key": "fwwb",
+    "title": "第十七届服创大赛参赛手册（2026年2月）",
+    "url": "https://www.hnpi.edu.cn/_upload/article/files/d4/cb/ad913737411f9b52b79ae89fc3d1/271cd76e-0826-43c9-ad42-3a34258dfd78.pdf",
+    "type": "组委会文件·高校转载",
+    "note": "四类别、资格、交付材料及评审；C类是赛道名。",
+    "accessed": "2026-11-10",
+    "id": "011"
+  },
+  {
+    "key": "opc_region",
+    "title": "服创2026校方转发：OPC单独评审不参加区域赛",
+    "url": "https://cx.gzist.edu.cn/info/2070/2788.htm",
+    "type": "高校通知",
+    "note": "区域奖与省奖、OPC全国评审路径分开。",
+    "accessed": "2026-11-10",
+    "id": "012"
+  },
+  {
+    "key": "fwwb_end",
+    "title": "第十七届服创报名情况通告",
+    "url": "https://www.fwwb.org.cn/attached/file/20260416/20260416115145_211.pdf",
+    "type": "组委会原文",
+    "note": "2026-03-31报名已结束。",
+    "accessed": "2026-11-10",
+    "id": "013"
+  },
+  {
+    "key": "softwarecup",
+    "title": "第十五届中国软件杯参赛通知",
+    "url": "https://se.xjtu.edu.cn/info/1043/3807.htm",
+    "type": "高校通知",
+    "note": "具体技术栈以组委会命题为准。",
+    "accessed": "2026-11-10",
+    "id": "014"
+  },
+  {
+    "key": "softwarecup_q",
+    "title": "中国软件杯2026赛题与校赛要求",
+    "url": "https://www.cuit.edu.cn/info/1006/16577.htm",
+    "type": "高校通知",
+    "note": "含学习多智能体、仓储仿真、导览数字人等命题。",
+    "accessed": "2026-11-10",
+    "id": "015"
+  },
+  {
+    "key": "swinnovation",
+    "title": "第二十届全国大学生软件创新大赛通知",
+    "url": "https://se.xjtu.edu.cn/info/1100/4080.htm",
+    "type": "高校通知",
+    "note": "2026-10-30至2027-01-15报名提交；免报名费，差旅自理。",
+    "accessed": "2026-11-10",
+    "id": "016"
+  },
+  {
+    "key": "c4ai",
+    "title": "2026中国高校计算机大赛人工智能创意赛通知",
+    "url": "https://zhxy.nwsuaf.edu.cn/bksjy/jxdt/2cdebc54228b408f8987ee79778c3714.htm",
+    "type": "高校通知",
+    "note": "须到当届华为云页面核对分项平台和奖项。",
+    "accessed": "2026-11-10",
+    "id": "017"
+  },
+  {
+    "key": "c4aigc",
+    "title": "第三届C4-AIGC创新赛通知与规程",
+    "url": "https://www.wbc.edu.cn/uploadFiles/file/20260320/20260320150225_29361.pdf",
+    "type": "主办方文件·高校转载",
+    "note": "vivo蓝心底座；应用与创作赛道。",
+    "accessed": "2026-11-10",
+    "id": "018"
+  },
+  {
+    "key": "c4aigc_detail",
+    "title": "C4系列2026校方转发：AIGC作品形态要求",
+    "url": "https://www.guit.edu.cn/cxcy/info/1051/1463.htm",
+    "type": "高校通知",
+    "note": "APP、智能体、快应用、插件等，并需运行于vivo手机。",
+    "accessed": "2026-11-10",
+    "id": "019"
+  },
+  {
+    "key": "mobile",
+    "title": "C4移动应用创新赛2026竞赛通知",
+    "url": "https://xk.qust.edu.cn/info/1047/5998.htm",
+    "type": "高校通知",
+    "note": "启明、启迪、启航分道和材料要求。",
+    "accessed": "2026-11-10",
+    "id": "020"
+  },
+  {
+    "key": "mobile_platform",
+    "title": "C4移动应用创新赛官方入口",
+    "url": "https://www.appcontest.net/",
+    "type": "赛事官网",
+    "note": "Apple生态平台要求及本届赛程。",
+    "accessed": "2026-11-10",
+    "id": "021"
+  },
+  {
+    "key": "network",
+    "title": "C4网络技术挑战赛2026竞赛规程",
+    "url": "https://jwc.ustb.edu.cn/docs/2026-04/3a226c8fa31444ada8cc28c67cd16208.pdf",
+    "type": "主办方文件·高校转载",
+    "note": "资格赛、选拔赛、挑战赛；A系列与B系列。",
+    "accessed": "2026-11-10",
+    "id": "022"
+  },
+  {
+    "key": "network_fee",
+    "title": "C4网络技术挑战赛2026校方通知",
+    "url": "https://jwc.ustb.edu.cn/tztg/a8f55b81a1724b8eaa6790778a40312b.htm",
+    "type": "高校通知",
+    "note": "转发选拔赛600元/作品，不代表其他赛事或未来年度收费。",
+    "accessed": "2026-11-10",
+    "id": "023"
+  },
+  {
+    "key": "bigdata",
+    "title": "C4大数据挑战赛2026报名通知",
+    "url": "https://sci.upc.edu.cn/2026/0323/c6838a485638/page.htm",
+    "type": "高校通知",
+    "note": "真实数据算法竞赛；不由此推定存在省奖。",
+    "accessed": "2026-11-10",
+    "id": "024"
+  },
+  {
+    "key": "aic",
+    "title": "AIC智能体互联主题赛2026通知",
+    "url": "https://www.aicomp.cn/notice/notice-3/5153.html",
+    "type": "组委会原文",
+    "note": "复赛公示后颁发省级证书；不能外推所有赛题。",
+    "accessed": "2026-11-10",
+    "id": "025"
+  },
+  {
+    "key": "aic_sc",
+    "title": "AIC2026四川赛区省级选拔赛通知",
+    "url": "https://www.aicomp.cn/notice/notice-2/notice-24/4523.html",
+    "type": "组委会原文",
+    "note": "含AI软件、场景、OPC等创新方向。",
+    "accessed": "2026-11-10",
+    "id": "026"
+  },
+  {
+    "key": "cmit",
+    "title": "第十四届数字媒体竞赛2026通知",
+    "url": "https://www.czu.cn/2026/1008/c6a178047/page.htm",
+    "type": "高校完整转载",
+    "note": "AI过程披露、交付与赛程；已在其他校级以上赛事获奖作品禁用。",
+    "accessed": "2026-11-10",
+    "id": "027"
+  },
+  {
+    "key": "cmit_home",
+    "title": "全国大学生数字媒体科技作品及创意竞赛官网",
+    "url": "https://www.cmit.cn/wap/",
+    "type": "赛事官网",
+    "note": "国内赛与国际专项赛资格不可混用。",
+    "accessed": "2026-11-10",
+    "id": "028"
+  },
+  {
+    "key": "ncda_rules",
+    "title": "NCDA2026竞赛办法",
+    "url": "https://ncda.org.cn/dsjs/dssz/",
+    "type": "组委会原文",
+    "note": "学院组织、赛程、全国评奖比例分母。",
+    "accessed": "2026-11-10",
+    "id": "029"
+  },
+  {
+    "key": "ncda_aigc",
+    "title": "NCDA2026非命题赛道细则",
+    "url": "https://www.ncda.org.cn/2026fmt/",
+    "type": "组委会原文",
+    "note": "1L AIGC要求创作过程PDF；1C交互含创意编程等。",
+    "accessed": "2026-11-10",
+    "id": "030"
+  },
+  {
+    "key": "goodidea",
+    "title": "好创意第21届常规赛与专项赛说明",
+    "url": "https://www.cdec.org.cn/contestDetail",
+    "type": "组委会原文",
+    "note": "常规赛截稿2027-05-31；专项赛另看各简章。",
+    "accessed": "2026-11-10",
+    "id": "031"
+  },
+  {
+    "key": "goodidea_home",
+    "title": "好创意大赛官方新闻与专项赛",
+    "url": "https://www.cdec.org.cn/",
+    "type": "赛事官网",
+    "note": "AIGC、游戏叙事、文化创意等方向。",
+    "accessed": "2026-11-10",
+    "id": "032"
+  },
+  {
+    "key": "ada",
+    "title": "第18届大广赛参赛指南（2026-04-01修订）",
+    "url": "https://www.sun-ada.net/home/about_intrs2.html",
+    "type": "组委会原文",
+    "note": "科技类、互动类、UI类、营销创客单元等。",
+    "accessed": "2026-11-10",
+    "id": "033"
+  },
+  {
+    "key": "milan",
+    "title": "米兰设计周2026专项赛补充通知",
+    "url": "https://ysxy.huznu.edu.cn/2026/0109/c1886a246452/page.htm",
+    "type": "高校完整转载",
+    "note": "不同命题有AI标注与平台要求。",
+    "accessed": "2026-11-10",
+    "id": "034"
+  },
+  {
+    "key": "milan_grade",
+    "title": "米兰设计周2026常州工学院通知",
+    "url": "https://www.czu.cn/_t454/2026/0323/c6a171373/pagem.htm",
+    "type": "高校通知",
+    "note": "校内为Ⅰ级C等的实例，不外推到其他高校。",
+    "accessed": "2026-11-10",
+    "id": "035"
+  },
+  {
+    "key": "robotcreative",
+    "title": "第九届高校智能机器人创意大赛：创意设计/AIGC材料",
+    "url": "https://xxgk.czu.cn/2026/0106/c5469a169887/page.htm",
+    "type": "高校通知",
+    "note": "主题1有无实物及AIGC组；需保留原始提示词截图。",
+    "accessed": "2026-11-10",
+    "id": "036"
+  },
+  {
+    "key": "robotcreative_home",
+    "title": "中国高校智能机器人创意大赛官网",
+    "url": "https://www.robotcontest.cn/home/homepage",
+    "type": "赛事官网",
+    "note": "省/区域赛与国赛，不同主题规则分开。",
+    "accessed": "2026-11-10",
+    "id": "037"
+  },
+  {
+    "key": "craic",
+    "title": "第28届机器人及人工智能大赛预通知",
+    "url": "https://craic.aicomp.cn/wp-content/uploads/2026/03/%E3%80%90%E5%9B%BD%E8%B5%9B%E7%BB%84%E5%A7%94%E4%BC%9A%E3%80%91%E5%85%B3%E4%BA%8E%E4%B8%BE%E5%8A%9E%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E5%B1%8A%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%9A%84%E9%A2%84%E9%80%9A%E7%9F%A520260131.pdf",
+    "type": "组委会原文",
+    "note": "创新、应用、竞技、挑战各类项目。",
+    "accessed": "2026-11-10",
+    "id": "038"
+  },
+  {
+    "key": "craic_rules",
+    "title": "CRAIC2026校方转发：原创和AI拼凑限制",
+    "url": "https://cxcy.lnut.edu.cn/info/14428/186040.htm",
+    "type": "高校通知",
+    "note": "有AI主题不等于允许AI拼凑提交。",
+    "accessed": "2026-11-10",
+    "id": "039"
+  },
+  {
+    "key": "raicom",
+    "title": "RAICOM2026校赛及省赛推荐要求",
+    "url": "https://jwc.neepu.edu.cn/info/1014/10578.htm",
+    "type": "高校通知",
+    "note": "创意设计、现场实践、现场答辩。",
+    "accessed": "2026-11-10",
+    "id": "040"
+  },
+  {
+    "key": "raicom_design",
+    "title": "RAICOM2026 CAIA设计赛道内容",
+    "url": "https://wdxy.jsu.edu.cn/tzgg/519e326676f2487693adebf139751bac.htm",
+    "type": "高校通知",
+    "note": "应用场景分析、交互、创业设计等；不等于CAIP编程。",
+    "accessed": "2026-11-10",
+    "id": "041"
+  },
+  {
+    "key": "rst",
+    "title": "第19届RST通知与江苏国赛资格选拔说明",
+    "url": "https://www.czu.cn/_t454/2026/0901/c6a176944/pagem.htm",
+    "type": "高校通知",
+    "note": "江苏无省赛组委会，线上选拔后进入线下国赛。",
+    "accessed": "2026-11-10",
+    "id": "042"
+  },
+  {
+    "key": "rst_official",
+    "title": "中国仿真学会：第19届RST赛道动态",
+    "url": "https://www.csf-sim.org.cn/",
+    "type": "主办学会官网",
+    "note": "核实仿真、创新创业、智能制造等赛道存在。",
+    "accessed": "2026-11-10",
+    "id": "043"
+  },
+  {
+    "key": "systems",
+    "id": "044",
+    "title": "2026全国大学生计算机系统能力大赛通知",
+    "url": "https://due.xjtu.edu.cn/info/1172/9851.htm",
+    "type": "高校通知",
+    "note": "OS、编译、数据库、处理器、智能计算等；省奖与AI辅助权限需分别核。",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "ican_pdf",
+    "title": "中国创造学会iCAN2026通知",
+    "url": "https://www.chinaccsis.com/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/%E4%B8%AD%E5%9B%BD%E5%88%9B%E9%80%A0%E5%AD%A6%E4%BC%9A%E5%85%B3%E4%BA%8E%E4%B8%BE%E5%8A%9E2026%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%B1%8AiCAN%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E5%A4%A7%E8%B5%9B%E7%9A%84%E9%80%9A%E7%9F%A5.pdf",
+    "type": "学会文件",
+    "note": "创新、创业、挑战赛道不能混同。",
+    "accessed": "2026-11-10",
+    "id": "045"
+  },
+  {
+    "key": "ican_ai",
+    "title": "iCAN快手AI未来创造者挑战赛启动",
+    "url": "https://jyt.ln.gov.cn/jyt/jyzx/zxlb/2026071810283077229/index.shtml",
+    "type": "省教育厅原文",
+    "note": "AI场景创想、AI产品实现；专项赛认定另核。",
+    "accessed": "2026-11-10",
+    "id": "046"
+  },
+  {
+    "key": "3chuang",
+    "title": "全国大学生电子商务三创赛官网",
+    "url": "https://www.3chuang.net/",
+    "type": "赛事官网",
+    "note": "常规赛与AI电商实战赛。",
+    "accessed": "2026-11-10",
+    "id": "047"
+  },
+  {
+    "key": "3chuang_next",
+    "title": "第17届三创赛（2026-2027）校方通知",
+    "url": "https://jwch.sdsmu.edu.cn/2026/1110/c2593a181620/page.htm",
+    "type": "高校通知",
+    "note": "当届常规与实战赛的报名区别。",
+    "accessed": "2026-11-10",
+    "id": "048"
+  },
+  {
+    "key": "survey_ai",
+    "title": "市调大赛2026 AI工具及校赛通知",
+    "url": "https://bs.sztu.edu.cn/info/1022/4269.htm",
+    "type": "高校通知",
+    "note": "核心调查与分析须独立完成；附件含AI规范。",
+    "accessed": "2026-11-10",
+    "id": "049"
+  },
+  {
+    "key": "survey_next",
+    "title": "第17届市调大赛2026-2027报名通知",
+    "url": "https://info.zzuli.edu.cn/_t2315/2026/0930/c13520a360736/page.htm",
+    "type": "高校通知",
+    "note": "报名至2026-10-31，校省国三级。",
+    "accessed": "2026-11-10",
+    "id": "050"
+  },
+  {
+    "key": "cumcm_ai",
+    "title": "CUMCM人工智能工具使用规定（2026试行）",
+    "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+    "type": "组委会原文",
+    "note": "2026-09-01施行；论文声明与支撑材料详情。",
+    "accessed": "2026-11-10",
+    "id": "051"
+  },
+  {
+    "key": "cumcm_rules",
+    "title": "CUMCM参赛规则（2026修订稿）",
+    "url": "https://www.mcm.edu.cn/upload_cn/node/774/FlQt6kJV6f5d5b4603e06c3c60acf89b72d7f298.pdf",
+    "type": "组委会原文",
+    "note": "AI辅助与赛题交流纪律。",
+    "accessed": "2026-11-10",
+    "id": "052"
+  },
+  {
+    "key": "stats_notice",
+    "title": "统计建模2026第12届主办方通知",
+    "url": "https://cmswebsite.ai-learning.net/u/cms/tjjmds/202603/10170642sbi1.pdf",
+    "type": "学会文件",
+    "note": "本科和研究生分组、省赛赛区。",
+    "accessed": "2026-11-10",
+    "id": "053"
+  },
+  {
+    "key": "stats_ai",
+    "title": "统计建模生成式AI使用规范（2026试行）转载",
+    "url": "https://www.cmathc.org.cn/tjjmds/news/416.html",
+    "type": "规则转载",
+    "note": "严禁直接生成选题、假设、框架、调查方案及论文正文；官网原站访问超时。",
+    "accessed": "2026-11-10",
+    "id": "054"
+  },
+  {
+    "key": "energy",
+    "title": "第13届能经大赛（2026启动）参赛通知",
+    "url": "https://jw.dhu.edu.cn/_t1379/2026/1103/c9979a384086/page.htm",
+    "type": "高校完整转载",
+    "note": "2026-11-17至12-16报名，禁止自动生成作品，免收费。",
+    "accessed": "2026-11-10",
+    "id": "055"
+  },
+  {
+    "key": "ielean",
+    "title": "2026工业工程与精益管理创新赛官网",
+    "url": "https://www.ielean.cn/anyNoLogin?view=index202603_university",
+    "type": "赛事官网",
+    "note": "机械工程创新创意大赛专业赛项。",
+    "accessed": "2026-11-10",
+    "id": "056"
+  },
+  {
+    "key": "ielean_rules",
+    "title": "中国机械工程学会2026专业赛项总通知",
+    "url": "https://stle.whut.edu.cn/bks/jxgg/202604/P020260409618326572998.pdf",
+    "type": "学会文件·高校转载",
+    "note": "工业工程赛3-5人；省/区域选拔和全国总决赛。",
+    "accessed": "2026-11-10",
+    "id": "057"
+  },
+  {
+    "key": "logistics",
+    "title": "全国大学生物流设计大赛官方介绍",
+    "url": "https://wlsjds.clpp.org.cn/about",
+    "type": "组委会原文",
+    "note": "案例设计、优化建模、软件开发；不据此认定有省赛。",
+    "accessed": "2026-11-10",
+    "id": "058"
+  },
+  {
+    "key": "ciscn",
+    "title": "第19届信息安全竞赛作品赛通知",
+    "url": "https://www.ciscn.cn/announcement/view/412",
+    "type": "组委会原文",
+    "note": "自由作品赛、命题挑战赛；AI辅助权限需核当届细则。",
+    "accessed": "2026-11-10",
+    "id": "059"
+  },
+  {
+    "key": "huawei",
+    "title": "第11届华为ICT大赛创新赛校方通知",
+    "url": "https://chuangxin.dlut.edu.cn/info/1020/16867.htm",
+    "type": "高校通知",
+    "note": "2026-11-30报名截止；初赛、中国总决赛、全球总决赛。",
+    "accessed": "2026-11-10",
+    "id": "060"
+  },
+  {
+    "key": "huawei_manual",
+    "title": "华为ICT大赛2025-2026手册",
+    "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/212464e4d94143deaad4b1ee7f9dc55f/M3T1A669N1207723985743143006/%E5%8D%8E%E4%B8%BAICT%E5%A4%A7%E8%B5%9B2025-2026%20%E6%89%8B%E5%86%8C-20251216.pdf",
+    "type": "华为官方",
+    "note": "不同赛事分支晋级路径不同。",
+    "accessed": "2026-11-10",
+    "id": "061"
+  },
+  {
+    "key": "business",
+    "title": "2026商业精英挑战赛管理办法",
+    "url": "https://www.ccpitcsc.org/mcdt/4855",
+    "type": "主办方原文",
+    "note": "八大赛事，不自动等同历史榜单列入的五分支。",
+    "accessed": "2026-11-10",
+    "id": "062"
+  },
+  {
+    "key": "business_platform",
+    "title": "商业精英挑战赛一体化平台及品牌赛规则",
+    "url": "https://ssyth.cubec.org.cn/",
+    "type": "赛事官网",
+    "note": "品牌赛真实品牌与企业书面授权要求。",
+    "accessed": "2026-11-10",
+    "id": "063"
+  },
+  {
+    "key": "innovation",
+    "title": "教育部：中国国际大学生创新大赛2026通知",
+    "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+    "type": "教育部原文",
+    "note": "校省国三级、实质性贡献和真实性审查。",
+    "accessed": "2026-11-10",
+    "id": "064"
+  },
+  {
+    "key": "challenge",
+    "title": "挑战杯官方平台",
+    "url": "http://www.tiaozhanbei.net/",
+    "type": "赛事官网",
+    "note": "大挑、小挑及专项赛分开。",
+    "accessed": "2026-11-10",
+    "id": "065"
+  },
+  {
+    "key": "challenge_startup",
+    "title": "挑战杯2026创业计划竞赛校方通知",
+    "url": "https://www.hfuu.edu.cn/tw/77/d4/c284a161748/page.htm",
+    "type": "高校通知",
+    "note": "项目真实性和往届获奖作品限制。",
+    "accessed": "2026-11-10",
+    "id": "066"
+  },
+  {
+    "key": "challenge_science",
+    "title": "挑战杯科技作品新周期校方预通知",
+    "url": "https://www.gzus.edu.cn/rjyrgznxy/info/1047/5203.htm",
+    "type": "高校预通知",
+    "note": "不得把校内预通知当作全国最终规则。",
+    "accessed": "2026-11-10",
+    "id": "067"
+  },
+  {
+    "key": "energyreduce",
+    "title": "全国大学生节能减排竞赛官方通知",
+    "url": "https://jienengjianpai.org/",
+    "type": "赛事官网",
+    "note": "科技作品与社会实践分支、当届结果。",
+    "accessed": "2026-11-10",
+    "id": "068"
+  },
+  {
+    "key": "energyreduce_next",
+    "title": "2027节能减排及四川省赛校内启动",
+    "url": "https://slsd.sicau.edu.cn/info/1012/16405.htm",
+    "type": "高校通知",
+    "note": "早期培育周期，不代表全国报名截止日期。",
+    "accessed": "2026-11-10",
+    "id": "069"
+  },
+  {
+    "key": "3d_ai",
+    "title": "2026第19届三维数字化大赛AMD专项说明",
+    "url": "https://3ddl-oss.oss-cn-beijing.aliyuncs.com/2026/3dds/2026amd.pdf",
+    "type": "组委会原文",
+    "note": "AI工具要求、三级赛制与交付形态；专项认定需核。",
+    "accessed": "2026-11-10",
+    "id": "070"
+  },
+  {
+    "key": "icbc",
+    "title": "第17届工行杯2026参赛通知",
+    "url": "https://sem.ysu.edu.cn/info/1068/9480.htm",
+    "type": "高校通知",
+    "note": "省赛与全国赛链路，最多3人。",
+    "accessed": "2026-11-10",
+    "id": "071"
+  },
+  {
+    "key": "test_ai",
+    "title": "2026软件测试大赛微信小微AI助手评测专项赛",
+    "url": "https://www.mooctest.org/news_detail?new_id=184",
+    "type": "赛事官网",
+    "note": "网页依赖JS；仅核实专项存在，细则未充分读取。",
+    "accessed": "2026-11-10",
+    "id": "072"
+  },
+  {
+    "key": "iot",
+    "title": "全国大学生物联网设计竞赛资格规则",
+    "url": "https://iot.sjtu.edu.cn/show.aspx?flag=2&info_id=474&info_lb=36",
+    "type": "组委会原文",
+    "note": "作品、文档、视频及重复作品限制。",
+    "accessed": "2026-11-10",
+    "id": "073"
+  },
+  {
+    "key": "iot26",
+    "title": "2026物联网设计竞赛校方通知",
+    "url": "https://www.xiyou.edu.cn/info/2104/86401.htm",
+    "type": "高校通知",
+    "note": "校赛、线上、分区、全国；硬件与展示要求。",
+    "accessed": "2026-11-10",
+    "id": "074"
+  },
+  {
+    "key": "4c",
+    "title": "4C2026通知、规程与15款工具表",
+    "url": "https://jwc.ustb.edu.cn/docs/2026-03/aec2284456ea4b00848d819edb8aa651.pdf",
+    "type": "组委会文件·高校转载",
+    "note": "工具限制与2-9人本科组；不能宣传全程Codex。",
+    "accessed": "2026-11-10",
+    "id": "075"
+  },
+  {
+    "key": "game",
+    "title": "2026计算机博弈大赛组委会报名通知",
+    "url": "https://www.saikr.com/vse/computergames/nciae/2026",
+    "type": "组委会发布平台",
+    "note": "大学生赛与面向社会的锦标赛不可混同。",
+    "accessed": "2026-11-10",
+    "id": "076"
+  },
+  {
+    "key": "blue_design",
+    "title": "蓝桥杯视觉艺术设计赛官方要求",
+    "url": "https://design.lanqiao.cn/home?eqid=b9122a550000495300000006656e96b0",
+    "type": "赛事官网",
+    "note": "AI标识要求；只核实设计赛，不代表软件机考允许AI。",
+    "accessed": "2026-11-10",
+    "id": "077"
+  },
+  {
+    "key": "teddy",
+    "title": "2026第14届泰迪杯通知",
+    "url": "https://www.tipdm.org/dssj14/2527.jhtml",
+    "type": "组委会原文",
+    "note": "2026改革赛制、数据与大模型实践；AI外部工具权限另核。",
+    "accessed": "2026-11-10",
+    "id": "078"
+  },
+  {
+    "key": "teddy_prize",
+    "title": "2026泰迪杯奖项公示",
+    "url": "https://www.tipdm.org/dssj14/2532.jhtml",
+    "type": "组委会原文",
+    "note": "成功参赛与三等奖以上区分。",
+    "accessed": "2026-11-10",
+    "id": "079"
+  },
+  {
+    "key": "mathorcup_ai",
+    "title": "MathorCup2026人工智能工具使用规定",
+    "url": "https://m.saikr.com/contest/notice_detail/39401",
+    "type": "组委会发布平台",
+    "note": "辅助边界、正文标注、程序注释与AI详情PDF。",
+    "accessed": "2026-11-10",
+    "id": "080"
+  },
+  {
+    "key": "huashu",
+    "title": "2026第七届华数杯获奖与主办信息",
+    "url": "https://www.hfuu.edu.cn/75/ce/c58a161230/page.htm",
+    "type": "高校新闻",
+    "note": "只核实届次存在及主办信息；AI细则未充分核验。",
+    "accessed": "2026-11-10",
+    "id": "081"
+  },
+  {
+    "key": "shuwei",
+    "title": "数维杯2026修订参赛规则",
+    "url": "https://www.nmmcm.org.cn/News/155.html",
+    "type": "组委会原文",
+    "note": "允许AI辅助，须遵守单列AI规定；师生赛中指导限制。",
+    "accessed": "2026-11-10",
+    "id": "082"
+  },
+  {
+    "key": "electric",
+    "title": "电工数学建模竞赛2026竞赛概况",
+    "url": "https://shumo.neepu.edu.cn/jszz/jsgk.htm",
+    "type": "主办承办方原文",
+    "note": "3名同校学生、免报名费、工程数学问题。",
+    "accessed": "2026-11-10",
+    "id": "083"
+  },
+  {
+    "key": "mcmicm",
+    "title": "COMAP MCM/ICM最新比赛说明与AI政策",
+    "url": "https://www.contest.comap.org/undergraduate/contests/mcm/instructions.html",
+    "type": "主办方原文",
+    "note": "当前页面2027周期；使用AI须附Report on Use of AI。",
+    "accessed": "2026-11-10",
+    "id": "084"
+  },
+  {
+    "key": "apmcm",
+    "title": "2026第16届APMCM报名通知",
+    "url": "https://apmcm.org/detail/2512?language=en",
+    "type": "组委会原文",
+    "note": "英语赛项及2026-11-26至11-30赛程，报名另看当届。",
+    "accessed": "2026-11-10",
+    "id": "085"
+  },
+  {
+    "key": "apmcm_platform",
+    "title": "2026第16届APMCM组委会报名页",
+    "url": "https://m.saikr.com/vse/apmcm26",
+    "type": "组委会发布平台",
+    "note": "报名截止2026-11-25；各学校认定层级差异。",
+    "accessed": "2026-11-10",
+    "id": "086"
+  },
+  {
+    "key": "bdci",
+    "title": "CCF BDCI2026官方竞赛平台介绍",
+    "url": "https://www.xir.cn/competition/races/BDCI2026/expert",
+    "type": "官方竞赛平台",
+    "note": "面向算法、应用、系统的真实产业题。",
+    "accessed": "2026-11-10",
+    "id": "087"
+  },
+  {
+    "key": "tianchi",
+    "title": "阿里云天池AI大模型赛事列表",
+    "url": "https://s.tianchi.aliyun.com/competition/aillmList",
+    "type": "平台原文",
+    "note": "含2026 Qoder高校创造力等，具体赛事独立核认。",
+    "accessed": "2026-11-10",
+    "id": "088"
+  },
+  {
+    "key": "simulation",
+    "title": "2026第二届全国大学生仿真建模应用挑战赛",
+    "url": "https://newwl.jlufe.edu.cn/info/1022/1279.htm",
+    "type": "联合主办高校原文",
+    "note": "中国仿真学会与吉林财经大学联合主办；不等于RST。",
+    "accessed": "2026-11-10",
+    "id": "089"
+  },
+  {
+    "key": "p_sc_agent",
+    "title": "四川省2026大学生智能体+大赛通知",
+    "url": "https://cxcyxy.cdu.edu.cn/info/1019/4340.htm",
+    "type": "高校完整转载",
+    "note": "基于女娲OS；奖项比例合计10%，低成本不等于高获奖率。",
+    "accessed": "2026-11-10",
+    "id": "090"
+  },
+  {
+    "key": "p_zj_ai",
+    "title": "浙江省2026第二届人工智能竞赛通知",
+    "url": "https://eee.wzu.edu.cn/info/1022/33580.htm",
+    "type": "高校通知",
+    "note": "算法、揭榜挂帅、专项；平台和AI工具另核。",
+    "accessed": "2026-11-10",
+    "id": "091"
+  },
+  {
+    "key": "p_zj_outsource",
+    "title": "浙江省2026第13届服务外包创新应用大赛预通知",
+    "url": "https://www.soft.zjut.edu.cn/4071.html",
+    "type": "承办高校通知",
+    "note": "3-5人同校，真实企业命题。",
+    "accessed": "2026-11-10",
+    "id": "092"
+  },
+  {
+    "key": "p_zj_media",
+    "title": "浙江省2026第25届多媒体/数智创意作品设计竞赛",
+    "url": "https://art.zafu.edu.cn/info/1003/2989.htm",
+    "type": "高校通知",
+    "note": "长三角资格及队伍要求；题名与正文名称更新。",
+    "accessed": "2026-11-10",
+    "id": "093"
+  },
+  {
+    "key": "p_zj_survey",
+    "title": "浙江省2026统计调查方案设计大赛",
+    "url": "https://jwc.zafu.edu.cn/info/1031/9876.htm",
+    "type": "高校通知",
+    "note": "方案、问卷、实调、处理与报告全过程。",
+    "accessed": "2026-11-10",
+    "id": "094"
+  },
+  {
+    "key": "p_ah_ai",
+    "title": "安徽省教育厅2026大数据与人工智能应用竞赛通知",
+    "url": "https://www.hsxy.edu.cn/__local/B/5A/A2/A6221E96885051AD21C7B5CF14F_2D52CCB5_1DF4E.pdf",
+    "type": "教育厅文件·高校转载",
+    "note": "校选、网络初赛、现场决赛；分项规则另核。",
+    "accessed": "2026-11-10",
+    "id": "095"
+  },
+  {
+    "key": "p_sd_data",
+    "title": "山东省2026数据分析与创新应用大赛",
+    "url": "https://www.sdbdra.cn/newsinfo/11130054.html",
+    "type": "承办学会原文",
+    "note": "5赛道中有市调山东赛区，避免重复计数。",
+    "accessed": "2026-11-10",
+    "id": "096"
+  },
+  {
+    "key": "p_sd_twin",
+    "title": "山东省机电产品创新设计竞赛2026仿真孪生专项",
+    "url": "https://jdjs.sdu.edu.cn/info/1002/1409.htm",
+    "type": "赛事官网",
+    "note": "工业仿真、数字孪生、调度效率等。",
+    "accessed": "2026-11-10",
+    "id": "097"
+  },
+  {
+    "key": "p_js_4c",
+    "title": "江苏省2026计算机设计大赛通知",
+    "url": "https://aao.nuaa.edu.cn/_t753/2026/0306/c8231a393900/page.htm",
+    "type": "高校通知",
+    "note": "省赛获奖与推荐国赛分别处理。",
+    "accessed": "2026-11-10",
+    "id": "098"
+  },
+  {
+    "key": "p_js_4c_tools",
+    "title": "江苏省2026计算机设计大赛组委会文件",
+    "url": "https://bigdata.cczu.edu.cn/_upload/article/files/29/e2/6a31a38e4a0ab71dcd434c181c72/011c7e13-39e8-4c62-a4b5-3cbfa2869cff.pdf",
+    "type": "组委会文件·高校转载",
+    "note": "明确15款国产AI或自主知识产权工具。",
+    "accessed": "2026-11-10",
+    "id": "099"
+  },
+  {
+    "key": "p_sc_4c",
+    "title": "四川省2026计算机设计大赛平台",
+    "url": "https://www.scjsjds.cn/index",
+    "type": "赛事官网",
+    "note": "国赛推荐、结果与违规公告入口。",
+    "accessed": "2026-11-10",
+    "id": "100"
+  },
+  {
+    "key": "p_gd_4c",
+    "title": "广东省2026计算机设计大赛通知",
+    "url": "https://jsj.dgpt.edu.cn/info/1109/2837.htm",
+    "type": "高校通知",
+    "note": "省教育厅主办，和国赛资格及分组区分。",
+    "accessed": "2026-11-10",
+    "id": "101"
+  },
+  {
+    "key": "p_ln_4c",
+    "title": "辽宁省2026本科大学生计算机设计竞赛",
+    "url": "https://rjxy.lntu.edu.cn/info/1118/8488.htm",
+    "type": "高校通知",
+    "note": "省教育厅主办，与4C国赛衔接。",
+    "accessed": "2026-11-10",
+    "id": "102"
+  },
+  {
+    "key": "p_north",
+    "title": "华北五省2026大学生计算机应用大赛",
+    "url": "https://jiaowu.buaa.edu.cn/info/1016/9052.htm",
+    "type": "高校完整通知",
+    "note": "AI生成部分须明示；跨省赛不自动算全国奖。",
+    "accessed": "2026-11-10",
+    "id": "103"
+  },
+  {
+    "key": "p_hn_media",
+    "title": "湖南省2026数字媒体创意设计大赛要求",
+    "url": "https://jwc.hatu.edu.cn/main/upload/202604/30/202604300912315886.pdf",
+    "type": "高校公开规则",
+    "note": "现场限时创作和作品赛需分别核AI工具。",
+    "accessed": "2026-11-10",
+    "id": "104"
+  },
+  {
+    "key": "icpc_limit",
+    "title": "ICPC世界总决赛当前编程环境",
+    "url": "https://icpc.global/worldfinals/programming-environment",
+    "type": "主办方原文",
+    "note": "IDE内置AI关闭；仅该范围确证，不外推全部比赛。",
+    "accessed": "2026-11-10",
+    "id": "105"
+  },
+  {
+    "key": "ciscn_qualification",
+    "title": "第19届信息安全作品赛2026资格与评审通知",
+    "url": "https://jwc.xjtu.edu.cn/info/1172/10355.htm",
+    "type": "高校通知",
+    "note": "自由作品赛本专科、不含研究生；命题挑战赛研究生可参。",
+    "accessed": "2026-11-10",
+    "id": "106"
+  },
+  {
+    "key": "teddy_prov",
+    "title": "2026泰迪杯全国奖与省奖的高校获奖报道",
+    "url": "https://www.nustti.edu.cn/2026/0918/c32a17510/page.htm",
+    "type": "高校获奖公报",
+    "note": "例证江苏省奖存在；不替代所有赛区和学校认定。",
+    "accessed": "2026-11-10",
+    "id": "107"
+  },
+  {
+    "key": "ncccu",
+    "title": "第八届计算机能力挑战赛2026湖北选拔通知",
+    "url": "https://jky.yangtzeu.edu.cn/info/1026/3267.htm",
+    "type": "高校通知",
+    "note": "大数据/AI为阶段提交；程序设计等限时赛另核。",
+    "accessed": "2026-11-10",
+    "id": "108"
+  },
+  {
+    "key": "iscc",
+    "title": "2026第23届信息安全与对抗技术竞赛通知",
+    "url": "https://jiaowu.nwpu.edu.cn/info/1160/28078.htm",
+    "type": "高校通知",
+    "note": "创新作品、智能安全与CTF分项不可混同。",
+    "accessed": "2026-11-10",
+    "id": "109"
+  },
+  {
+    "key": "p_zj_ai_grade",
+    "title": "湖州师范学院2026浙江AI专项校内认定通知",
+    "url": "https://www.zjhu.edu.cn/2026/0703/c66a253202/page.htm",
+    "type": "高校通知",
+    "note": "例校A类，仅适用于该校当届认定。",
+    "accessed": "2026-11-10",
+    "id": "110"
+  },
+  {
+    "key": "tool_mma",
+    "title": "MathModelAgent：六阶段 Skills 与模板",
+    "url": "https://github.com/jihe520/MathModelAgent",
+    "note": "核对 README 与 skills/1start-mathmodel/SKILL.md；文件入口名为 1start-mathmodel。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_mma_entry",
+    "title": "MathModelAgent 的实际总控文件",
+    "url": "https://github.com/jihe520/MathModelAgent/blob/main/skills/1start-mathmodel/SKILL.md",
+    "note": "核对阶段、相邻依赖和输出目录；未运行整场赛题。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_mathmodel",
+    "title": "mathmodel-skill：国赛/美赛/电工杯",
+    "url": "https://github.com/handsomeZR-netizen/mathmodel-skill",
+    "note": "核对 Codex 安装、doctor、10 阶段和三个竞赛包。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_mmexpert",
+    "title": "MM-Agent Expert：跨宿主技能包",
+    "url": "https://github.com/luckyfan-cs/mm-agent-expert",
+    "note": "核对三技能、依赖与安装。2026 发布包不等于 2025 实战系统。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_mmresearch",
+    "title": "MM-Agent 原研究仓库",
+    "url": "https://github.com/usail-hkust/LLM-MM-Agent",
+    "note": "原系统 README 指向 mm-agent-expert；与 jihe520 的 MathModelAgent 是不同项目。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_mm_paper",
+    "title": "NeurIPS 2025：MM-Agent 论文",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1ddd6c6909c2a7acf877ce0f84abf6eb-Abstract-Conference.html",
+    "note": "作者报告辅助两支队伍获 2025 MCM/ICM Finalist；不能推出无人干预或获奖概率。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_anticipate",
+    "title": "math-modeling-skill：国赛/研赛/美赛",
+    "url": "https://github.com/anticipate218/math-modeling-skill",
+    "note": "核对 SKILL、规则资料、算法示例、校验与模板；获奖论文经验不等于该工具获奖。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_front",
+    "title": "Anthropic frontend-design",
+    "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "note": "通用界面设计 skill；不是某竞赛专用工具。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_test",
+    "title": "Anthropic webapp-testing",
+    "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+    "note": "Playwright 本地应用测试、截图和日志。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_art",
+    "title": "Anthropic algorithmic-art",
+    "url": "https://github.com/anthropics/skills/blob/main/skills/algorithmic-art/SKILL.md",
+    "note": "p5.js 生成艺术，产出 HTML/JS 与设计说明。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_canvas",
+    "title": "Anthropic canvas-design",
+    "url": "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+    "note": "静态海报 PNG/PDF 的通用制作工作流。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_remotion",
+    "title": "Remotion 官方 Agent Skills",
+    "url": "https://github.com/remotion-dev/skills",
+    "note": "README 明列 Codex 和安装；用于程序化动画、预览与渲染。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_student",
+    "title": "Awesome Student AI Skills",
+    "url": "https://github.com/cuic19053-hue/awesome-student-ai-skills",
+    "note": "核对路由、挑战杯/互联网+子项、build.py 和 DOCX 样例。三创/服创专用项仍在开发路线图，不能写成已具备。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_slide",
+    "title": "SlideMuse：竞赛答辩与路演",
+    "url": "https://github.com/helloo1568/slidemuse",
+    "note": "核对 Codex 安装、SKILL、可编辑 PPTX 示例及竞赛作品画廊。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_rdagent",
+    "title": "Microsoft R&D-Agent",
+    "url": "https://github.com/microsoft/RD-Agent",
+    "note": "核对 data_science 入口、本地数据情景与额外 API/环境需求；是独立 agent。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "tool_kaggle",
+    "title": "NVIDIA Kaggle Skill",
+    "url": "https://github.com/NVIDIA/nvidia-kaggle",
+    "note": "平台专用技能，不把其提交脚本套到泰迪/天池。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "codex_skills",
+    "title": "OpenAI Docs：Build skills",
+    "url": "https://learn.chatgpt.com/docs/build-skills",
+    "note": "核对 .agents/skills、显式 $技能调用及发现机制。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "cmit_new",
+    "title": "数媒竞赛 2026 组委会正式通知",
+    "url": "https://www.cmit.cn/html/tongzhigonggao/show-144-45826-1.html",
+    "note": "允许使用生成式 AI 并要求披露；赛区奖不自动等于省奖。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "huawei_model",
+    "title": "华为杯 2026 开赛公告（完整转载）",
+    "url": "https://www.cmathc.org.cn/cpmcm/news/642.html",
+    "note": "研究生赛事；AI 辅助、独立思考、摘要与 MD5 提交要求。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "huawei_model_uni",
+    "title": "华为杯 2026：培养单位通知及附件",
+    "url": "https://gs.bigc.edu.cn/yjspy/jwxx/c3d4acea32064c70b3cca72407335b2f.htm",
+    "note": "培养单位正式通知，含当届 AI 使用规定附件。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "mathorcup26",
+    "title": "MathorCup 2026：官网报名通知",
+    "url": "https://mathorcup.org/detail/2476",
+    "note": "200 元/队，1-3 人同校；赛区奖与全国奖分别计算。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "software_case",
+    "title": "软件杯 2026 A3 智小学开源作品",
+    "url": "https://github.com/Faye-bit/MLA_CnSoftBei",
+    "note": "作品形态和源码参考；未找到可核实的对应获奖记录。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "software_case_ai",
+    "title": "软件杯 A3 知析开源作品",
+    "url": "https://github.com/jingyu-cyber/Zhixi--",
+    "note": "README 披露使用 Codex/Claude Code；不是该队获奖或组委会授权的证明。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "rst_cert",
+    "title": "RST 等赛事公开证书仓库",
+    "url": "https://github.com/jirui-tian/Awards-and-Certificates",
+    "note": "有 2026 RST 个人 DeepSeek 组国三证书条目；不证明使用 Codex，也未提供可复用完整 agent。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "mathorcup_alias",
+    "title": "高校数模协会对 MathorCup 的俗称",
+    "url": "https://mcm-cuit.wiki/",
+    "note": "辅助辨认用户说的“妈妈杯”，正式名称以 MathorCup 官网为准。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  },
+  {
+    "key": "shuwei_ai",
+    "title": "数维杯 2026 春季赛 AI 规定",
+    "url": "https://www.nmmcm.org.cn/News/154.html",
+    "note": "辅助范围和单列使用详情要求。",
+    "type": "本轮核查",
+    "accessed": "2026-11-10"
+  }
+]
