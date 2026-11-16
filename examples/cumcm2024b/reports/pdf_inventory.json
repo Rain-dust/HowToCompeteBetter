@@ -1,0 +1,230 @@
+{
+  "pdf_sha256": "384b0ec0d89adb8c0d55aaf37e16d9162e832d4941230c19c4b4716da70f0f95",
+  "pages": 17,
+  "compile_command": [
+    "typst",
+    "compile",
+    "--root",
+    ".",
+    "--creation-timestamp",
+    "1794787200",
+    "paper/main.typ",
+    "paper/main.pdf"
+  ],
+  "render_command": [
+    "pdftoppm",
+    "-png",
+    "-r",
+    "120",
+    "paper/main.pdf",
+    "reports/pdf_pages/page"
+  ],
+  "page_inventory": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 856,
+      "text_lines": 25,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-01.png",
+      "render_sha256": "8a894011762f327614fe396190a0e0e804a15d9db33403428871611a01903774"
+    },
+    {
+      "page": 2,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 2657,
+      "text_lines": 28,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-02.png",
+      "render_sha256": "92c6a8aec3bc0f0d610ee7f8f43fa7e6a2dd8d79a0690c631487e2f481ed48ff"
+    },
+    {
+      "page": 3,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 1428,
+      "text_lines": 41,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-03.png",
+      "render_sha256": "594e1ce814420d5d6eb2174d1f4c6e7796dab3be6f45ba4d61260d78bf7e76a5"
+    },
+    {
+      "page": 4,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 1116,
+      "text_lines": 42,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-04.png",
+      "render_sha256": "669b14eb071cae032bd18c0e49d71e73b97d5e7036dc1245b1b14c95b999d4d9"
+    },
+    {
+      "page": 5,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 1117,
+      "text_lines": 62,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-05.png",
+      "render_sha256": "e42459cab4565e23e2675ee9ec01e6d1616d1618c73d5705729a1bcca0a07967"
+    },
+    {
+      "page": 6,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 940,
+      "text_lines": 71,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-06.png",
+      "render_sha256": "58b82c57fd1111010d0178cc0932537855c3d853d594a5e3786d3e2518c448d4"
+    },
+    {
+      "page": 7,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 891,
+      "text_lines": 77,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-07.png",
+      "render_sha256": "e5b32bae86f1fa40f7b704291a86191700827e7876271b6f492f56c17c459995"
+    },
+    {
+      "page": 8,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 912,
+      "text_lines": 67,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-08.png",
+      "render_sha256": "3a06c473dc9b61cb80b6dd6ed2aab6d29eb116889d9ae6a6c2abbba0afe8ed11"
+    },
+    {
+      "page": 9,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 913,
+      "text_lines": 104,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-09.png",
+      "render_sha256": "4dff25438c71b8e3119146b9c1a00a8b739c08c5af87cf067b3903c029961346"
+    },
+    {
+      "page": 10,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 983,
+      "text_lines": 56,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-10.png",
+      "render_sha256": "980b728cc688853080a42adf2e682860537619452599c62dfe2f65607a8f3434"
+    },
+    {
+      "page": 11,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 885,
+      "text_lines": 73,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-11.png",
+      "render_sha256": "5024ac2a00f96ad7822f59a90327092cce27210bd68447b454a7450b9a868efa"
+    },
+    {
+      "page": 12,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 934,
+      "text_lines": 46,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-12.png",
+      "render_sha256": "70b2dc2e96031be8c17d4568602f2a7770b313961be6c7b89992d7c49439891f"
+    },
+    {
+      "page": 13,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 909,
+      "text_lines": 122,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-13.png",
+      "render_sha256": "32e953746367baccfe9bb5dbee1e72da7f1dbaf68b09f13476a20c5f83fd3a82"
+    },
+    {
+      "page": 14,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 836,
+      "text_lines": 59,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-14.png",
+      "render_sha256": "7097b4fbfbbdd1fd7d9a3a102a406c01f7493912b57d99fce3c82fdf21ccc1b7"
+    },
+    {
+      "page": 15,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 1285,
+      "text_lines": 77,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-15.png",
+      "render_sha256": "1fbf36e3bbe8d0f8d1e7f4931c3d9c2a2ef6a05ee3d1bc29e9d032a8e6ff50cc"
+    },
+    {
+      "page": 16,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 519,
+      "text_lines": 13,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-16.png",
+      "render_sha256": "97151d0ec070a4664045dfe61670b8c4d224560a92f300d526e03c54c1f53707"
+    },
+    {
+      "page": 17,
+      "size_points": [
+        595.2755737304688,
+        841.8897705078125
+      ],
+      "text_characters": 838,
+      "text_lines": 30,
+      "geometry_alerts": [],
+      "render": "reports\\pdf_pages\\page-17.png",
+      "render_sha256": "e2865e97b2c4bf8ee5389c307edb923290bfbc56f6c37281c7f254450066f02c"
+    }
+  ],
+  "visual_review_status": "PASS: actual image inspection of every final page; see VISUAL_REVIEW.json",
+  "packaging_note": "Commands use portable paths; original per-page PNGs were reviewed and hashed, with contact sheets included in this public package."
+}

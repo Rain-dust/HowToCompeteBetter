@@ -1,0 +1,29 @@
+name: 分享真实参赛经历
+description: 成功、失败和未完成都欢迎；请写明具体赛项与投入。
+title: "[复盘] 比赛 / 届次 / 赛项"
+body:
+  - type: input
+    id: contest
+    attributes:
+      label: 比赛、届次与具体赛项
+      placeholder: 例如第18届RST / 创新创业赛道 / 前沿技术挑战组
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: Agent做了什么，你改了什么
+      description: 写清工具/技能、实际用时、人工修改和最容易失败的步骤。不要填写密钥或私人信息。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 结果与可公开证据
+      description: 奖项请写准确层级；无奖、未出结果、仅练习也请如实写。可选附脱敏链接。
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: 最值得告诉后来者的一件事

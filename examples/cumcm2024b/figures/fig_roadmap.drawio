@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="fig_roadmap">
+    <mxGraphModel pageWidth="920" pageHeight="240">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q1" value="问题一：抽样证据&#10;随时有效的两侧边界" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="10" y="15" width="210" height="65" />
+        </mxCell>
+        <mxCell id="q2" value="问题二：两件装配&#10;固定策略穷举与返工" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="240" y="15" width="210" height="65" />
+        </mxCell>
+        <mxCell id="q3" value="问题三：多层装配&#10;装配树递归与穷举" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="15" width="210" height="65" />
+        </mxCell>
+        <mxCell id="q4" value="问题四：抽样误差&#10;同时区间与鲁棒决策" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="700" y="15" width="210" height="65" />
+        </mxCell>
+        <mxCell id="validate" value="独立物理模拟、二项概率校验、成本分解与参数敏感性" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="130" y="150" width="660" height="60" />
+        </mxCell>
+        <mxCell id="edge0" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="q1" target="q2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="q2" target="q3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge2" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="q3" target="q4">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge3" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="q2" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge4" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="q3" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

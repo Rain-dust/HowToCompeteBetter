@@ -1,0 +1,130 @@
+{
+  "researched_at": "2026-11-16",
+  "scope": "只读检查5套候选的固定版本源码、技能入口、模板与许可；本文件是选型记录，不是运行或获奖证明。",
+  "recommendation": {
+    "primary": {
+      "repository": "jihe520/MathModelAgent",
+      "commit": "03f4eb388b3862b7bde55b508dceaf3d6b39d5ac",
+      "entry": "$1start-mathmodel",
+      "route": "只使用当前 skills 流水线，不部署旧 desktop/web/backend。",
+      "why": [
+        "当前套件已有分析建模、真实代码与图表、可选概念图、Typst/LaTeX论文和最终验收的完整串接入口。",
+        "Typst路线比另外安装Pandoc+TeX发行版更适合本次Windows首次完整演示。",
+        "建模、计算和写作协议不强制逐问等待人类选方法；预先给清偏好后可由宿主agent连续完成。"
+      ],
+      "qualification": "这是本次5候选中对“一次交题、持续完成代码与PDF”需求的静态最适配选择；未做横向端到端实测，不能称性能最好或获奖率最高。",
+      "required_upfront_preferences": {
+        "competition": "2024 CUMCM历史B题练习",
+        "language": "中文",
+        "engine": "Typst",
+        "top_level_questions": 4,
+        "continuation": "已给偏好不重复确认；由agent自行选择并记录合理模型假设与路线，完成后报告未通过项。"
+      },
+      "installation_scope": "完整保留skills/下1start、2analysis、3coding、4drawio、5writing、6verity、_references和typst-author等被引用目录；只复制1start/SKILL.md会缺模板、脚本与知识库。",
+      "license": "docs/md/License.md允许个人免费使用，限制商业用途、闭源分发和基于本项目的商业服务。不能按README“开源免费”概括为MIT；教程宜链接上游，勿直接把整个套件装进公开成果ZIP。",
+      "known_gaps": [
+        "1start在规划前询问排版等偏好；5writing即便plan已记录引擎仍要求再次确认。用户此次明确持续运行的授权与已给偏好应写入任务并覆盖重复询问，不能把agent决定假写成人类答复。",
+        "README中Codex示例写$start-mathmodel，但实际frontmatter为1start-mathmodel。",
+        "6verity允许无法编译或无法视觉检查时解释后PASS；本任务必须加严为实际编译成功、PDF非空、逐页视觉检查与完整重跑成功。",
+        "该入口是供Codex/Claude执行的Markdown协议，不是运行一次Python命令就调用模型自行解题的独立程序。",
+        "默认国赛模板包含三问题include和目录；必须按B题四问动态修改，并以历史练习交付目标及给定格式要求核准。"
+      ],
+      "sources": [
+        "https://github.com/jihe520/MathModelAgent/blob/03f4eb388b3862b7bde55b508dceaf3d6b39d5ac/skills/1start-mathmodel/SKILL.md",
+        "https://github.com/jihe520/MathModelAgent/blob/03f4eb388b3862b7bde55b508dceaf3d6b39d5ac/skills/5writing/SKILL.md",
+        "https://github.com/jihe520/MathModelAgent/blob/03f4eb388b3862b7bde55b508dceaf3d6b39d5ac/skills/6verity/SKILL.md",
+        "https://github.com/jihe520/MathModelAgent/blob/03f4eb388b3862b7bde55b508dceaf3d6b39d5ac/docs/md/License.md"
+      ]
+    },
+    "backup": {
+      "repository": "WuXinbo-bo/Math-model-skills",
+      "commit": "ee8a616c6e4a84bb28bd7891c57ff02b8184a082",
+      "entry": "$meta-model-agent",
+      "why": "MIT且优先适配Codex；7阶段、机器manifest、结果与源码哈希、发布数值清单、确定性门禁和最终PDF页面审计，比纯口头自评更可审计。",
+      "tradeoffs": [
+        "PDF路线依赖Bash、XeLaTeX、BibTeX、PyMuPDF与TeX宏包；完整依赖比主选更重。",
+        "机器manifest在DISCOVERY、FORMULATION、COMPUTATION、MANUSCRIPT设置checkpoint；stage_executor完成阶段后确会暂停，pipeline_manager只给下一动作，不执行LLM。",
+        "未发现必须由人类本人作答的硬身份约束；获用户持续执行授权后，主控agent可按证据处理核验点，但必须保留真实检查记录，不能直接刷completed。",
+        "championship要求至少3轮审稿，内部85分阈值只代表项目内部条件。"
+      ],
+      "sources": [
+        "https://github.com/WuXinbo-bo/Math-model-skills/blob/ee8a616c6e4a84bb28bd7891c57ff02b8184a082/SKILL.md",
+        "https://github.com/WuXinbo-bo/Math-model-skills/blob/ee8a616c6e4a84bb28bd7891c57ff02b8184a082/assets/workflow_manifest.json",
+        "https://github.com/WuXinbo-bo/Math-model-skills/blob/ee8a616c6e4a84bb28bd7891c57ff02b8184a082/scripts/stage_executor.py",
+        "https://github.com/WuXinbo-bo/Math-model-skills/blob/ee8a616c6e4a84bb28bd7891c57ff02b8184a082/LICENSE"
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "repository": "handsomeZR-netizen/mathmodel-skill",
+      "commit": "e0e65c8c56f1f0435fb76e99490dbae7c2704d59",
+      "license": "MIT（本地LICENSE已读）",
+      "entry": "$mathmodel-skill",
+      "pdf": "scripts/render_paper.py通过Pandoc装配Markdown并用CUMCM XeLaTeX模板编译；AI披露PDF另用reportlab。",
+      "automation": "10阶段Friendly Mode明确把关键竞赛、选题、模型、verdict决策交给问答；可恢复状态不是自动持续推理器。",
+      "strength": "doctor、schema、渲染防错、AI使用披露以及多项tests脚本实存；更适合有队员决策的国赛协作。",
+      "limitation": "不最贴当前无人反复确认偏好；内部评分、59份公开论文统计都不等于此skill实测获奖或保证有效。",
+      "run_evidence": "仅静态读到测试代码和样本统计说明；本轮未执行这些测试，也未验证整题运行。",
+      "source": "https://github.com/handsomeZR-netizen/mathmodel-skill/blob/e0e65c8c56f1f0435fb76e99490dbae7c2704d59/SKILL.md"
+    },
+    {
+      "repository": "zhnnky329/MathModeling-skills",
+      "commit": "7780c20de4bdde73d93ea784b1dadf1c5f552e65",
+      "license": "MIT（本地LICENSE/仓库元数据）",
+      "entry": "workflow-orchestrator及分阶段skills；main明确辅助模式",
+      "pdf": "有论文撰写、质量审计和打包协议；不属于一个自己生成论文的执行程序。",
+      "automation": "main的G2.5明确需要human-authored方法选择，G4结果/稳定性与G5解释范围也需人类判断；speed只减少提问，不能跨越人工边界。",
+      "strength": "风险探针、基线、冻结数字、三类最终审计和打包审核很清楚。",
+      "limitation": "当前main主动移除autopilot，不适合作此次一次给题到底；legacy-full-auto是另一分支，未在本次固定版本深查，不应拿旧行为冒充当前。",
+      "run_evidence": "examples目录和打包单测实存，不足证明完整题面到PDF已在本机跑通。",
+      "source": "https://github.com/zhnnky329/MathModeling-skills/blob/7780c20de4bdde73d93ea784b1dadf1c5f552e65/AGENTS.md"
+    },
+    {
+      "repository": "jihe520/MathModelAgent",
+      "commit": "03f4eb388b3862b7bde55b508dceaf3d6b39d5ac",
+      "license": "个人非商业限制许可，非MIT",
+      "entry": "$1start-mathmodel",
+      "pdf": "17族Typst/LaTeX模板、编译流程、writing_check.sh和PDF视觉验收协议实存。",
+      "automation": "宿主agent依次执行完整skills链；预先明确偏好后最接近持续完成，但5writing重复确认和6verity宽松PASS需要任务级纠正。",
+      "dependencies": "Python数值库、Typst、可用中文字体、Bash+python3用于原有验收脚本；DrawIO仅需要概念图时使用；PDF光栅化可用已有工具。",
+      "run_evidence": "README有demo与旧app示例输入，未见足以在本轮核验该新skills链2024B全题跑完的公开完整日志；不据此称实测。",
+      "source": "https://github.com/jihe520/MathModelAgent/tree/03f4eb388b3862b7bde55b508dceaf3d6b39d5ac/skills"
+    },
+    {
+      "repository": "WuXinbo-bo/Math-model-skills",
+      "commit": "ee8a616c6e4a84bb28bd7891c57ff02b8184a082",
+      "license": "MIT（本地LICENSE已读）",
+      "entry": "$meta-model-agent",
+      "pdf": "论文源码、Bash编译检查、竞赛cls、PyMuPDF页数与页面构成审计；DOCX另需相应导出工具。",
+      "automation": "完整状态机及checkpoint可脚本化处理，但pipeline_manager不是LLM编排执行器；仍由Codex读阶段协议做工作。",
+      "dependencies": "Python>=3.8，建议3.10/3.11；Bash/XeLaTeX/BibTeX/PyMuPDF和所用科学库。",
+      "run_evidence": "读取到绘图/版式demo、脚本门禁与模板；无本轮端到端实测。",
+      "source": "https://github.com/WuXinbo-bo/Math-model-skills/blob/ee8a616c6e4a84bb28bd7891c57ff02b8184a082/README.md"
+    },
+    {
+      "repository": "xuec699-sudo/math-modeling-skills",
+      "commit": "0ac52b3085d8d54284647060eb07ace016d55e10",
+      "license": "固定版本完整目录树未发现LICENSE/COPYING；不据README自称工业级推断开源授权。",
+      "entry": "$math-modeling-contest",
+      "pdf": "build_docx.py主路线，另有compile_pdf.py；PDF编译器存在作者机器特定路径优先逻辑。",
+      "automation": "SKILL允许明确授权的Autopilot，但pipeline_manager.py的auto辅助代码有占位函数打印后return True，失败仍继续最后统一completed；不能把该命令日志当作实际解题完成。",
+      "strength": "有DAG、冻结数字、DOCX排版和诚信审计协议。",
+      "limitation": "9000字符硬阈值不等于建模质量；README auto与实码占位、许可不清使其不适合主运行。",
+      "run_evidence": "有gate测试脚本与外部优秀论文参考，均不能证明该套件运行获奖。",
+      "source": "https://github.com/xuec699-sudo/math-modeling-skills/blob/0ac52b3085d8d54284647060eb07ace016d55e10/scripts/pipeline_manager.py"
+    }
+  ],
+  "evidence_boundaries": {
+    "executed_by_this_researcher": [],
+    "not_executed": [
+      "候选环境安装",
+      "候选doctor或单测",
+      "2024B任何数值模型",
+      "任一候选整题到PDF运行",
+      "任何获奖验证"
+    ],
+    "what_can_be_claimed_now": "已读取固定commit下的真实代码/技能/模板/许可，并形成对本任务的选型；尚不能称端到端实测成功。",
+    "after_parent_run": "只有完成主代理实际运行、独立重跑与PDF检查后，才能称指定版本/环境/历史题的实测；仍不等于获奖证明或真实比赛资格。"
+  }
+}

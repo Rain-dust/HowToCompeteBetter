@@ -1,0 +1,752 @@
+[
+  {
+    "question": "q1",
+    "p": 0.05,
+    "trials": 30000,
+    "accept": 0.9998,
+    "reject": 0.0002,
+    "inconclusive": 0.0,
+    "mean_tests": 138.79183333333333,
+    "se_tests": 0.6596746353888778
+  },
+  {
+    "question": "q1",
+    "p": 0.1,
+    "trials": 30000,
+    "accept": 0.09653333333333333,
+    "reject": 0.03843333333333333,
+    "inconclusive": 0.8650333333333333,
+    "mean_tests": 1746.4611333333332,
+    "se_tests": 3.713082546908591
+  },
+  {
+    "question": "q1",
+    "p": 0.2,
+    "trials": 30000,
+    "accept": 6.666666666666667e-05,
+    "reject": 0.9999333333333333,
+    "inconclusive": 0.0,
+    "mean_tests": 74.12906666666667,
+    "se_tests": 0.3635446223484659
+  },
+  {
+    "question": "q2:1",
+    "label": "best",
+    "exact": 38.444444444444436,
+    "z": 0.5302134409393993,
+    "orders": 20000,
+    "seed": 1221,
+    "mean_cost": 38.4853,
+    "standard_error": 0.07705492241611452,
+    "ci95": [
+      38.33427235206442,
+      38.63632764793559
+    ],
+    "mean_components": [
+      24.4876,
+      6.6657,
+      6.11155,
+      0.55475,
+      0.6657
+    ],
+    "mean_assembly_attempts": 1.11095,
+    "mean_market_returns": 0.11095,
+    "mean_detected_failures": 0.3321
+  },
+  {
+    "question": "q2:1",
+    "label": "baseline",
+    "exact": 40.639231824417,
+    "z": 0.6021080999779628,
+    "orders": 20000,
+    "seed": 1210,
+    "mean_cost": 40.7432,
+    "standard_error": 0.17267360393724002,
+    "ci95": [
+      40.40475973628301,
+      41.08164026371699
+    ],
+    "mean_components": [
+      30.2456,
+      8.2488,
+      0.0,
+      0.0,
+      2.2488
+    ],
+    "mean_assembly_attempts": 1.3748,
+    "mean_market_returns": 0.3748,
+    "mean_detected_failures": 0.3748
+  },
+  {
+    "question": "q2:2",
+    "label": "best",
+    "exact": 45.25,
+    "z": 0.5260776333106186,
+    "orders": 20000,
+    "seed": 1231,
+    "mean_cost": 45.18595,
+    "standard_error": 0.12175009151583503,
+    "ci95": [
+      44.94731982062896,
+      45.424580179371034
+    ],
+    "mean_components": [
+      27.5709,
+      7.4577,
+      7.4849,
+      1.21475,
+      1.4577
+    ],
+    "mean_assembly_attempts": 1.24295,
+    "mean_market_returns": 0.24295,
+    "mean_detected_failures": 0.75175
+  },
+  {
+    "question": "q2:2",
+    "label": "baseline",
+    "exact": 60.406249999999986,
+    "z": 0.9208422214328735,
+    "orders": 20000,
+    "seed": 1220,
+    "mean_cost": 60.1028,
+    "standard_error": 0.3295352807865406,
+    "ci95": [
+      59.456910849658385,
+      60.74868915034162
+    ],
+    "mean_components": [
+      42.7724,
+      11.6652,
+      0.0,
+      0.0,
+      5.6652
+    ],
+    "mean_assembly_attempts": 1.9442,
+    "mean_market_returns": 0.9442,
+    "mean_detected_failures": 0.9442
+  },
+  {
+    "question": "q2:3",
+    "label": "best",
+    "exact": 41.11111111111111,
+    "z": 0.57043860031975,
+    "orders": 20000,
+    "seed": 1241,
+    "mean_cost": 41.1839,
+    "standard_error": 0.12760161890884225,
+    "ci95": [
+      40.93380082693867,
+      41.43399917306133
+    ],
+    "mean_components": [
+      24.39,
+      6.6843,
+      6.11785,
+      0.57025,
+      3.4215
+    ],
+    "mean_assembly_attempts": 1.11405,
+    "mean_market_returns": 0.11405,
+    "mean_detected_failures": 0.3339
+  },
+  {
+    "question": "q2:3",
+    "label": "baseline",
+    "exact": 49.56104252400548,
+    "z": 1.0334393022223431,
+    "orders": 20000,
+    "seed": 1230,
+    "mean_cost": 49.257,
+    "standard_error": 0.2942045298177243,
+    "ci95": [
+      48.68035912155726,
+      49.833640878442736
+    ],
+    "mean_components": [
+      30.063,
+      8.199,
+      0.0,
+      0.0,
+      10.995
+    ],
+    "mean_assembly_attempts": 1.3665,
+    "mean_market_returns": 0.3665,
+    "mean_detected_failures": 0.3665
+  },
+  {
+    "question": "q2:4",
+    "label": "best",
+    "exact": 41.75,
+    "z": 0.4425312458971127,
+    "orders": 20000,
+    "seed": 1255,
+    "mean_cost": 41.793,
+    "standard_error": 0.09716827997722141,
+    "ci95": [
+      41.602550171244644,
+      41.983449828755354
+    ],
+    "mean_components": [
+      27.4914,
+      7.5222,
+      5.5109,
+      1.2685,
+      0.0
+    ],
+    "mean_assembly_attempts": 1.2537,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 0.7498
+  },
+  {
+    "question": "q2:4",
+    "label": "baseline",
+    "exact": 83.28124999999997,
+    "z": 1.5946803363417437,
+    "orders": 20000,
+    "seed": 1240,
+    "mean_cost": 82.4011,
+    "standard_error": 0.5519287972278313,
+    "ci95": [
+      81.31931955743345,
+      83.48288044256655
+    ],
+    "mean_components": [
+      42.6349,
+      11.6277,
+      0.0,
+      0.0,
+      28.1385
+    ],
+    "mean_assembly_attempts": 1.93795,
+    "mean_market_returns": 0.93795,
+    "mean_detected_failures": 0.93795
+  },
+  {
+    "question": "q2:5",
+    "label": "best",
+    "exact": 44.012345679012334,
+    "z": 0.2955641300125407,
+    "orders": 20000,
+    "seed": 1252,
+    "mean_cost": 44.0669,
+    "standard_error": 0.18457693423538213,
+    "ci95": [
+      43.70512920889865,
+      44.42867079110135
+    ],
+    "mean_components": [
+      32.7822,
+      7.4016,
+      1.5471,
+      0.0,
+      2.336
+    ],
+    "mean_assembly_attempts": 1.2336,
+    "mean_market_returns": 0.2336,
+    "mean_detected_failures": 0.5471
+  },
+  {
+    "question": "q2:5",
+    "label": "baseline",
+    "exact": 48.64197530864197,
+    "z": 0.8603444697574945,
+    "orders": 20000,
+    "seed": 1250,
+    "mean_cost": 48.8544,
+    "standard_error": 0.24690655757676572,
+    "ci95": [
+      48.370463147149536,
+      49.33833685285046
+    ],
+    "mean_components": [
+      34.0736,
+      9.2928,
+      0.0,
+      0.0,
+      5.488
+    ],
+    "mean_assembly_attempts": 1.5488,
+    "mean_market_returns": 0.5488,
+    "mean_detected_failures": 0.5488
+  },
+  {
+    "question": "q2:6",
+    "label": "best",
+    "exact": 34.32132963988921,
+    "z": 0.7179791939655382,
+    "orders": 20000,
+    "seed": 1260,
+    "mean_cost": 34.2377,
+    "standard_error": 0.11647919687937965,
+    "ci95": [
+      34.009400774116415,
+      34.46599922588358
+    ],
+    "mean_components": [
+      25.6113,
+      6.9849,
+      0.0,
+      0.0,
+      1.6415
+    ],
+    "mean_assembly_attempts": 1.16415,
+    "mean_market_returns": 0.16415,
+    "mean_detected_failures": 0.16415
+  },
+  {
+    "question": "q2:6",
+    "label": "baseline",
+    "exact": 34.32132963988921,
+    "z": 0.7179791939655382,
+    "orders": 20000,
+    "seed": 1260,
+    "mean_cost": 34.2377,
+    "standard_error": 0.11647919687937965,
+    "ci95": [
+      34.009400774116415,
+      34.46599922588358
+    ],
+    "mean_components": [
+      25.6113,
+      6.9849,
+      0.0,
+      0.0,
+      1.6415
+    ],
+    "mean_assembly_attempts": 1.16415,
+    "mean_market_returns": 0.16415,
+    "mean_detected_failures": 0.16415
+  },
+  {
+    "question": "q3",
+    "label": "best",
+    "exact": 142.33333333333334,
+    "z": 0.10509953461362218,
+    "orders": 20000,
+    "seed": 52451,
+    "mean_cost": 142.31125,
+    "standard_error": 0.21011827896790136,
+    "ci95": [
+      141.89941817322293,
+      142.72308182677708
+    ],
+    "mean_components": [
+      71.1051,
+      35.538,
+      28.09325,
+      3.1009,
+      4.474
+    ],
+    "mean_assembly_attempts": 4.44225,
+    "mean_market_returns": 0.11185,
+    "mean_detected_failures": 1.32795
+  },
+  {
+    "question": "q3",
+    "label": "baseline",
+    "exact": 441.53603796021207,
+    "z": 0.5625080084876941,
+    "orders": 20000,
+    "seed": 3300,
+    "mean_cost": 443.1876,
+    "standard_error": 2.9360684912347086,
+    "ci95": [
+      437.4329057571799,
+      448.94229424282
+    ],
+    "mean_components": [
+      227.3824,
+      113.6912,
+      0.0,
+      0.0,
+      102.114
+    ],
+    "mean_assembly_attempts": 14.2114,
+    "mean_market_returns": 2.55285,
+    "mean_detected_failures": 2.55285
+  },
+  {
+    "question": "q3",
+    "label": "all_tests",
+    "exact": 144.55555555555557,
+    "z": 0.8311695477135727,
+    "orders": 20000,
+    "seed": 68835,
+    "mean_cost": 144.433,
+    "standard_error": 0.14744952566261751,
+    "ci95": [
+      144.14399892970127,
+      144.72200107029872
+    ],
+    "mean_components": [
+      71.1359,
+      35.5228,
+      34.704,
+      3.0703,
+      0.0
+    ],
+    "mean_assembly_attempts": 4.44035,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 1.33255
+  },
+  {
+    "question": "q3",
+    "label": "next_best",
+    "exact": 144.17283950617286,
+    "z": 0.3817094507674659,
+    "orders": 20000,
+    "seed": 44259,
+    "mean_cost": 144.0877,
+    "standard_error": 0.2230479386917703,
+    "ci95": [
+      143.65052604016415,
+      144.52487395983587
+    ],
+    "mean_components": [
+      73.6813,
+      35.538,
+      28.1366,
+      2.4158,
+      4.316
+    ],
+    "mean_assembly_attempts": 4.44225,
+    "mean_market_returns": 0.1079,
+    "mean_detected_failures": 1.36685
+  },
+  {
+    "question": "q4:q2:1:100",
+    "label": "upper_robust",
+    "exact": 44.80790971388488,
+    "z": 1.0447677509898434,
+    "orders": 10000,
+    "seed": 4119,
+    "mean_cost": 44.9875,
+    "standard_error": 0.17189493640568995,
+    "ci95": [
+      44.650585924644844,
+      45.32441407535515
+    ],
+    "mean_components": [
+      27.3294,
+      7.4856,
+      7.4489,
+      1.238,
+      1.4856
+    ],
+    "mean_assembly_attempts": 1.2476,
+    "mean_market_returns": 0.2476,
+    "mean_detected_failures": 0.7319
+  },
+  {
+    "question": "q4:q2:2:100",
+    "label": "upper_robust",
+    "exact": 55.267733381012256,
+    "z": 0.5475468957519901,
+    "orders": 10000,
+    "seed": 4120,
+    "mean_cost": 55.1293,
+    "standard_error": 0.25282470247983757,
+    "ci95": [
+      54.63376358313952,
+      55.62483641686048
+    ],
+    "mean_components": [
+      31.8034,
+      8.7528,
+      9.5263,
+      2.294,
+      2.7528
+    ],
+    "mean_assembly_attempts": 1.4588,
+    "mean_market_returns": 0.4588,
+    "mean_detected_failures": 1.3525
+  },
+  {
+    "question": "q4:q2:3:100",
+    "label": "upper_robust",
+    "exact": 47.084976466096016,
+    "z": 0.1926715210453881,
+    "orders": 10000,
+    "seed": 4121,
+    "mean_cost": 47.0545,
+    "standard_error": 0.15817836455881523,
+    "ci95": [
+      46.74447040546472,
+      47.36452959453528
+    ],
+    "mean_components": [
+      27.3626,
+      7.4208,
+      11.0871,
+      1.184,
+      0.0
+    ],
+    "mean_assembly_attempts": 1.2368,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 0.7091
+  },
+  {
+    "question": "q4:q2:4:100",
+    "label": "upper_robust",
+    "exact": 49.72329799713221,
+    "z": 0.26983783185374055,
+    "orders": 10000,
+    "seed": 4122,
+    "mean_cost": 49.7766,
+    "standard_error": 0.19753346853411732,
+    "ci95": [
+      49.389434401673135,
+      50.16376559832687
+    ],
+    "mean_components": [
+      31.9504,
+      8.766,
+      6.7552,
+      2.305,
+      0.0
+    ],
+    "mean_assembly_attempts": 1.461,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 1.3722
+  },
+  {
+    "question": "q4:q2:5:100",
+    "label": "upper_robust",
+    "exact": 55.75549269841629,
+    "z": 0.37377961959753236,
+    "orders": 10000,
+    "seed": 4123,
+    "mean_cost": 55.8439,
+    "standard_error": 0.23652253078672436,
+    "ci95": [
+      55.38031583965802,
+      56.30748416034198
+    ],
+    "mean_components": [
+      31.0738,
+      7.485,
+      13.5726,
+      1.2375,
+      2.475
+    ],
+    "mean_assembly_attempts": 1.2475,
+    "mean_market_returns": 0.2475,
+    "mean_detected_failures": 0.9357
+  },
+  {
+    "question": "q4:q2:6:100",
+    "label": "upper_robust",
+    "exact": 43.80835382933829,
+    "z": 0.8925092642782444,
+    "orders": 10000,
+    "seed": 4124,
+    "mean_cost": 43.5744,
+    "standard_error": 0.2621304211642937,
+    "ci95": [
+      43.06062437451798,
+      44.088175625482016
+    ],
+    "mean_components": [
+      29.5964,
+      7.8684,
+      2.9956,
+      0.0,
+      3.114
+    ],
+    "mean_assembly_attempts": 1.3114,
+    "mean_market_returns": 0.3114,
+    "mean_detected_failures": 0.4978
+  },
+  {
+    "question": "q4:q3:100",
+    "label": "upper_robust",
+    "exact": 173.09087296469997,
+    "z": 1.2748035119219514,
+    "orders": 10000,
+    "seed": 4125,
+    "mean_cost": 173.5399,
+    "standard_error": 0.3522323488292297,
+    "ci95": [
+      172.84952459629469,
+      174.2302754037053
+    ],
+    "mean_components": [
+      81.3804,
+      40.924,
+      43.4237,
+      7.8118,
+      0.0
+    ],
+    "mean_assembly_attempts": 5.1155,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 3.2864
+  },
+  {
+    "question": "q4:q2:1:400",
+    "label": "upper_robust",
+    "exact": 41.073324648099366,
+    "z": 0.39538955530600073,
+    "orders": 10000,
+    "seed": 4426,
+    "mean_cost": 41.1277,
+    "standard_error": 0.1375234908735748,
+    "ci95": [
+      40.858153957887794,
+      41.3972460421122
+    ],
+    "mean_components": [
+      25.6402,
+      6.9996,
+      6.6553,
+      0.833,
+      0.9996
+    ],
+    "mean_assembly_attempts": 1.1666,
+    "mean_market_returns": 0.1666,
+    "mean_detected_failures": 0.4946
+  },
+  {
+    "question": "q4:q2:2:400",
+    "label": "upper_robust",
+    "exact": 49.5239361823732,
+    "z": 1.6217032673070475,
+    "orders": 10000,
+    "seed": 4427,
+    "mean_cost": 49.1912,
+    "standard_error": 0.20517698217734254,
+    "ci95": [
+      48.78905311493241,
+      49.5933468850676
+    ],
+    "mean_components": [
+      29.2228,
+      7.9974,
+      8.3091,
+      1.6645,
+      1.9974
+    ],
+    "mean_assembly_attempts": 1.3329,
+    "mean_market_returns": 0.3329,
+    "mean_detected_failures": 0.9913
+  },
+  {
+    "question": "q4:q2:3:400",
+    "label": "upper_robust",
+    "exact": 43.579039465562666,
+    "z": 2.0801423164464423,
+    "orders": 10000,
+    "seed": 4428,
+    "mean_cost": 43.8498,
+    "standard_error": 0.1301644278358238,
+    "ci95": [
+      43.59467772144179,
+      44.10492227855821
+    ],
+    "mean_components": [
+      25.6776,
+      7.0548,
+      10.2384,
+      0.879,
+      0.0
+    ],
+    "mean_assembly_attempts": 1.1758,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 0.5079
+  },
+  {
+    "question": "q4:q2:4:400",
+    "label": "upper_robust",
+    "exact": 45.15170430841948,
+    "z": 0.08425751220395522,
+    "orders": 10000,
+    "seed": 4429,
+    "mean_cost": 45.1378,
+    "standard_error": 0.1650215874618616,
+    "ci95": [
+      44.81435768857475,
+      45.461242311425245
+    ],
+    "mean_components": [
+      29.3264,
+      8.0556,
+      6.0428,
+      1.713,
+      0.0
+    ],
+    "mean_assembly_attempts": 1.3426,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 1.015
+  },
+  {
+    "question": "q4:q2:5:400",
+    "label": "upper_robust",
+    "exact": 50.3272331160258,
+    "z": 0.06911793087994395,
+    "orders": 10000,
+    "seed": 4430,
+    "mean_cost": 50.3403,
+    "standard_error": 0.18905201310053735,
+    "ci95": [
+      49.969758054322945,
+      50.71084194567705
+    ],
+    "mean_components": [
+      28.8586,
+      6.9672,
+      12.0965,
+      0.806,
+      1.612
+    ],
+    "mean_assembly_attempts": 1.1612,
+    "mean_market_returns": 0.1612,
+    "mean_detected_failures": 0.6687
+  },
+  {
+    "question": "q4:q2:6:400",
+    "label": "upper_robust",
+    "exact": 38.145204383887105,
+    "z": 1.4366118675395134,
+    "orders": 10000,
+    "seed": 4431,
+    "mean_cost": 37.871,
+    "standard_error": 0.19086880046225205,
+    "ci95": [
+      37.49689715109399,
+      38.245102848906015
+    ],
+    "mean_components": [
+      26.4064,
+      7.0812,
+      2.5814,
+      0.0,
+      1.802
+    ],
+    "mean_assembly_attempts": 1.1802,
+    "mean_market_returns": 0.1802,
+    "mean_detected_failures": 0.2907
+  },
+  {
+    "question": "q4:q3:400",
+    "label": "upper_robust",
+    "exact": 156.099730636201,
+    "z": 0.7482777840161537,
+    "orders": 10000,
+    "seed": 4432,
+    "mean_cost": 155.8992,
+    "standard_error": 0.26798956281276637,
+    "ci95": [
+      155.373940456887,
+      156.42445954311302
+    ],
+    "mean_components": [
+      75.3554,
+      37.5888,
+      38.0762,
+      4.8788,
+      0.0
+    ],
+    "mean_assembly_attempts": 4.6986,
+    "mean_market_returns": 0.0,
+    "mean_detected_failures": 2.1102
+  }
+]

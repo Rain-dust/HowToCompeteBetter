@@ -1,0 +1,762 @@
+[
+  {
+    "target": "q2:1",
+    "parameter": "loss",
+    "factor": 0.5,
+    "policy_id": 11,
+    "profit": 17.888888888888893,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "loss",
+    "factor": 0.8,
+    "policy_id": 11,
+    "profit": 17.688888888888897,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "loss",
+    "factor": 1,
+    "policy_id": 11,
+    "profit": 17.555555555555564,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "loss",
+    "factor": 1.2,
+    "policy_id": 11,
+    "profit": 17.42222222222223,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "loss",
+    "factor": 1.5,
+    "policy_id": 11,
+    "profit": 17.22222222222223,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "dismantle",
+    "factor": 0.5,
+    "policy_id": 11,
+    "profit": 17.833333333333343,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "dismantle",
+    "factor": 0.8,
+    "policy_id": 11,
+    "profit": 17.66666666666668,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "dismantle",
+    "factor": 1,
+    "policy_id": 11,
+    "profit": 17.555555555555564,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "dismantle",
+    "factor": 1.2,
+    "policy_id": 11,
+    "profit": 17.444444444444457,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "dismantle",
+    "factor": 1.5,
+    "policy_id": 11,
+    "profit": 17.277777777777786,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "inspection",
+    "factor": 0.5,
+    "policy_id": 11,
+    "profit": 20.611111111111114,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "inspection",
+    "factor": 0.8,
+    "policy_id": 11,
+    "profit": 18.77777777777778,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "inspection",
+    "factor": 1,
+    "policy_id": 11,
+    "profit": 17.555555555555564,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "inspection",
+    "factor": 1.2,
+    "policy_id": 11,
+    "profit": 16.333333333333336,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "inspection",
+    "factor": 1.5,
+    "policy_id": 0,
+    "profit": 15.360768175582997,
+    "bits": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "defect",
+    "factor": 0.5,
+    "policy_id": 0,
+    "profit": 22.344073480099134,
+    "bits": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "defect",
+    "factor": 0.8,
+    "policy_id": 1,
+    "profit": 18.850497246650768,
+    "bits": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "defect",
+    "factor": 1,
+    "policy_id": 11,
+    "profit": 17.555555555555564,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "defect",
+    "factor": 1.2,
+    "policy_id": 11,
+    "profit": 16.318181818181813,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q2:1",
+    "parameter": "defect",
+    "factor": 1.5,
+    "policy_id": 11,
+    "profit": 14.352941176470587,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "loss",
+    "factor": 0.5,
+    "policy_id": 49151,
+    "profit": 59.888888888888886,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "loss",
+    "factor": 0.8,
+    "policy_id": 49151,
+    "profit": 58.55555555555557,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "loss",
+    "factor": 1,
+    "policy_id": 49151,
+    "profit": 57.66666666666666,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "loss",
+    "factor": 1.2,
+    "policy_id": 49151,
+    "profit": 56.77777777777777,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "loss",
+    "factor": 1.5,
+    "policy_id": 49151,
+    "profit": 55.44444444444446,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "dismantle",
+    "factor": 0.5,
+    "policy_id": 49151,
+    "profit": 59.22222222222223,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "dismantle",
+    "factor": 0.8,
+    "policy_id": 49151,
+    "profit": 58.28888888888889,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "dismantle",
+    "factor": 1,
+    "policy_id": 49151,
+    "profit": 57.66666666666666,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "dismantle",
+    "factor": 1.2,
+    "policy_id": 49151,
+    "profit": 57.04444444444445,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "dismantle",
+    "factor": 1.5,
+    "policy_id": 49151,
+    "profit": 56.111111111111114,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "inspection",
+    "factor": 0.5,
+    "policy_id": 65535,
+    "profit": 72.83333333333333,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "inspection",
+    "factor": 0.8,
+    "policy_id": 49151,
+    "profit": 63.28888888888886,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "inspection",
+    "factor": 1,
+    "policy_id": 49151,
+    "profit": 57.66666666666666,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "inspection",
+    "factor": 1.2,
+    "policy_id": 49151,
+    "profit": 52.04444444444442,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "inspection",
+    "factor": 1.5,
+    "policy_id": 49151,
+    "profit": 43.611111111111086,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "defect",
+    "factor": 0.5,
+    "policy_id": 40831,
+    "profit": 70.17320309082956,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "defect",
+    "factor": 0.8,
+    "policy_id": 49151,
+    "profit": 62.739130434782595,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "defect",
+    "factor": 1,
+    "policy_id": 49151,
+    "profit": 57.66666666666666,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "defect",
+    "factor": 1.2,
+    "policy_id": 49151,
+    "profit": 52.363636363636346,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "target": "q3",
+    "parameter": "defect",
+    "factor": 1.5,
+    "policy_id": 49151,
+    "profit": 43.94117647058823,
+    "bits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  }
+]

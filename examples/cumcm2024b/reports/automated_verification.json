@@ -1,0 +1,167 @@
+{
+  "checks": [
+    {
+      "check": "Full rerun deterministic result hashes",
+      "pass": true,
+      "evidence": {
+        "compared": 22,
+        "changed": []
+      }
+    },
+    {
+      "check": "Independent numerical and simulation checks",
+      "pass": true,
+      "evidence": "211/211"
+    },
+    {
+      "check": "Original skill embedded text gate",
+      "pass": true,
+      "evidence": "reports/writing_check.log; all checks unchanged"
+    },
+    {
+      "check": "Compiled Typst numeric ledger q1",
+      "pass": true,
+      "evidence": {
+        "comparison": "Exact structure, strings and integers; floating absolute tolerance 1e-12",
+        "differences": [],
+        "reason": "Observed JSON parser/serializer roundoff max 5.684341886080802e-14; displayed numbers separately checked"
+      }
+    },
+    {
+      "check": "Compiled Typst numeric ledger q2",
+      "pass": true,
+      "evidence": {
+        "comparison": "Exact structure, strings and integers; floating absolute tolerance 1e-12",
+        "differences": [],
+        "reason": "Observed JSON parser/serializer roundoff max 5.684341886080802e-14; displayed numbers separately checked"
+      }
+    },
+    {
+      "check": "Compiled Typst numeric ledger q3",
+      "pass": true,
+      "evidence": {
+        "comparison": "Exact structure, strings and integers; floating absolute tolerance 1e-12",
+        "differences": [],
+        "reason": "Observed JSON parser/serializer roundoff max 5.684341886080802e-14; displayed numbers separately checked"
+      }
+    },
+    {
+      "check": "Compiled Typst numeric ledger q4",
+      "pass": true,
+      "evidence": {
+        "comparison": "Exact structure, strings and integers; floating absolute tolerance 1e-12",
+        "differences": [],
+        "reason": "Observed JSON parser/serializer roundoff max 5.684341886080802e-14; displayed numbers separately checked"
+      }
+    },
+    {
+      "check": "Ten numbered body sections in order",
+      "pass": true,
+      "evidence": [
+        "abstract.typ",
+        "sections/1_restatement.typ",
+        "sections/2_analysis.typ",
+        "sections/3_assumptions.typ",
+        "sections/4_symbols.typ",
+        "sections/5_problem1.typ",
+        "sections/6_problem2.typ",
+        "sections/7_problem3.typ",
+        "sections/8_problem4.typ",
+        "sections/9_sensitivity.typ",
+        "sections/10_evaluation.typ",
+        "sections/A_code.typ"
+      ]
+    },
+    {
+      "check": "Four problem sections",
+      "pass": true,
+      "evidence": [
+        "abstract.typ",
+        "sections/1_restatement.typ",
+        "sections/2_analysis.typ",
+        "sections/3_assumptions.typ",
+        "sections/4_symbols.typ",
+        "sections/5_problem1.typ",
+        "sections/6_problem2.typ",
+        "sections/7_problem3.typ",
+        "sections/8_problem4.typ",
+        "sections/9_sensitivity.typ",
+        "sections/10_evaluation.typ",
+        "sections/A_code.typ"
+      ]
+    },
+    {
+      "check": "All nine figure PDFs referenced",
+      "pass": true,
+      "evidence": [
+        "fig_assembly_tree.pdf",
+        "fig_q1_boundaries.pdf",
+        "fig_q1_oc.pdf",
+        "fig_q2_decisions.pdf",
+        "fig_q3_results.pdf",
+        "fig_q4_intervals.pdf",
+        "fig_q4_robust.pdf",
+        "fig_roadmap.pdf",
+        "fig_sensitivity.pdf"
+      ]
+    },
+    {
+      "check": "No unexpanded placeholders",
+      "pass": true,
+      "evidence": "Scanned every Typst file"
+    },
+    {
+      "check": "PDF opens with all pages",
+      "pass": true,
+      "evidence": 17
+    },
+    {
+      "check": "A4 dimensions",
+      "pass": true,
+      "evidence": "All pages"
+    },
+    {
+      "check": "Every page rendered",
+      "pass": true,
+      "evidence": 17
+    },
+    {
+      "check": "Text within page bounds",
+      "pass": true,
+      "evidence": "No geometry alerts"
+    },
+    {
+      "check": "No missing glyph replacement",
+      "pass": true,
+      "evidence": "Extracted PDF text"
+    },
+    {
+      "check": "No internal paths in rendered prose",
+      "pass": true,
+      "evidence": "Full extracted PDF text"
+    },
+    {
+      "check": "Every core Q2/Q3/Q4 displayed number",
+      "pass": true,
+      "evidence": {
+        "checked_values": 29,
+        "missing": []
+      }
+    },
+    {
+      "check": "Historical study and hypothetical counts disclosed",
+      "pass": true,
+      "evidence": "Rendered PDF"
+    },
+    {
+      "check": "Three verified sources cited",
+      "pass": true,
+      "evidence": "Official CUMCM, Howard et al., NIST"
+    }
+  ],
+  "all_pass": true,
+  "passed": 20,
+  "total": 20,
+  "pdf_sha256": "384b0ec0d89adb8c0d55aaf37e16d9162e832d4941230c19c4b4716da70f0f95",
+  "visual_review_status": "PASS: actual inspection of every final page recorded separately in VISUAL_REVIEW.json"
+}

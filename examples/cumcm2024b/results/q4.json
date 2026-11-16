@@ -1,0 +1,1460 @@
+[
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 38.444444444444436,
+      "profit": 17.555555555555564,
+      "price": 56,
+      "cost_components": {
+        "purchase": 24.444444444444443,
+        "assembly": 6.666666666666666,
+        "inspection": 6.111111111111111,
+        "dismantling": 0.5555555555555556,
+        "replacement_loss": 0.6666666666666667
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 44.80790971388488,
+      "profit": 11.192090286115118,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.30151048378505,
+        "assembly": 7.445866495577741,
+        "inspection": 7.409777492629569,
+        "dismantling": 1.2048887463147846,
+        "replacement_loss": 1.4458664955777416
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 11.192090286115118,
+    "robust_center_profit": 17.555555555555564,
+    "target": "q2:1",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 45.25,
+      "profit": 10.75,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.5,
+        "assembly": 7.5,
+        "inspection": 7.5,
+        "dismantling": 1.25,
+        "replacement_loss": 1.5000000000000002
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 55.267733381012256,
+      "profit": 0.7322666189877438,
+      "price": 56,
+      "cost_components": {
+        "purchase": 31.99775784453611,
+        "assembly": 8.72666123032803,
+        "inspection": 9.544435383880051,
+        "dismantling": 2.2722176919400257,
+        "replacement_loss": 2.7266612303280313
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 0.7322666189877438,
+    "robust_center_profit": 10.75,
+    "target": "q2:2",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 41.11111111111111,
+      "profit": 14.888888888888893,
+      "price": 56,
+      "cost_components": {
+        "purchase": 24.444444444444443,
+        "assembly": 6.666666666666666,
+        "inspection": 6.111111111111111,
+        "dismantling": 0.5555555555555556,
+        "replacement_loss": 3.333333333333333
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11,
+        15
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 47.084976466096016,
+      "profit": 8.915023533903984,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.30151048378505,
+        "assembly": 7.445866495577741,
+        "inspection": 11.132710740418439,
+        "dismantling": 1.2048887463147846,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 5.408624303804146,
+    "robust_center_profit": 14.888888888888893,
+    "target": "q2:3",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 41.75,
+      "profit": 14.25,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.5,
+        "assembly": 7.5,
+        "inspection": 5.5,
+        "dismantling": 1.25,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 49.72329799713221,
+      "profit": 6.276702002867793,
+      "price": 56,
+      "cost_components": {
+        "purchase": 31.99775784453611,
+        "assembly": 8.72666123032803,
+        "inspection": 6.72666123032803,
+        "dismantling": 2.2722176919400257,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 6.276702002867793,
+    "robust_center_profit": 14.25,
+    "target": "q2:4",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 20,
+        "estimate": 0.2,
+        "lower": 0.11361675058609902,
+        "upper": 0.31245182531573273,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.04119586025090358,
+        "upper": 0.19418377920641908,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 2,
+      "bits": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "cost": 44.012345679012334,
+      "profit": 11.987654320987666,
+      "price": 56,
+      "cost_components": {
+        "purchase": 32.716049382716044,
+        "assembly": 7.4074074074074066,
+        "inspection": 1.5432098765432098,
+        "dismantling": 0.0,
+        "replacement_loss": 2.3456790123456783
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        2
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 55.75549269841629,
+      "profit": 0.2445073015837096,
+      "price": 56,
+      "cost_components": {
+        "purchase": 31.143894688035918,
+        "assembly": 7.445866495577741,
+        "inspection": 13.551065275858273,
+        "dismantling": 1.2048887463147846,
+        "replacement_loss": 2.409777492629569
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": -7.35824567085605,
+    "robust_center_profit": 9.583333333333329,
+    "target": "q2:5",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 5,
+        "estimate": 0.05,
+        "lower": 0.012393591163241431,
+        "upper": 0.12833698620661416,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 5,
+        "estimate": 0.05,
+        "lower": 0.012393591163241431,
+        "upper": 0.12833698620661416,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 5,
+        "estimate": 0.05,
+        "lower": 0.012393591163241431,
+        "upper": 0.12833698620661416,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 0,
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": 34.32132963988921,
+      "profit": 21.678670360110793,
+      "price": 56,
+      "cost_components": {
+        "purchase": 25.659717159935855,
+        "assembly": 6.9981046799825055,
+        "inspection": 0.0,
+        "dismantling": 0.0,
+        "replacement_loss": 1.6635077999708427
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        0
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 1,
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "cost": 43.80835382933829,
+      "profit": 12.191646170661713,
+      "price": 56,
+      "cost_components": {
+        "purchase": 29.73023967828204,
+        "assembly": 7.896852267355909,
+        "inspection": 3.0198414381071563,
+        "dismantling": 0.0,
+        "replacement_loss": 3.1614204455931807
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        1
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 8.623012675964034,
+    "robust_center_profit": 21.328765126111676,
+    "target": "q2:6",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件1"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件2"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件3"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "半成品1"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件4"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件5"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件6"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "半成品2"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件7"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "零件8"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "半成品3"
+      },
+      {
+        "n": 100,
+        "k": 10,
+        "estimate": 0.1,
+        "lower": 0.03374073098523301,
+        "upper": 0.21460433585920963,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 49151,
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 142.33333333333334,
+      "profit": 57.66666666666666,
+      "price": 200,
+      "cost_components": {
+        "purchase": 71.11111111111111,
+        "assembly": 35.55555555555556,
+        "inspection": 28.11111111111111,
+        "dismantling": 3.111111111111111,
+        "replacement_loss": 4.444444444444445
+      },
+      "enumerated": 65536,
+      "proper_encodings": 17060,
+      "tied_encodings": [
+        49151
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 65535,
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 173.09087296469997,
+      "profit": 26.90912703530003,
+      "price": 200,
+      "cost_components": {
+        "purchase": 81.4875901689818,
+        "assembly": 40.7437950844909,
+        "inspection": 43.20866701229771,
+        "dismantling": 7.650820698929537,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 65536,
+      "proper_encodings": 17060,
+      "tied_encodings": [
+        65535
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "零件3",
+      "半成品1",
+      "零件4",
+      "零件5",
+      "零件6",
+      "半成品2",
+      "零件7",
+      "零件8",
+      "半成品3",
+      "成品"
+    ],
+    "nominal_worst_profit": 23.618844758028473,
+    "robust_center_profit": 55.44444444444443,
+    "target": "q3",
+    "N_per_node": 100,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 38.444444444444436,
+      "profit": 17.555555555555564,
+      "price": 56,
+      "cost_components": {
+        "purchase": 24.444444444444443,
+        "assembly": 6.666666666666666,
+        "inspection": 6.111111111111111,
+        "dismantling": 0.5555555555555556,
+        "replacement_loss": 0.6666666666666667
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 41.073324648099366,
+      "profit": 14.926675351900634,
+      "price": 56,
+      "cost_components": {
+        "purchase": 25.624758005269104,
+        "assembly": 6.988570365073392,
+        "inspection": 6.64761727512232,
+        "dismantling": 0.8238086375611603,
+        "replacement_loss": 0.9885703650733924
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 14.926675351900634,
+    "robust_center_profit": 17.555555555555564,
+    "target": "q2:1",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 45.25,
+      "profit": 10.75,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.5,
+        "assembly": 7.5,
+        "inspection": 7.5,
+        "dismantling": 1.25,
+        "replacement_loss": 1.5000000000000002
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 49.5239361823732,
+      "profit": 6.476063817626802,
+      "price": 56,
+      "cost_components": {
+        "purchase": 29.418910122698172,
+        "assembly": 8.023339124372228,
+        "inspection": 8.372231873953714,
+        "dismantling": 1.6861159369768572,
+        "replacement_loss": 2.023339124372229
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 6.476063817626802,
+    "robust_center_profit": 10.75,
+    "target": "q2:2",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 41.11111111111111,
+      "profit": 14.888888888888893,
+      "price": 56,
+      "cost_components": {
+        "purchase": 24.444444444444443,
+        "assembly": 6.666666666666666,
+        "inspection": 6.111111111111111,
+        "dismantling": 0.5555555555555556,
+        "replacement_loss": 3.333333333333333
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11,
+        15
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 43.579039465562666,
+      "profit": 12.420960534437334,
+      "price": 56,
+      "cost_components": {
+        "purchase": 25.624758005269104,
+        "assembly": 6.988570365073392,
+        "inspection": 10.141902457659016,
+        "dismantling": 0.8238086375611603,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 10.97239389160707,
+    "robust_center_profit": 14.888888888888893,
+    "target": "q2:3",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 41.75,
+      "profit": 14.25,
+      "price": 56,
+      "cost_components": {
+        "purchase": 27.5,
+        "assembly": 7.5,
+        "inspection": 5.5,
+        "dismantling": 1.25,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 45.15170430841948,
+      "profit": 10.848295691580518,
+      "price": 56,
+      "cost_components": {
+        "purchase": 29.418910122698172,
+        "assembly": 8.023339124372228,
+        "inspection": 6.023339124372228,
+        "dismantling": 1.6861159369768572,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        15
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 10.848295691580518,
+    "robust_center_profit": 14.25,
+    "target": "q2:4",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 80,
+        "estimate": 0.2,
+        "lower": 0.15423489404315968,
+        "upper": 0.2521816781028237,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06719058492318446,
+        "upper": 0.14145530679836127,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 2,
+      "bits": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "cost": 44.012345679012334,
+      "profit": 11.987654320987666,
+      "price": 56,
+      "cost_components": {
+        "purchase": 32.716049382716044,
+        "assembly": 7.4074074074074066,
+        "inspection": 1.5432098765432098,
+        "dismantling": 0.0,
+        "replacement_loss": 2.3456790123456783
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        2
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 50.3272331160258,
+      "profit": 5.672766883974198,
+      "price": 56,
+      "cost_components": {
+        "purchase": 28.729064283165613,
+        "assembly": 6.988570365073392,
+        "inspection": 12.138172555103315,
+        "dismantling": 0.8238086375611603,
+        "replacement_loss": 1.6476172751223206
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        11
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 4.39736431239691,
+    "robust_center_profit": 9.583333333333329,
+    "target": "q2:5",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 20,
+        "estimate": 0.05,
+        "lower": 0.02748438004103497,
+        "upper": 0.08238923596331338,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 20,
+        "estimate": 0.05,
+        "lower": 0.02748438004103497,
+        "upper": 0.08238923596331338,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 20,
+        "estimate": 0.05,
+        "lower": 0.02748438004103497,
+        "upper": 0.08238923596331338,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 0,
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": 34.32132963988921,
+      "profit": 21.678670360110793,
+      "price": 56,
+      "cost_components": {
+        "purchase": 25.659717159935855,
+        "assembly": 6.9981046799825055,
+        "inspection": 0.0,
+        "dismantling": 0.0,
+        "replacement_loss": 1.6635077999708427
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        0
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 1,
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "cost": 38.145204383887105,
+      "profit": 17.854795616112895,
+      "price": 56,
+      "cost_components": {
+        "purchase": 26.55450608681356,
+        "assembly": 7.125810217428653,
+        "inspection": 2.5885377172638013,
+        "dismantling": 0.0,
+        "replacement_loss": 1.876350362381089
+      },
+      "enumerated": 16,
+      "proper_encodings": 10,
+      "tied_encodings": [
+        1
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "成品"
+    ],
+    "nominal_worst_profit": 16.817783371987765,
+    "robust_center_profit": 21.328765126111676,
+    "target": "q2:6",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  },
+  {
+    "intervals": [
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件1"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件2"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件3"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "半成品1"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件4"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件5"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件6"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "半成品2"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件7"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "零件8"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "半成品3"
+      },
+      {
+        "n": 400,
+        "k": 40,
+        "estimate": 0.1,
+        "lower": 0.06180782356731576,
+        "upper": 0.1501678951520798,
+        "node": "成品"
+      }
+    ],
+    "nominal": {
+      "available": true,
+      "policy_id": 49151,
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "cost": 142.33333333333334,
+      "profit": 57.66666666666666,
+      "price": 200,
+      "cost_components": {
+        "purchase": 71.11111111111111,
+        "assembly": 35.55555555555556,
+        "inspection": 28.11111111111111,
+        "dismantling": 3.111111111111111,
+        "replacement_loss": 4.444444444444445
+      },
+      "enumerated": 65536,
+      "proper_encodings": 17060,
+      "tied_encodings": [
+        49151
+      ]
+    },
+    "robust": {
+      "available": true,
+      "policy_id": 65535,
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 156.099730636201,
+      "profit": 43.900269363799,
+      "price": 200,
+      "cost_components": {
+        "purchase": 75.30899295861855,
+        "assembly": 37.65449647930927,
+        "inspection": 38.18855677887757,
+        "dismantling": 4.947684419395612,
+        "replacement_loss": 0.0
+      },
+      "enumerated": 65536,
+      "proper_encodings": 17060,
+      "tied_encodings": [
+        65535
+      ]
+    },
+    "coverage_per_case": 0.95,
+    "node_order": [
+      "零件1",
+      "零件2",
+      "零件3",
+      "半成品1",
+      "零件4",
+      "零件5",
+      "零件6",
+      "半成品2",
+      "零件7",
+      "零件8",
+      "半成品3",
+      "成品"
+    ],
+    "nominal_worst_profit": 43.892366854532895,
+    "robust_center_profit": 55.44444444444443,
+    "target": "q3",
+    "N_per_node": 400,
+    "count_status": "HYPOTHETICAL_not_observed"
+  }
+]

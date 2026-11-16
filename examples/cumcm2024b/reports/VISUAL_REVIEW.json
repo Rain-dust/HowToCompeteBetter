@@ -1,0 +1,27 @@
+{
+  "review_method": "实际逐页打开最终Poppler PNG并查看；不是仅凭文本提取或编译返回码判断。首轮18页发现3类问题后修复，再次实际查看最终全部17页。",
+  "review_date": "2026-11-16",
+  "pdf_sha256": "384b0ec0d89adb8c0d55aaf37e16d9162e832d4941230c19c4b4716da70f0f95",
+  "render_dpi": 120,
+  "scope": "标题、摘要、目录、正文、公式下标与编号、表格、九张图、图例、参考文献、附录、页码、中文字体和边距",
+  "pages": [
+    {"page":1,"status":"PASS","render_sha256":"8a894011762f327614fe396190a0e0e804a15d9db33403428871611a01903774","observation":"标题和历史复现实验标识清楚；摘要覆盖四问及数值，关键词、页码无裁切；摘要独立页的下方留白正常。"},
+    {"page":2,"status":"PASS","render_sha256":"92c6a8aec3bc0f0d610ee7f8f43fa7e6a2dd8d79a0690c631487e2f481ed48ff","observation":"目录层级清楚，四问均列出；参考文献与附录页码更新为16、17；点线、文字和页码不冲突。"},
+    {"page":3,"status":"PASS","render_sha256":"594e1ce814420d5d6eb2174d1f4c6e7796dab3be6f45ba4d61260d78bf7e76a5","observation":"问题重述和总体分析段落连续，中文引号、概率指数及脚注引用清楚，底部行未越界。"},
+    {"page":4,"status":"PASS","render_sha256":"669b14eb071cae032bd18c0e49d71e73b97d5e7036dc1245b1b14c95b999d4d9","observation":"四问路线图节点、箭头和中文文字分离，图注完整；假设章节字号、段落和页码正常。"},
+    {"page":5,"status":"PASS","render_sha256":"e42459cab4565e23e2675ee9ec01e6d1616d1618c73d5705729a1bcca0a07967","observation":"三线符号表列宽合适，数学符号、单位无重叠；第一问单次检验和n=22边界可读，公式编号靠右且在页内。"},
+    {"page":6,"status":"PASS","render_sha256":"58b82c57fd1111010d0178cc0932537855c3d853d594a5e3786d3e2518c448d4","observation":"已确认E_R(n,k)、E_A(n,k)、D_n(k)的括号在正常基线，不再误入脚标；停止边界图、坐标、图例、双和式与编号清楚。"},
+    {"page":7,"status":"PASS","render_sha256":"e5b32bae86f1fa40f7b704291a86191700827e7876271b6f492f56c17c459995","observation":"操作特性表和双面板图均可读；第二问目标和原料成本公式正常，无表格分裂或公式重叠。"},
+    {"page":8,"status":"PASS","render_sha256":"3a06c473dc9b61cb80b6dd6ed2aab6d29eb116889d9ae6a6c2abbba0afe8ed11","observation":"报废/拆解成本公式及六情形表排版完整；四位策略均保留前导0，情况3并列解释与表相接，无截断。"},
+    {"page":9,"status":"PASS","render_sha256":"4dff25438c71b8e3119146b9c1a00a8b739c08c5af87cf067b3903c029961346","observation":"成本柱图及策略矩阵标签可读；模拟区间表没有压字；第三问标题与引导段落保留在同页。"},
+    {"page":10,"status":"PASS","render_sha256":"980b728cc688853080a42adf2e682860537619452599c62dfe2f65607a8f3434","observation":"装配树的1—3、4—6、7—8分组与连线正确；式(11)已确认p_v乘括号在基线显示，递归说明、编码定义无越界。"},
+    {"page":11,"status":"PASS","render_sha256":"5024ac2a00f96ad7822f59a90327092cce27210bd68447b454a7450b9a868efa","observation":"图6的图例已移入柱体上方空白，采购/装配/检测/拆解/调换色块不再被遮；候选利润标注及成本分解表清楚；第四问正常开始。"},
+    {"page":12,"status":"PASS","render_sha256":"70b2dc2e96031be8c17d4568602f2a7770b313961be6c7b89992d7c49439891f","observation":"CP分位数和鲁棒优化公式结构正确、编号清楚；假想样本区间图横轴、两组误差线及图注未裁切。"},
+    {"page":13,"status":"PASS","render_sha256":"32e953746367baccfe9bb5dbee1e72da7f1dbaf68b09f13476a20c5f83fd3a82","observation":"12行第二问鲁棒结果表、第三问结果表与比较图全部完整；负利润符号清楚，假想计数身份明确；底部0.0079解释没有越界。"},
+    {"page":14,"status":"PASS","render_sha256":"7097b4fbfbbdd1fd7d9a3a102a406c01f7493912b57d99fce3c82fdf21ccc1b7","observation":"统计独立验证说明与灵敏度章节顺接；两面板曲线、不同标记和图例可读，无重叠图注或孤立标题。"},
+    {"page":15,"status":"PASS","render_sha256":"1fbf36e3bbe8d0f8d1e7f4931c3d9c2a2ef6a05ee3d1bc29e9d032a8e6ff50cc","observation":"灵敏度策略切换表、211项验证说明与模型评价正常排版；长段落连续，末行与页码保持分离。"},
+    {"page":16,"status":"PASS","render_sha256":"97151d0ec070a4664045dfe61670b8c4d224560a92f300d526e03c54c1f53707","observation":"原来单占一页的结论末段现与参考文献合并；三条来源、DOI和日期完整，中英字体无缺字；末尾参考文献页留白属于正常终章留白。"},
+    {"page":17,"status":"PASS","render_sha256":"e2865e97b2c4bf8ee5389c307edb923290bfbc56f6c37281c7f254450066f02c","observation":"附录伪代码灰框完整，缩进和中文均可读；独立事件模拟与计数顺序说明齐全；页码17和底部留白正常。"}
+  ],
+  "unresolved_visual_defects": []
+}

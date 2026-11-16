@@ -3,5 +3,12 @@
 *.md text eol=lf
 *.json text eol=lf
 *.txt text eol=lf
-*.csv text eol=crlf
+*.csv text eol=lf
 .gitattributes text eol=lf
+*.svg text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.zip binary
+*.typ text eol=lf
+.gitignore text eol=lf
+*.drawio text eol=lf

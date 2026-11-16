@@ -1,0 +1,51 @@
+[
+  {
+    "figure": "fig_q1_boundaries.pdf",
+    "sources": [
+      "results/q1_boundaries.csv"
+    ],
+    "purpose": "给出随时有效的停止边界，空缺表示该样本量尚无接收路径"
+  },
+  {
+    "figure": "fig_q1_oc.pdf",
+    "sources": [
+      "results/q1_oc.csv"
+    ],
+    "purpose": "比较判断概率和检测代价，2000次上限保留未决"
+  },
+  {
+    "figure": "fig_q2_decisions.pdf",
+    "sources": [
+      "results/q2.json"
+    ],
+    "purpose": "统一履约口径下的成本比较和四位策略"
+  },
+  {
+    "figure": "fig_q3_results.pdf",
+    "sources": [
+      "results/q3.json"
+    ],
+    "purpose": "解释多工序最优策略成本构成及候选差距"
+  },
+  {
+    "figure": "fig_q4_robust.pdf",
+    "sources": [
+      "results/q4.json"
+    ],
+    "purpose": "明确假想抽样条件下的鲁棒利润与名义决策风险"
+  },
+  {
+    "figure": "fig_q4_intervals.pdf",
+    "sources": [
+      "results/q4_intervals.csv"
+    ],
+    "purpose": "表2共12个率分配错误概率后的单节点区间"
+  },
+  {
+    "figure": "fig_sensitivity.pdf",
+    "sources": [
+      "results/sensitivity.csv"
+    ],
+    "purpose": "每个扰动点重新枚举后的策略类最优利润"
+  }
+]

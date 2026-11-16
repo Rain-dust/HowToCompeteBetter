@@ -1,0 +1,165 @@
+[
+  {
+    "available": true,
+    "policy_id": 11,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "cost": 38.444444444444436,
+    "profit": 17.555555555555564,
+    "price": 56,
+    "cost_components": {
+      "purchase": 24.444444444444443,
+      "assembly": 6.666666666666666,
+      "inspection": 6.111111111111111,
+      "dismantling": 0.5555555555555556,
+      "replacement_loss": 0.6666666666666667
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      11
+    ],
+    "case": 1,
+    "baseline_cost": 40.639231824417
+  },
+  {
+    "available": true,
+    "policy_id": 11,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "cost": 45.25,
+    "profit": 10.75,
+    "price": 56,
+    "cost_components": {
+      "purchase": 27.5,
+      "assembly": 7.5,
+      "inspection": 7.5,
+      "dismantling": 1.25,
+      "replacement_loss": 1.5000000000000002
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      11
+    ],
+    "case": 2,
+    "baseline_cost": 60.406249999999986
+  },
+  {
+    "available": true,
+    "policy_id": 11,
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "cost": 41.11111111111111,
+    "profit": 14.888888888888893,
+    "price": 56,
+    "cost_components": {
+      "purchase": 24.444444444444443,
+      "assembly": 6.666666666666666,
+      "inspection": 6.111111111111111,
+      "dismantling": 0.5555555555555556,
+      "replacement_loss": 3.333333333333333
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      11,
+      15
+    ],
+    "case": 3,
+    "baseline_cost": 49.56104252400548
+  },
+  {
+    "available": true,
+    "policy_id": 15,
+    "bits": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "cost": 41.75,
+    "profit": 14.25,
+    "price": 56,
+    "cost_components": {
+      "purchase": 27.5,
+      "assembly": 7.5,
+      "inspection": 5.5,
+      "dismantling": 1.25,
+      "replacement_loss": 0.0
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      15
+    ],
+    "case": 4,
+    "baseline_cost": 83.28124999999997
+  },
+  {
+    "available": true,
+    "policy_id": 2,
+    "bits": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "cost": 44.012345679012334,
+    "profit": 11.987654320987666,
+    "price": 56,
+    "cost_components": {
+      "purchase": 32.716049382716044,
+      "assembly": 7.4074074074074066,
+      "inspection": 1.5432098765432098,
+      "dismantling": 0.0,
+      "replacement_loss": 2.3456790123456783
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      2
+    ],
+    "case": 5,
+    "baseline_cost": 48.64197530864197
+  },
+  {
+    "available": true,
+    "policy_id": 0,
+    "bits": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "cost": 34.32132963988921,
+    "profit": 21.678670360110793,
+    "price": 56,
+    "cost_components": {
+      "purchase": 25.659717159935855,
+      "assembly": 6.9981046799825055,
+      "inspection": 0.0,
+      "dismantling": 0.0,
+      "replacement_loss": 1.6635077999708427
+    },
+    "enumerated": 16,
+    "proper_encodings": 10,
+    "tied_encodings": [
+      0
+    ],
+    "case": 6,
+    "baseline_cost": 34.32132963988921
+  }
+]

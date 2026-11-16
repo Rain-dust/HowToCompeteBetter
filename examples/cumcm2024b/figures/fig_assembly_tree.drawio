@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="fig_assembly_tree">
+    <mxGraphModel pageWidth="820" pageHeight="325">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1" value="零件1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="15" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p2" value="零件2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="115" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p3" value="零件3" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="215" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p4" value="零件4" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="315" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p5" value="零件5" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p6" value="零件6" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="515" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p7" value="零件7" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="615" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="p8" value="零件8" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="715" y="15" width="80" height="48" />
+        </mxCell>
+        <mxCell id="s1" value="半成品1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="125" width="130" height="50" />
+        </mxCell>
+        <mxCell id="s2" value="半成品2" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="125" width="130" height="50" />
+        </mxCell>
+        <mxCell id="s3" value="半成品3" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="125" width="130" height="50" />
+        </mxCell>
+        <mxCell id="root" value="成品&#10;最终合格交付" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f8;strokeColor=#285980;fontColor=#111111;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="340" y="235" width="180" height="65" />
+        </mxCell>
+        <mxCell id="edge0" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p1" target="s1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p2" target="s1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge2" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p3" target="s1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge3" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p4" target="s2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge4" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p5" target="s2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge5" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p6" target="s2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge6" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p7" target="s3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge7" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="p8" target="s3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge8" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="s1" target="root">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge9" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="s2" target="root">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge10" style="endArrow=block;html=0;strokeColor=#285980;" edge="1" parent="1" source="s3" target="root">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

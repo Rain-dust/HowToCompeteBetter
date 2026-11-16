@@ -1,0 +1,17 @@
+name: 纠错或更新规则
+description: 补充当届官方规则、时间、工具入口或失效链接。
+title: "[纠错] 比赛 / 需要更正的内容"
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: 仓库里的位置与现有说法
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 正确内容、适用届次与来源链接
+      description: 优先主办方通知；注明该来源支持哪一句，不用评论代替官方规则。
+    validations:
+      required: true

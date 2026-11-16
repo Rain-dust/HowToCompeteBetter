@@ -1,0 +1,82 @@
+[
+  {
+    "command": [
+      "python",
+      "code/problem1.py"
+    ],
+    "returncode": 0,
+    "seconds": 2.4806972999995196,
+    "stdout": "Q1 {'earliest_all_defective_reject_n': 2, 'reject_tail': 0.010000000000000002, 'earliest_zero_defect_accept_n': 22, 'accept_tail': 0.0984770902183611, 'n22_reject_at_least': 6} {'p': 0.1, 'accept': 0.09717280417604218, 'reject': 0.03875697601331905, 'inconclusive': 0.8640702198106867, 'expected_tests_capped': 1744.5729177752446}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/problem2.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.29987720000008267,
+    "stdout": "Q2 1 [1, 1, 0, 1] 38.444444444444436 17.555555555555564\nQ2 2 [1, 1, 0, 1] 45.25 10.75\nQ2 3 [1, 1, 0, 1] 41.11111111111111 14.888888888888893\nQ2 4 [1, 1, 1, 1] 41.75 14.25\nQ2 5 [0, 1, 0, 0] 44.012345679012334 11.987654320987666\nQ2 6 [0, 0, 0, 0] 34.32132963988921 21.678670360110793\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/problem3.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.8280825000001641,
+    "stdout": "Q3 {'available': True, 'policy_id': 49151, 'bits': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1], 'cost': 142.33333333333334, 'profit': 57.66666666666666, 'price': 200, 'cost_components': {'purchase': 71.11111111111111, 'assembly': 35.55555555555556, 'inspection': 28.11111111111111, 'dismantling': 3.111111111111111, 'replacement_loss': 4.444444444444445}, 'enumerated': 65536, 'proper_encodings': 17060, 'tied_encodings': [49151], 'baseline_cost': 441.53603796021207, 'top10': [{'policy_id': 49151, 'bits': '1111111111111101', 'proper': True, 'cost': 142.33333333333334, 'profit': 57.66666666666666}, {'policy_id': 40959, 'bits': '1111111111111001', 'proper': True, 'cost': 144.17283950617286, 'profit': 55.82716049382714}, {'policy_id': 40831, 'bits': '1111111011111001', 'proper': True, 'cost': 144.41975308641977, 'profit': 55.580246913580226}, {'policy_id': 45055, 'bits': '1111111111110101', 'proper': True, 'cost': 144.43209876543213, 'profit': 55.56790123456787}, {'policy_id': 47103, 'bits': '1111111111101101', 'proper': True, 'cost': 144.43209876543213, 'profit': 55.56790123456787}, {'policy_id': 65535, 'bits': '1111111111111111', 'proper': True, 'cost': 144.55555555555557, 'profit': 55.44444444444443}, {'policy_id': 45023, 'bits': '1111101111110101', 'proper': True, 'cost': 145.0905349794239, 'profit': 54.90946502057611}, {'policy_id': 47099, 'bits': '1101111111101101', 'proper': True, 'cost': 145.0905349794239, 'profit': 54.90946502057611}, {'policy_id': 36863, 'bits': '1111111111110001', 'proper': True, 'cost': 146.2716049382716, 'profit': 53.728395061728406}, {'policy_id': 38911, 'bits': '1111111111101001', 'proper': True, 'cost': 146.2716049382716, 'profit': 53.728395061728406}]}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/problem4.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.0839089000000968,
+    "stdout": "Q4 q2:1 100 robust [1, 1, 0, 1] worst profit 11.192090286115118\nQ4 q2:2 100 robust [1, 1, 0, 1] worst profit 0.7322666189877438\nQ4 q2:3 100 robust [1, 1, 1, 1] worst profit 8.915023533903984\nQ4 q2:4 100 robust [1, 1, 1, 1] worst profit 6.276702002867793\nQ4 q2:5 100 robust [1, 1, 0, 1] worst profit 0.2445073015837096\nQ4 q2:6 100 robust [1, 0, 0, 0] worst profit 12.191646170661713\nQ4 q3 100 robust [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] worst profit 26.90912703530003\nQ4 q2:1 400 robust [1, 1, 0, 1] worst profit 14.926675351900634\nQ4 q2:2 400 robust [1, 1, 0, 1] worst profit 6.476063817626802\nQ4 q2:3 400 robust [1, 1, 1, 1] worst profit 12.420960534437334\nQ4 q2:4 400 robust [1, 1, 1, 1] worst profit 10.848295691580518\nQ4 q2:5 400 robust [1, 1, 0, 1] worst profit 5.672766883974198\nQ4 q2:6 400 robust [1, 0, 0, 0] worst profit 17.854795616112895\nQ4 q3 400 robust [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] worst profit 43.900269363799\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/validate_calculations.py"
+    ],
+    "returncode": 0,
+    "seconds": 6.413810099999864,
+    "stdout": "VALIDATION 211 / 211 max production z 2.0801423164464423\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/sensitivity.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.6911411000000953,
+    "stdout": "SENSITIVITY 40 re-optimizations\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/make_figures.py"
+    ],
+    "returncode": 0,
+    "seconds": 3.5613300999993953,
+    "stdout": "Generated 7 data figures\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "code/write_results_report.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.29937729999983276,
+    "stdout": "Wrote RESULTS_REPORT.md\n",
+    "stderr": ""
+  }
+]

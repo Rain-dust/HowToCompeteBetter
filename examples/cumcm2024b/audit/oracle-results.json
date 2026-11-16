@@ -1,0 +1,1152 @@
+{
+  "status": "independent_oracles_executed_only; running_solution_not_read_or_reviewed",
+  "observation_data": "none; boundaries are synthetic diagnostic inputs, not sampled observations",
+  "q1": {
+    "p0": 0.1,
+    "reject_alpha": 0.05,
+    "accept_alpha": 0.1,
+    "fixed_n_thresholds": [
+      {
+        "n": 1,
+        "accept_if_x_le": null,
+        "reject_if_x_ge": null,
+        "accept_boundary_tail_at_p0": null,
+        "reject_boundary_tail_at_p0": null,
+        "reject_power_at_p_0_2": 0.0
+      },
+      {
+        "n": 2,
+        "accept_if_x_le": null,
+        "reject_if_x_ge": 2,
+        "accept_boundary_tail_at_p0": null,
+        "reject_boundary_tail_at_p0": 0.010000000000000002,
+        "reject_power_at_p_0_2": 0.04000000000000001
+      },
+      {
+        "n": 21,
+        "accept_if_x_le": null,
+        "reject_if_x_ge": 6,
+        "accept_boundary_tail_at_p0": null,
+        "reject_boundary_tail_at_p0": 0.014445270276504444,
+        "reject_power_at_p_0_2": 0.23070411885182687
+      },
+      {
+        "n": 22,
+        "accept_if_x_le": 0,
+        "reject_if_x_ge": 6,
+        "accept_boundary_tail_at_p0": 0.0984770902183611,
+        "reject_boundary_tail_at_p0": 0.018215981058799055,
+        "reject_power_at_p_0_2": 0.2673616183787718
+      },
+      {
+        "n": 29,
+        "accept_if_x_le": 0,
+        "reject_if_x_ge": 7,
+        "accept_boundary_tail_at_p0": 0.04710128697246244,
+        "reject_boundary_tail_at_p0": 0.021616715796312563,
+        "reject_power_at_p_0_2": 0.35713858384717634
+      },
+      {
+        "n": 50,
+        "accept_if_x_le": 1,
+        "reject_if_x_ge": 10,
+        "accept_boundary_tail_at_p0": 0.0337858596924319,
+        "reject_boundary_tail_at_p0": 0.024537935704591392,
+        "reject_power_at_p_0_2": 0.5562595867082483
+      },
+      {
+        "n": 100,
+        "accept_if_x_le": 5,
+        "reject_if_x_ge": 16,
+        "accept_boundary_tail_at_p0": 0.05757688648703396,
+        "reject_boundary_tail_at_p0": 0.0398905271110835,
+        "reject_power_at_p_0_2": 0.8714944851612023
+      }
+    ],
+    "smallest_n_zero_defects_90pct_upper_bound_le_p0": 22,
+    "smallest_n_any_rejection_feasible_at_5pct_typeI": 2,
+    "n29_probability_detect_at_least_one_at_p_0_1": 0.9528987130275375,
+    "n29_is_not_probability_p_exceeds_p0": true
+  },
+  "q2": {
+    "table1_no_dismantle_diagnostics": [
+      {
+        "case": 1,
+        "input": {
+          "case": 1,
+          "p1": 0.1,
+          "p2": 0.1,
+          "pf": 0.1,
+          "t1": 2,
+          "t2": 3,
+          "tf": 3,
+          "L": 6,
+          "d": 5
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.7290000000000001,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.371742112482853,
+            "failed_customer_deliveries_per_fulfilled": 0.37174211248285305,
+            "cost_per_fulfilled": 40.639231824417,
+            "profit_per_fulfilled": 15.360768175582997
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.7290000000000001,
+            "base_cost_per_attempt": 31.0,
+            "attempts_per_fulfilled": 1.371742112482853,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 42.52400548696844,
+            "profit_per_fulfilled": 13.475994513031559
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 33.33333333333333,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+            "cost_per_fulfilled": 42.559670781893,
+            "profit_per_fulfilled": 13.440329218107003
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 36.33333333333333,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 44.855967078189295,
+            "profit_per_fulfilled": 11.144032921810705
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 30.666666666666664,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+            "cost_per_fulfilled": 39.267489711934154,
+            "profit_per_fulfilled": 16.732510288065846
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 33.666666666666664,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 41.563786008230444,
+            "profit_per_fulfilled": 14.436213991769556
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 36.0,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.11111111111111108,
+            "cost_per_fulfilled": 40.666666666666664,
+            "profit_per_fulfilled": 15.333333333333336
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 39.0,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 43.333333333333336,
+            "profit_per_fulfilled": 12.666666666666664
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q": 0.81,
+          "base_cost_per_attempt": 30.666666666666664,
+          "attempts_per_fulfilled": 1.2345679012345678,
+          "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+          "cost_per_fulfilled": 39.267489711934154,
+          "profit_per_fulfilled": 16.732510288065846
+        },
+        "universal_optimistic_cost_lower_bound": 31.111111111111107,
+        "profit_upper_bound_per_fulfilled": 24.888888888888893,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 41.111111111111114,
+          "profit_per_fulfilled": 14.888888888888886,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      },
+      {
+        "case": 2,
+        "input": {
+          "case": 2,
+          "p1": 0.2,
+          "p2": 0.2,
+          "pf": 0.2,
+          "t1": 2,
+          "t2": 3,
+          "tf": 3,
+          "L": 6,
+          "d": 5
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.5120000000000001,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.9531249999999996,
+            "failed_customer_deliveries_per_fulfilled": 0.9531249999999996,
+            "cost_per_fulfilled": 60.40624999999998,
+            "profit_per_fulfilled": -4.406249999999979
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.5120000000000001,
+            "base_cost_per_attempt": 31.0,
+            "attempts_per_fulfilled": 1.9531249999999996,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 60.546874999999986,
+            "profit_per_fulfilled": -4.546874999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 36.25,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.5624999999999997,
+            "cost_per_fulfilled": 60.015624999999986,
+            "profit_per_fulfilled": -4.015624999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 39.25,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 61.328124999999986,
+            "profit_per_fulfilled": -5.328124999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 31.5,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.5624999999999997,
+            "cost_per_fulfilled": 52.593749999999986,
+            "profit_per_fulfilled": 3.406250000000014
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 34.5,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 53.90624999999999,
+            "profit_per_fulfilled": 2.093750000000007
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.8,
+            "base_cost_per_attempt": 39.75,
+            "attempts_per_fulfilled": 1.25,
+            "failed_customer_deliveries_per_fulfilled": 0.24999999999999994,
+            "cost_per_fulfilled": 51.1875,
+            "profit_per_fulfilled": 4.8125
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.8,
+            "base_cost_per_attempt": 42.75,
+            "attempts_per_fulfilled": 1.25,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 53.4375,
+            "profit_per_fulfilled": 2.5625
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q": 0.8,
+          "base_cost_per_attempt": 39.75,
+          "attempts_per_fulfilled": 1.25,
+          "failed_customer_deliveries_per_fulfilled": 0.24999999999999994,
+          "cost_per_fulfilled": 51.1875,
+          "profit_per_fulfilled": 4.8125
+        },
+        "universal_optimistic_cost_lower_bound": 35.0,
+        "profit_upper_bound_per_fulfilled": 21.0,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 47.5,
+          "profit_per_fulfilled": 8.5,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      },
+      {
+        "case": 3,
+        "input": {
+          "case": 3,
+          "p1": 0.1,
+          "p2": 0.1,
+          "pf": 0.1,
+          "t1": 2,
+          "t2": 3,
+          "tf": 3,
+          "L": 30,
+          "d": 5
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.7290000000000001,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.371742112482853,
+            "failed_customer_deliveries_per_fulfilled": 0.37174211248285305,
+            "cost_per_fulfilled": 49.56104252400547,
+            "profit_per_fulfilled": 6.438957475994528
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.7290000000000001,
+            "base_cost_per_attempt": 31.0,
+            "attempts_per_fulfilled": 1.371742112482853,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 42.52400548696844,
+            "profit_per_fulfilled": 13.475994513031559
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 33.33333333333333,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+            "cost_per_fulfilled": 48.189300411522616,
+            "profit_per_fulfilled": 7.810699588477384
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 36.33333333333333,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 44.855967078189295,
+            "profit_per_fulfilled": 11.144032921810705
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 30.666666666666664,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+            "cost_per_fulfilled": 44.89711934156377,
+            "profit_per_fulfilled": 11.102880658436227
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 33.666666666666664,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 41.563786008230444,
+            "profit_per_fulfilled": 14.436213991769556
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 36.0,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.11111111111111108,
+            "cost_per_fulfilled": 43.333333333333336,
+            "profit_per_fulfilled": 12.666666666666664
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 39.0,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 43.333333333333336,
+            "profit_per_fulfilled": 12.666666666666664
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q": 0.81,
+          "base_cost_per_attempt": 33.666666666666664,
+          "attempts_per_fulfilled": 1.2345679012345678,
+          "failed_customer_deliveries_per_fulfilled": 0.0,
+          "cost_per_fulfilled": 41.563786008230444,
+          "profit_per_fulfilled": 14.436213991769556
+        },
+        "universal_optimistic_cost_lower_bound": 31.111111111111107,
+        "profit_upper_bound_per_fulfilled": 24.888888888888893,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 41.111111111111114,
+          "profit_per_fulfilled": 14.888888888888886,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      },
+      {
+        "case": 4,
+        "input": {
+          "case": 4,
+          "p1": 0.2,
+          "p2": 0.2,
+          "pf": 0.2,
+          "t1": 1,
+          "t2": 1,
+          "tf": 2,
+          "L": 30,
+          "d": 5
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.5120000000000001,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.9531249999999996,
+            "failed_customer_deliveries_per_fulfilled": 0.9531249999999996,
+            "cost_per_fulfilled": 83.28124999999999,
+            "profit_per_fulfilled": -27.281249999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.5120000000000001,
+            "base_cost_per_attempt": 30.0,
+            "attempts_per_fulfilled": 1.9531249999999996,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 58.593749999999986,
+            "profit_per_fulfilled": -2.593749999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 33.75,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.5624999999999997,
+            "cost_per_fulfilled": 69.60937499999999,
+            "profit_per_fulfilled": -13.609374999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 35.75,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 55.859374999999986,
+            "profit_per_fulfilled": 0.1406250000000142
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 30.25,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.5624999999999997,
+            "cost_per_fulfilled": 64.14062499999999,
+            "profit_per_fulfilled": -8.140624999999986
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.6400000000000001,
+            "base_cost_per_attempt": 32.25,
+            "attempts_per_fulfilled": 1.5624999999999998,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 50.39062499999999,
+            "profit_per_fulfilled": 5.609375000000007
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.8,
+            "base_cost_per_attempt": 36.0,
+            "attempts_per_fulfilled": 1.25,
+            "failed_customer_deliveries_per_fulfilled": 0.24999999999999994,
+            "cost_per_fulfilled": 52.5,
+            "profit_per_fulfilled": 3.5
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.8,
+            "base_cost_per_attempt": 38.0,
+            "attempts_per_fulfilled": 1.25,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 47.5,
+            "profit_per_fulfilled": 8.5
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "q": 0.8,
+          "base_cost_per_attempt": 38.0,
+          "attempts_per_fulfilled": 1.25,
+          "failed_customer_deliveries_per_fulfilled": 0.0,
+          "cost_per_fulfilled": 47.5,
+          "profit_per_fulfilled": 8.5
+        },
+        "universal_optimistic_cost_lower_bound": 35.0,
+        "profit_upper_bound_per_fulfilled": 21.0,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 41.75,
+          "profit_per_fulfilled": 14.25,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      },
+      {
+        "case": 5,
+        "input": {
+          "case": 5,
+          "p1": 0.1,
+          "p2": 0.2,
+          "pf": 0.1,
+          "t1": 8,
+          "t2": 1,
+          "tf": 2,
+          "L": 10,
+          "d": 5
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.6480000000000001,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.5432098765432096,
+            "failed_customer_deliveries_per_fulfilled": 0.5432098765432095,
+            "cost_per_fulfilled": 48.64197530864197,
+            "profit_per_fulfilled": 7.3580246913580325
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.6480000000000001,
+            "base_cost_per_attempt": 30.0,
+            "attempts_per_fulfilled": 1.5432098765432096,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 46.29629629629628,
+            "profit_per_fulfilled": 9.703703703703717
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 33.75,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+            "cost_per_fulfilled": 44.01234567901234,
+            "profit_per_fulfilled": 11.987654320987659
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.81,
+            "base_cost_per_attempt": 35.75,
+            "attempts_per_fulfilled": 1.2345679012345678,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 44.1358024691358,
+            "profit_per_fulfilled": 11.864197530864203
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.7200000000000001,
+            "base_cost_per_attempt": 37.33333333333333,
+            "attempts_per_fulfilled": 1.3888888888888886,
+            "failed_customer_deliveries_per_fulfilled": 0.38888888888888873,
+            "cost_per_fulfilled": 55.740740740740726,
+            "profit_per_fulfilled": 0.25925925925927373
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.7200000000000001,
+            "base_cost_per_attempt": 39.33333333333333,
+            "attempts_per_fulfilled": 1.3888888888888886,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 54.62962962962962,
+            "profit_per_fulfilled": 1.370370370370381
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 43.08333333333333,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.11111111111111108,
+            "cost_per_fulfilled": 48.981481481481474,
+            "profit_per_fulfilled": 7.018518518518526
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.9,
+            "base_cost_per_attempt": 45.08333333333333,
+            "attempts_per_fulfilled": 1.1111111111111112,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 50.09259259259259,
+            "profit_per_fulfilled": 5.907407407407412
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q": 0.81,
+          "base_cost_per_attempt": 33.75,
+          "attempts_per_fulfilled": 1.2345679012345678,
+          "failed_customer_deliveries_per_fulfilled": 0.23456790123456783,
+          "cost_per_fulfilled": 44.01234567901234,
+          "profit_per_fulfilled": 11.987654320987659
+        },
+        "universal_optimistic_cost_lower_bound": 33.61111111111111,
+        "profit_upper_bound_per_fulfilled": 22.388888888888893,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 47.52777777777777,
+          "profit_per_fulfilled": 8.472222222222229,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      },
+      {
+        "case": 6,
+        "input": {
+          "case": 6,
+          "p1": 0.05,
+          "p2": 0.05,
+          "pf": 0.05,
+          "t1": 2,
+          "t2": 3,
+          "tf": 3,
+          "L": 10,
+          "d": 40
+        },
+        "no_dismantle_policies": [
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "q": 0.8573749999999999,
+            "base_cost_per_attempt": 28.0,
+            "attempts_per_fulfilled": 1.1663507799970843,
+            "failed_customer_deliveries_per_fulfilled": 0.16635077999708428,
+            "cost_per_fulfilled": 34.3213296398892,
+            "profit_per_fulfilled": 21.6786703601108
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "q": 0.8573749999999999,
+            "base_cost_per_attempt": 31.0,
+            "attempts_per_fulfilled": 1.1663507799970843,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 36.156874179909614,
+            "profit_per_fulfilled": 19.843125820090386
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "q": 0.9025,
+            "base_cost_per_attempt": 32.10526315789474,
+            "attempts_per_fulfilled": 1.10803324099723,
+            "failed_customer_deliveries_per_fulfilled": 0.10803324099722995,
+            "cost_per_fulfilled": 36.65403119988337,
+            "profit_per_fulfilled": 19.34596880011663
+          },
+          {
+            "feasible": true,
+            "policy": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "q": 0.9025,
+            "base_cost_per_attempt": 35.10526315789474,
+            "attempts_per_fulfilled": 1.10803324099723,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 38.89779851290276,
+            "profit_per_fulfilled": 17.10220148709724
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "q": 0.9025,
+            "base_cost_per_attempt": 30.315789473684212,
+            "attempts_per_fulfilled": 1.10803324099723,
+            "failed_customer_deliveries_per_fulfilled": 0.10803324099722995,
+            "cost_per_fulfilled": 34.671234873888324,
+            "profit_per_fulfilled": 21.328765126111676
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "q": 0.9025,
+            "base_cost_per_attempt": 33.31578947368421,
+            "attempts_per_fulfilled": 1.10803324099723,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 36.915002186907714,
+            "profit_per_fulfilled": 19.084997813092286
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "q": 0.95,
+            "base_cost_per_attempt": 34.421052631578945,
+            "attempts_per_fulfilled": 1.0526315789473684,
+            "failed_customer_deliveries_per_fulfilled": 0.052631578947368474,
+            "cost_per_fulfilled": 36.7590027700831,
+            "profit_per_fulfilled": 19.2409972299169
+          },
+          {
+            "feasible": true,
+            "policy": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "q": 0.95,
+            "base_cost_per_attempt": 37.421052631578945,
+            "attempts_per_fulfilled": 1.0526315789473684,
+            "failed_customer_deliveries_per_fulfilled": 0.0,
+            "cost_per_fulfilled": 39.390581717451525,
+            "profit_per_fulfilled": 16.609418282548475
+          }
+        ],
+        "best_within_no_dismantle_only": {
+          "feasible": true,
+          "policy": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q": 0.8573749999999999,
+          "base_cost_per_attempt": 28.0,
+          "attempts_per_fulfilled": 1.1663507799970843,
+          "failed_customer_deliveries_per_fulfilled": 0.16635077999708428,
+          "cost_per_fulfilled": 34.3213296398892,
+          "profit_per_fulfilled": 21.6786703601108
+        },
+        "universal_optimistic_cost_lower_bound": 29.473684210526315,
+        "profit_upper_bound_per_fulfilled": 26.526315789473685,
+        "all_raw_tested_recycle_retest": {
+          "feasible": true,
+          "policy": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "retest_recovered": true,
+          "cost_per_fulfilled": 40.26315789473684,
+          "profit_per_fulfilled": 15.736842105263158,
+          "new_raw_purchase_cost_increases_after_process_failure": false
+        }
+      }
+    ],
+    "fresh_pair_failure_posterior_example": {
+      "failure_probability": 0.2709999999999999,
+      "conditional_joint": {
+        "GG": 0.29889298892988947,
+        "GB": 0.3321033210332104,
+        "BG": 0.3321033210332104,
+        "BB": 0.03690036900369003
+      },
+      "P_G1_given_failure": 0.6309963099630999,
+      "P_G2_given_failure": 0.6309963099630999,
+      "covariance_G1_G2_given_failure": -0.09926335425715893,
+      "same_pair_next_attempt_success_probability": 0.26900369003690056
+    },
+    "synthetic_zero_defects_no_test": {
+      "feasible": true,
+      "policy": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "q": 1,
+      "base_cost_per_attempt": 28.0,
+      "attempts_per_fulfilled": 1.0,
+      "failed_customer_deliveries_per_fulfilled": 0.0,
+      "cost_per_fulfilled": 28.0,
+      "profit_per_fulfilled": 28.0
+    },
+    "synthetic_zero_defects_all_test": {
+      "feasible": true,
+      "policy": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "q": 1.0,
+      "base_cost_per_attempt": 36.0,
+      "attempts_per_fulfilled": 1.0,
+      "failed_customer_deliveries_per_fulfilled": 0.0,
+      "cost_per_fulfilled": 36.0,
+      "profit_per_fulfilled": 20.0
+    },
+    "same_pair_no_inspection_always_recycle_completion_probability_example": 0.81,
+    "same_pair_no_inspection_always_recycle_expected_cost_example": "infinite with positive probability of persistent defective part"
+  },
+  "q3": {
+    "scope": "one fulfilled final unit; perfect tests; no initial/free inventory; independent fresh defect draws",
+    "tree_raw_groups_1_based": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "inspection_decisions": 12,
+    "dismantling_decisions": 4,
+    "static_binary_policies_if_all_independent": 65536,
+    "optimistic_cost_lower_bound": 106.66666666666667,
+    "corresponding_profit_upper_bound": 93.33333333333333,
+    "fresh_no_inspection_success_probability": 0.2824295364810001,
+    "no_inspection_no_dismantle_cost_per_fulfilled": 441.5360379602122,
+    "no_inspection_no_dismantle_profit_per_fulfilled": -241.53603796021218,
+    "feasible_all_test_no_dismantle_semi_costs": [
+      45.432098765432094,
+      45.432098765432094,
+      41.7283950617284
+    ],
+    "feasible_all_test_no_dismantle_cost_per_fulfilled": 162.88065843621396,
+    "feasible_profit_lower_bound_for_profit_maximization": 37.11934156378604,
+    "all_defect_rates_zero_no_tests_no_dismantle_cost": 96,
+    "all_defect_rates_zero_all_tests_no_dismantle_cost": 125
+  }
+}

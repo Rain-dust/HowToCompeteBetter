@@ -1,0 +1,246 @@
+{
+  "design": {
+    "p0": 0.1,
+    "reject_alpha": 0.05,
+    "accept_alpha": 0.1,
+    "reject_alternative": 0.2,
+    "accept_alternative": 0.05,
+    "cap": 2000
+  },
+  "interpretation": "No observed sample: all paths are conditional design examples.",
+  "fixed_single_look": {
+    "earliest_all_defective_reject_n": 2,
+    "reject_tail": 0.010000000000000002,
+    "earliest_zero_defect_accept_n": 22,
+    "accept_tail": 0.0984770902183611,
+    "n22_reject_at_least": 6
+  },
+  "sequential_earliest_reject_n": 5,
+  "sequential_earliest_accept_n": 43,
+  "oc": [
+    {
+      "p": 0.0,
+      "accept": 1.0,
+      "reject": 0.0,
+      "inconclusive": 0.0,
+      "expected_tests_capped": 43.0
+    },
+    {
+      "p": 0.01,
+      "accept": 0.999999988924861,
+      "reject": 1.1075138661146244e-08,
+      "inconclusive": 4.2382002860283375e-73,
+      "expected_tests_capped": 49.98971424186155
+    },
+    {
+      "p": 0.02,
+      "accept": 0.9999993876330874,
+      "reject": 6.123669113713415e-07,
+      "inconclusive": 2.1967598503675403e-38,
+      "expected_tests_capped": 59.610926325554
+    },
+    {
+      "p": 0.03,
+      "accept": 0.9999925215848091,
+      "reject": 7.478415189171122e-06,
+      "inconclusive": 1.8209140793694934e-21,
+      "expected_tests_capped": 73.70256899218113
+    },
+    {
+      "p": 0.04,
+      "accept": 0.999951573765727,
+      "reject": 4.842622681758235e-05,
+      "inconclusive": 7.452068345437935e-12,
+      "expected_tests_capped": 96.44110963255373
+    },
+    {
+      "p": 0.05,
+      "accept": 0.9997771385751657,
+      "reject": 0.00021981067201383363,
+      "inconclusive": 3.050752814474366e-06,
+      "expected_tests_capped": 139.4455688268998
+    },
+    {
+      "p": 0.06,
+      "accept": 0.995158874568013,
+      "reject": 0.0007934436133625541,
+      "inconclusive": 0.00404768181861026,
+      "expected_tests_capped": 249.47299989531032
+    },
+    {
+      "p": 0.07,
+      "accept": 0.8640982719724227,
+      "reject": 0.002439877268774125,
+      "inconclusive": 0.13346185075876968,
+      "expected_tests_capped": 599.1305804737084
+    },
+    {
+      "p": 0.08,
+      "accept": 0.48376560689076653,
+      "reject": 0.006667518603164983,
+      "inconclusive": 0.5095668745061174,
+      "expected_tests_capped": 1177.9206996089936
+    },
+    {
+      "p": 0.09,
+      "accept": 0.2152927873698025,
+      "reject": 0.016652043485715137,
+      "inconclusive": 0.768055169144526,
+      "expected_tests_capped": 1580.4824439752074
+    },
+    {
+      "p": 0.1,
+      "accept": 0.09717280417604218,
+      "reject": 0.03875697601331905,
+      "inconclusive": 0.8640702198106867,
+      "expected_tests_capped": 1744.5729177752446
+    },
+    {
+      "p": 0.11,
+      "accept": 0.045548443170933664,
+      "reject": 0.0852559815964162,
+      "inconclusive": 0.8691955752326747,
+      "expected_tests_capped": 1751.826741345255
+    },
+    {
+      "p": 0.12,
+      "accept": 0.02202057987706721,
+      "reject": 0.17907998521259003,
+      "inconclusive": 0.7988994349103458,
+      "expected_tests_capped": 1625.5379822011369
+    },
+    {
+      "p": 0.13,
+      "accept": 0.010916536983889853,
+      "reject": 0.3595668611937119,
+      "inconclusive": 0.629516601822399,
+      "expected_tests_capped": 1342.6912441653053
+    },
+    {
+      "p": 0.14,
+      "accept": 0.0055240242040755375,
+      "reject": 0.646484184266757,
+      "inconclusive": 0.34799179152916787,
+      "expected_tests_capped": 912.9490788963597
+    },
+    {
+      "p": 0.15,
+      "accept": 0.002842725094844969,
+      "reject": 0.9001703709047417,
+      "inconclusive": 0.0969869040003971,
+      "expected_tests_capped": 499.19565379917236
+    },
+    {
+      "p": 0.16,
+      "accept": 0.0014831655054461381,
+      "reject": 0.9881213767030073,
+      "inconclusive": 0.01039545779153954,
+      "expected_tests_capped": 262.4237149862775
+    },
+    {
+      "p": 0.17,
+      "accept": 0.0007825033835559931,
+      "reject": 0.9988351941122129,
+      "inconclusive": 0.0003823025042263727,
+      "expected_tests_capped": 161.66365618235383
+    },
+    {
+      "p": 0.18,
+      "accept": 0.0004165258489759831,
+      "reject": 0.99957870003323,
+      "inconclusive": 4.774117800336459e-06,
+      "expected_tests_capped": 115.49080325191413
+    },
+    {
+      "p": 0.19,
+      "accept": 0.00022325080900987193,
+      "reject": 0.9997767282488996,
+      "inconclusive": 2.094209546583724e-08,
+      "expected_tests_capped": 89.8320639804143
+    },
+    {
+      "p": 0.2,
+      "accept": 0.00012027446946278041,
+      "reject": 0.9998797254966793,
+      "inconclusive": 3.386366609403038e-11,
+      "expected_tests_capped": 73.52686084435656
+    },
+    {
+      "p": 0.21,
+      "accept": 6.502798311508519e-05,
+      "reject": 0.9999349720168652,
+      "inconclusive": 2.1223290821882403e-14,
+      "expected_tests_capped": 62.251025772165114
+    },
+    {
+      "p": 0.22,
+      "accept": 3.523407694795444e-05,
+      "reject": 0.9999647659230528,
+      "inconclusive": 5.404825346444707e-18,
+      "expected_tests_capped": 53.9900514777401
+    },
+    {
+      "p": 0.23,
+      "accept": 1.910794561050444e-05,
+      "reject": 0.9999808920543926,
+      "inconclusive": 5.837031148896409e-22,
+      "expected_tests_capped": 47.67836296891453
+    },
+    {
+      "p": 0.24,
+      "accept": 1.0360046611352503e-05,
+      "reject": 0.9999896399533882,
+      "inconclusive": 2.776262753852244e-26,
+      "expected_tests_capped": 42.69932217538351
+    },
+    {
+      "p": 0.25,
+      "accept": 5.609992103248306e-06,
+      "reject": 0.9999943900078959,
+      "inconclusive": 6.010858070989777e-31,
+      "expected_tests_capped": 38.671319867726936
+    },
+    {
+      "p": 0.26,
+      "accept": 3.031189464513608e-06,
+      "reject": 0.9999969688105339,
+      "inconclusive": 6.096108361223254e-36,
+      "expected_tests_capped": 35.345549100887645
+    },
+    {
+      "p": 0.27,
+      "accept": 1.6328514966110937e-06,
+      "reject": 0.9999983671485028,
+      "inconclusive": 2.9682488812067643e-41,
+      "expected_tests_capped": 32.55286599058719
+    },
+    {
+      "p": 0.28,
+      "accept": 8.762438991376907e-07,
+      "reject": 0.9999991237561007,
+      "inconclusive": 7.08597186126669e-47,
+      "expected_tests_capped": 30.174280292492494
+    },
+    {
+      "p": 0.29,
+      "accept": 4.680956403592091e-07,
+      "reject": 0.9999995319043591,
+      "inconclusive": 8.442193920338595e-53,
+      "expected_tests_capped": 28.123667144728987
+    },
+    {
+      "p": 0.3,
+      "accept": 2.487611097490182e-07,
+      "reject": 0.9999997512388886,
+      "inconclusive": 5.0944471919778714e-59,
+      "expected_tests_capped": 26.337176409115028
+    }
+  ],
+  "risk_at_p0": {
+    "p": 0.1,
+    "accept": 0.09717280417604218,
+    "reject": 0.03875697601331905,
+    "inconclusive": 0.8640702198106867,
+    "expected_tests_capped": 1744.5729177752446
+  }
+}

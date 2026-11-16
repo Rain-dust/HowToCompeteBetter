@@ -1,0 +1,15 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "typst_version": "Typst not on PATH during this numerical rerun; original PDF used 0.15.1",
+  "packages": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2",
+    "PyMuPDF": "2.1",
+    "pypdf": "7.1.0",
+    "Pillow": "13.0.0"
+  },
+  "scope": "Automatically collected for the public numerical rerun; no credential or private path fields"
+}

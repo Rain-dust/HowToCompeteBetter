@@ -4,27 +4,15 @@
 
 ## 1. 全国大学生数学建模竞赛
 
-数模专用技能；先模型与检验，后论文。
+**两条完整路线：** [Modex官方详细教程](modex.md) · [Codex / Claude固定技能链](coding-agent.md) · [真实成果与复现](../examples/cumcm2024b/README.md)。
 
-[主选：mathmodel-skill](https://github.com/handsomeZR-netizen/mathmodel-skill) · [分阶段备选：MathModeling-skills](https://github.com/zhnnky329/MathModeling-skills) · [另一套：MathModelAgent](https://github.com/jihe520/MathModelAgent)
+GitHub：[Modex展示仓库](https://github.com/N-allpass/modex-mh-agent) · [主选MathModelAgent](https://github.com/jihe520/MathModelAgent)；Modex不是源码仓库。安装、单条启动和失败恢复已移入数模教程，避免复制旧技能入口。
 
-**先看：** 2026国赛允许AI工具，核心模型与分析须由队员主导核验。
+~~~text
+使用 $1start-mathmodel，完整处理 inputs/problem.pdf 与全部附件。偏好已给：Typst、国赛中文、问数按题面，不重复确认。连续完成建模、实际计算、图表、论文和验收；所有数字来自真实运行，缺失样本不伪造。完整重跑并编译PDF、逐页查看，交付代码、结果、图表、paper/main.pdf与验收清单。
+~~~
 
-**安装，复制给Codex：**
-
-```text
-请按 https://github.com/handsomeZR-netizen/mathmodel-skill 的 Codex 安装说明，把整个仓库装到当前项目 .agents/skills/mathmodel-skill，保留全部竞赛包、脚本、模板与入口。阅读 README 和 SKILL.md，用隔离环境补齐依赖，检查 Pandoc 与 XeLaTeX，运行 scripts/doctor.py --competition cumcm。已有同名目录先核对复用，记录 commit 和检查结果。确认当前会话能发现 mathmodel-skill。
-```
-
-**开打，复制给Codex：**
-
-```text
-使用 $mathmodel-skill 开始 CUMCM。inputs/ 中有赛题、附件和当届规则。先做数据审计、题意与约束清单，比较两条可验证模型路线，队员确定核心方案后再求解。对每问交付可运行基线、改进、误差和灵敏度检验；图表与结论必须对应真实输出。最后编译论文和支撑包，生成 AI 使用声明与 AI工具使用详情.pdf。提交前列出未通过的核验项，不把生成完成当作验收通过。
-```
-
-**交付：** 论文PDF、可复现代码与环境、图表、支撑包、AI使用记录。
-
-**已有证据：** X31：Codex省一自述，杯赛不明；X44：GPT国赛省一自述；T05：Codex校赛返工。均不是本技能保证获奖的证明。
+2026国赛允许AI辅助，但核心建模与分析需由队员主导核验；本轮用的是历史题复现，结果不是奖项。
 
 ## 2. 中国大学生计算机设计大赛
 
