@@ -4,9 +4,11 @@
 
 [📖 PDF 在线预览](guide.pdf) · [⬇️ 下载 PDF](https://github.com/Rain-dust/HowToCompeteBetter/raw/refs/heads/main/guide.pdf) · [完整排名图](assets/ranking.png)
 
-[数模教程](docs/math-modeling.md) · [Modex：Windows 成品](docs/modex.md) · [Codex / Claude：MathModelAgent](docs/coding-agent.md) · [2024 国赛 B：运行记录](examples/cumcm2024b/README.md)
+[选赛与开赛打法](docs/competition-playbook.md) · [找数据](docs/data-sources.md) · [作品与答辩](docs/project-delivery.md) · [数模教程](docs/math-modeling.md) · [Modex：Windows 成品](docs/modex.md) · [Codex / Claude：MathModelAgent](docs/coding-agent.md) · [2024 国赛 B：运行记录](examples/cumcm2024b/README.md)
 
 **本轮实测：** Codex + 固定技能链完成2024国赛B四问、17页论文、代码与图表，干净环境可复现；有额度中断恢复和验收修正。[成果包](examples/cumcm2024b/README.md)
+
+**本轮新增：** 从[浪尖知识库](docs/knowledge-integration.md)筛出学校资源、项目复用和交付方法，补上5条赛事入口。复制[开赛工作区模板](templates/contest-starter/README.md)，直接把规则和已有项目交给Agent。
 
 ## 先看前五
 
@@ -153,17 +155,31 @@
 
 ## PDF 预览与整包下载
 
-[在线阅读 26 页指南](guide.pdf) · [直接下载 PDF](https://github.com/Rain-dust/HowToCompeteBetter/raw/refs/heads/main/guide.pdf) · [版本与整包下载](https://github.com/Rain-dust/HowToCompeteBetter/releases/latest)
+[在线阅读 30 页指南](guide.pdf) · [直接下载 PDF](https://github.com/Rain-dust/HowToCompeteBetter/raw/refs/heads/main/guide.pdf) · [版本与整包下载](https://github.com/Rain-dust/HowToCompeteBetter/releases/latest)
 
 <a href="guide.pdf"><img src="assets/ranking-preview.png" alt="最新版竞赛指南首页预览，点击阅读完整PDF" width="380"></a>
 
+## 先把比赛做出来
+
+[![从选赛到答辩的六步执行图](assets/playbook.png)](docs/competition-playbook.md)
+
+| 现在卡在哪 | 直接打开 |
+| --- | --- |
+| 不知道自己该报哪个 | [三关选赛卡：本校认定、工具范围、关键资源](docs/competition-playbook.md) |
+| 没数据、没项目、没团队 | [数据原始入口](docs/data-sources.md) · [找本校已有项目与团队](docs/competition-playbook.md#2-去哪里找现成资源) |
+| 代码做完了，不会交材料 | [评分-证据表、文书、演示与答辩](docs/project-delivery.md) |
+| 想直接让Agent开工 | [复制工作区和启动指令](templates/contest-starter/README.md) · [下载模板 ZIP](templates/contest-starter.zip) |
+| 想看这轮新增什么比赛 | [高职计设、中青杯、学创杯、西门子杯、职业技能赛](docs/knowledge-integration.md#补充的5个入口) |
+
 ## 证据与资料
+
+新增知识整理另列[33条来源台账](data/knowledge-import.json)，重点提炼16条；二手经验与直播口播不增加独立获奖样本。
 
 现有反馈样本截至 **2026-11-16**：75 篇原帖详情（小红书 45、贴吧 30），其中 74 篇有非空文字正文；270 条去重小红书评论、121 条贴吧楼层记录。16 篇亲历／个人经验材料用于路线判断，另有 22 份既有外部材料。评论不作为独立成功案例。
 
 作者的数模系列、计设及第十八届 RST 前沿技术挑战组省奖经历单列为 **U01 亲历自述**。外部奖项、身份与证书真伪未独立核验；成功、失败、返工和未获奖的制作过程均保留。
 
-[原帖解读、编号与研究方法](docs/field-feedback.md) · [75 条分类数据](data/social-feedback.json) · [22 份外部材料](data/feedback-records.json) · [排名与权限数据](data/ranking.json) · [赛事来源索引](docs/sources.md) · [67 条选赛参考](docs/competition-catalog.md)
+[原帖解读、编号与研究方法](docs/field-feedback.md) · [75 条分类数据](data/social-feedback.json) · [22 份外部材料](data/feedback-records.json) · [排名与权限数据](data/ranking.json) · [赛事来源索引](docs/sources.md) · [72 条选赛参考](docs/competition-catalog.md)
 
 ## 分享与离线阅读
 

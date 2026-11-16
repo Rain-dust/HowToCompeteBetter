@@ -1,4 +1,4 @@
-"""Build the v6 offline guide from current repository data and the verified run.
+"""Build the v7 offline guide from current repository data and the verified run.
 
 This is a deliberately paginated A4 document. Every content box is measured and
 checked against the printable area; a missing/unverified run summary is fatal.
@@ -24,8 +24,8 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT = ROOT / 'output/pdf/高性价比大学生竞赛指南_v6_2026-11-16.pdf'
-DEFAULT_VALIDATION = ROOT / 'research/pdf-v6-validation.json'
+DEFAULT_OUTPUT = ROOT / 'output/pdf/高性价比大学生竞赛指南_v7_2026-11-16.pdf'
+DEFAULT_VALIDATION = ROOT / 'research/pdf-v7-validation.json'
 REPOSITORY = 'https://github.com/Rain-dust/HowToCompeteBetter'
 BLOB = REPOSITORY + '/blob/main/'
 COMMIT = '03f4eb388b3862b7bde55b508dceaf3d6b39d5ac'
@@ -117,7 +117,7 @@ def load_inputs():
 class Guide:
     def __init__(self, target):
         self.c = canvas.Canvas(target, pagesize=A4, pageCompression=1)
-        self.c.setTitle('高性价比大学生竞赛指南 - v6 / 2026-11-16')
+        self.c.setTitle('高性价比大学生竞赛指南 - v7 / 2026-11-16')
         self.c.setAuthor('Rain-dust / HowToCompeteBetter')
         self.c.setSubject('连续27项制作适配顺序、两条数模路线、历史题实测与复现')
         self.pages = []
@@ -156,7 +156,7 @@ class Guide:
         c.setLineWidth(.55)
         c.line(LEFT, 34, RIGHT, 34)
         c.setFont('GuideBody', 8.5)
-        c.drawString(LEFT, 21, 'v6 · 2026-11-16   |   历史题练习与正式参赛分别核对')
+        c.drawString(LEFT, 21, 'v7 · 2026-11-16   |   历史题练习与正式参赛分别核对')
         c.drawRightString(RIGHT, 21, '%02d' % num)
         self.p(E(title), size=23, leading=31, bold=True, gap=8, kind='page_title')
         if subtitle:
@@ -242,8 +242,8 @@ class Guide:
     def save(self):
         if self.current:
             self.finish_page()
-        if len(self.pages) != 26:
-            raise AssertionError('Expected exactly 26 designed pages, got %d.' % len(self.pages))
+        if len(self.pages) != 30:
+            raise AssertionError('Expected exactly 30 designed pages, got %d.' % len(self.pages))
         self.c.save()
 
 
@@ -258,6 +258,10 @@ def repo_line(g, label, url):
 
 
 def make_pages(g, ranking, top5, feedback, social, run):
+    knowledge = read_json('data/knowledge-import.json')
+    supplements = [r for r in read_json('data/competitions.json') if r['id'] in ['L01', 'L02', 'L03', 'L04', 'L05']]
+    if len(knowledge['records']) != 33 or len(supplements) != 5:
+        raise ValueError('Expected 33 source notes and five supplemental entries.')
     # 01: Lead with a usable conclusion, not the research apparatus.
     g.page('先做选择', '高性价比大学生竞赛指南', '用编程 Agent 做出能运行、能解释、能复现的作品。版本：2026-11-16。')
     g.note('第一次尝试，先用历史数模题跑通完整链。想用 Windows 界面选 <b>Modex</b>；已有 Codex 选 <b>MathModelAgent skills</b>。', '先从一条数模路线开始')
@@ -266,7 +270,7 @@ def make_pages(g, ranking, top5, feedback, social, run):
             (row['rank'], E(row['name']), E(row['verdict'])), size=12, leading=18, gap=14)
     g.p('前五表示制作适配与已读反馈的编辑顺序。计设工具名单、统计建模核心生成禁令，都会影响正式赛能做什么。', color=MUTED)
     g.rule()
-    g.p('<b>直接跳读</b>　Modex 07-09页　|　Codex 10-12页<br/>历史题实测 13-15页　|　其他前五 16-19页<br/>完整顺序 04-06页　|　集中来源 23-26页', size=12, leading=21)
+    g.p('<b>直接跳读</b>　Modex 07-09页　|　Codex 10-12页<br/>历史题实测 13-15页　|　其他前五 16-19页<br/>选赛与交付 23-25页　|　集中来源 26-30页<br/>完整顺序 04-06页', size=12, leading=21)
 
     # 02: Make scope and the two choices clear with little text per block.
     g.page('怎么使用', '先选能交付的题，再核工具权限', '排名回答“适不适合制作”，正式参赛还需要当届规则、资格与本校认定。')
@@ -280,6 +284,7 @@ def make_pages(g, ranking, top5, feedback, social, run):
     g.p('270条去重小红书评论与121条贴吧楼层记录，帮助理解体验与卡点；评论数量不等于成功案例数量。', color=MUTED)
     g.note('作者U01自述数模系列、计设和第18届RST前沿技术挑战组的省奖经历，单列保留。未细分的杯赛、等级与届次不补写；历史经历也不能证明2026工具获准。', '亲历与正式规则分别记录', fill=PALE)
     g.p('资料与规则核对日期见末页索引；历史题实测是独立的一组证据，不是获奖验证。', size=11.5, color=MUTED)
+    g.p('另索引浪尖知识库33条相关笔记，重点提炼16条；它们属于二手知识整理，不增加上面的独立反馈或获奖样本。', size=11.5, color=MUTED)
 
     # 03: A concise permissions-first front-five view.
     g.page('前五具体范围', '前五名，具体做哪一种作品', '制作范围、权限与亲历证据一起看。安装和可复制任务在后面的路线页。')
@@ -506,7 +511,7 @@ def make_pages(g, ranking, top5, feedback, social, run):
     g.p('建议Python 3.12；上面显式使用.venv中的Python，无需另行激活。requirements.txt锁定本轮8个直接依赖。编译另装官方Typst 0.15.1并加入PATH。纯计算只读inputs/parameters.json，无需题面PDF或模型Key。', size=11.5)
     g.table(['目录或文件', '用于复核'], [
         ['inputs/parameters.json', '固定参数；与原题表格对应。'],
-        ['code/ 与 tools/', '计算、核验和辅助脚本。'],
+        ['code/ 与 audit/', '计算源码与独立核验脚本。'],
         ['results/', '四问JSON、汇总CSV与检查结果。'],
         ['figures/', '论文图表及其实际计算来源。'],
         ['paper/main.typ 与 main.pdf', '可编辑论文源文件与编译成稿。'],
@@ -646,7 +651,48 @@ def make_pages(g, ranking, top5, feedback, social, run):
         g.p(E(text), size=11.5, leading=17, gap=14)
     g.note('样本来自公开发布与筛选，有成功者、平台和宣传偏差；没有可比投入和完整总体，不能据此计算获奖率。', '这一组材料怎样使用', size=11.5, fill=PALE)
 
-    # 23-24: Full clickable rule sources, at the end rather than interrupting tutorials.
+    # 23-25: Newly distilled operational guidance, not copied third-party prose.
+    g.page('选赛 / 先过三关', '别先报名，先查你已有的底座', '吸收浪尖知识库的学校资源与项目路径思路，改写为Agent项目的执行方法。时间预算不是拿奖统计。')
+    for title, text in [
+        ('01  本校认不认', '查当学年认定、具体赛项、奖级、团队排序和校内推荐要求。全国性赛事、国奖证书、本校A类分别确认。'),
+        ('02  允许这样打吗', '查当届身份、工具表、AI任务范围、现场操作与复用限制。历史获奖经历不覆盖新规则。'),
+        ('03  资源现在拿得到吗', '题面、真实数据、接口、平台、设备、队友与指导教师逐项确认。先跑一条基线，再决定投入。'),
+    ]:
+        g.h(title)
+        g.p(E(text), gap=16)
+    g.note('按顺序查本校：教务/双创/团委通知 → 近两年获奖与指导教师 → 大创公示和已有团队 → 实验室与课程项目。名单人数不代表有空位，联系后再确认。', '先找资源，再另起项目', size=11.5)
+    g.p('大创是训练计划，不是另一个竞赛奖项。同一底座能否转投其他比赛，要核主题、原创、已获奖作品与重复申报限制。', size=11.5)
+    g.code(['读inputs/的本校认定、当届规程和现有项目。', '最多保留两个候选，逐项列依据、缺口与新增工作。', '先用历史题或练习任务跑最小基线，不编获奖率。'], '可复制：先做选赛卡')
+    g.p(local('完整选赛、组队与条件复用表', 'docs/competition-playbook.md'), size=11.5)
+
+    g.page('数据 / 交付', '每个结论，都有拿得出的证据', '先找原表，再清洗、计算、作图。没有真实样本的合成演示，不能写成调研或营业实绩。')
+    g.table(['需要什么', '先查哪里 / 注意什么'], [
+        ['国内地区指标', '国家统计局、国家数据；核单位、年份、统计口径和行政区划。'],
+        ['跨国发展数据', 'World Bank、UNdata；核指标代码、缺失值与发布机构。'],
+        ['地理环境数据', '国家地球系统科学数据中心、资源环境平台；核许可、坐标与分辨率。'],
+        ['企业经营事实', '巨潮资讯年报与公告；核报告页码、合并口径和实际年度。'],
+    ], [125, WIDTH - 125], size=11.5, leading=17, pad=9)
+    g.note('原始URL、发布者、表号/页码、数据期、单位、使用条件、文件hash、清洗脚本和对应图表一起登记。找到入口不代表已下载或可再分发。', '来源链比链接堆更有用', size=11.5)
+    g.h('先做评分-证据表，再写材料')
+    g.p('评分原文 → 验收动作 → 实际文件 → 运行版本 → 缺口 → 负责人。项目说明回答能否做成；商业材料需要真实用户与成本；论文需要可复算结果。', size=11.5)
+    g.code(['按正式评分表验收源码、结果、文稿和演示。', '逐项核同版本数字、图表和功能，缺证据写缺失。', '给出12个追问，每个答案指向现有证据。', '不编用户、访谈、营收、合作、专利或奖项。'], '可复制：让Agent做挑错评委')
+    g.p(local('数据入口与来源台账', 'docs/data-sources.md') + '　|　' + local('作品、演示与答辩', 'docs/project-delivery.md') + '<br/>' + local('复制开赛工作区与启动指令', 'templates/contest-starter/README.md'), size=11.5, leading=19)
+
+    g.page('新增线索 / 逐项筛选', '补充五个入口，不硬塞进主榜', '参考目录从67条增到72条，包含分支与平台，不表示72项独立赛事。新线索缺Agent赛果，不自动改主榜。')
+    verdicts = {
+        'L01': '高职优先研究软件/AI作品；别套本科资格和工具表。先看高职通知，再做可运行核心功能。',
+        'L02': '用现有数模链做历史题迁移练习。完整AI细则未读到，正式提交范围和学校认定待核。',
+        'L03': '专用经营模拟平台赛，不是只交BP。先拿训练账号和真实记录，Agent用于获准的策略复盘。',
+        'L04': '先筛软件/仿真方向，核设备、PLC、授权与现场条件。官方基线跑不通，先别谈自动代打。',
+        'L05': '2026为43赛道，AI等指定范围有普通本科组别。要学校推荐，也要现场操作与讲解。',
+    }
+    for row in supplements:
+        g.p('<b>' + E(row['name']) + '</b>', size=12.5, leading=18, gap=5)
+        g.p(E(verdicts[row['id']]), size=11.5, leading=17, gap=17)
+    g.note('2026国赛为9月10日18时至13日20时，共74小时；各校报名可能更早。旧“84项”目录不能推出教育部统一ABC。匿名故事、融资额与培训保奖承诺不计独立成功案例。', '这轮没有照抄的内容', size=11.5)
+    g.p(local('五项完整资格、权限、官方依据与知识库取舍', 'docs/knowledge-integration.md'), size=11.5)
+
+    # 26-27: Full clickable rule sources, at the end rather than interrupting tutorials.
     for lo, hi in [(1, 14), (15, 27)]:
         g.page('集中来源 / 规则', '赛事规则来源 %02d-%02d' % (lo, hi), '链接指向具体原文或发布页。核对日期来自排名数据；保留校方转载、主办方与待核状态的差别。')
         for row in ranking[lo - 1:hi]:
@@ -703,6 +749,24 @@ def make_pages(g, ranking, top5, feedback, social, run):
         local('来源解读与U01作者自述', 'docs/field-feedback.md'), size=10.8, leading=17, gap=7)
     g.p('项目：' + link('Rain-dust/HowToCompeteBetter', REPOSITORY) + '<br/>结构灵感：' +
         link('eternity4719/HowToLiveBetter', 'https://github.com/eternity4719/HowToLiveBetter') + '；内容独立整理。', size=10.8, leading=17, color=MUTED)
+
+    g.page('集中来源 / 本轮整合', '新增官方依据与知识库出处', '知识库用于启发检索和执行方法；资格、赛制和权限另外核原文。核查日期：2026-11-16。')
+    for label, url in [
+        ('K01 高职计设2026：校方当届通知', 'https://it.hceb.edu.cn/info/1053/25691.htm'),
+        ('K02 高职计设2026：全国决赛信息', 'https://www.shanghai.gov.cn/nw15343/20260826/45f8f2a0b59a44928dfed0e89024876a.html'),
+        ('K03 中青杯2026：官方通知入口，附件未完整读取', 'https://zqb.52jingsai.com/newss.php?id=42'),
+        ('K04 学创杯2026：西安交大组织通知', 'https://dean.xjtu.edu.cn/info/1172/10073.htm'),
+        ('K05 西门子杯2026：组委会初赛通知', 'https://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=2432'),
+        ('K06 西门子杯2026：参赛与官方学习说明', 'https://www.siemenscup-cimc.org.cn/joinflow/index'),
+        ('K07 世界职业院校技能大赛：2026教育部方案', 'https://www.moe.gov.cn/srcsite/A07/s7055/202608/t20260820_1447374.html'),
+        ('K08 大创：教育部训练计划管理办法', 'https://www.moe.gov.cn/srcsite/A08/s5672/201907/t20190724_392132.html'),
+        ('K09 国赛2026：中科大报名与正式赛时间', 'https://math.ustc.edu.cn/2026/0520/c18650a741197/pagem.htm'),
+    ]:
+        g.p(link(label, url), size=11.3, leading=17, gap=8, kind='source_entry')
+    g.rule()
+    g.p('数据原始入口：' + link('国家统计局', 'https://www.stats.gov.cn/') + '　' + link('国家数据', 'https://data.stats.gov.cn/') + '　' + link('World Bank', 'https://data.worldbank.org/') + '　' + link('UNdata', 'https://data.un.org/') + '<br/>' + link('国家地球系统科学数据中心', 'https://www.geodata.cn/') + '　' + link('资源环境平台', 'https://www.resdc.cn/') + '　' + link('巨潮资讯', 'https://www.cninfo.com.cn/'), size=11.3, leading=19, gap=16)
+    g.p(link('浪尖知识库2026：原站', 'https://langjian-knowledge-2026.pages.dev/') + '<br/>' + local('33条标题、原链接、重点16条与采纳/未采纳说明', 'data/knowledge-import.json') + '<br/>' + local('本项目改写后的完整工作流与核对方法', 'docs/knowledge-integration.md'), size=11.3, leading=20)
+    g.note('仅发布短摘要、链接和自主改写，不分发原文、课程、登录信息或站内用户资料。二手整理与直播口播不增加独立获奖样本；原来的75篇社会反馈与22份外部材料保持不变。', '来源与使用范围', size=11.5, fill=PALE)
 
 
 def main():
