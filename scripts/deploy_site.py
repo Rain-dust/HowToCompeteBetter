@@ -4,7 +4,7 @@ Uses the user's existing Git authentication. Enable GitHub Pages for gh-pages /
 once in repository Settings > Pages; this script never prints or stores tokens.
 """
 from pathlib import Path
-import argparse,json,shutil,subprocess,tempfile
+import argparse,json,shutil,stat,subprocess,tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -31,7 +31,7 @@ def main():
     checkout=Path(tempfile.mkdtemp(prefix='site-publish-',dir=parent)).resolve()
     if not checkout.is_relative_to(parent) or checkout==parent:raise ValueError('Unsafe checkout path')
     try:
-        if branch_exists:git('clone','--single-branch','--branch','gh-pages',remote,str(checkout))
+        if branch_exists:git('clone','--config','core.autocrlf=false','--single-branch','--branch','gh-pages',remote,str(checkout))
         else:
             git('init','--initial-branch=gh-pages',cwd=checkout)
             git('remote','add','origin',remote,cwd=checkout)
@@ -53,6 +53,12 @@ def main():
         sha=git('rev-parse','HEAD',cwd=checkout).stdout.strip()
         print(json.dumps({'status':'published' if changed else 'unchanged','branch':'gh-pages','commit':sha,'url':'https://rain-dust.github.io/HowToCompeteBetter/','files':len(names)}))
     finally:
-        if checkout.is_relative_to(parent) and checkout!=parent:shutil.rmtree(checkout)
+        def remove_readonly(function,name,_error):
+            target=Path(name).resolve()
+            if not target.is_relative_to(checkout):raise ValueError('Cleanup escaped temporary checkout')
+            target.chmod(stat.S_IWRITE|stat.S_IREAD)
+            function(name)
+        if checkout.is_relative_to(parent) and checkout!=parent:
+            shutil.rmtree(checkout,onerror=remove_readonly)
 
 if __name__=='__main__':main()
