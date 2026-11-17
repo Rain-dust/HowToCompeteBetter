@@ -1,14 +1,24 @@
-# Codex / Claude：一次给题，跑到完整成果
+# Codex数模：安装一次，再给完整赛题
 
 **主选：[MathModelAgent 当前 skills 链](https://github.com/jihe520/MathModelAgent)，入口 `$1start-mathmodel`。不用部署旧版 Web、Redis 或 Docker。**
 
-固定版本：`03f4eb388b3862b7bde55b508dceaf3d6b39d5ac`。[2024 国赛 B 实测记录](../examples/cumcm2024b/README.md)单列实际成果。Claude 能加载同一套技能，但本轮实际调用的是 Codex，不冒称 Claude 端到端实测。
+固定版本：`03f4eb388b3862b7bde55b508dceaf3d6b39d5ac`。[2024 国赛 B 实测记录](../examples/cumcm2024b/README.md)单列实际成果。下面默认走已跑通的Codex CLI路线；Claude入口放在后面。
 
-## 需要准备
+## 先检查你现在能不能跑
 
-已安装并登录的 Codex CLI（或自行配置 Claude Code）、Git、Python 3.12、uv、完整题目附件和可用模型额度。排版选择 Typst，无需先装大型 TeX 环境。
+**已经装了桌面版，不代表这份命令行教程已准备好。** 先在普通终端检查以下条件，不要先启动模型。
 
-安装和登录按[Codex 官方文档](https://learn.chatgpt.com/docs/cli)、[技能目录说明](https://learn.chatgpt.com/docs/build-skills)、[Claude Code 官方安装](https://code.claude.com/docs/en/setup)。基础工具：[Python](https://www.python.org/downloads/)、[uv](https://docs.astral.sh/uv/getting-started/installation/)、[Typst](https://github.com/typst/typst/releases)。
+| 条件 | 你需要看到什么 | 没准备好时 |
+| --- | --- | --- |
+| 系统 | 本项目验证：Windows 10 build19045；其他系统未端到端验证 | Mac/Linux先自行配Typst与中文字体，再预检；不保证照抄Windows路径可用 |
+| Codex CLI | `codex --version`能运行；本例版本0.167.0-alpha.3.2 | 仅桌面版可用时，按[官方CLI安装](https://learn.chatgpt.com/docs/cli)补齐终端命令 |
+| CLI登录 | `codex login status`返回已登录；实际模式可能是ChatGPT或API | 按[官方认证说明](https://learn.chatgpt.com/docs/auth?surface=cli)完成登录，不把密钥发进聊天 |
+| 基础工具 | `git --version`、`python --version`、`uv --version`可运行 | 安装[Git](https://git-scm.com/downloads)、[Python](https://www.python.org/downloads/)与[uv](https://docs.astral.sh/uv/getting-started/installation/)；目标Python为3.12 |
+| 排版 | 安装脚本会准备Typst；已有编译器可传路径 | Windows自动下载已测，其他系统先装[官方Typst](https://github.com/typst/typst/releases) |
+| 费用与时间 | 有可用模型额度；单次实付费用未知 | 先预检。35.52分钟只统计本例两次CLI运行，含恢复，不是总准备或备赛时间 |
+| 题目 | 完整题面PDF、全部附件和历史题/正式赛用途明确 | 先用[公开历史题入口](https://dxs.moe.gov.cn/zx/a/hd_sxjm_sthb/240605/1887443.shtml)，不要只给标题 |
+
+**准备好后只走下面三步：建工作区 → 预检 → 启动。** 本项目不替你测算购买订阅或模型服务的价格；本例复用已有ChatGPT登录，确实遇到额度耗尽。其他CLI版本先预检，参数变化查[官方命令参考](https://learn.chatgpt.com/docs/cli/reference)。核对日期：2026-11-17。
 
 ## 1. 创建工作区
 
@@ -44,7 +54,7 @@ python scripts/run_codex_math.py --workspace ../my-math-run
 
 复用已登录的 Codex，使用工作区沙箱与自动审批，不用 `--yolo`。任务与事件日志在 `run-logs/UTC时间-唯一编号/`，每次启动与恢复均保留独立目录；脚本的退出码0不代表数学正确。
 
-也可在 Codex 或 Claude Code 中打开 **my-math-run文件夹**，确认技能已发现后，复制：
+若使用Codex桌面界面，在其中打开 **my-math-run文件夹**，确认技能已发现后，也可复制下面这条任务。不要在指南仓库根目录直接调用未安装的技能：
 
 ~~~text
 使用 $1start-mathmodel 完整处理 inputs/problem.pdf 与同目录附件。
@@ -56,6 +66,12 @@ python scripts/run_codex_math.py --workspace ../my-math-run
 ~~~
 
 美赛改为英文与 MCM 模板，其他杯赛改成对应比赛。首条任务提前给清偏好是为了连续推进；实质信息缺失仍应如实补充，不假写成人工批准。
+
+## 其他coding-agent入口
+
+**已在用Claude Code的人**：安装脚本同时准备 `.claude/skills/`，在新工作区重开Claude Code并确认技能可用，再发送上面的完整任务。[官方安装](https://code.claude.com/docs/en/setup)。本项目没有做Claude端到端实测，不需要为了跟教程再装第二个agent。
+
+想用Windows成品界面而非自己管理依赖，另看[Modex官方步骤](modex.md)。这不会改变本页默认的Codex路线。
 
 ## 4. 成果在哪里
 

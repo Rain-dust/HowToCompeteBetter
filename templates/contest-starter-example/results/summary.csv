@@ -1,0 +1,4 @@
+category,label,count,total_minutes,mean_minutes
+classroom,教学楼,3,120.0,40.0
+dorm,宿舍,4,240.0,60.0
+library,图书馆,3,90.0,30.0

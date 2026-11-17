@@ -19,7 +19,36 @@
     "proof": "历史参赛自述与本轮历史题复现实验分别记录。Modex未实测；Codex+固定技能链的实际完成范围见示例，不等同获奖验证。",
     "boundary": "2026国赛允许AI工具，核心模型与分析须由队员主导核验。",
     "tutorial": "docs/math-modeling.md",
-    "example": "examples/cumcm2024b/README.md"
+    "example": "examples/cumcm2024b/README.md",
+    "catalog_id": "N22",
+    "card_path": "docs/contests/N22.md",
+    "decision_label": "先练习；正式赛仅辅助",
+    "decision_note": "2026允许AI辅助，核心建模和分析由队员主导。先跑历史题，正式参赛另核当届规则。",
+    "cost_summary": {
+      "team": "本科和高职高专分组；3名同校学生，其他资格按当届章程。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "读题与选题；核心模型判断与结果核验；独立复跑论文与支撑代码",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时（含定向备赛）",
+      "legacy_cost_note": "已有数模基础：赛前跑通一套旧题；正式赛按当届限时。"
+    },
+    "entry_links": {
+      "homepage": "https://www.mcm.edu.cn/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "CUMCM人工智能工具使用规定（2026试行）",
+          "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html"
+        },
+        {
+          "label": "CUMCM参赛规则（2026修订稿）",
+          "url": "https://www.mcm.edu.cn/upload_cn/node/774/FlQt6kJV6f5d5b4603e06c3c60acf89b72d7f298.pdf"
+        }
+      ]
+    }
   },
   {
     "rank": 2,
@@ -39,7 +68,31 @@
     "start": "我要做中国大学生计算机设计大赛软件作品。inputs/ 有当届规程、赛道要求和真实需求。先输出工具权限与评分项对照表：2026规程限制AI工具范围，不能默认Codex在名单内。用于赛前练习，或确认当前参赛范围允许后，用 $frontend-design 完成一个单一核心功能的可运行系统；用 $webapp-testing 测正常、空输入和异常场景。交付实际运行视频、源码、部署说明和过程材料；演示必须来自同一版本，别只做PPT。",
     "deliver": "可运行作品、完整源码、部署入口、测试截图、真实演示和说明。",
     "proof": "U01作者亲测Codex省奖；X01有材料制作过程；X05/X06提供未获奖的反例。",
-    "boundary": "2026组委会限定15款工具或自主知识产权工具；未查到Codex获准依据。历史亲测不覆盖当届权限。"
+    "boundary": "2026组委会限定15款工具或自主知识产权工具；未查到Codex获准依据。历史亲测不覆盖当届权限。",
+    "catalog_id": "N38",
+    "card_path": "docs/contests/N38.md",
+    "decision_label": "外部Codex许可待核",
+    "decision_note": "2026限定工具名单，未查到Codex获准依据；历史省奖经历不能代替当届许可。",
+    "cost_summary": {
+      "team": "2026国赛为同校2-9名全日制本科生；≤2名指导教师。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "原创选题与内容判断；合规工具及过程记录；真机/部署测试与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-200人时"
+    },
+    "entry_links": {
+      "homepage": "https://jsjds.blcu.edu.cn/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "4C2026通知、规程与15款工具表",
+          "url": "https://jwc.ustb.edu.cn/docs/2026-03/aec2284456ea4b00848d819edb8aa651.pdf"
+        }
+      ]
+    }
   },
   {
     "rank": 3,
@@ -55,11 +108,44 @@
         "https://github.com/cline/cline"
       ]
     ],
-    "install": "请从 https://github.com/anthropics/skills 将 skills/frontend-design 和 skills/webapp-testing 两个完整目录安装到当前项目 .agents/skills/。保留脚本和资源，按 SKILL.md 建隔离依赖并配置 Playwright 浏览器。已有技能先核对并复用。用最小网页做一次主流程测试，报告安装路径、commit、实际截图与缺失依赖。安装后在此项目重开会话或确认技能已被发现。 RST仿真项目另按 inputs/ 的官方平台与SDK说明配置编译器、依赖和启动命令，先编译并运行官方基线，保存版本和截图。Cline是另一套独立agent，无需安装到Codex技能目录。",
+    "install": "先读 inputs/ 的具体RST届次、赛项、平台和SDK。仿真竞技先配置官方环境并运行基线，不预装无关网页技能。只有创新作品确实需要Web界面时，才从 https://github.com/anthropics/skills 完整安装 frontend-design 与 webapp-testing 到项目 .agents/skills/ 并做最小验证。报告实际平台版本、基线成绩、日志和缺失依赖。",
     "start": "我要参加RST，具体届次、赛道、组别、官方规则和平台SDK已放 inputs/。先识别这是创新创业作品还是仿真竞技，不能混用评审方式。创新作品：完成一个能运行并按评分点演示的小产品；仿真：先跑官方基线、记录多次成绩，再逐项改策略，输出同环境的对照、失败回放和日志。按我的具体组别整理源码、说明、视频与答辩。官方基线未跑通前先修环境，不虚构成绩。",
     "deliver": "对应赛项的程序/策略、实测日志与对照、视频、说明与答辩包。",
     "proof": "U01：第18届创新创业前沿技术挑战组省奖；X16：第19届机器鱼仿真国一自述附证书照片，用Gemini迭代。",
-    "boundary": "两个案例是不同赛项。X16图片中的Cline课程例子不能证明其比赛使用Cline；也不能扩到硬件竞技。"
+    "boundary": "两个案例是不同赛项。X16图片中的Cline课程例子不能证明其比赛使用Cline；也不能扩到硬件竞技。",
+    "catalog_id": "N18",
+    "card_path": "docs/contests/N18.md",
+    "decision_label": "先定赛项，再跑官方基线",
+    "decision_note": "创新作品、仿真竞技和硬件赛分别核平台及AI范围；已熟悉平台者再比较投入。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "仿真先核官方平台；硬件组另核器材与维护",
+      "human": "官方平台和SDK调通；仿真有效性与重复测试；对应组别的实际演示与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "60-180人时（软件/设计）",
+      "legacy_cost_note": "沿用已有环境最省；新平台的安装和 SDK 调通另留时间。"
+    },
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第19届RST通知与江苏国赛资格选拔说明",
+          "url": "https://www.czu.cn/_t454/2026/0901/c6a176944/pagem.htm"
+        },
+        {
+          "label": "中国仿真学会：第19届RST赛道动态",
+          "url": "https://www.csf-sim.org.cn/"
+        },
+        {
+          "label": "2023竞赛分析报告观察目录：高校转载",
+          "url": "https://cs.fdzcxy.edu.cn/_upload/article/files/92/04/3434b0214a5782729013f1aaf60f/1ec58b9b-7871-4406-b9fe-2f852fcf9644.pdf"
+        }
+      ]
+    }
   },
   {
     "rank": 4,
@@ -83,7 +169,35 @@
     "start": "请先读 inputs/ 的全国大学生统计建模大赛当届AI规范。2026正式赛模式只执行规则明确允许的文献检索整理、语言格式校对等环节；不要直接生成研究选题、假设、框架、调查方案或论文正文。把拟执行的数据与代码任务单独列出待核权限。赛前练习模式下，可用 $exploratory-data-analysis 和 $statistical-analysis 对合成/历史练习数据做审计、按已给方案复现与诊断，输出可重跑代码和错误记录。正式提交内容以获准范围和人工原创方案为准。",
     "deliver": "练习复现包；正式赛的获准辅助材料、校对意见与AI使用披露。",
     "proof": "F07/F08有国三和省一经验；本轮没有本赛Agent主导获奖的可靠绑定。X36有辅导关联，不能充独立证据。",
-    "boundary": "2026禁止AI直接生成核心设计和正文；在“全程Agent直出提交”这个条件下，本届不推荐。第4名仅表示制作适配。"
+    "boundary": "2026禁止AI直接生成核心设计和正文；在“全程Agent直出提交”这个条件下，本届不推荐。第4名仅表示制作适配。",
+    "catalog_id": "N23",
+    "card_path": "docs/contests/N23.md",
+    "decision_label": "正式赛核心生成受限",
+    "decision_note": "2026禁止AI直接生成核心研究设计与正文；这届不推荐作为Agent全程直出参赛路线。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "人独立提出研究问题与设计；真实数据和统计解释；核心论文写作与全过程监督",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "120-260人时"
+    },
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "统计建模2026第12届主办方通知",
+          "url": "https://cmswebsite.ai-learning.net/u/cms/tjjmds/202603/10170642sbi1.pdf"
+        },
+        {
+          "label": "统计建模生成式AI使用规范（2026试行）转载",
+          "url": "https://www.cmathc.org.cn/tjjmds/news/416.html"
+        }
+      ]
+    }
   },
   {
     "rank": 5,
@@ -103,6 +217,35 @@
     "start": "我要参加中国软件杯。inputs/ 有当届题目、评分标准、规定技术栈、工具条款与原始数据。先把每个评分点写成可操作验收动作，确认数据、接口和硬件可得，再做最小端到端系统。用 $frontend-design 打磨界面，用 $webapp-testing 验证Web评分动作与异常输入；原生部分另用对应测试工具。先修稳定性再加功能，最后交源码、环境锁定、部署说明、同版本演示视频和答辩问答，保留AI开发记录。",
     "deliver": "完整系统、评分项测试矩阵、可复现部署、视频与答辩材料。",
     "proof": "F12明确Claude Code做两天原型与两月完整项目，但未写奖项；X19/X21/X38有国奖自述，未写Agent制作。不能拼成同队AI国奖。",
-    "boundary": "不是每题都有省赛。平台、SDK、工具权限和现场答辩逐题核对。"
+    "boundary": "不是每题都有省赛。平台、SDK、工具权限和现场答辩逐题核对。",
+    "catalog_id": "N02",
+    "card_path": "docs/contests/N02.md",
+    "decision_label": "纯软件题可研究；先核工具",
+    "decision_note": "优先数据和接口可得的题；产品模型、开发辅助、SDK与现场要求分开核。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "理解企业验收指标；接口/数据/环境准备；稳定性测试与现场解释",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "120-240人时",
+      "legacy_cost_note": "建议预算：2-4 周起；复杂 AI/工业命题会更长。"
+    },
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第十五届中国软件杯参赛通知",
+          "url": "https://se.xjtu.edu.cn/info/1043/3807.htm"
+        },
+        {
+          "label": "中国软件杯2026赛题与校赛要求",
+          "url": "https://www.cuit.edu.cn/info/1006/16577.htm"
+        }
+      ]
+    }
   }
 ]

@@ -1,5 +1,7 @@
 # 浪尖知识库：炼化了什么，怎么用
 
+> 本页记录2026-11-16整合批次。其时目录为72条；现役目录已补齐原第8项漏卡，共73条参考，统一从[赛事卡索引](competition-catalog.md)进入。
+
 **这轮最值得用的不是再抄一张比赛名单，而是把“学校资源 → 已有项目 → Agent交付 → 答辩证据”连起来。**
 
 [直接看开赛打法](competition-playbook.md) · [找数据](data-sources.md) · [交付与答辩](project-delivery.md) · [33条来源台账](../data/knowledge-import.json)

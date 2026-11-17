@@ -1,0 +1,6 @@
+source_line,ticket_id,category,response_minutes,reason
+12,T003,classroom,25,duplicate_id
+13,T011,dorm,-5,negative_minutes
+14,T012,classroom,,missing_minutes
+15,T013,dorm,abc,nonnumeric_minutes
+16,T014,,35,missing_category

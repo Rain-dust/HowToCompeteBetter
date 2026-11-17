@@ -5,7 +5,7 @@ Thumbs.db
 __pycache__/
 
 # Local research, model runs and temporary artifacts
-research/
+/research/
 _private/
 tmp/
 output/

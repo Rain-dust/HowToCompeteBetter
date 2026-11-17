@@ -1,0 +1,16 @@
+ticket_id,category,response_minutes
+T001,library,45
+T002,dorm,60
+T003,classroom,20
+T004,dorm,30
+T005,library,15
+T006,classroom,40
+T007,dorm,90
+T008,library,30
+T009,classroom,60
+T010,dorm,60
+T003,classroom,25
+T011,dorm,-5
+T012,classroom,
+T013,dorm,abc
+T014,,35

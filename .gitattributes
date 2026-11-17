@@ -12,3 +12,4 @@
 *.typ text eol=lf
 .gitignore text eol=lf
 *.drawio text eol=lf
+*.html text eol=lf

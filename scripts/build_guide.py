@@ -1,4 +1,4 @@
-"""Build the v7 offline guide from current repository data and the verified run.
+"""Build the navigable v8 guide from the canonical contest source and verified run.
 
 This is a deliberately paginated A4 document. Every content box is measured and
 checked against the printable area; a missing/unverified run summary is fatal.
@@ -24,8 +24,8 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT = ROOT / 'output/pdf/高性价比大学生竞赛指南_v7_2026-11-16.pdf'
-DEFAULT_VALIDATION = ROOT / 'research/pdf-v7-validation.json'
+DEFAULT_OUTPUT = ROOT / 'output/pdf/高性价比大学生竞赛指南_v8_2026-11-17.pdf'
+DEFAULT_VALIDATION = ROOT / 'research/pdf-v8-validation.json'
 REPOSITORY = 'https://github.com/Rain-dust/HowToCompeteBetter'
 BLOB = REPOSITORY + '/blob/main/'
 COMMIT = '03f4eb388b3862b7bde55b508dceaf3d6b39d5ac'
@@ -69,9 +69,17 @@ def local(label, relative):
     return link(label, BLOB + relative)
 
 
+def jump(label, page):
+    return link(label, '#page-%02d' % page)
+
+
 def load_inputs():
-    ranking = read_json('data/ranking.json')
-    top5 = read_json('data/top5.json')
+    contests = read_json('data/competitions.json')
+    ordered = sorted((r for r in contests if isinstance(r.get('rank'), int)), key=lambda r: r['rank'])
+    ranking = [dict(r['ranking_view'], rank=r['rank'], catalog_id=r['id'],
+                    card_path=r['card_path'], decision_label=r['decision_label'],
+                    decision_note=r['decision_note'], cost_summary=r['cost_summary']) for r in ordered]
+    top5 = [dict(r['top5_view']) for r in ordered[:5]]
     feedback = read_json('data/feedback-records.json')
     social = read_json('data/social-feedback.json')
     summary_file = ROOT / 'examples/cumcm2024b/run-summary.json'
@@ -117,7 +125,7 @@ def load_inputs():
 class Guide:
     def __init__(self, target):
         self.c = canvas.Canvas(target, pagesize=A4, pageCompression=1)
-        self.c.setTitle('高性价比大学生竞赛指南 - v7 / 2026-11-16')
+        self.c.setTitle('高性价比大学生竞赛指南 - v8 / 2026-11-17')
         self.c.setAuthor('Rain-dust / HowToCompeteBetter')
         self.c.setSubject('连续27项制作适配顺序、两条数模路线、历史题实测与复现')
         self.pages = []
@@ -147,6 +155,9 @@ class Guide:
         self.pages.append(self.current)
         self.y = CONTENT_TOP
         c = self.c
+        destination = 'page-%02d' % num
+        c.bookmarkPage(destination)
+        c.addOutlineEntry('%02d  %s' % (num, title), destination, level=0, closed=False)
         c.setFillColor(TEAL)
         c.rect(LEFT, H - 37, 23, 3, fill=1, stroke=0)
         c.setFont('GuideBody', 9)
@@ -156,7 +167,11 @@ class Guide:
         c.setLineWidth(.55)
         c.line(LEFT, 34, RIGHT, 34)
         c.setFont('GuideBody', 8.5)
-        c.drawString(LEFT, 21, 'v7 · 2026-11-16   |   历史题练习与正式参赛分别核对')
+        c.drawString(LEFT, 21, 'v8 · 2026-11-17   |   制作参考与当届参赛建议分开')
+        c.setFillColor(TEAL)
+        c.drawRightString(RIGHT - 35, 21, '返回导航')
+        c.linkRect('', 'page-02', (RIGHT - 96, 13, RIGHT - 31, 31), relative=0, thickness=0)
+        c.setFillColor(MUTED)
         c.drawRightString(RIGHT, 21, '%02d' % num)
         self.p(E(title), size=23, leading=31, bold=True, gap=8, kind='page_title')
         if subtitle:
@@ -225,9 +240,9 @@ class Guide:
 
     def ranking_card(self, row, track, evidence):
         title = '%02d  %s' % (row['rank'], row['name'])
-        self.p(E(title), size=12.2, leading=16, bold=True, gap=3, kind='ranking_title')
+        self.p(local(title, row['card_path']), size=12.2, leading=16, bold=True, gap=3, kind='ranking_title')
         self.p(E(track), size=11.5, leading=15.7, color=MUTED, gap=3, kind='ranking_track')
-        self.p('<font color="#007e87">' + E(row['ai_status']) + '</font>  |  ' + E(evidence),
+        self.p('<font color="#007e87">' + E(row['decision_label']) + '</font>  |  ' + E(evidence),
                size=11.5, leading=15.7, gap=11, kind='ranking_permission_evidence')
 
     def finish_page(self):
@@ -258,41 +273,52 @@ def repo_line(g, label, url):
 
 
 def make_pages(g, ranking, top5, feedback, social, run):
+    contests = read_json('data/competitions.json')
     knowledge = read_json('data/knowledge-import.json')
     supplements = [r for r in read_json('data/competitions.json') if r['id'] in ['L01', 'L02', 'L03', 'L04', 'L05']]
     if len(knowledge['records']) != 33 or len(supplements) != 5:
         raise ValueError('Expected 33 source notes and five supplemental entries.')
     # 01: Lead with a usable conclusion, not the research apparatus.
-    g.page('先做选择', '高性价比大学生竞赛指南', '用编程 Agent 做出能运行、能解释、能复现的作品。版本：2026-11-16。')
-    g.note('第一次尝试，先用历史数模题跑通完整链。想用 Windows 界面选 <b>Modex</b>；已有 Codex 选 <b>MathModelAgent skills</b>。', '先从一条数模路线开始')
+    g.page('先选入口', '高性价比大学生竞赛指南', '先找到自己的路径，再看工具、投入与证据。版本：2026-11-17。')
+    g.note(jump('还没选比赛：先看资格、奖项路径和投入', 23) + '<br/>' +
+           jump('已有Codex想做数模：从准备检查直接开跑', 10) + '<br/>' +
+           jump('已有项目准备参赛：核评分、补证据与演示', 24), '点这里，直接开始', size=12)
+    g.h('先看参考前五，当届建议单列')
+    targets = {1: 10, 2: 16, 3: 17, 4: 18, 5: 19}
     for row in ranking[:5]:
         g.p('<font color="#007e87"><b>%02d</b></font>  <b>%s</b><br/><font color="#526673">%s</font>' %
-            (row['rank'], E(row['name']), E(row['verdict'])), size=12, leading=18, gap=14)
-    g.p('前五表示制作适配与已读反馈的编辑顺序。计设工具名单、统计建模核心生成禁令，都会影响正式赛能做什么。', color=MUTED)
+            (row['rank'], jump(row['name'], targets[row['rank']]), E(row['decision_label'])), size=12, leading=18, gap=12)
+    g.p('序号用于浏览制作适配，不是当届推荐或获奖率。计设许可待核、统计核心生成受限，不能因名次靠前就直接报名。', color=MUTED, size=11.5)
     g.rule()
-    g.p('<b>直接跳读</b>　Modex 07-09页　|　Codex 10-12页<br/>历史题实测 13-15页　|　其他前五 16-19页<br/>选赛与交付 23-25页　|　集中来源 26-30页<br/>完整顺序 04-06页', size=12, leading=21)
+    g.p(jump('打开完整导航', 2) + '　|　' + jump('不装模型，先跑小样例', 20) + '　|　' + jump('比较前五投入', 3), size=12, leading=20)
 
-    # 02: Make scope and the two choices clear with little text per block.
-    g.page('怎么使用', '先选能交付的题，再核工具权限', '排名回答“适不适合制作”，正式参赛还需要当届规则、资格与本校认定。')
-    g.h('三步开始')
-    g.bullet('把具体赛项、评分点、题面、附件和真实输入放进独立工作区。只有比赛名字，还不足以开工。', 1)
-    g.bullet('先做最小完整成果：从输入到真实结果，再到图表、文稿与演示。第一次练习不要同时装五套技能。', 2)
-    g.bullet('让同一版本重跑；每个关键数字都能回到代码、参数和结果文件。', 3)
-    g.note('有界面需求：按 Modex 官方手册配置、连接测试与检查点推进。<br/>有 Codex 环境：用固定技能链、启动脚本、事件日志和独立验收。', '数模的两条入口')
-    g.h('这份指南的证据来自哪里')
-    g.p('75篇原帖详情：小红书45、贴吧30，其中74篇有非空正文；另有22份既有外部材料。16篇亲历或个人经验材料用于路线判断。')
-    g.p('270条去重小红书评论与121条贴吧楼层记录，帮助理解体验与卡点；评论数量不等于成功案例数量。', color=MUTED)
-    g.note('作者U01自述数模系列、计设和第18届RST前沿技术挑战组的省奖经历，单列保留。未细分的杯赛、等级与届次不补写；历史经历也不能证明2026工具获准。', '亲历与正式规则分别记录', fill=PALE)
-    g.p('资料与规则核对日期见末页索引；历史题实测是独立的一组证据，不是获奖验证。', size=11.5, color=MUTED)
-    g.p('另索引浪尖知识库33条相关笔记，重点提炼16条；它们属于二手知识整理，不增加上面的独立反馈或获奖样本。', size=11.5, color=MUTED)
+    # 02: A clickable task-based contents page.
+    g.page('导航 / 可点击', '你现在要解决什么', '点击蓝色文字跳转；任意页底都能返回这里，阅读器侧栏也有30个章节书签。')
+    g.table(['现在想做什么', '直接跳到'], [
+        ['还没选比赛，先看条件与投入', jump('前五投入对照 / 第03页', 3) + '<br/>' + jump('选赛三关 / 第23页', 23)],
+        ['浏览全部1-27连续参考顺序', jump('第04页开始', 4)],
+        ['已有Codex，直接处理历史数模题', jump('准备、安装、运行 / 第10-12页', 10)],
+        ['想用Windows现成软件', jump('Modex官方教程 / 第07-09页', 7)],
+        ['先看实际论文与可复现结果', jump('2024国赛B记录 / 第13-15页', 13)],
+        ['先跑一个不需要模型的小练习', jump('合成数据完整小样例 / 第20页', 20)],
+        ['已有作品，准备材料与答辩', jump('数据与交付 / 第24页', 24)],
+        ['核对规则、工具与参赛反馈', jump('集中来源 / 第26-30页', 26)],
+    ], [255, WIDTH - 255], size=11.5, leading=17, pad=9)
+    g.h('想查某一项的完整情况')
+    g.p(local('打开全部%d张赛事卡目录' % len(contests), 'docs/competition-catalog.md') + '：每项分别写资格、奖项路径、人数、时间、费用、人工任务与资料日期。', size=11.5)
+    g.p(link('下载离线筛选页后，用浏览器打开', REPOSITORY + '/releases/latest/download/explorer.html') + '；筛选在本地运行，跳到GitHub赛事详情需要联网。', size=11.5)
+    g.note('第一次练习默认走已跑通的Codex路线。Modex是官方步骤整理，未安装实测；Claude兼容安装不等于本轮端到端测试。', '先看清验证状态', size=11.5)
 
-    # 03: A concise permissions-first front-five view.
-    g.page('前五具体范围', '前五名，具体做哪一种作品', '制作范围、权限与亲历证据一起看。安装和可复制任务在后面的路线页。')
+    # 03: Comparable effort fields without invented prices or probabilities.
+    g.page('投入 / 人工任务', '参考前五，还要自己做什么', '费用未知就保留未知。旧版人时估算不是实测，不能拿它与模型运行分钟数比较。')
     for row in ranking[:5]:
-        g.p('<b>%02d  %s</b>' % (row['rank'], E(row['name'])), size=13, leading=19, gap=5)
-        g.p(E(row['track']), size=11.5, leading=17, gap=4, color=MUTED)
-        g.p('<font color="#007e87">%s</font><br/>%s' % (E(row['ai_status']), E(row['evidence'])), size=11.5, leading=17, gap=16)
-    g.note('计设：历史Codex省奖不覆盖2026限定工具表。<br/>统计建模：2026禁止AI直接生成核心设计与论文正文。<br/>RST：前沿技术挑战与机器鱼仿真属于两个赛项。', '先读这三个边界', size=11.5)
+        cost = row['cost_summary']
+        registration = '待核' if '待核' in cost['registration_fee'] else compact(cost['registration_fee'], 16)
+        model_cost = '未取得单次账单' if '未测' in cost['model_fee'] else compact(cost['model_fee'], 16)
+        g.p('<b>%02d  %s</b>　%s' % (row['rank'], E(row['name']), jump('看做法', targets[row['rank']])), size=12.5, leading=18, gap=4)
+        g.p('<font color="#007e87">%s</font><br/>人要做：%s' % (E(row['decision_label']), E(compact(cost['human'], 61))), size=11.5, leading=17, gap=5)
+        g.p('组队：%s<br/>报名费：%s；模型费：%s。' % (E(cost['team']), E(registration), E(model_cost)), size=11, leading=16, color=MUTED, gap=14)
+    g.note('数模本机记录约35.52分钟，仅为两次CLI运行墙钟合计；含额度中断后的恢复，不含暂停、环境、外部审计与打包。它不是完整备赛工时或费用账单。', '实际测量与估算分开', size=11.5)
 
     # 04-06: Continuous ranking, kept legible rather than a dense mega-table.
     tracks = {
@@ -344,7 +370,7 @@ def make_pages(g, ranking, top5, feedback, social, run):
         27: '缺Agent奖项绑定；不是华为ICT',
     }
     for lo, hi in [(6, 13), (14, 20), (21, 27)]:
-        g.page('连续制作适配顺序', '完整排名 %02d-%02d' % (lo, hi), '接续前五，同一顺序，不分档。蓝色为工具权限标签；来源编号在文末集中列出。')
+        g.page('连续制作参考顺序', '参考顺序 %02d-%02d' % (lo, hi), '接续前五，不分档。点比赛名打开赛事卡；蓝色为当届建议，序号不表示当前获准或拿奖概率。')
         for row in ranking[lo - 1:hi]:
             g.ranking_card(row, tracks[row['rank']], evidence_short[row['rank']])
 
@@ -407,7 +433,8 @@ def make_pages(g, ranking, top5, feedback, social, run):
     g.page('Codex 1 / 3', '安装一套完整skills，先预检', '主选MathModelAgent当前skills链。实际入口是 $1start-mathmodel，不部署旧Web、Redis或Docker。')
     repo_line(g, 'MathModelAgent主选仓库', 'https://github.com/jihe520/MathModelAgent')
     g.p('固定commit：' + E(COMMIT), size=11.5, color=MUTED)
-    g.p('准备：已安装登录的Codex CLI、Git、Python 3.12、uv、完整题目附件和可用模型额度。排版选Typst。Claude可加载同一套技能，本轮实际调用Codex。')
+    g.p('准备：Codex CLI、Git、Python 3.12、uv、完整附件与可用模型额度。已测Windows 10 build19045，其他系统未端到端验证。', size=11.5)
+    g.note('装了桌面版不等于CLI就绪。在普通终端运行 <b>codex --version</b> 与 <b>codex login status</b>，确认命令可用且已登录，再继续安装。', '先检查这两条', size=11.5)
     g.code([
         'git clone https://github.com/Rain-dust/HowToCompeteBetter.git',
         'cd HowToCompeteBetter',
@@ -520,104 +547,33 @@ def make_pages(g, ranking, top5, feedback, social, run):
     g.note('在干净环境重跑，核对六个Q2策略与利润、Q3成本/利润及Q4假想样本标记。然后重新编译论文，逐页查看数字、图表、公式和排版。', '复现后的验收动作', size=12)
     g.p(local('打开示例README与完整复现说明', 'examples/cumcm2024b/README.md') + '<br/>' + local('查看run-summary.json', 'examples/cumcm2024b/run-summary.json') + '　|　' + link('下载成果ZIP', REPOSITORY + '/raw/refs/heads/main/examples/cumcm2024b-example.zip'), size=11.5)
 
-    # 16: Other top-five routes are templates, not invented contest-specific winners.
-    g.page('第02名 / 作品路线', '计算机设计：先做一个核心功能', '优先软件、数据与交互作品。历史Codex省奖自述与2026工具许可分开。')
-    g.note('2026限定15款规定工具或自主知识产权工具，未查到Codex许可。以下开发任务用于赛前练习，或明确获准的范围；先核当届工具表。', '正式赛的前置条件', size=11.5)
-    repo_line(g, '通用界面与浏览器测试技能', 'https://github.com/anthropics/skills')
-    g.code([
-        '从上面仓库安装完整 skills/frontend-design 和',
-        'skills/webapp-testing 到本项目 .agents/skills/。',
-        '保留脚本和资源，按SKILL.md建隔离依赖并配置Playwright。',
-        '用最小网页实测一遍，报告commit、路径、截图与缺失依赖。',
-        '安装后重开项目会话，确认两个技能已发现。',
-    ], '可复制：让Agent安装并验证')
-    g.code([
-        '我要做计算机设计大赛软件作品，inputs/有规程与真实需求。',
-        '先输出工具权限、评分点与验收动作对照表。',
-        '练习或获准后，用 $frontend-design 做一个核心功能。',
-        '用 $webapp-testing 测正常、空输入与异常场景。',
-        '交付源码、部署说明、真实截图与同版本运行视频。',
-        '把平台所需注释、过程、时间戳与支撑材料一起完成。',
-    ], '可复制：启动制作')
-    g.p('U01自述历史省奖；F03-F06、F21补充作品和答辩流程。X05/X06保留未获奖反例；能运行、展示与答辩都影响结果。', size=11.5, color=MUTED)
-    g.p('可选演示视频：' + link('remotion-dev/skills', 'https://github.com/remotion-dev/skills') + '。技能组合是通用制作建议。', size=11.5, color=MUTED)
+    # 16-19: Install/start text is rendered from the canonical top5_view.
+    route_titles = {2: '计算机设计：先确认工具范围', 3: 'RST：先定赛项和官方平台', 4: '统计建模：核心生成受限', 5: '软件杯：按评分做完整系统'}
+    for row in ranking[1:5]:
+        task = next(t for t in top5 if t['rank'] == row['rank'])
+        g.page('参考第%02d项 / 做法' % row['rank'], route_titles[row['rank']], '完整安装和启动来自唯一赛事数据源；练习与正式参赛范围分开。')
+        g.note(E(row['decision_note']), row['decision_label'], size=11.5)
+        github = task.get('github', [])
+        if github:
+            g.p('工具出处：' + '　'.join(link(label, url) for label, url in github[:2]), size=11.5, leading=17)
+        g.code(task.get('install', '先读具体平台与规则，按赛事卡配置环境。'), '可复制：安装与准备')
+        g.code(task.get('start', '读取当届赛题与评分表，先跑完整基线。'), '可复制：启动任务')
+        g.p('交付：' + E(task.get('deliver', '按具体赛项要求整理可复现成果。')), size=11.5, leading=17)
+        g.p(local('打开本项完整赛事卡、投入和证据', row['card_path']), size=11.5)
 
-    # 17
-    g.page('第03名 / 分赛项路线', 'RST：作品和仿真，先分清赛项', '第18届前沿技术挑战组与第19届机器鱼仿真分别记录，不扩展到硬件竞技。')
-    g.note('未核到可信RST专用获奖skill。创新软件可复用通用开发技能；仿真要先读官方平台、SDK和评分口径，逐赛项核工具权限。', '先选平台，再选技能', size=11.5)
-    repo_line(g, '创新软件作品的通用技能', 'https://github.com/anthropics/skills')
-    g.p('安装frontend-design与webapp-testing，完整目录、隔离依赖和浏览器测试方法同第16页。Cline是另一套独立Agent，' + link('仓库在这里', 'https://github.com/cline/cline') + '，无需装入Codex技能目录。', size=11.5)
-    g.code([
-        '我要参加RST，inputs/有届次、赛道、组别、规则和SDK。',
-        '先识别创新创业作品还是仿真竞技，逐项列出评分动作。',
-        '创新作品：完成能运行并按评分点演示的小产品。',
-        '仿真：先编译运行官方基线，记录环境与多次成绩。',
-        '基线跑通后逐项改策略，同环境比较改动前后。',
-        '输出每次分数、失败回放、日志与复跑命令。',
-        '基线未运行成功先修环境，不能虚构成绩。',
-        '最后按本组要求交源码、说明、真实视频与答辩包。',
-    ], '可复制：启动具体赛项')
-    g.h('交付时，留住同环境的对照')
-    g.p('保存官方平台/SDK版本、配置、随机种子、基线和候选策略的多次结果。演示来自实际程序，别只交概念动画。')
-    g.p('U01：第18届创新创业前沿技术挑战组省奖自述。X16：第19届机器鱼仿真国一自述，提及Gemini并附照片。图片中的Cline课程例子不足以证明其比赛用了Cline。', size=11.5, color=MUTED)
-
-    # 18
-    g.page('第04名 / 受限辅助路线', '统计建模：先守住研究原创范围', '制作适配高，2026正式赛禁止AI直接生成核心设计与论文正文。')
-    g.note('禁止直接生成研究选题、假设、框架、调查方案与论文正文。文献整理、图表类型建议、语言格式校对按规范执行；数据和代码任务单独核权限。', '正式赛按当届AI规范执行', size=11.5)
-    repo_line(g, 'Scientific Agent Skills', 'https://github.com/K-Dense-AI/scientific-agent-skills')
-    g.code([
-        '安装 skills/exploratory-data-analysis 和',
-        'skills/statistical-analysis 到项目 .agents/skills/。',
-        '保留引用资源，按SKILL.md建独立Python环境。',
-        '用有缺失值、重复与分组的合成CSV做一次检查。',
-        '报告commit、环境和结果；此安装用于赛前练习。',
-    ], '可复制：安装并做练习验证')
-    g.code([
-        '先读inputs/的统计建模当届AI规范，列出允许的动作。',
-        '正式赛仅做明确允许的检索整理、语言与格式校对。',
-        '不要直接生成核心研究设计或论文正文。',
-        '拟执行的数据、代码任务单独列出待核权限。',
-        '练习模式用 $exploratory-data-analysis 和',
-        '$statistical-analysis 对合成或历史练习数据审计。',
-        '按我已给方案复现诊断，交可重跑代码和错误记录。',
-    ], '可复制：区分正式赛与练习')
-    g.p('F07/F08分别提供国三、省一经验，未与Agent主导制作绑定。X36有辅导关联，不能充独立证据。若目标是全程Agent直出参赛核心内容，本届不推荐。', size=11.5, color=MUTED)
-
-    # 19
-    g.page('第05名 / 工程路线', '软件杯：把评分点写成验收动作', '优先数据可得、无额外硬件、本机能跑的企业指定软件题。')
-    repo_line(g, '界面、开发与浏览器测试技能', 'https://github.com/anthropics/skills')
-    g.p('完整安装frontend-design和webapp-testing，方法同第16页。视频可选 ' + link('Remotion技能', 'https://github.com/remotion-dev/skills') + '；原生或后台系统另用对应测试工具。', size=11.5)
-    g.note('产品要求使用某种模型，不等于外部Codex开发获准。指定平台、SDK、开发辅助、提交声明和现场答辩逐题核，不预设每题都有省赛。', '逐题核开发工具', size=11.5)
-    g.code([
-        '我要参加中国软件杯，inputs/有当届题目和评分标准，',
-        '以及规定技术栈、工具条款、真实数据和接口说明。',
-        '先把每个评分点写成可执行验收动作，核数据与硬件可得。',
-        '做最小端到端系统，跑通输入、处理、输出与错误恢复。',
-        '用 $frontend-design 打磨必要界面；',
-        '用 $webapp-testing 验证Web评分动作与异常输入。',
-        '先修稳定性再加功能，记录失败与修复。',
-        '交源码、锁定环境、部署说明、同版本视频与答辩问答。',
-        '保留AI开发过程，正式提交只用规则允许的范围。',
-    ], '可复制：启动工程项目')
-    g.h('验收至少覆盖三件事')
-    g.bullet('评分动作跑得通，空数据、断网、接口错误等场景有真实处理。')
-    g.bullet('换一台机器能按说明部署，视频与源码是同一版本。')
-    g.bullet('队员能解释架构、数据流、关键算法和失败处理。')
-    g.p('F12有Claude Code两天原型、两月完整项目过程，未披露奖项；X19/X21/X38有国奖自述，未披露Agent。两类材料不能拼成同队AI国奖。', size=11.5, color=MUTED)
-
-    # 20
-    g.page('把路线变成成果', '第一次练习，就完成这六步', '先拿一份历史题或真实小需求，跑完一条链，再决定是否扩展规模。')
-    for i, (title, text) in enumerate([
-        ('冻结输入', '题面、附件、规则和原始数据保留原件。把单位、列名、样本来源和缺失信息写清楚。'),
-        ('运行最小基线', '数模先算一个情形，软件先跑一条核心用户路径，仿真先跑官方基线。'),
-        ('做完整结果', '扩到全部问题或评分动作；结果由真实代码生成。保留失败记录，不只保留最好的一次。'),
-        ('交叉核验', '用手算、边界、独立实现或真实事件模拟检查关键结论。查数据泄漏、重复计费和单位错位。'),
-        ('同步表达', '从本次结果生成图表、论文或说明。摘要、正文、图、表与演示使用同一版本。'),
-        ('干净重跑', '按README在新环境复现，编译并逐页查看成稿，整理可编辑源文件、依赖和真实演示。'),
-    ], 1):
-        g.p('<font color="#007e87"><b>%02d</b></font>  <b>%s</b>' % (i, E(title)), size=13, leading=19, gap=5)
-        g.p(E(text), gap=17)
-    g.note('别先用复杂度证明价值。先交一个能稳定复跑、能说明用途的小成果，再按评分缺口增加功能或模型。', '每一轮只解决一个明确缺口', size=11.5)
+    # 20: A filled, deterministic, no-model starter rather than another blank checklist.
+    g.page('第一次练习 / 无需模型', '先跑一个有完整输入的小样例', '自拟合成工单练习；不是历届赛题、真实校园调研或获奖作品。3分钟是建议上手预算。')
+    g.note('只需已安装Python 3.12或更新版本，不用模型账号、密钥、网络或第三方库。先看一次完整输入如何变成结果。', '最少准备', size=12)
+    g.code(['python templates/contest-starter-example/run.py'], '在仓库根目录运行')
+    g.table(['固定练习输入', '应得到的真实计算结果'], [
+        ['输入 / 有效 / 剔除', '15 / 10 / 5 条'],
+        ['有效记录总响应时长', '450 分钟'],
+        ['图书馆 / 宿舍 / 教学楼平均值', '30 / 60 / 40 分钟'],
+    ], [245, WIDTH - 245], size=11.5, leading=17, pad=9)
+    g.p('打开results/report.md与chart.svg，看结果和图。summary.json/CSV、rejected.csv与checks.json保留计算和验收。所有输出都明确标注合成数据，不能当作真实调查。', size=11.5)
+    g.h('然后只给Agent一个小任务')
+    g.code(['读已填项目卡、原始工单和现有代码，先重跑。', '增加各类别记录数图，沿用合成数据标识。', '每个数字能追到结果文件，重跑仍能生成。'], '完成标志：多一张可核验的图')
+    g.p(local('打开已填样例与完整命令', 'templates/contest-starter-example/README.md') + '<br/>' + local('熟悉后复制空白工作区', 'templates/contest-starter/README.md'), size=11.5, leading=20)
 
     # 21
     g.page('正式参赛前', '从练习转到比赛，再做一次核对', '全国性赛事、证书奖级和学校认定分别确认；具体赛项与下一届规则不能靠母赛名称推断。')
@@ -678,7 +634,7 @@ def make_pages(g, ranking, top5, feedback, social, run):
     g.code(['按正式评分表验收源码、结果、文稿和演示。', '逐项核同版本数字、图表和功能，缺证据写缺失。', '给出12个追问，每个答案指向现有证据。', '不编用户、访谈、营收、合作、专利或奖项。'], '可复制：让Agent做挑错评委')
     g.p(local('数据入口与来源台账', 'docs/data-sources.md') + '　|　' + local('作品、演示与答辩', 'docs/project-delivery.md') + '<br/>' + local('复制开赛工作区与启动指令', 'templates/contest-starter/README.md'), size=11.5, leading=19)
 
-    g.page('新增线索 / 逐项筛选', '补充五个入口，不硬塞进主榜', '参考目录从67条增到72条，包含分支与平台，不表示72项独立赛事。新线索缺Agent赛果，不自动改主榜。')
+    g.page('新增线索 / 逐项筛选', '补充五个入口，不硬塞进主榜', '目录共有%d条参考，包含分支与平台；补齐了原第8项漏掉的华中杯卡。新线索不自动改变参考顺序。' % len(contests) + '')
     verdicts = {
         'L01': '高职优先研究软件/AI作品；别套本科资格和工具表。先看高职通知，再做可运行核心功能。',
         'L02': '用现有数模链做历史题迁移练习。完整AI细则未读到，正式提交范围和学校认定待核。',
@@ -787,7 +743,7 @@ def main():
     guide.save()
     validation = {
         'schema_version': 1,
-        'generated_at': '2026-11-16',
+        'generated_at': '2026-11-17',
         'source': 'scripts/build_guide.py',
         'page_count': len(guide.pages),
         'paper_size': 'A4',

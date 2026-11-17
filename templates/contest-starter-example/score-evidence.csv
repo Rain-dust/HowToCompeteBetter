@@ -1,0 +1,4 @@
+criterion_id,rule_file_and_location,criterion_text,acceptance_action,evidence_file,version_or_run_date,status,gap,owner
+P01,inputs/task.md第1至3项,按明示规则清洗和分组汇总,运行python run.py并核15输入10有效5剔除,results/checks.json,2026-11-17,passed,仅验证合成fixture,练习者
+P02,inputs/task.md第4项,图与报告标明合成且结果一致,打开SVG与report并核30/60/40分钟,results/chart.svg；results/report.md；results/summary.json,2026-11-17,passed,不代表真实场景,练习者
+P03,inputs/task.md第5项,原始输入不变且总量正确,核SHA256与450分钟总量,results/checks.json；results/summary.json,2026-11-17,passed,不验证任何竞赛成绩,练习者

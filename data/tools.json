@@ -7,12 +7,15 @@
     "kind": "数模专用",
     "use": "优先想要串起读题、求解、绘图、论文和验收的人。",
     "outputs": "代码、结果、图表、Typst/LaTeX、PDF、验收报告。",
-    "setup": "Node.js/npm；计算所需 Python 库；Typst 或 XeLaTeX。",
-    "evidence": "有阶段文件和模板；本次未核到可归属于当前技能包的获奖实证。",
+    "setup": "本仓库固定技能链：Git、Python 3.12、uv和Typst；无需旧版Web/Docker/Redis。",
+    "evidence": "本项目Codex实际跑通2024国赛B四问、17页论文与复现；历史题实测不是获奖验证。",
     "keys": [
       "tool_mma",
       "tool_mma_entry"
-    ]
+    ],
+    "status": "current_primary",
+    "tutorial": "docs/coding-agent.md",
+    "commit": "03f4eb388b3862b7bde55b508dceaf3d6b39d5ac"
   },
   {
     "id": "M2",
@@ -20,13 +23,15 @@
     "invoke": "$mathmodel-skill",
     "repo": "https://github.com/handsomeZR-netizen/mathmodel-skill",
     "kind": "数模专用",
-    "use": "国赛首选之一；喜欢按阶段推进、随时断点接着做的人。",
+    "use": "历史候选：按阶段问答与检查点推进；不作为本项目当前连续自动链首选。",
     "outputs": "三竞赛包、求解、稳健性、LaTeX 论文、终审与状态记录。",
     "setup": "Python、Pandoc、TeX；先让 doctor.py 检查。",
     "evidence": "有 Codex 说明与检查脚本。论文样本统计不是技能参赛获奖统计。",
     "keys": [
       "tool_mathmodel"
-    ]
+    ],
+    "status": "historical_alternative",
+    "tutorial": "docs/coding-agent.md#为什么只主推这一套"
   },
   {
     "id": "M3",
