@@ -4,11 +4,11 @@
   "files": {
     "index.html": {
       "bytes": 13654,
-      "sha256": "bda4ff9d49f3649371e823a3e246454db21780bda3827387b0d4c2d69c67a327"
+      "sha256": "5b626507b4d1afb837bf061f7a3a9bade56af5de7be33fe584dad5d05f371ca4"
     },
     "style.css": {
-      "bytes": 39499,
-      "sha256": "6ab6c3f778e07fc82ac042194afebf0688687d0d27506a0d92e533168bc9a6a8"
+      "bytes": 39681,
+      "sha256": "5a74e9c6138aca07b4978d728e2f9fa558d276e5fccca12e3e6ae55623d42f49"
     },
     "app.js": {
       "bytes": 32427,
@@ -28,7 +28,7 @@
     },
     "404.html": {
       "bytes": 13654,
-      "sha256": "bda4ff9d49f3649371e823a3e246454db21780bda3827387b0d4c2d69c67a327"
+      "sha256": "5b626507b4d1afb837bf061f7a3a9bade56af5de7be33fe584dad5d05f371ca4"
     },
     "robots.txt": {
       "bytes": 91,
