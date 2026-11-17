@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450">
+<rect width="1280" height="450" rx="16" fill="#f6f5f0"/>
+<path d="M62 53h54" stroke="#277166" stroke-width="4"/>
+<g font-family="Microsoft YaHei,SimHei,sans-serif">
+<text x="134" y="60" fill="#277166" font-size="21" letter-spacing="2">HOW TO COMPETE BETTER</text>
+<text x="62" y="173" fill="#203c35" font-size="60" font-weight="700">高性价比大学生竞赛指南</text>
+<text x="65" y="236" fill="#65726b" font-size="29">从选比赛到交作品，按问题查，照步骤做。</text>
+<path d="M64 282h1152" stroke="#d9ded7" stroke-width="1"/>
+<text x="65" y="344" fill="#277166" font-size="22" font-weight="700">01　选比赛</text>
+<text x="65" y="388" fill="#65726b" font-size="22">先看排名，再看资格与投入</text>
+<text x="472" y="344" fill="#277166" font-size="22" font-weight="700">02　跑实战</text>
+<text x="472" y="388" fill="#65726b" font-size="22">找到工具，完成一套真题</text>
+<text x="876" y="344" fill="#277166" font-size="22" font-weight="700">03　交作品</text>
+<text x="876" y="388" fill="#65726b" font-size="22">补齐数据、材料与演示</text>
+</g></svg>

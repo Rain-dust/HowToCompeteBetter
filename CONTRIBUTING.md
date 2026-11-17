@@ -14,6 +14,12 @@
 
 不要直接修改生成的赛事卡、总索引、首页、兼容JSON或离线筛选页。它们由同一事实源生成，避免出现新教程和旧指令两套答案。
 
+## 维护章节和目录
+
+`book/` 是面向读者的编号章节，每章都有结论、章内目录和前后章导航。章节顺序、问题与小节配置在 `data/chapters.json`，正文由 `scripts/build_book.py` 读取已有教程和赛事数据生成。修改教程内容时，改对应的 `docs/` 源文；修改前五工具和开打任务时，仍改 `data/competitions.json`。不要直接改生成的 `book/*.md`。
+
+README 的问题导航和章节目录也读取同一份章节配置。术语表由 `scripts/build_book.py` 中的术语定义生成。每次更新后执行以下命令，保证首页、章节、赛事卡和下载资料相互指向正确：
+
 ~~~text
 python scripts/build_all.py --skip-pdf
 python scripts/check_reader.py

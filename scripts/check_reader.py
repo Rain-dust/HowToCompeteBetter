@@ -27,10 +27,21 @@ def main():
     assert '$1start-mathmodel' in math['detail']['prompt'] and '$mathmodel-skill' not in math['detail']['prompt']
     assert len(json.loads((ROOT/'data/social-feedback.json').read_text('utf8'))['records'])==75
     assert len(json.loads((ROOT/'data/feedback-records.json').read_text('utf8'))['external'])==22
-    for script in ['build_catalog.py','build_readme.py','build_explorer.py']:
+    chapters=json.loads((ROOT/'data/chapters.json').read_text('utf8'))
+    assert [c['id'] for c in chapters]==[f'{n:02d}' for n in range(1,11)]
+    assert len({c['file'] for c in chapters})==10
+    assert all((ROOT/c['file']).is_file() for c in chapters)
+    assert all(c['question'] and c['summary'] and c['sections'] for c in chapters)
+    for index,chapter in enumerate(chapters):
+        body=(ROOT/chapter['file']).read_text('utf8')
+        assert '[总目录](README.md)' in body
+        if index:assert Path(chapters[index-1]['file']).name in body
+        if index+1<len(chapters):assert Path(chapters[index+1]['file']).name in body
+        assert all(s['id'] in headings(ROOT/chapter['file']) for s in chapter['sections'])
+    for script in ['build_catalog.py','build_book.py','build_readme.py','build_explorer.py']:
         subprocess.run([sys.executable,str(ROOT/'scripts'/script),'--check'],cwd=ROOT,check=True)
     for path in (ROOT/'scripts').glob('*.py'):ast.parse(path.read_text('utf8'))
-    mdpaths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md']+list((ROOT/'docs').rglob('*.md'))+list((ROOT/'templates').rglob('*.md'))+list((ROOT/'examples').rglob('*.md'))
+    mdpaths=[ROOT/'README.md',ROOT/'CONTRIBUTING.md']+list((ROOT/'book').rglob('*.md'))+list((ROOT/'docs').rglob('*.md'))+list((ROOT/'templates').rglob('*.md'))+list((ROOT/'examples').rglob('*.md'))
     broken=[];links=0;anchors=0
     for path in mdpaths:
         text=path.read_text('utf8')
@@ -48,6 +59,9 @@ def main():
     html=(ROOT/'docs/explorer.html').read_text('utf8')
     assert not re.search(r'<script[^>]+src=',html,re.I),'Offline viewer must not require external scripts'
     assert 'releases/latest/download/explorer.html' in (ROOT/'README.md').read_text('utf8')
+    readme=(ROOT/'README.md').read_text('utf8')
+    assert 'https://github.com/eternity4719/HowToLiveBetter' in readme
+    assert all(c['file'] in readme for c in chapters),'Every numbered chapter must be reachable from README'
     with zipfile.ZipFile(ROOT/'templates/contest-starter.zip') as archive:
         assert archive.testzip() is None and 'contest-starter-example/run.py' in archive.namelist()
     temp_root=ROOT/'tmp';temp_root.mkdir(exist_ok=True)
@@ -65,7 +79,11 @@ def main():
     pdf_result=None
     if args.pdf:
         from pypdf import PdfReader
-        reader=PdfReader(ROOT/'guide.pdf');assert len(reader.pages)==30 and len(reader.outline)==30
+        reader=PdfReader(ROOT/'guide.pdf');assert len(reader.pages)==30
+        def count_bookmarks(items):
+            return sum(count_bookmarks(item) if isinstance(item,list) else 1 for item in items)
+        bookmarks=count_bookmarks(reader.outline)
+        assert bookmarks>=40,'PDF must expose the ten book chapters and page-level navigation'
         destinations=0;first=0
         for i,page in enumerate(reader.pages):
             for annotation in page.get('/Annots',[]):
@@ -73,7 +91,7 @@ def main():
                 if obj.get('/Subtype')=='/Link' and (obj.get('/Dest') or obj.get('/A',{}).get('/S')=='/GoTo'):
                     destinations+=1;first+=int(i==0)
         assert destinations>=40 and first>=4
-        pdf_result={'pages':30,'bookmarks':30,'internal_links':destinations,'first_page_internal_links':first}
-    print(json.dumps({'status':'passed','catalog':len(rows),'ranked':27,'markdown_files':len(mdpaths),'local_links':links,'anchors':anchors,'practice':'15/10/5 rows; 450 minutes; 0 model calls','pdf':pdf_result},ensure_ascii=False))
+        pdf_result={'pages':30,'bookmarks':bookmarks,'internal_links':destinations,'first_page_internal_links':first}
+    print(json.dumps({'status':'passed','chapters':len(chapters),'catalog':len(rows),'ranked':27,'markdown_files':len(mdpaths),'local_links':links,'anchors':anchors,'practice':'15/10/5 rows; 450 minutes; 0 model calls','pdf':pdf_result},ensure_ascii=False))
 
 if __name__=='__main__':main()

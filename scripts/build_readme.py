@@ -29,66 +29,106 @@ def load():
         assert (ROOT/r['card_path']).is_file(),r['id']
     return rows,ranked
 
+def load_chapters():
+    chapters=json.loads((ROOT/'data/chapters.json').read_text('utf8'))
+    assert [c['id'] for c in chapters]==[f'{i:02d}' for i in range(1,11)]
+    for chapter in chapters:
+        assert all(chapter.get(key) for key in ['title','file','question','summary','sections']),chapter
+    return chapters
+
 def generate_readme(rows,ranked):
+    chapters=load_chapters()
+    section_count=sum(len(c['sections']) for c in chapters)
+    def chapter_link(index):
+        c=chapters[index-1]
+        return '['+str(index)+'. '+c['title']+']('+c['file']+')'
     lines=[
+        '<div align="center">','',
+        '<a href="guide.pdf"><img src="assets/cover.png" alt="高性价比大学生竞赛指南：选比赛、找工具、跑实战、交作品；点击预览PDF" width="820"></a>','',
         '# 高性价比大学生竞赛指南','',
-        '**找到适合自己的比赛，用 Agent 做出完整作品。**','',
-        '| 你现在想做什么 | 从这里开始 |',
-        '| --- | --- |',
-        '| **还没选比赛** | [按学历、设备和目标找比赛](docs/competition-catalog.md) |',
-        '| **已有 Codex，想做数模** | [准备检查 → 安装 → 启动](docs/coding-agent.md) |',
-        '| **已有项目，准备参赛** | [核评分、补证据、做演示与答辩](docs/project-delivery.md) |','',
-        '[PDF预览](guide.pdf) · [下载PDF]('+REPO+'/raw/refs/heads/main/guide.pdf) · [先看真实数模成果](examples/cumcm2024b/README.md) · [零依赖小样例](templates/contest-starter-example/README.md)','',
-        '## 先看这五项','',
-        '**序号是制作参考顺序；当届建议单独看。** 计设的Codex许可待核，统计建模核心生成受限，不能仅凭排在前面决定报名。[排序怎么读](docs/how-to-read-ranking.md)','',
-        '| 参考序号 / 赛事详情 | 当届怎么选 | 工具与开打 |',
-        '| --- | --- | --- |',
+        '哪些比赛值得打，用什么 Agent，拿到赛题后怎样开始？<br>',
+        '把选赛、工具、数模实战和作品交付，写成可以按问题查的十章指南。','',
+        '**27项连续参考排名 · '+str(len(rows))+'条赛事参考 · 完整数模教程与复现案例**','',
+        '### [从目录开始](#目录) · [直接做数模]('+chapters[3]['file']+') · [预览 PDF](guide.pdf)','',
+        '<table>',
+        '<tr><td width="64" align="right"><b>下载</b></td><td align="left">','',
+        '[PDF 预览](guide.pdf) · [PDF 下载]('+REPO+'/raw/refs/heads/main/guide.pdf) · [离线筛选 HTML]('+REPO+'/releases/latest/download/explorer.html) · [开赛模板 ZIP](templates/contest-starter.zip)','',
+        '</td></tr>',
+        '<tr><td width="64" align="right"><b>查阅</b></td><td align="left">','',
+        '[全书目录](book/README.md) · [1–27 排名]('+chapters[1]['file']+'#ranking) · [全部赛事卡](docs/competition-catalog.md) · [资料与核查](docs/research/README.md)','',
+        '</td></tr>',
+        '<tr><td width="64" align="right"><b>实战</b></td><td align="left">','',
+        '[Modex 官方教程](docs/modex.md) · [Codex 安装开跑](docs/coding-agent.md) · [国赛 B 题成果](examples/cumcm2024b/README.md) · [零依赖小样例](templates/contest-starter-example/README.md)','',
+        '</td></tr>',
+        '<tr><td width="64" align="right"><b>反馈</b></td><td align="left">','',
+        '[参赛者怎么说](docs/field-feedback.md) · [提交参赛经历]('+REPO+'/issues/new?template=experience.yml) · [纠错补充]('+REPO+'/issues/new?template=correction.yml)','',
+        '</td></tr></table>','',
+        '<sub>离线筛选页下载后用浏览器打开。赛事参考含赛项和平台；报名时以具体届次、组别和学校认定为准。</sub>','',
+        '</div>','',
+        '---','',
+        '## 这本指南回答什么','',
+        '| 你的问题 | 去哪看 |','| --- | --- |',
+    ]
+    for c in chapters:
+        lines.append('| '+safe(c['question'])+' | ['+str(int(c['id']))+'. '+c['title']+']('+c['file']+') |')
+    lines += ['','## 怎么读','',
+        '- **还没选比赛**：从'+chapter_link(1)+'开始，挑出两三项，再读'+chapter_link(2)+'核资格、奖项和学校认定。',
+        '- **现在就想跑数模**：现成软件看'+chapter_link(3)+'；已有 Codex 看'+chapter_link(4)+'。运行结果和复现材料在'+chapter_link(5)+'。',
+        '- **已有想法或项目**：软件作品看'+chapter_link(6)+'，仿真项目看'+chapter_link(7)+'，最后按第8、9章补数据、材料和演示。','',
+        '排名反映 Agent 制作适配，正式参赛建议另列。计设的外部 Codex 许可待核，统计建模的正式赛核心生成受限；具体结论和原文在对应赛事卡。','',
+        '## 目录','',
+    ]
+    featured={'01':['s01','s03'],'02':['ranking','s04'],'03':['s02','s05','s08'],
+              '04':['s02','s04','s07'],'05':['s02','s03','s05'],'06':['s02','s03'],
+              '07':['s01','s02','s03'],'08':['practice','s01','paper'],
+              '09':['s01','s03','s04'],'10':['s01','s03','s04']}
+    for c in chapters:
+        selected=[s for s in c['sections'] if s['id'] in featured[c['id']]]
+        lines += ['**['+str(int(c['id']))+'. '+c['title']+']('+c['file']+')**','',
+                  ' · '.join('['+s['title']+']('+c['file']+'#'+s['id']+')' for s in selected),'']
+    lines += ['[展开'+str(section_count)+'节完整目录](book/README.md) · [按条件找比赛](docs/competition-catalog.md) · [查看27项连续排名]('+chapters[1]['file']+'#ranking)','',
+        '## 前五：工具与开打指令','',
+        '先看当届建议，再复制对应指令。每项的 GitHub、安装和启动写在一起。','',
+        '这些任务默认你已在 Agent 中打开本仓库。第一次使用，先按[第4章创建工作区](book/04-用Codex完成数模.md#s02)，再把题面、规则和附件放进 `inputs/`。','',
+        '| 参考序号 / 比赛 | GitHub 与当届建议 |','| --- | --- |',
     ]
     for r in ranked[:5]:
-        tool='[教程]('+r['tool_tutorial']+')' if r.get('tool_tutorial') else '[做法]('+r['card_path']+'#怎么开始)'
-        if r.get('tool_url'):tool+=' · [GitHub]('+r['tool_url']+')'
-        elif (r.get('top5_view') or {}).get('github'):
-            tool+=' · [可选技能GitHub]('+r['top5_view']['github'][0][1]+')'
-        lines.append('| **'+str(r['rank'])+'. ['+safe(r['name'])+']('+r['card_path']+')** | **'+safe(r['decision_label'])+'**<br>'+short(r.get('decision_note'),43)+' | '+tool+' |')
-    lines += ['', '<details>', '<summary><strong>前五：展开复制安装和启动指令</strong></summary>','',
-              '先按上表选择练习或正式赛范围。数模只有一条默认安装主线；其他项目按具体赛项和环境配置。','']
+        repos=(r.get('top5_view') or {}).get('github') or []
+        primary=repos[:2] if r['rank']==1 else repos[:1]
+        labels=[]
+        for label,url in primary:
+            slug='/'.join(url.rstrip('/').split('/')[3:5])
+            labels.append('['+slug+']('+url+')')
+        lines.append('| **'+str(r['rank'])+'. ['+safe(r['name'])+']('+r['card_path']+')** | '+' · '.join(labels)+'<br>'+safe(r['decision_label'])+' |')
+    lines += ['']
     for r in ranked[:5]:
         view=r.get('top5_view') or {}
-        lines += ['### '+str(r['rank'])+'. '+safe(r['name']),'',
-                  '**'+safe(r['decision_label'])+'。** [完整赛事卡]('+r['card_path']+')','']
+        lines += ['<details>','<summary><strong>'+str(r['rank'])+'. '+safe(r['name'])+'：展开安装与开打</strong></summary>','',
+                  '**'+safe(r['decision_label'])+'。** [赛事详情]('+r['card_path']+')','']
+        lines.append(' · '.join('['+label+']('+url+')' for label,url in view.get('github',[])))
+        lines += ['']
         if r['rank']==1:
-            lines += ['[Codex完整安装与开跑](docs/coding-agent.md) · [Modex官方步骤](docs/modex.md)','']
-        else:
-            lines += ['安装：','','~~~text',view.get('install','先按赛事卡确认具体平台和依赖，再配置项目环境。'),'~~~','']
-        lines += ['启动：','','~~~text',view.get('start',r.get('getting_started','先读取完整题面、当届规则和评分表，跑通最小基线。')),'~~~','']
-    lines += ['</details>','',
-        '<details>','<summary><strong>完整连续参考顺序 1–27：点名字直接看赛事卡</strong></summary>','',
-        '| 参考序号 | 比赛 | 当届建议 |','| :--: | --- | --- |']
+            lines += ['[Codex 完整安装步骤](docs/coding-agent.md) · [Modex 官方配置教程](docs/modex.md)','']
+        lines += ['**复制给 Agent：安装**','','~~~text',view.get('install','先按赛事卡确认平台和依赖，再配置项目环境。'),'~~~','',
+                  '**复制给 Agent：开打**','','~~~text',view.get('start',r.get('getting_started','先读取题面、当届规则和评分表，跑通最小基线。')),'~~~','',
+                  '</details>','']
+    lines += ['<details>','<summary>展开完整的 1–27 连续参考排名</summary>','',
+              '| 序号 | 比赛 | 当届建议 |','| :--: | --- | --- |']
     for r in ranked:
         lines.append('| '+str(r['rank'])+' | ['+safe(r['name'])+']('+r['card_path']+') | '+safe(r['decision_label'])+' |')
     lines += ['','</details>','',
-        '## 选好以后，完成第一步','',
-        '| 卡在哪里 | 直接拿走 |',
-        '| --- | --- |',
-        '| 不知道自己能报什么、学校认不认 | [三关选赛卡与校内资源](docs/competition-playbook.md) |',
-        '| 没有数据或不知道怎么引用 | [原始数据入口与来源台账](docs/data-sources.md) |',
-        '| 第一次让Agent做完整项目 | [已填小样例](templates/contest-starter-example/README.md) → [空白模板](templates/contest-starter/README.md) |',
-        '| 想看代码、论文和实际运行结果 | [2024国赛B：17页论文与复现包](examples/cumcm2024b/README.md) |','',
-        '## 下载与查阅','',
-        '- [指南PDF](guide.pdf)：有章节书签、可点击导航和返回导航入口。',
-        '- [全部'+str(len(rows))+'条参考](docs/competition-catalog.md)：统一赛事卡，分别写资格、奖项路径、成本、人工任务与依据。',
-        '- [下载离线筛选页]('+REPO+'/releases/latest/download/explorer.html)：保存HTML后用浏览器打开；筛选无需联网，打开详情需要联网。',
-        '- [开赛模板ZIP](templates/contest-starter.zip) · [版本下载](https://github.com/Rain-dust/HowToCompeteBetter/releases/latest)','',
-        '<details>','<summary>PDF首页预览</summary>','',
-        '<a href="guide.pdf"><img src="assets/ranking-preview.png" alt="指南首页，点击查看有导航的完整PDF" width="380"></a>','',
-        '</details>','',
-        '## 依据与更新','',
-        '数模记录：Codex实际完成历史国赛B题，经中断恢复与修正；Modex整理官方教程，Claude未做本轮端到端运行。历史练习与获奖验证分开。','',
-        '[真实参赛反馈](docs/field-feedback.md) · [证据与来源](docs/research/README.md) · [更新记录](CHANGELOG.md) · [贡献方式](CONTRIBUTING.md)','',
-        '反馈库保留75篇原帖、22份外部材料；二手知识整理单列，不能推出获奖率。各赛事卡显示资料核查日期，页面更新不表示所有当届规则已重查。','',
-        '[提交参赛经历]('+REPO+'/issues/new?template=experience.yml) · [纠错与补规则]('+REPO+'/issues/new?template=correction.yml)','',
-        '页面更新：**'+DATE+'**。结构灵感来自[高性价比人生指南](https://github.com/eternity4719/HowToLiveBetter)，竞赛资料独立整理。','',
-        '<!-- Generated by scripts/build_readme.py from data/competitions.json. -->',''
+        '## PDF 预览','',
+        '[预览完整 PDF](guide.pdf) · [直接下载]('+REPO+'/raw/refs/heads/main/guide.pdf)','',
+        '<a href="guide.pdf"><img src="assets/ranking-preview.png" alt="指南PDF首页预览，点击打开完整文档" width="310"></a>','',
+        'PDF 带可点击目录和章节书签；想在 GitHub 按章阅读，直接打开[全书目录](book/README.md)。','',
+        '## 内容从哪里来','',
+        '赛事规则、作者经历、学生复盘和工具实测分别记载。反馈库保留75篇原帖、22份外部材料，二手知识整理另列，不能据此计算获奖率。','',
+        '数模实测完成了历史国赛B题的代码、图表和17页论文，经中断恢复与修正；Modex提供官方教程，Claude未做本轮端到端运行。具体过程见[案例记录](examples/cumcm2024b/README.md)。','',
+        '[资料与核查](docs/research/README.md) · [排序怎么定](docs/how-to-read-ranking.md) · [更新记录](CHANGELOG.md) · [如何贡献](CONTRIBUTING.md)','',
+        '## 致谢','',
+        '本项目参考了 **[高性价比人生指南 · HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter)** 的书式首页、问题导航和编号章节结构。竞赛资料、工具指令、视觉资产与实战记录由本项目独立整理。','',
+        '页面更新：**'+DATE+'**。规则核查日期逐项写在赛事卡，页面更新不表示全部当届规则已重新核查。','',
+        '<!-- Generated by scripts/build_readme.py from data/competitions.json and data/chapters.json. -->',''
     ]
     emit(ROOT/'README.md','\n'.join(lines))
 
@@ -120,6 +160,23 @@ def generate_ranking_svg(ranked):
     emit(ROOT/'assets/ranking.svg',''.join(out))
 
 def generate_entry_assets(rows):
+    chapters=load_chapters()
+    cover='''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450">
+<rect width="1280" height="450" rx="16" fill="#f6f5f0"/>
+<path d="M62 53h54" stroke="#277166" stroke-width="4"/>
+<g font-family="Microsoft YaHei,SimHei,sans-serif">
+<text x="134" y="60" fill="#277166" font-size="21" letter-spacing="2">HOW TO COMPETE BETTER</text>
+<text x="62" y="173" fill="#203c35" font-size="60" font-weight="700">高性价比大学生竞赛指南</text>
+<text x="65" y="236" fill="#65726b" font-size="29">从选比赛到交作品，按问题查，照步骤做。</text>
+<path d="M64 282h1152" stroke="#d9ded7" stroke-width="1"/>
+<text x="65" y="344" fill="#277166" font-size="22" font-weight="700">01　选比赛</text>
+<text x="65" y="388" fill="#65726b" font-size="22">先看排名，再看资格与投入</text>
+<text x="472" y="344" fill="#277166" font-size="22" font-weight="700">02　跑实战</text>
+<text x="472" y="388" fill="#65726b" font-size="22">找到工具，完成一套真题</text>
+<text x="876" y="344" fill="#277166" font-size="22" font-weight="700">03　交作品</text>
+<text x="876" y="388" fill="#65726b" font-size="22">补齐数据、材料与演示</text>
+</g></svg>'''
+    emit(ROOT/'assets/cover.svg',cover)
     entries=[('01','还没选比赛','先按身份、资源和目标缩小范围','docs/competition-catalog.md'),
              ('02','已有Codex，想做数模','从准备检查直接安装和启动','docs/coding-agent.md'),
              ('03','已有项目，准备参赛','核评分、补证据、做演示与答辩','docs/project-delivery.md')]
@@ -135,7 +192,7 @@ def generate_entry_assets(rows):
     out += [f'<text x="42" y="743" fill="#526673" font-size="19">27项制作参考 · {len(rows)}张赛事卡 · 不用先读完全部资料</text>',
             f'<text x="42" y="778" fill="#007e87" font-size="16">{REPO.replace("https://","")} · {DATE}</text></g></svg>']
     emit(ROOT/'assets/overview.svg',''.join(out))
-    social=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><rect width="1280" height="640" fill="#f3f7f8"/><g font-family="Microsoft YaHei,SimHei,sans-serif"><text x="68" y="86" fill="#007e87" font-size="22">HOW TO COMPETE BETTER</text><text x="68" y="182" fill="#162c3b" font-size="58" font-weight="700">高性价比大学生竞赛指南</text><text x="68" y="247" fill="#526673" font-size="29">先找适合自己的比赛，再用Agent做出完整作品。</text><rect x="68" y="301" width="1144" height="158" rx="19" fill="white" stroke="#dbe5e8"/><text x="101" y="361" fill="#007e87" font-size="33" font-weight="700">27项制作参考　·　{len(rows)}张赛事卡　·　数模完整实战</text><text x="101" y="411" fill="#526673" font-size="25">当届建议、成本未知项、人工任务与工具步骤分别写清。</text><text x="68" y="540" fill="#162c3b" font-size="26">按问题导航 → 点比赛看详情 → 跑一个最小成果</text><text x="68" y="596" fill="#007e87" font-size="21">{REPO.replace("https://","")}</text></g></svg>'''
+    social=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><rect width="1280" height="640" fill="#f6f5f0"/><g font-family="Microsoft YaHei,SimHei,sans-serif"><path d="M68 77h55" stroke="#277166" stroke-width="4"/><text x="145" y="85" fill="#277166" font-size="22" letter-spacing="2">HOW TO COMPETE BETTER</text><text x="68" y="189" fill="#203c35" font-size="58" font-weight="700">高性价比大学生竞赛指南</text><text x="70" y="254" fill="#65726b" font-size="29">从选比赛到交作品，按问题查，照步骤做。</text><path d="M68 303h1144" stroke="#d9ded7" stroke-width="1"/><text x="70" y="375" fill="#277166" font-size="32" font-weight="700">{len(chapters)}章指南　·　27项参考排名　·　{len(rows)}张赛事卡</text><text x="70" y="430" fill="#65726b" font-size="27">Modex官方教程 / Codex实跑 / 真题复现 / 作品交付</text><text x="70" y="532" fill="#203c35" font-size="27">选比赛　→　找工具　→　跑实战　→　交作品</text><text x="70" y="591" fill="#277166" font-size="21">{REPO.replace("https://","")}</text></g></svg>'''
     emit(ROOT/'assets/social-preview.svg',social)
 
 def main():

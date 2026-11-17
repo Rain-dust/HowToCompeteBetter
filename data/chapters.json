@@ -1,0 +1,432 @@
+[
+  {
+    "id": "01",
+    "title": "先选值得打的比赛",
+    "file": "book/01-先选值得打的比赛.md",
+    "question": "还没选比赛，怎样先缩小范围？",
+    "summary": "先过资格、奖项认定和资源三关，再看 Agent 能替你做多少。",
+    "takeaway": "一张选赛检查表、一条报名资料核对指令。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "报名前先过三关",
+        "source": "docs/competition-playbook.md",
+        "source_heading": "1. 报名前先过三关"
+      },
+      {
+        "id": "s02",
+        "title": "去哪里找现成资源",
+        "source": "docs/competition-playbook.md",
+        "source_heading": "2. 去哪里找现成资源"
+      },
+      {
+        "id": "s03",
+        "title": "组队先试做，别只看简历",
+        "source": "docs/competition-playbook.md",
+        "source_heading": "3. 组队先试做，别只看简历"
+      },
+      {
+        "id": "s04",
+        "title": "一个项目能不能投多个赛？先做复用表",
+        "source": "docs/competition-playbook.md",
+        "source_heading": "4. 一个项目能不能投多个赛？先做复用表"
+      },
+      {
+        "id": "s05",
+        "title": "直接复制给 Codex",
+        "source": "docs/competition-playbook.md",
+        "source_heading": "5. 直接复制给 Codex"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "title": "看懂排名与奖项",
+    "file": "book/02-看懂排名与奖项.md",
+    "question": "排在前面就能报名、拿省奖吗？",
+    "summary": "序号用于比较制作适配；报名资格、AI 使用范围和本校认定逐项确认。",
+    "takeaway": "连续 1–27 的完整榜单，以及读榜和读证据的方法。",
+    "sections": [
+      {
+        "id": "ranking",
+        "title": "连续制作参考顺序 1–27",
+        "kind": "ranking"
+      },
+      {
+        "id": "s01",
+        "title": "为什么保留这个顺序",
+        "source": "docs/how-to-read-ranking.md",
+        "source_heading": "为什么保留这个顺序"
+      },
+      {
+        "id": "s02",
+        "title": "真正选正式赛时，先执行这些条件",
+        "source": "docs/how-to-read-ranking.md",
+        "source_heading": "真正选正式赛时，先执行这些条件"
+      },
+      {
+        "id": "s03",
+        "title": "两个容易误读的例子",
+        "source": "docs/how-to-read-ranking.md",
+        "source_heading": "两个容易误读的例子"
+      },
+      {
+        "id": "s04",
+        "title": "验证状态如何理解",
+        "source": "docs/how-to-read-ranking.md",
+        "source_heading": "验证状态如何理解"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "title": "用Modex完成数模",
+    "file": "book/03-用Modex完成数模.md",
+    "question": "想直接给赛题、用桌面软件跑全流程，怎么配？",
+    "summary": "想用成品界面先走 Modex 官方路线，软件授权与模型服务分别准备。本章按官方教程整理，未安装实测。",
+    "takeaway": "从官方下载、激活、模型预设到任务、检查点与导出的完整步骤。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "准备材料与官方入口",
+        "source": "docs/modex.md",
+        "source_heading": "1. 准备材料与官方入口"
+      },
+      {
+        "id": "s02",
+        "title": "下载、安装与首次打开",
+        "source": "docs/modex.md",
+        "source_heading": "2. 下载、安装与首次打开"
+      },
+      {
+        "id": "s03",
+        "title": "配置模型连接：先确认你走的是哪条路线",
+        "source": "docs/modex.md",
+        "source_heading": "3. 配置模型连接：先确认你走的是哪条路线"
+      },
+      {
+        "id": "s04",
+        "title": "两组模式不要混淆",
+        "source": "docs/modex.md",
+        "source_heading": "4. 两组模式不要混淆"
+      },
+      {
+        "id": "s05",
+        "title": "新建任务并输入赛题",
+        "source": "docs/modex.md",
+        "source_heading": "5. 新建任务并输入赛题"
+      },
+      {
+        "id": "s06",
+        "title": "到检查点时，具体看什么",
+        "source": "docs/modex.md",
+        "source_heading": "6. 到检查点时，具体看什么"
+      },
+      {
+        "id": "s07",
+        "title": "失败恢复：先定位，再决定重跑范围",
+        "source": "docs/modex.md",
+        "source_heading": "7. 失败恢复：先定位，再决定重跑范围"
+      },
+      {
+        "id": "s08",
+        "title": "编译、编辑与导出",
+        "source": "docs/modex.md",
+        "source_heading": "8. 编译、编辑与导出"
+      },
+      {
+        "id": "s09",
+        "title": "常见故障与处理",
+        "source": "docs/modex.md",
+        "source_heading": "9. 常见故障与处理"
+      },
+      {
+        "id": "s10",
+        "title": "本篇的核查范围",
+        "source": "docs/modex.md",
+        "source_heading": "本篇的核查范围"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "title": "用Codex完成数模",
+    "file": "book/04-用Codex完成数模.md",
+    "question": "已经在用 Codex 或 Claude Code，装哪套技能、怎么开跑？",
+    "summary": "默认使用已实跑的 MathModelAgent 固定技能链，先预检，再启动。",
+    "takeaway": "安装脚本、完整启动任务、中断恢复和交付位置。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "先检查你现在能不能跑",
+        "source": "docs/coding-agent.md",
+        "source_heading": "先检查你现在能不能跑"
+      },
+      {
+        "id": "s02",
+        "title": "创建工作区",
+        "source": "docs/coding-agent.md",
+        "source_heading": "1. 创建工作区"
+      },
+      {
+        "id": "s03",
+        "title": "放题目，先预检",
+        "source": "docs/coding-agent.md",
+        "source_heading": "2. 放题目，先预检"
+      },
+      {
+        "id": "s04",
+        "title": "一次启动完整链",
+        "source": "docs/coding-agent.md",
+        "source_heading": "3. 一次启动完整链"
+      },
+      {
+        "id": "s05",
+        "title": "其他coding-agent入口",
+        "source": "docs/coding-agent.md",
+        "source_heading": "其他coding-agent入口"
+      },
+      {
+        "id": "s06",
+        "title": "成果在哪里",
+        "source": "docs/coding-agent.md",
+        "source_heading": "4. 成果在哪里"
+      },
+      {
+        "id": "s07",
+        "title": "中断后继续",
+        "source": "docs/coding-agent.md",
+        "source_heading": "5. 中断后继续"
+      },
+      {
+        "id": "s08",
+        "title": "常见卡点",
+        "source": "docs/coding-agent.md",
+        "source_heading": "6. 常见卡点"
+      },
+      {
+        "id": "s09",
+        "title": "为什么只主推这一套",
+        "source": "docs/coding-agent.md",
+        "source_heading": "为什么只主推这一套"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "title": "从真题看完整成果",
+    "file": "book/05-从真题看完整成果.md",
+    "question": "Agent 到底产出了什么，结果能重新算出来吗？",
+    "summary": "直接打开历史国赛 B 题的论文、源码、数值与独立审计，再判断是否适合自己。",
+    "takeaway": "17 页论文、结果表、无模型复算命令与验证边界。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "实际做了什么",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "实际做了什么"
+      },
+      {
+        "id": "s02",
+        "title": "快速核对结果",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "快速核对结果"
+      },
+      {
+        "id": "s03",
+        "title": "复现计算",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "复现计算"
+      },
+      {
+        "id": "s04",
+        "title": "编译论文",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "编译论文"
+      },
+      {
+        "id": "s05",
+        "title": "验收证据",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "验收证据"
+      },
+      {
+        "id": "s06",
+        "title": "费用和限制",
+        "source": "examples/cumcm2024b/README.md",
+        "source_heading": "费用和限制"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "title": "软件与设计作品怎么做",
+    "file": "book/06-软件与设计作品怎么做.md",
+    "question": "计设、软件杯这类作品赛，怎么交给 Agent 推进？",
+    "summary": "把评分表变成可执行验收动作，再做能演示的最小完整作品。",
+    "takeaway": "计设与软件杯的工具仓库、安装任务、开打任务和交付清单。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "先挑有输入、有评分表、能验收的作品",
+        "kind": "software_selection"
+      },
+      {
+        "id": "s02",
+        "title": "计设：工具与完整启动任务",
+        "kind": "contest",
+        "rank": 2
+      },
+      {
+        "id": "s03",
+        "title": "软件杯：工具与完整启动任务",
+        "kind": "contest",
+        "rank": 5
+      },
+      {
+        "id": "s04",
+        "title": "先验收一个评分动作，再扩大范围",
+        "kind": "software_acceptance"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "title": "仿真与机器人怎么做",
+    "file": "book/07-仿真与机器人怎么做.md",
+    "question": "RST 该选创新作品还是仿真，怎么开始？",
+    "summary": "先分清作品评审、仿真竞技与硬件竞技，再跑对应的官方基线。",
+    "takeaway": "具体赛项拆分、可复制任务、同环境对照与失败记录。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "先确认你的 RST 属于哪一种评审",
+        "kind": "rst_selection"
+      },
+      {
+        "id": "s02",
+        "title": "工具与完整启动任务",
+        "kind": "contest",
+        "rank": 3
+      },
+      {
+        "id": "s03",
+        "title": "把基线、改动与失败留在同一套环境里",
+        "kind": "rst_evidence"
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "title": "数据、论文与项目材料",
+    "file": "book/08-数据、论文与项目材料.md",
+    "question": "没有数据、没有材料，怎么做出可核对的成果？",
+    "summary": "先保留原始数据与来源，再让代码生成结果，最后写材料。",
+    "takeaway": "数据入口、来源台账、零依赖练习和空白项目模板。",
+    "sections": [
+      {
+        "id": "practice",
+        "title": "第一次做完整项目：先跑零依赖小样例",
+        "kind": "practice"
+      },
+      {
+        "id": "data",
+        "title": "原始数据先从哪里找",
+        "kind": "data_entry_points"
+      },
+      {
+        "id": "s01",
+        "title": "数据给 Agent 前，至少保留这几列",
+        "source": "docs/data-sources.md",
+        "source_heading": "数据给 Agent 前，至少保留这几列"
+      },
+      {
+        "id": "s02",
+        "title": "直接复制给 Codex",
+        "source": "docs/data-sources.md",
+        "source_heading": "直接复制给 Codex"
+      },
+      {
+        "id": "paper",
+        "title": "先有计算结果，再写论文与项目材料",
+        "kind": "paper"
+      },
+      {
+        "id": "statistics",
+        "title": "统计建模：先看核心生成限制，再决定任务范围",
+        "kind": "contest",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "title": "演示、答辩与提交",
+    "file": "book/09-演示、答辩与提交.md",
+    "question": "项目跑通之后，还差什么才能交？",
+    "summary": "按评分点准备证据，让演示、文档与代码指向同一版本。",
+    "takeaway": "材料类型、路演结构、挑错评委任务和提交检查。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "每个评分点，都有一件能拿出来的证据",
+        "source": "docs/project-delivery.md",
+        "source_heading": "1. 每个评分点，都有一件能拿出来的证据"
+      },
+      {
+        "id": "s02",
+        "title": "项目书、商业计划书和论文，不用同一个模板硬套",
+        "source": "docs/project-delivery.md",
+        "source_heading": "2. 项目书、商业计划书和论文，不用同一个模板硬套"
+      },
+      {
+        "id": "s03",
+        "title": "路演先搭七个问题",
+        "source": "docs/project-delivery.md",
+        "source_heading": "3. 路演先搭七个问题"
+      },
+      {
+        "id": "s04",
+        "title": "让 Agent 做一次“挑错评委”",
+        "source": "docs/project-delivery.md",
+        "source_heading": "4. 让 Agent 做一次“挑错评委”"
+      },
+      {
+        "id": "s05",
+        "title": "比完以后，留下下一次真能用的底座",
+        "source": "docs/project-delivery.md",
+        "source_heading": "5. 比完以后，留下下一次真能用的底座"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "真实反馈与资料核查",
+    "file": "book/10-真实反馈与资料核查.md",
+    "question": "排名用了谁的经历，哪些结论还不确定？",
+    "summary": "把作者经历、外部自述、真实运行和当届规则分别读，避免把它们拼成保奖结论。",
+    "takeaway": "真实反馈入口、证据边界、规则核查与纠错方式。",
+    "sections": [
+      {
+        "id": "s01",
+        "title": "这批反馈读了什么，没有统计什么",
+        "kind": "feedback_scope"
+      },
+      {
+        "id": "s02",
+        "title": "最先看五个会影响选择的结论",
+        "kind": "feedback_conclusions"
+      },
+      {
+        "id": "s03",
+        "title": "把作者亲历、外部自述与工具实跑分开",
+        "kind": "feedback_evidence"
+      },
+      {
+        "id": "s04",
+        "title": "报名时重新核规则，发现错误直接补证据",
+        "kind": "feedback_update"
+      }
+    ]
+  }
+]
