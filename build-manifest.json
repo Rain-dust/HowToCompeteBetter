@@ -1,34 +1,34 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "source": "book/ + data/competitions.json + maintained documents",
   "files": {
     "index.html": {
-      "bytes": 10993,
-      "sha256": "e393d3acfc46128076a1c8a8dfc94485e4475d364890dda72d8908328045a651"
+      "bytes": 13654,
+      "sha256": "bda4ff9d49f3649371e823a3e246454db21780bda3827387b0d4c2d69c67a327"
     },
     "style.css": {
-      "bytes": 27211,
-      "sha256": "51c93cfc25c1ba0553df75c5f2bbd6d29abce0f2062a115d2cf75fb59c4993ab"
+      "bytes": 39499,
+      "sha256": "6ab6c3f778e07fc82ac042194afebf0688687d0d27506a0d92e533168bc9a6a8"
     },
     "app.js": {
-      "bytes": 27277,
-      "sha256": "7ec0c2a59f74e15d34342322727213d219e256d7797e07a5eba8dfa61ad519ec"
+      "bytes": 32427,
+      "sha256": "5865af0cced2de18eb88fbf681d9cc51265b4aaf33d2e1eace1d7417b13a442c"
     },
     "icon.svg": {
       "bytes": 397,
       "sha256": "598036127e61da0ffa5ef879f2bda0d3f6ed1f22ac6a4656430c3041888a0b90"
     },
     "content.json": {
-      "bytes": 2156049,
-      "sha256": "4efd4c3a22b248c400b843224887d684b42d5ec67e5b3e2325b2946f57775acc"
+      "bytes": 2159357,
+      "sha256": "fd5da330855ae3749e0fb60c103988d4163cdadd69c0d84ad369fc8e42adeb2c"
     },
     ".nojekyll": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "404.html": {
-      "bytes": 10993,
-      "sha256": "e393d3acfc46128076a1c8a8dfc94485e4475d364890dda72d8908328045a651"
+      "bytes": 13654,
+      "sha256": "bda4ff9d49f3649371e823a3e246454db21780bda3827387b0d4c2d69c67a327"
     },
     "robots.txt": {
       "bytes": 91,
@@ -39,8 +39,8 @@
       "sha256": "7bfceee434af155eaa805aec0ab33fe387f8ef42d256bca5b96b7c64eccf9cb3"
     },
     "data/competitions.json": {
-      "bytes": 621405,
-      "sha256": "da00cab571b398c8f37b84f462f59fef030a35155097d99a536226e39518a2fa"
+      "bytes": 621747,
+      "sha256": "1b63149e61806b4ff8a9df6f23d38d3a93edb0a2f95113af73c415af6826e548"
     },
     "data/knowledge-import.json": {
       "bytes": 26683,

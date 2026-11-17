@@ -593,7 +593,8 @@
       "中国软件杯",
       "软件杯"
     ],
-    "implementation_notes": "有 A3 开源完整作品及 AI Coding 披露可参考；本次没核到对应工具组合的获奖证明。"
+    "implementation_notes": "有 A3 开源完整作品及 AI Coding 披露可参考；本次没核到对应工具组合的获奖证明。",
+    "homepage_tool_label": "Codex + frontend-design / webapp-testing"
   },
   {
     "id": "N03",
@@ -3777,7 +3778,8 @@
       "机器人仿真",
       "前沿技术挑战"
     ],
-    "implementation_notes": "本次没找到能直接复用且有获奖闭环的 RST 专用 skill。P 只负责答辩；策略由 Codex 读 SDK 实现。"
+    "implementation_notes": "本次没找到能直接复用且有获奖闭环的 RST 专用 skill。P 只负责答辩；策略由 Codex 读 SDK 实现。",
+    "homepage_tool_label": "Codex + 具体赛项 SDK"
   },
   {
     "id": "N19",
@@ -4689,7 +4691,8 @@
       "CUMCM",
       "高教社杯"
     ],
-    "implementation_notes": "模型选择、结果解释和关键复算由队伍掌握。2026 明确允许 agent 辅助，仍要求人主导。"
+    "implementation_notes": "模型选择、结果解释和关键复算由队伍掌握。2026 明确允许 agent 辅助，仍要求人主导。",
+    "homepage_tool_label": "Modex / Codex + MathModelAgent"
   },
   {
     "id": "N23",
@@ -4970,7 +4973,8 @@
     "aliases": [
       "统计建模",
       "统计建模大赛"
-    ]
+    ],
+    "homepage_tool_label": "Codex + 科学数据技能（练习 / 获准辅助）"
   },
   {
     "id": "N24",
@@ -7570,7 +7574,8 @@
       "计设",
       "4C",
       "本科计设"
-    ]
+    ],
+    "homepage_tool_label": "Codex + frontend-design / webapp-testing"
   },
   {
     "id": "N39",
