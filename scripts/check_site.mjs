@@ -15,6 +15,15 @@ assert(data.chapters.reduce((n,c)=>n+c.sections.length,0)===57,'Chapter sections
 const ranked=data.contests.filter(c=>c.rank).sort((a,b)=>a.rank-b.rank);
 assert(JSON.stringify(ranked.map(c=>c.rank))===JSON.stringify(Array.from({length:27},(_,i)=>i+1)),'Ranking continuity differs');
 assert(data.contests.length===73,'Contest entry count differs');
+const index=await read('index.html');
+const initialRanks=[...index.matchAll(/class="home-rank-item" data-rank="(\d+)"/g)].map(m=>+m[1]);
+assert(JSON.stringify(initialRanks)==='[1,2,3,4,5]','First five ranks must render before the full book loads');
+assert(index.includes('id="home-top5"')&&index.includes('id="home-rest-ranking"'),'Homepage ranking sections missing');
+assert(!index.includes('<!-- HOME_RANK_PREVIEW -->'),'Ranking placeholder was not rendered');
+for(const contest of ranked.slice(0,5)){
+  assert(contest.homepage_tool_label,'Explicit homepage tool label required');
+  assert(contest.top5_view?.start&&contest.top5_view?.github?.length,'Homepage launch task incomplete');
+}
 const chapters=new Map(data.chapters.map(c=>[c.id,c]));
 const contests=new Map(data.contests.map(c=>[c.id,c]));
 const pages=new Map(data.supplements.map(c=>[c.path,c]));

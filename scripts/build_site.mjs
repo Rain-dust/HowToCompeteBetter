@@ -18,7 +18,7 @@ const copyFiles=new Set(['guide.pdf','templates/contest-starter.zip']);
 const supplements=[];
 const knownSupplements=new Set();
 const args=new Set(process.argv.slice(2));
-const manifest={version:'0.6.0',source:'book/ + data/competitions.json + maintained documents',files:{}};
+const manifest={version:'0.6.1',source:'book/ + data/competitions.json + maintained documents',files:{}};
 const ent=text=>text.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
 const attribute=text=>text.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const plain=html=>ent(html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ')).trim();
@@ -91,6 +91,22 @@ for(const relative of ['CONTRIBUTING.md','CHANGELOG.md',...await markdownFiles('
 const content={version:manifest.version,updated:'2026-11-17',siteURL,chapters:outputChapters,contests:outputContests,supplements};
 const outputs=new Map();
 for(const name of ['index.html','style.css','app.js','icon.svg'])outputs.set(name,await fs.readFile(path.join(root,'site',name)));
+let index=outputs.get('index.html').toString('utf8');
+// The first five ranks are present in the initial HTML too. Readers on a slow
+// connection can see the ranking while the full searchable book is loading.
+const preview=contests.filter(c=>Number.isInteger(c.rank)).sort((a,b)=>a.rank-b.rank).slice(0,5).map(c=>
+  '<li class="home-rank-item" data-rank="'+c.rank+'"><a class="home-rank-link" href="#/home/top5-'+c.rank+'">'+
+  '<span class="rank-number">'+c.rank+'</span><span class="rank-main"><strong class="rank-name">'+attribute(c.name)+'</strong><span class="rank-tool">'+attribute(c.homepage_tool_label||c.tool_name)+'</span></span><span class="rank-status">'+attribute(c.decision_label)+'</span></a></li>'
+).join('\n');
+if(!index.includes('<!-- HOME_RANK_PREVIEW -->'))throw Error('Missing initial ranking placeholder');
+index=index.replace('<!-- HOME_RANK_PREVIEW -->',preview);
+// Give each asset a content-derived URL so an already-open site receives the
+// matching script and styles after publication rather than a stale cached pair.
+for(const name of ['style.css','app.js']){
+  const revision=createHash('sha256').update(outputs.get(name)).digest('hex').slice(0,12);
+  index=index.replaceAll('./'+name+'"','./'+name+'?v='+revision+'"');
+}
+outputs.set('index.html',Buffer.from(index));
 outputs.set('content.json',Buffer.from(JSON.stringify(content)));
 outputs.set('.nojekyll',Buffer.from(''));
 outputs.set('404.html',outputs.get('index.html'));

@@ -63,8 +63,85 @@
     });
     container.replaceChildren(list);
   }
-  function renderHome() {
-    showView('home'); renderSidebar(null); document.title = '高性价比大学生竞赛指南 · 在线阅读';
+  function copyButton(text, target, label = '复制', cls = '') {
+    const button = el('button', 'copy-button' + (cls ? ' ' + cls : ''), label);
+    button.type = 'button'; button.setAttribute('aria-label', label); button.setAttribute('aria-live', 'polite');
+    button.addEventListener('click', async () => {
+      try {
+        if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(text); button.textContent = '已复制'; button.dataset.copyStatus = 'success';
+      } catch {
+        const selection = window.getSelection(); const range = document.createRange(); range.selectNodeContents(target); selection.removeAllRanges(); selection.addRange(range);
+        button.textContent = '已选中，请手动复制'; button.dataset.copyStatus = 'manual';
+      }
+      window.setTimeout(() => { if (button.isConnected) { button.textContent = label; delete button.dataset.copyStatus; } }, 2600);
+    });
+    return button;
+  }
+  function commandBlock(text, label, cls = '') {
+    const wrapper = el('div', 'code-block' + (cls ? ' ' + cls : ''));
+    const pre = el('pre'), code = el('code', 'language-text', text);
+    pre.append(code); wrapper.append(pre, copyButton(text, code, label, cls ? 'launch-copy' : ''));
+    return wrapper;
+  }
+  function homeTool(contest) {
+    return contest.homepage_tool_label || contest.tool_name;
+  }
+  function scrollHomeSection(section) {
+    if (!section) return;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const target = section === 'ranking-rest' ? $('home-rest-ranking') : $(section);
+      if (!target || !$('view-home').contains(target)) return;
+      const header = document.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+      window.scrollTo({top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - header - 16), behavior: 'instant'});
+      const heading = target.querySelector('h2,h3') || target;
+      heading.tabIndex = -1; heading.focus({preventScroll: true});
+    }));
+  }
+  function renderHome(section) {
+    showView('home'); renderSidebar(null); document.title = '比赛排名与开打指令 · 高性价比大学生竞赛指南';
+    const ranked = state.data.contests.filter(contest => Number.isInteger(contest.rank)).sort((a, b) => a.rank - b.rank);
+    const overview = $('home-rank-overview');
+    if (overview) overview.replaceChildren(...ranked.slice(0, 5).map(contest => {
+      const item = el('li', 'home-rank-item'); item.dataset.rank = contest.rank;
+      const link = anchor('', '#/home/top5-' + contest.rank, 'home-rank-link');
+      const main = el('span', 'rank-main');
+      main.append(el('strong', 'rank-name', contest.name), el('span', 'rank-tool', homeTool(contest)));
+      link.append(el('span', 'rank-number', String(contest.rank)), main, el('span', 'rank-status', contest.decision_label));
+      item.append(link); return item;
+    }));
+    const launches = $('home-top5');
+    if (launches) launches.replaceChildren(...ranked.slice(0, 5).map(contest => {
+      const view = contest.top5_view || {};
+      const card = el('article', 'launch-card'); card.id = 'top5-' + contest.rank; card.dataset.id = contest.id; card.dataset.rank = contest.rank;
+      const head = el('div', 'launch-card-head');
+      head.append(el('span', 'launch-rank', String(contest.rank)), el('h3', 'launch-title', contest.name));
+      const agent = el('p', 'launch-agent'); agent.append(el('strong', '', '用什么：'), document.createTextNode(homeTool(contest)));
+      const choice = el('p', 'launch-route'); choice.append(el('strong', '', '怎么选：'), document.createTextNode(view.route || contest.summary));
+      const repositories = el('div', 'launch-repos'); repositories.setAttribute('aria-label', contest.name + '的工具 GitHub 链接');
+      repositories.append(el('span', 'launch-repos-label', 'GitHub：'));
+      (view.github || []).forEach(([label, url]) => { const link = anchor(label + ' ↗', url); link.target = '_blank'; link.rel = 'noopener noreferrer'; repositories.append(link); });
+      const status = el('p', 'launch-decision', contest.decision_label);
+      const note = el('p', 'launch-note', contest.decision_note);
+      const startLabel = el('p', 'launch-start-label', contest.rank === 1 ? '复制给 Codex / Claude：开打（Modex 另见官方教程）' : '复制给 Coding Agent：开打');
+      const instruction = commandBlock(view.start || contest.getting_started || '', '复制开打指令', 'launch-command');
+      const installation = el('details', 'launch-install');
+      installation.append(el('summary', '', '还没装工具？复制安装任务'), commandBlock(view.install || '先读取完整赛事卡，确认具体平台与依赖。', '复制安装任务', 'launch-install-command'));
+      const deliver = el('p', 'launch-deliver'); deliver.append(el('strong', '', '拿到什么：'), document.createTextNode(view.deliver || contest.deliver));
+      const links = el('p', 'launch-links');
+      links.append(anchor('赛事、规则与依据 →', '#/contest/' + contest.id));
+      if (contest.rank === 1) links.append(document.createTextNode(' · '), anchor('Modex 官方教程', '#/chapter/03'), document.createTextNode(' · '), anchor('Codex 实跑教程', '#/chapter/04'));
+      card.append(head, agent, choice, repositories, status, note, startLabel, instruction, installation, deliver, links);
+      return card;
+    }));
+    const remaining = $('home-rest-ranking');
+    if (remaining) remaining.replaceChildren(...ranked.slice(5).map(contest => {
+      const item = el('li', 'ranking-item'); item.dataset.rank = contest.rank; item.dataset.id = contest.id;
+      const title = anchor(contest.name, '#/contest/' + contest.id, 'ranking-name');
+      const main = el('div', 'ranking-main'); main.append(title, el('p', 'ranking-tool', contest.tool_name));
+      item.append(el('span', 'ranking-number', String(contest.rank)), main, el('span', 'ranking-status', contest.decision_label));
+      return item;
+    }));
     const grid = $('chapter-grid'); if (grid) {
       grid.replaceChildren(...state.data.chapters.map(chapter => {
         const card = el('article', 'chapter-card');
@@ -79,24 +156,14 @@
         return item;
       }));
     }
+    scrollHomeSection(section);
   }
   function decorateArticle(container) {
     container.querySelectorAll('pre').forEach(pre => {
       if (pre.parentElement.classList.contains('code-block')) return;
       const code = pre.querySelector('code'); const text = (code || pre).textContent;
       const wrapper = el('div', 'code-block'); pre.before(wrapper); wrapper.append(pre);
-      const button = el('button', 'copy-button', '复制'); button.type = 'button'; button.setAttribute('aria-label', '复制这段代码或指令');
-      button.addEventListener('click', async () => {
-        try {
-          if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-          await navigator.clipboard.writeText(text); button.textContent = '已复制'; button.dataset.copyStatus = 'success';
-        } catch {
-          const selection = window.getSelection(); const range = document.createRange(); range.selectNodeContents(code || pre); selection.removeAllRanges(); selection.addRange(range);
-          button.textContent = '已选中，请手动复制'; button.dataset.copyStatus = 'manual';
-        }
-        window.setTimeout(() => { if (button.isConnected) { button.textContent = '复制'; delete button.dataset.copyStatus; } }, 2600);
-      });
-      wrapper.append(button);
+      wrapper.append(copyButton(text, code || pre, '复制'));
     });
     container.querySelectorAll('a[href^="https://"],a[href^="http://"]').forEach(link => { link.rel = 'noopener noreferrer'; link.target = '_blank'; });
     container.querySelectorAll('table').forEach(table => { if (!table.parentElement.classList.contains('table-scroll')) { const wrapper = el('div', 'table-scroll'); table.before(wrapper); wrapper.append(table); } });
@@ -279,7 +346,7 @@
       a.classList.toggle('is-active', active); if (active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     if (current.kind !== 'search' && $('search-clear')) $('search-clear').hidden = !$('search-input').value;
-    if (current.kind === 'home') renderHome();
+    if (current.kind === 'home') renderHome(current.parts.slice(1).join('/'));
     else if (current.kind === 'chapter') renderChapter(current.parts[1], current.parts.slice(2).join('/'));
     else if (current.kind === 'contest') renderContest(current.parts[1], current.parts.slice(2).join('/'));
     else if (current.kind === 'page') renderSupplement(current.parts.slice(1).join('/'), current.params.get('section'));
@@ -319,7 +386,7 @@
     bind();
     if ($('site-status')) { $('site-status').hidden = false; $('site-status').textContent = '正在打开指南…'; }
     try {
-      const response = await fetch('./content.json'); if (!response.ok) throw new Error('content ' + response.status);
+      const response = await fetch('./content.json', {cache: 'no-cache'}); if (!response.ok) throw new Error('content ' + response.status);
       const data = await response.json();
       if (!Array.isArray(data.chapters) || !Array.isArray(data.contests) || !Array.isArray(data.supplements)) throw new Error('Incomplete content');
       state.data = data;
