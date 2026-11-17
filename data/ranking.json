@@ -1,0 +1,2092 @@
+[
+  {
+    "rank": 1,
+    "name": "全国大学生数学建模竞赛",
+    "verdict": "先跑通模型，再写论文",
+    "evidence": "X44有GPT省一；F02有Codex过程，U01未细分杯赛",
+    "award_path": "全国性赛事，有赛区/全国奖；不把外部不明杯赛省一归国赛",
+    "sources": "X31、X44、T05、F02、U01",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N22",
+    "track": "本科/高职高专组；按具体赛题分别建模",
+    "ai_status": "辅助可用，核心须人主导",
+    "ai_scope": "2026允许AI辅助；队员负责建模决策、必要审查与验证，提交AI声明和AI工具使用详情。",
+    "tool_permission": "auxiliary_only",
+    "fit": "高",
+    "human_threshold": [
+      "读题与选题",
+      "核心模型判断与结果核验",
+      "独立复跑论文与支撑代码"
+    ],
+    "evidence_level": "过程＋赛果自述",
+    "evidence_boundary": "U01未细分杯赛；X31不能绑定国赛；不得把不明杯赛奖项归入CUMCM。",
+    "edition": "2026",
+    "current_status": "2026规则可参考；下一届资格、赛程和AI规定另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "CUMCM人工智能工具使用规定（2026试行）",
+        "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "CUMCM参赛规则（2026修订稿）",
+        "url": "https://www.mcm.edu.cn/upload_cn/node/774/FlQt6kJV6f5d5b4603e06c3c60acf89b72d7f298.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先练习；正式赛仅辅助",
+    "decision_code": "auxiliary",
+    "decision_note": "2026允许AI辅助，核心建模和分析由队员主导。先跑历史题，正式参赛另核当届规则。",
+    "cost_summary": {
+      "team": "本科和高职高专分组；3名同校学生，其他资格按当届章程。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "读题与选题；核心模型判断与结果核验；独立复跑论文与支撑代码",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时（含定向备赛）",
+      "legacy_cost_note": "已有数模基础：赛前跑通一套旧题；正式赛按当届限时。"
+    },
+    "card_path": "docs/contests/N22.md",
+    "evidence_label": "过程＋赛果自述",
+    "entry_links": {
+      "homepage": "https://www.mcm.edu.cn/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "CUMCM人工智能工具使用规定（2026试行）",
+          "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html"
+        },
+        {
+          "label": "CUMCM参赛规则（2026修订稿）",
+          "url": "https://www.mcm.edu.cn/upload_cn/node/774/FlQt6kJV6f5d5b4603e06c3c60acf89b72d7f298.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 2,
+    "name": "中国大学生计算机设计大赛",
+    "verdict": "优先软件、数据与交互作品",
+    "evidence": "U01 Codex省奖；外部成功与失败都存在",
+    "award_path": "校赛→省赛→国赛；2026工具名单需先过门",
+    "sources": "U01、X01、X05、X06、F03-F06、F21",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N38",
+    "track": "软件应用、数据与交互作品；按正式类别选题",
+    "ai_status": "2026限定名单；未查到Codex许可",
+    "ai_scope": "2026仅可使用规定15款或自主知识产权AI工具；不能默认Codex获准，也不能改名或套壳规避。",
+    "tool_permission": "allowlist_permission_unverified",
+    "fit": "高",
+    "human_threshold": [
+      "原创选题与内容判断",
+      "合规工具及过程记录",
+      "真机/部署测试与答辩"
+    ],
+    "evidence_level": "作者亲测；外部正反例",
+    "evidence_boundary": "保留U01历史Codex省奖；该经历不能证明2026或下一届工具许可。",
+    "edition": "2026",
+    "current_status": "2026已结束；下一届工具表、主题与资格另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "4C2026通知、规程与15款工具表",
+        "url": "https://jwc.ustb.edu.cn/docs/2026-03/aec2284456ea4b00848d819edb8aa651.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://jwc.ustb.edu.cn/docs/2026-03/aec2284456ea4b00848d819edb8aa651.pdf",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "practice_or_permitted_scope",
+    "start_label": "正式赛受限：先读规则",
+    "decision_label": "外部Codex许可待核",
+    "decision_code": "allowlist",
+    "decision_note": "2026限定工具名单，未查到Codex获准依据；历史省奖经历不能代替当届许可。",
+    "cost_summary": {
+      "team": "2026国赛为同校2-9名全日制本科生；≤2名指导教师。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "原创选题与内容判断；合规工具及过程记录；真机/部署测试与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-200人时"
+    },
+    "card_path": "docs/contests/N38.md",
+    "evidence_label": "作者亲测；外部正反例",
+    "entry_links": {
+      "homepage": "https://jsjds.blcu.edu.cn/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "4C2026通知、规程与15款工具表",
+          "url": "https://jwc.ustb.edu.cn/docs/2026-03/aec2284456ea4b00848d819edb8aa651.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 3,
+    "name": "先进机器人及仿真技术大赛",
+    "verdict": "先选前沿技术挑战或纯仿真",
+    "evidence": "U01第18届前沿组省奖；X16 Gemini机器鱼国一自述附照片",
+    "award_path": "按具体赛项查省/全国证书；硬件组另算",
+    "sources": "U01、X16",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N18",
+    "track": "创新创业赛道—前沿技术挑战组；机器鱼仿真单列核对",
+    "ai_status": "分赛项核工具权限",
+    "ai_scope": "未核实覆盖全部赛项的Codex许可；创新作品、机器鱼仿真与硬件竞技分别读细则。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "官方平台和SDK调通",
+      "仿真有效性与重复测试",
+      "对应组别的实际演示与答辩"
+    ],
+    "evidence_level": "作者亲测＋赛果自述（分赛项）",
+    "evidence_boundary": "U01为第18届前沿技术挑战组；X16为第19届机器鱼仿真，不合并为同一赛项实测。",
+    "edition": "2026第19届",
+    "current_status": "赛项与地区入口分别核；不能默认各省均设省赛",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "第19届RST通知与江苏国赛资格选拔说明",
+        "url": "https://www.czu.cn/_t454/2026/0901/c6a176944/pagem.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "中国仿真学会：第19届RST赛道动态",
+        "url": "https://www.csf-sim.org.cn/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "2023竞赛分析报告观察目录：高校转载",
+        "url": "https://cs.fdzcxy.edu.cn/_upload/article/files/92/04/3434b0214a5782729013f1aaf60f/1ec58b9b-7871-4406-b9fe-2f852fcf9644.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.czu.cn/_t454/2026/0901/c6a176944/pagem.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先定赛项，再跑官方基线",
+    "decision_code": "rule_check",
+    "decision_note": "创新作品、仿真竞技和硬件赛分别核平台及AI范围；已熟悉平台者再比较投入。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "仿真先核官方平台；硬件组另核器材与维护",
+      "human": "官方平台和SDK调通；仿真有效性与重复测试；对应组别的实际演示与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "60-180人时（软件/设计）",
+      "legacy_cost_note": "沿用已有环境最省；新平台的安装和 SDK 调通另留时间。"
+    },
+    "card_path": "docs/contests/N18.md",
+    "evidence_label": "作者亲测＋赛果自述（分赛项）",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第19届RST通知与江苏国赛资格选拔说明",
+          "url": "https://www.czu.cn/_t454/2026/0901/c6a176944/pagem.htm"
+        },
+        {
+          "label": "中国仿真学会：第19届RST赛道动态",
+          "url": "https://www.csf-sim.org.cn/"
+        },
+        {
+          "label": "2023竞赛分析报告观察目录：高校转载",
+          "url": "https://cs.fdzcxy.edu.cn/_upload/article/files/92/04/3434b0214a5782729013f1aaf60f/1ec58b9b-7871-4406-b9fe-2f852fcf9644.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 4,
+    "name": "全国大学生统计建模大赛",
+    "verdict": "数据流程很配，正式赛权限收紧",
+    "evidence": "F07/F08有获奖经验；本轮未见可绑定Agent获奖实录",
+    "award_path": "省/全国奖；2026禁止核心设计与正文直出",
+    "sources": "F07、F08、X36、T29、R02",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N23",
+    "track": "本科生组/研究生组统计研究；正式赛与赛前练习分开",
+    "ai_status": "2026核心设计及正文禁直出",
+    "ai_scope": "2026禁止AI直接生成选题、假设、框架、调查方案和论文正文；文献整理、图表类型建议、语言格式校对按规范执行，数据和代码任务另核。",
+    "tool_permission": "core_generation_prohibited",
+    "fit": "高",
+    "human_threshold": [
+      "人独立提出研究问题与设计",
+      "真实数据和统计解释",
+      "核心论文写作与全过程监督"
+    ],
+    "evidence_level": "获奖经验；缺Agent绑定",
+    "evidence_boundary": "F07/F08获奖经验未与Agent主导制作绑定；不得把通用数据能力当正式赛许可。",
+    "edition": "2026第12届",
+    "current_status": "2026规则限制核心直出；下一届规范另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "统计建模2026第12届主办方通知",
+        "url": "https://cmswebsite.ai-learning.net/u/cms/tjjmds/202603/10170642sbi1.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "统计建模生成式AI使用规范（2026试行）转载",
+        "url": "https://www.cmathc.org.cn/tjjmds/news/416.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://cmswebsite.ai-learning.net/u/cms/tjjmds/202603/10170642sbi1.pdf",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "practice_or_permitted_scope",
+    "start_label": "正式赛受限：先读规则",
+    "decision_label": "正式赛核心生成受限",
+    "decision_code": "restricted",
+    "decision_note": "2026禁止AI直接生成核心研究设计与正文；这届不推荐作为Agent全程直出参赛路线。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "人独立提出研究问题与设计；真实数据和统计解释；核心论文写作与全过程监督",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "120-260人时"
+    },
+    "card_path": "docs/contests/N23.md",
+    "evidence_label": "获奖经验；缺Agent绑定",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "统计建模2026第12届主办方通知",
+          "url": "https://cmswebsite.ai-learning.net/u/cms/tjjmds/202603/10170642sbi1.pdf"
+        },
+        {
+          "label": "统计建模生成式AI使用规范（2026试行）转载",
+          "url": "https://www.cmathc.org.cn/tjjmds/news/416.html"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 5,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "verdict": "优先数据已给、能本机跑的题",
+    "evidence": "F12 Claude Code两天原型、两月交付；外部国奖自述未披露Agent",
+    "award_path": "全国性赛事；不能预设必有省奖",
+    "sources": "F12、F13、X19、X21、X38",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N02",
+    "track": "企业指定题中数据可得、无额外硬件的纯软件题",
+    "ai_status": "逐题核开发工具",
+    "ai_scope": "未核到覆盖所有题的外部Codex许可；产品指定模型、开发辅助工具与提交声明分开核。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "高",
+    "human_threshold": [
+      "理解企业验收指标",
+      "接口/数据/环境准备",
+      "稳定性测试与现场解释"
+    ],
+    "evidence_level": "制作过程；缺AI赛果闭环",
+    "evidence_boundary": "F12有Claude Code制作过程但未写奖项；其他国奖自述未披露Agent，不能拼成同队AI国奖。",
+    "edition": "2026第15届",
+    "current_status": "当届题目和阶段分别核；下一届不可沿用旧赛题假定",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "第十五届中国软件杯参赛通知",
+        "url": "https://se.xjtu.edu.cn/info/1043/3807.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "中国软件杯2026赛题与校赛要求",
+        "url": "https://www.cuit.edu.cn/info/1006/16577.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://se.xjtu.edu.cn/info/1043/3807.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "纯软件题可研究；先核工具",
+    "decision_code": "rule_check",
+    "decision_note": "优先数据和接口可得的题；产品模型、开发辅助、SDK与现场要求分开核。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "理解企业验收指标；接口/数据/环境准备；稳定性测试与现场解释",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "120-240人时",
+      "legacy_cost_note": "建议预算：2-4 周起；复杂 AI/工业命题会更长。"
+    },
+    "card_path": "docs/contests/N02.md",
+    "evidence_label": "制作过程；缺AI赛果闭环",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第十五届中国软件杯参赛通知",
+          "url": "https://se.xjtu.edu.cn/info/1043/3807.htm"
+        },
+        {
+          "label": "中国软件杯2026赛题与校赛要求",
+          "url": "https://www.cuit.edu.cn/info/1006/16577.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 6,
+    "name": "美国大学生数学建模竞赛（MCM/ICM）",
+    "verdict": "现成Agent链最完整之一",
+    "evidence": "F18论文报告MM-Agent辅助两队获Finalist，非Codex无人值守",
+    "award_path": "境外赛事；奖项不是中国省奖",
+    "sources": "F18",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "E06",
+    "track": "MCM/ICM具体题；本科层次等资格按COMAP",
+    "ai_status": "允许负责任AI辅助并披露",
+    "ai_scope": "COMAP允许负责任使用AI，须核验、引用并追加Report on Use of AI；核心理解、模型判断与结果由队员负责。",
+    "tool_permission": "auxiliary_with_disclosure",
+    "fit": "高",
+    "human_threshold": [
+      "核心模型与误差判断",
+      "英文技术表达核验",
+      "符合当届页数与AI报告要求"
+    ],
+    "evidence_level": "论文报告；非Codex实测",
+    "evidence_boundary": "F18是MM-Agent辅助两队获2025 Finalist的论文报告，不等于本教程或Codex无人值守复现。",
+    "edition": "2027周期（既有官网资料）",
+    "current_status": "国际奖项单列；当届赛程、费用与页数再核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "COMAP MCM/ICM最新比赛说明与AI政策",
+        "url": "https://www.contest.comap.org/undergraduate/contests/mcm/instructions.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.contest.comap.org/undergraduate/contests/mcm/instructions.html",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "允许负责任AI辅助，须披露",
+    "decision_code": "auxiliary",
+    "decision_note": "COMAP允许负责任使用AI并要求核验与AI报告；它没有中国省奖，不能当省奖路线。",
+    "cost_summary": {
+      "team": "同校最多3名本科层次等学生，资格依COMAP",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "核心模型与误差判断；英文技术表达核验；符合当届页数与AI报告要求",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时",
+      "legacy_cost_note": "当届报名费另查 COMAP；赛前必须跑通英文模板和编译。"
+    },
+    "card_path": "docs/contests/E06.md",
+    "evidence_label": "论文报告；非Codex实测",
+    "entry_links": {
+      "homepage": "https://www.contest.comap.org/undergraduate/contests/mcm/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "COMAP MCM/ICM最新比赛说明与AI政策",
+          "url": "https://www.contest.comap.org/undergraduate/contests/mcm/instructions.html"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 7,
+    "name": "MathorCup数学应用挑战赛",
+    "verdict": "AI仅辅助，核心建模与求解须独立完成",
+    "evidence": "F09获奖方法可读，缺本赛Agent赛果绑定",
+    "award_path": "全国性社会赛事；校内认定先查",
+    "sources": "F09",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "E02",
+    "track": "第16届对应学历组；核心工作由队员独立完成",
+    "ai_status": "2026仅辅助，核心须独立",
+    "ai_scope": "允许AI辅助，但核心建模、算法设计、求解与分析须由队员独立完成；正文标注、参考文献、AI详情PDF及代码注释均需保留。",
+    "tool_permission": "auxiliary_only",
+    "fit": "高",
+    "human_threshold": [
+      "独立完成核心模型与算法",
+      "独立求解、分析及核验",
+      "完整AI使用标注与交互记录"
+    ],
+    "evidence_level": "获奖经验；缺Agent绑定",
+    "evidence_boundary": "F09可支持备赛方法，缺本赛Agent与奖项绑定；不能用“复用数模链”表示允许核心代做。",
+    "edition": "2026第16届",
+    "current_status": "2026AI规定已核；下一届重新核对",
+    "rules_checked_through": "2026-11-16",
+    "rule_sources": [
+      {
+        "label": "MathorCup2026人工智能工具使用规定（组委会发布）",
+        "url": "https://m.saikr.com/contest/notice_detail/39401",
+        "checked_through": "2026-11-16",
+        "basis": "本轮读取完整规定；组委会署名",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://m.saikr.com/contest/notice_detail/39401",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "核心独立完成，AI仅辅助",
+    "decision_code": "auxiliary",
+    "decision_note": "2026核心建模、算法、求解和分析须队员独立完成；通用数模链只在获准范围使用。",
+    "cost_summary": {
+      "team": "2026：1–3名同校学生",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "既有2026通知：200元/队；下一届另核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "独立完成核心模型与算法；独立求解、分析及核验；完整AI使用标注与交互记录",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-180人时",
+      "legacy_cost_note": "2026：200 元/队，1-3 名同校学生；正式赛约 4 天。"
+    },
+    "card_path": "docs/contests/E02.md",
+    "evidence_label": "获奖经验；缺Agent绑定",
+    "entry_links": {
+      "homepage": "https://mathorcup.org/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "MathorCup2026人工智能工具使用规定（组委会发布）",
+          "url": "https://m.saikr.com/contest/notice_detail/39401"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 8,
+    "name": "华中杯大学生数学建模挑战赛",
+    "verdict": "有Codex获奖自述，证据带折扣",
+    "evidence": "F01自述十来小时、一等奖，有服务赞助",
+    "award_path": "全国性社会赛事；不把一等奖自动折算省奖",
+    "sources": "F01",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "H01",
+    "track": "明确届次、杯赛与学历组后再做限时建模",
+    "ai_status": "当届AI权限待核",
+    "ai_scope": "缺可绑定当届的AI规范原文；F01获奖自述不能代替组委会工具许可。",
+    "tool_permission": "unknown",
+    "fit": "高",
+    "human_threshold": [
+      "独立建模判断与验证",
+      "核实当届资格和规则",
+      "说明AI与人工各自贡献"
+    ],
+    "evidence_level": "获奖自述；有赞助关联",
+    "evidence_boundary": "F01有服务赞助关联；自述工时和一等奖不代表普遍结果。",
+    "edition": "届次待核",
+    "current_status": "正式参赛入口及当届规则待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [],
+    "entry": {
+      "label": "当届入口待核",
+      "url": null,
+      "kind": "unverified",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "缺可绑定当届的AI规范原文；F01获奖自述不能代替组委会工具许可。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "独立建模判断与验证；核实当届资格和规则；说明AI与人工各自贡献",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "未测量"
+    },
+    "card_path": "docs/contests/H01.md",
+    "evidence_label": "获奖自述；有赞助关联",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": []
+    }
+  },
+  {
+    "rank": 9,
+    "name": "“中国电机工程学会杯”全国大学生电工数学建模竞赛",
+    "verdict": "通用数模链能迁移",
+    "evidence": "F17国二访谈；X44同作者电工杯无奖",
+    "award_path": "全国性赛事；奖项路径看当届",
+    "sources": "F17、X44",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "E05",
+    "track": "电工、电力相关具体数模题；同校组队规则另核",
+    "ai_status": "AI辅助范围待核",
+    "ai_scope": "已知2026竞赛概况不等于完整AI许可；电力工程约束、辅助工具和披露要求分别核。",
+    "tool_permission": "unknown",
+    "fit": "中高",
+    "human_threshold": [
+      "电工/电力背景",
+      "单位、边界与物理可行性",
+      "数值结果及仿真核验"
+    ],
+    "evidence_level": "获奖访谈＋无奖反例",
+    "evidence_boundary": "F17为国二访谈；X44同作者电工杯无奖，不把其他杯赛成功迁移为本赛成功。",
+    "edition": "2026",
+    "current_status": "2026概况作参考；下一届AI规则与日程待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "电工数学建模竞赛2026竞赛概况",
+        "url": "https://shumo.neepu.edu.cn/jszz/jsgk.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://shumo.neepu.edu.cn/jszz/jsgk.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "已知2026竞赛概况不等于完整AI许可；电力工程约束、辅助工具和披露要求分别核。",
+    "cost_summary": {
+      "team": "2026概况：本专研、3名同校学生",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "2026官方概况：不收报名费",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "电工/电力背景；单位、边界与物理可行性；数值结果及仿真核验",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-180人时"
+    },
+    "card_path": "docs/contests/E05.md",
+    "evidence_label": "获奖访谈＋无奖反例",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "电工数学建模竞赛2026竞赛概况",
+          "url": "https://shumo.neepu.edu.cn/jszz/jsgk.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 10,
+    "name": "“泰迪杯”数据挖掘挑战赛",
+    "verdict": "适合把数据项目做扎实",
+    "evidence": "F10/F11获奖实作约两月，未披露生成式Agent",
+    "award_path": "全国性赛事；不是短时写完即拿奖",
+    "sources": "F10、F11",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "E01",
+    "track": "数据已给、评测明确、算力可承担的具体题",
+    "ai_status": "外部模型/工具逐题核",
+    "ai_scope": "外部数据、预训练模型、联网API与开发Agent可能分别受限；未核统一全流程Codex许可。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "高",
+    "human_threshold": [
+      "数据泄漏与验证集判断",
+      "业务解释和模型对照",
+      "成绩复现与部署"
+    ],
+    "evidence_level": "获奖复盘；未披露Agent",
+    "evidence_boundary": "F10/F11约两个月获奖实作未披露生成式Agent，不代表短时自动获奖。",
+    "edition": "2026第14届",
+    "current_status": "2026赛题与结果为历史参考；下一届题目另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "2026第14届泰迪杯通知",
+        "url": "https://www.tipdm.org/dssj14/2527.jhtml",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "2026泰迪杯奖项公示",
+        "url": "https://www.tipdm.org/dssj14/2532.jhtml",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "2026泰迪杯全国奖与省奖的高校获奖报道",
+        "url": "https://www.nustti.edu.cn/2026/0918/c32a17510/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "普通高校大学生计算机类竞赛指数（2026版）",
+        "url": "https://www.ceracu.org.cn/nd.jsp?groupId=-1&id=288",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.tipdm.org/dssj14/2527.jhtml",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "外部数据、预训练模型、联网API与开发Agent可能分别受限；未核统一全流程Codex许可。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "数据泄漏与验证集判断；业务解释和模型对照；成绩复现与部署",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-180人时",
+      "legacy_cost_note": "建议预算：2-4 周；表格题通常比大模型训练题更省算力。"
+    },
+    "card_path": "docs/contests/E01.md",
+    "evidence_label": "获奖复盘；未披露Agent",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "2026第14届泰迪杯通知",
+          "url": "https://www.tipdm.org/dssj14/2527.jhtml"
+        },
+        {
+          "label": "2026泰迪杯奖项公示",
+          "url": "https://www.tipdm.org/dssj14/2532.jhtml"
+        },
+        {
+          "label": "2026泰迪杯全国奖与省奖的高校获奖报道",
+          "url": "https://www.nustti.edu.cn/2026/0918/c32a17510/page.htm"
+        },
+        {
+          "label": "普通高校大学生计算机类竞赛指数（2026版）",
+          "url": "https://www.ceracu.org.cn/nd.jsp?groupId=-1&id=288"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 11,
+    "name": "中国大学生服务外包创新创业大赛",
+    "verdict": "有真实需求再上，软件题优先",
+    "evidence": "F12不属于服创；X23/X24提供流程与选题经验，无OPC Agent赛果",
+    "award_path": "OPC与企业题分开；2026 OPC不走区域赛",
+    "sources": "X23、X24、T19",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N01",
+    "track": "A类纯软件企业题；OPC与创业实践单列",
+    "ai_status": "OPC与企业题权限分开",
+    "ai_scope": "2026OPC鼓励AI参与流程；企业题按具体题目核工具、模型和披露，不能把OPC许可套给所有类别。",
+    "tool_permission": "track_specific_conditions",
+    "fit": "高",
+    "human_threshold": [
+      "真实需求与用户验证",
+      "企业指标/平台适配",
+      "本人演示及答辩"
+    ],
+    "evidence_level": "流程经验；缺Agent赛果",
+    "evidence_boundary": "F12不属于服创；X23/X24为流程经验，缺OPC学生Agent获奖闭环。",
+    "edition": "2026第17届",
+    "current_status": "2026已结束；下一届按新手册与新题；OPC不预设区域/省奖",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "第十七届服创大赛参赛手册（2026年2月）",
+        "url": "https://www.hnpi.edu.cn/_upload/article/files/d4/cb/ad913737411f9b52b79ae89fc3d1/271cd76e-0826-43c9-ad42-3a34258dfd78.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "服创2026校方转发：OPC单独评审不参加区域赛",
+        "url": "https://cx.gzist.edu.cn/info/2070/2788.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "第十七届服创报名情况通告",
+        "url": "https://www.fwwb.org.cn/attached/file/20260416/20260416115145_211.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.hnpi.edu.cn/_upload/article/files/d4/cb/ad913737411f9b52b79ae89fc3d1/271cd76e-0826-43c9-ad42-3a34258dfd78.pdf",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "有真实产品需求，再查OPC",
+    "decision_code": "conditional",
+    "decision_note": "2026 OPC鼓励AI参与流程；企业题和创业实践另核，且OPC不预设省奖。",
+    "cost_summary": {
+      "team": "本专科等高校学生及部分毕业生；通常每队≤5名学生，具体类别看手册。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "真实需求与用户验证；企业指标/平台适配；本人演示及答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-180人时",
+      "legacy_cost_note": "建议预算：2-4 周；2026 届已结束，下一届按新题。"
+    },
+    "card_path": "docs/contests/N01.md",
+    "evidence_label": "流程经验；缺Agent赛果",
+    "entry_links": {
+      "homepage": "https://www.fwwb.org.cn/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "第十七届服创大赛参赛手册（2026年2月）",
+          "url": "https://www.hnpi.edu.cn/_upload/article/files/d4/cb/ad913737411f9b52b79ae89fc3d1/271cd76e-0826-43c9-ad42-3a34258dfd78.pdf"
+        },
+        {
+          "label": "服创2026校方转发：OPC单独评审不参加区域赛",
+          "url": "https://cx.gzist.edu.cn/info/2070/2788.htm"
+        },
+        {
+          "label": "第十七届服创报名情况通告",
+          "url": "https://www.fwwb.org.cn/attached/file/20260416/20260416115145_211.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 12,
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "verdict": "Web/游戏适配，先补真实赛果",
+    "evidence": "本轮多为教程与专项介绍，缺独立Agent获奖复盘",
+    "award_path": "全国性赛事；数媒OPC不是服创OPC",
+    "sources": "X25、X41",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N10",
+    "track": "Web交互、游戏与可视化作品；正式类名以指南为准",
+    "ai_status": "AI使用须披露原创贡献",
+    "ai_scope": "2026要求如实填报AI工具、使用环节、提示词/工作流、人工修改和原创贡献；各专项另有规定时按专项执行。",
+    "tool_permission": "ai_creation_with_disclosure",
+    "fit": "高",
+    "human_threshold": [
+      "原创叙事与交互设计",
+      "实际运行/体验验证",
+      "第三方授权与过程记录"
+    ],
+    "evidence_level": "介绍材料；缺实赛闭环",
+    "evidence_boundary": "本轮材料多为教程和专项介绍，缺独立Agent制作与同赛项奖项闭环。",
+    "edition": "2026第14届",
+    "current_status": "报名/提交已于2026-10-23截止；全国赛2026-11-27至29",
+    "rules_checked_through": "2026-11-16",
+    "rule_sources": [
+      {
+        "label": "数媒竞赛2026正式通知",
+        "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45826-1.html",
+        "checked_through": "2026-11-16",
+        "basis": "本轮读取组委会官网正文",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      },
+      {
+        "label": "数媒竞赛2026 AI与提交说明",
+        "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45835-1.html",
+        "checked_through": "2026-11-16",
+        "basis": "本轮读取秘书处官网正文",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      }
+    ],
+    "entry": {
+      "label": "查看2026正式通知",
+      "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45826-1.html",
+      "kind": "notice",
+      "registration_status": "2026-10-23已截止（本轮核对）",
+      "status_checked_through": "2026-11-16"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "dates": {
+      "registration_deadline": "2026-10-23T23:59:59+08:00",
+      "national_final_start": "2026-11-27",
+      "national_final_end": "2026-11-29"
+    },
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "2026要求如实填报AI工具、使用环节、提示词/工作流、人工修改和原创贡献；各专项另有规定时按专项执行。",
+    "cost_summary": {
+      "team": "2026本专研可参，≤5名学生，允许跨校但需确定第一申报单位。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "原创叙事与交互设计；实际运行/体验验证；第三方授权与过程记录",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "60-160人时",
+      "legacy_cost_note": "建议预算：7-14 个日历日。2026 常规提交已于 10 月 23 日截止。"
+    },
+    "card_path": "docs/contests/N10.md",
+    "evidence_label": "介绍材料；缺实赛闭环",
+    "entry_links": {
+      "homepage": "https://www.cmit.cn/wap/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "数媒竞赛2026正式通知",
+          "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45826-1.html"
+        },
+        {
+          "label": "数媒竞赛2026 AI与提交说明",
+          "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45835-1.html"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 13,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "verdict": "创意编程可试，审美仍是门槛",
+    "evidence": "X42国一与另一稿落选；X29未获省三，均未披露Agent",
+    "award_path": "省/全国赛分开；不是AIGC出图就容易奖",
+    "sources": "X28、X29、X42",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N11",
+    "track": "交互设计/创意编程；AIGC类别单列核对",
+    "ai_status": "AIGC与交互类别分别核",
+    "ai_scope": "AIGC类别考察AI创作及过程；不能把其许可套给全部交互和设计方向。",
+    "tool_permission": "track_specific_conditions",
+    "fit": "中高",
+    "human_threshold": [
+      "原创构思与文化考证",
+      "审美与体验修改",
+      "源文件、授权和过程证据"
+    ],
+    "evidence_level": "正反结果；未披露Agent",
+    "evidence_boundary": "X42有国一及另一稿落选；X29未获省三，均未披露Agent。",
+    "edition": "2026",
+    "current_status": "下一届类别、主题、院校报送和AI条款另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "NCDA2026竞赛办法",
+        "url": "https://ncda.org.cn/dsjs/dssz/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "NCDA2026非命题赛道细则",
+        "url": "https://www.ncda.org.cn/2026fmt/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://ncda.org.cn/dsjs/dssz/",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "AIGC类别考察AI创作及过程；不能把其许可套给全部交互和设计方向。",
+    "cost_summary": {
+      "team": "研究生、本科、专科分组；2026非命题多数类别≤3名作者，具体类别另核。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "原创构思与文化考证；审美与体验修改；源文件、授权和过程证据",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "50-140人时",
+      "legacy_cost_note": "建议预算：7-14 个日历日；无实体硬件。"
+    },
+    "card_path": "docs/contests/N11.md",
+    "evidence_label": "正反结果；未披露Agent",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "NCDA2026竞赛办法",
+          "url": "https://ncda.org.cn/dsjs/dssz/"
+        },
+        {
+          "label": "NCDA2026非命题赛道细则",
+          "url": "https://www.ncda.org.cn/2026fmt/"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 14,
+    "name": "全国大学生软件创新大赛",
+    "verdict": "软件制作很配，口碑证据待补",
+    "evidence": "目前工具与赛题适配判断，缺本轮合格Agent获奖复盘",
+    "award_path": "全国性赛事；指定题和平台另核",
+    "sources": "原目录N03",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N03",
+    "track": "第20届指定题：优先AI赋能学习生产力等软件题",
+    "ai_status": "外部编程Agent权限待核",
+    "ai_scope": "主题支持AI应用，尚未核实所有外部编程Agent的准入；先读赛题详情、能力清单与参赛者声明。",
+    "tool_permission": "unknown",
+    "fit": "高",
+    "human_threshold": [
+      "真实移动场景与需求",
+      "指定终端/能力兼容测试",
+      "完整软件、量化验证与答辩"
+    ],
+    "evidence_level": "规则适配；缺亲历",
+    "evidence_boundary": "当前为工程与赛题适配判断，缺独立Agent参赛获奖复盘。",
+    "edition": "第20届（2026—2027）",
+    "current_status": "报名及区域初赛作品提交至2027-01-15 18:00",
+    "rules_checked_through": "2026-11-16",
+    "rule_sources": [
+      {
+        "label": "第二十届软件创新大赛官方通知及附件",
+        "url": "https://www.swcontest.com.cn/information?activeTab=notice&detailId=3ecbb4eb0077464fbdfba2bbbefb31a0",
+        "checked_through": "2026-11-16",
+        "basis": "本轮检索官网当届通知；附件AI许可尚待逐项读取",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      },
+      {
+        "label": "承办高校第二十届参赛通知",
+        "url": "https://jiaowu.nwpu.edu.cn/info/1160/30698.htm",
+        "checked_through": "2026-11-16",
+        "basis": "本轮读取承办高校通知与赛题/赛程",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      }
+    ],
+    "entry": {
+      "label": "查看第20届官方通知及附件",
+      "url": "https://www.swcontest.com.cn/information?activeTab=notice&detailId=3ecbb4eb0077464fbdfba2bbbefb31a0",
+      "kind": "notice",
+      "registration_status": "通知安排：2026-10-30至2027-01-15 18:00",
+      "status_checked_through": "2026-11-16"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "dates": {
+      "registration_start": "2026-10-30",
+      "initial_submission_deadline": "2027-01-15T18:00:00+08:00"
+    },
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "主题支持AI应用，尚未核实所有外部编程Agent的准入；先读赛题详情、能力清单与参赛者声明。",
+    "cost_summary": {
+      "team": "第二十届在籍本科及研究生；学生最多4人、指导教师最多2人，跨校等按通知。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "既有第20届通知：免报名费；差旅自理",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "真实移动场景与需求；指定终端/能力兼容测试；完整软件、量化验证与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时",
+      "legacy_cost_note": "第 20 届：免费；2027-01-15 18:00 报名/初赛提交截止。"
+    },
+    "card_path": "docs/contests/N03.md",
+    "evidence_label": "规则适配；缺亲历",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第二十届软件创新大赛官方通知及附件",
+          "url": "https://www.swcontest.com.cn/information?activeTab=notice&detailId=3ecbb4eb0077464fbdfba2bbbefb31a0"
+        },
+        {
+          "label": "承办高校第二十届参赛通知",
+          "url": "https://jiaowu.nwpu.edu.cn/info/1160/30698.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 15,
+    "name": "全球校园人工智能算法精英大赛",
+    "verdict": "只有合适主题才值得投",
+    "evidence": "主题含Agent，不代表开发Agent替你参赛容易获奖",
+    "award_path": "全国性赛事；主题赛门槛分别查",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N09",
+    "track": "2026智能体互联主题赛；其他主题分别核",
+    "ai_status": "主题含Agent，工具仍待核",
+    "ai_scope": "智能体作品和平台要求已知，不等于外部开发Agent统一获准；须逐题核辅助与声明。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "有价值的协同任务",
+      "规定平台注册与真实运行",
+      "量化收益及调用轨迹"
+    ],
+    "evidence_level": "规则适配；缺亲历",
+    "evidence_boundary": "主题包含Agent不构成开发Agent替你参赛的成功证据。",
+    "edition": "2026",
+    "current_status": "该主题报名/提交已于2026-10-30截止；其他主题另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "AIC智能体互联主题赛2026通知",
+        "url": "https://www.aicomp.cn/notice/notice-3/5153.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "AIC2026四川赛区省级选拔赛通知",
+        "url": "https://www.aicomp.cn/notice/notice-2/notice-24/4523.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.aicomp.cn/notice/notice-3/5153.html",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "智能体作品和平台要求已知，不等于外部开发Agent统一获准；须逐题核辅助与声明。",
+    "cost_summary": {
+      "team": "本专研在读；该主题赛1-3人，最多2位指导教师。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "有价值的协同任务；规定平台注册与真实运行；量化收益及调用轨迹",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-200人时",
+      "legacy_cost_note": "2026：500 元/队，1-3 人；10 月 30 日报名提交已截止。"
+    },
+    "card_path": "docs/contests/N09.md",
+    "evidence_label": "规则适配；缺亲历",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "AIC智能体互联主题赛2026通知",
+          "url": "https://www.aicomp.cn/notice/notice-3/5153.html"
+        },
+        {
+          "label": "AIC2026四川赛区省级选拔赛通知",
+          "url": "https://www.aicomp.cn/notice/notice-2/notice-24/4523.html"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 16,
+    "name": "中国高校计算机大赛—人工智能创意赛",
+    "verdict": "有现成项目更划算",
+    "evidence": "缺本轮独立Agent参赛反馈",
+    "award_path": "全国性赛事；看年度赛道与成果要求",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N04",
+    "track": "人工智能创意赛对应年度分项；不与4C/AIGC赛混用",
+    "ai_status": "规定平台与开发权限另核",
+    "ai_scope": "已核AI创新作品定位，未核统一Codex准入；平台、模型、算力与代码规则按目标分项确认。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "真实应用价值",
+      "数据授权与人工对照",
+      "模型误差解释和部署"
+    ],
+    "evidence_level": "规则适配；缺亲历",
+    "evidence_boundary": "缺本轮独立Agent参赛反馈，不借用C4其他分支或4C赛果。",
+    "edition": "2026",
+    "current_status": "对应分项赛程与下一届规则待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "2026中国高校计算机大赛人工智能创意赛通知",
+        "url": "https://zhxy.nwsuaf.edu.cn/bksjy/jxdt/2cdebc54228b408f8987ee79778c3714.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "普通高校大学生计算机类竞赛指数（2026版）",
+        "url": "https://www.ceracu.org.cn/nd.jsp?groupId=-1&id=288",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://zhxy.nwsuaf.edu.cn/bksjy/jxdt/2cdebc54228b408f8987ee79778c3714.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "已核AI创新作品定位，未核统一Codex准入；平台、模型、算力与代码规则按目标分项确认。",
+    "cost_summary": {
+      "team": "2026校方通知：本研可组队，≤3名学生；跨校资格按全国规程。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "真实应用价值；数据授权与人工对照；模型误差解释和部署",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时"
+    },
+    "card_path": "docs/contests/N04.md",
+    "evidence_label": "规则适配；缺亲历",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "2026中国高校计算机大赛人工智能创意赛通知",
+          "url": "https://zhxy.nwsuaf.edu.cn/bksjy/jxdt/2cdebc54228b408f8987ee79778c3714.htm"
+        },
+        {
+          "label": "普通高校大学生计算机类竞赛指数（2026版）",
+          "url": "https://www.ceracu.org.cn/nd.jsp?groupId=-1&id=288"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 17,
+    "name": "华为ICT大赛",
+    "verdict": "软件创新题可看，生态成本另算",
+    "evidence": "F14旧获奖者经历含硬件、两月准备与英文答辩",
+    "award_path": "全国/全球阶段，不能一概当省奖",
+    "sources": "F14",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N28",
+    "track": "华为ICT创新赛；实践赛与编程赛另判",
+    "ai_status": "华为技术栈必需，Codex待核",
+    "ai_scope": "产品按指定华为技术实现；外部Codex开发辅助权限另核，不能套用实践赛/编程赛规则。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "华为平台/SDK学习",
+      "真实场景效果验证",
+      "本人现场演示与英文答辩准备"
+    ],
+    "evidence_level": "历史获奖经历；未披露Agent",
+    "evidence_boundary": "F14是历史获奖经历，含硬件、约两个月准备和英文答辩；未披露Agent，不升级为本届AI参赛实证。",
+    "edition": "第11届（既有通知）",
+    "current_status": "既有通知：创新赛报名至2026-11-30；本轮未重核入口状态",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "第11届华为ICT大赛创新赛校方通知",
+        "url": "https://chuangxin.dlut.edu.cn/info/1020/16867.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "华为ICT大赛2025-2026手册",
+        "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/212464e4d94143deaad4b1ee7f9dc55f/M3T1A669N1207723985743143006/%E5%8D%8E%E4%B8%BAICT%E5%A4%A7%E8%B5%9B2025-2026%20%E6%89%8B%E5%86%8C-20251216.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://chuangxin.dlut.edu.cn/info/1020/16867.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "产品按指定华为技术实现；外部Codex开发辅助权限另核，不能套用实践赛/编程赛规则。",
+    "cost_summary": {
+      "team": "第11届校方通知：3名同校学生、1名同校指导教师；学历按当届细则。",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "华为平台/SDK学习；真实场景效果验证；本人现场演示与英文答辩准备",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-220人时"
+    },
+    "card_path": "docs/contests/N28.md",
+    "evidence_label": "历史获奖经历；未披露Agent",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第11届华为ICT大赛创新赛校方通知",
+          "url": "https://chuangxin.dlut.edu.cn/info/1020/16867.htm"
+        },
+        {
+          "label": "华为ICT大赛2025-2026手册",
+          "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/212464e4d94143deaad4b1ee7f9dc55f/M3T1A669N1207723985743143006/%E5%8D%8E%E4%B8%BAICT%E5%A4%A7%E8%B5%9B2025-2026%20%E6%89%8B%E5%86%8C-20251216.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 18,
+    "name": "中国高校智能机器人创意大赛",
+    "verdict": "只考虑无需自购硬件的类别",
+    "evidence": "有AI作品线索，缺本轮独立Agent制作复盘",
+    "award_path": "全国性赛事；AIGC与硬件竞技分开",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N15",
+    "track": "主题一创意设计/AIGC等无需实物类别；硬件主题另算",
+    "ai_status": "AI创作材料要求已知",
+    "ai_scope": "创意/AIGC类别须按要求说明AI协助；外部Codex与具体材料范围仍按正式组别细则核。",
+    "tool_permission": "track_specific_conditions",
+    "fit": "条件高",
+    "human_threshold": [
+      "机器人机构/控制可行性",
+      "场景、尺寸和功能核验",
+      "原创方案与过程解释"
+    ],
+    "evidence_level": "作品线索；缺Agent实录",
+    "evidence_boundary": "有AI作品线索，缺本轮独立Agent制作与获奖闭环。",
+    "edition": "2026第9届",
+    "current_status": "2026资料作参考；下一届主题与组别待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "第九届高校智能机器人创意大赛：创意设计/AIGC材料",
+        "url": "https://xxgk.czu.cn/2026/0106/c5469a169887/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "中国高校智能机器人创意大赛官网",
+        "url": "https://www.robotcontest.cn/home/homepage",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://xxgk.czu.cn/2026/0106/c5469a169887/page.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "创意/AIGC类别须按要求说明AI协助；外部Codex与具体材料范围仍按正式组别细则核。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "机器人机构/控制可行性；场景、尺寸和功能核验；原创方案与过程解释",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "50-130人时"
+    },
+    "card_path": "docs/contests/N15.md",
+    "evidence_label": "作品线索；缺Agent实录",
+    "entry_links": {
+      "homepage": "https://www.robotcontest.cn/home/homepage",
+      "registration": null,
+      "rules": [
+        {
+          "label": "第九届高校智能机器人创意大赛：创意设计/AIGC材料",
+          "url": "https://xxgk.czu.cn/2026/0106/c5469a169887/page.htm"
+        },
+        {
+          "label": "中国高校智能机器人创意大赛官网",
+          "url": "https://www.robotcontest.cn/home/homepage"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 19,
+    "name": "睿抗机器人开发者大赛",
+    "verdict": "先筛纯软件/仿真项",
+    "evidence": "缺本轮Agent获奖实录",
+    "award_path": "具体省赛、全国阶段和设备分项核",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N17",
+    "track": "CAIA设计/应用作品优先；CAIP现场编程单列",
+    "ai_status": "作品与现场赛权限分开",
+    "ai_scope": "未确认全部子项AI准入；作品赛工具边界不能套给现场限时编程和机器人竞技。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "对应赛题的真实应用",
+      "原型测试和设备联调",
+      "现场独立操作与答辩"
+    ],
+    "evidence_level": "规则适配；缺Agent实录",
+    "evidence_boundary": "缺本轮Agent获奖实录，不外推母赛全部分项。",
+    "edition": "2026",
+    "current_status": "具体子项、地区省赛及现场限制另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "RAICOM2026校赛及省赛推荐要求",
+        "url": "https://jwc.neepu.edu.cn/info/1014/10578.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "RAICOM2026 CAIA设计赛道内容",
+        "url": "https://wdxy.jsu.edu.cn/tzgg/519e326676f2487693adebf139751bac.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://jwc.neepu.edu.cn/info/1014/10578.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "未确认全部子项AI准入；作品赛工具边界不能套给现场限时编程和机器人竞技。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "对应赛题的真实应用；原型测试和设备联调；现场独立操作与答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "70-180人时（设计）"
+    },
+    "card_path": "docs/contests/N17.md",
+    "evidence_label": "规则适配；缺Agent实录",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "RAICOM2026校赛及省赛推荐要求",
+          "url": "https://jwc.neepu.edu.cn/info/1014/10578.htm"
+        },
+        {
+          "label": "RAICOM2026 CAIA设计赛道内容",
+          "url": "https://wdxy.jsu.edu.cn/tzgg/519e326676f2487693adebf139751bac.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 20,
+    "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+    "verdict": "已有真实业务时再复用",
+    "evidence": "F15复盘强调调研、盈利规划与路演，未披露Agent",
+    "award_path": "校/省/全国选拔；项目真实性有独立成本",
+    "sources": "F15",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N20",
+    "track": "常规赛/实战赛分别核；已有真实电商业务再复用",
+    "ai_status": "AI题目不等于工具开放",
+    "ai_scope": "AI电商主题不构成外部写作/编程Agent许可；实战平台操作、原创与材料声明分别核。",
+    "tool_permission": "track_specific_unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "真实业务/用户与交易记录",
+      "调研与商业判断",
+      "本人经营验证和路演"
+    ],
+    "evidence_level": "获奖复盘；未披露Agent",
+    "evidence_boundary": "F15强调真实调研、盈利规划与路演；未披露Agent，材料生成能力不能替代真实运营证据。",
+    "edition": "第17届（2026—2027）",
+    "current_status": "新周期已启动；官方分赛道报名与提交安排待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "全国大学生电子商务三创赛官网",
+        "url": "https://www.3chuang.net/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "第17届三创赛（2026-2027）校方通知",
+        "url": "https://jwch.sdsmu.edu.cn/2026/1110/c2593a181620/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.3chuang.net/",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "已有真实项目再考虑",
+    "decision_code": "existing_project",
+    "decision_note": "先确认真实需求、数据或研究积累，再按具体赛项核工具与提交范围；只生成文稿不够。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "真实业务/用户与交易记录；调研与商业判断；本人经营验证和路演",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "80-200人时"
+    },
+    "card_path": "docs/contests/N20.md",
+    "evidence_label": "获奖复盘；未披露Agent",
+    "entry_links": {
+      "homepage": "https://www.3chuang.net/",
+      "registration": null,
+      "rules": [
+        {
+          "label": "全国大学生电子商务三创赛官网",
+          "url": "https://www.3chuang.net/"
+        },
+        {
+          "label": "第17届三创赛（2026-2027）校方通知",
+          "url": "https://jwch.sdsmu.edu.cn/2026/1110/c2593a181620/page.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 21,
+    "name": "中国国际大学生创新大赛",
+    "verdict": "已有产品与数据更合适",
+    "evidence": "F20仅旧校赛感想，不能推断Agent省奖",
+    "award_path": "校/省/全国选拔；不要凭空写运营",
+    "sources": "F20",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N30",
+    "track": "高教/红旅/职教/产业等对应组别；已有项目再投",
+    "ai_status": "外部Agent权限待核",
+    "ai_scope": "AI项目可参不等于全程代作获准；项目、数据、贡献和知识产权须真实，按组别核。",
+    "tool_permission": "unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "真实客户、实验或运营",
+      "团队与知识产权材料",
+      "真实财务口径和答辩"
+    ],
+    "evidence_level": "旧校赛经验；缺Agent赛果",
+    "evidence_boundary": "F20仅旧校赛感想，不据此推断Agent省奖或国奖。",
+    "edition": "2026",
+    "current_status": "2026全国报名已结束；2027按正式通知",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "教育部：中国国际大学生创新大赛2026通知",
+        "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "已有真实项目再考虑",
+    "decision_code": "existing_project",
+    "decision_note": "先确认真实需求、数据或研究积累，再按具体赛项核工具与提交范围；只生成文稿不够。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "真实客户、实验或运营；团队与知识产权材料；真实财务口径和答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "200-600+人时"
+    },
+    "card_path": "docs/contests/N30.md",
+    "evidence_label": "旧校赛经验；缺Agent赛果",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "教育部：中国国际大学生创新大赛2026通知",
+          "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 22,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "verdict": "有研究积累再投",
+    "evidence": "本轮缺同赛项Agent获奖亲历",
+    "award_path": "校/省/全国选拔；科研内容与证明独立准备",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N31",
+    "track": "自然科学论文/哲社调查/科技发明对应组别；主体赛与专项分开",
+    "ai_status": "核心研究须原创，AI细则待核",
+    "ai_scope": "缺当届统一AI细则；不能用AI专项或生成材料替代核心研究、实验和作者实际贡献。",
+    "tool_permission": "unknown",
+    "fit": "中",
+    "human_threshold": [
+      "长期研究问题与核心成果",
+      "真实实验/调查与数据",
+      "连续过程证据和答辩"
+    ],
+    "evidence_level": "规则适配；缺同赛项亲历",
+    "evidence_boundary": "缺本轮同赛项Agent获奖亲历，不借用创业计划竞赛或专项奖。",
+    "edition": "新周期待全国正式通知",
+    "current_status": "校内预通知不能替代全国正式规则和资格",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "挑战杯官方平台",
+        "url": "http://www.tiaozhanbei.net/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "挑战杯科技作品新周期校方预通知",
+        "url": "https://www.gzus.edu.cn/rjyrgznxy/info/1047/5203.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "东北大学秦皇岛分校2026竞赛星级分类表",
+        "url": "https://cxcyzx.neuq.edu.cn/__local/B/13/B6/0EC54AD2C0F8BE5A64111124108_1720848A_28B95.pdf",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "http://www.tiaozhanbei.net/",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "已有真实项目再考虑",
+    "decision_code": "existing_project",
+    "decision_note": "先确认真实需求、数据或研究积累，再按具体赛项核工具与提交范围；只生成文稿不够。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "长期研究问题与核心成果；真实实验/调查与数据；连续过程证据和答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "250-700+人时"
+    },
+    "card_path": "docs/contests/N31.md",
+    "evidence_label": "规则适配；缺同赛项亲历",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "挑战杯官方平台",
+          "url": "http://www.tiaozhanbei.net/"
+        },
+        {
+          "label": "挑战杯科技作品新周期校方预通知",
+          "url": "https://www.gzus.edu.cn/rjyrgznxy/info/1047/5203.htm"
+        },
+        {
+          "label": "东北大学秦皇岛分校2026竞赛星级分类表",
+          "url": "https://cxcyzx.neuq.edu.cn/__local/B/13/B6/0EC54AD2C0F8BE5A64111124108_1720848A_28B95.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 23,
+    "name": "“挑战杯”中国大学生创业计划竞赛",
+    "verdict": "有真实创业项目再投",
+    "evidence": "本轮缺Agent省奖绑定",
+    "award_path": "校/省/全国选拔；运营和答辩不能只靠材料",
+    "sources": "原目录",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N32",
+    "track": "对应创业计划组别；真实创业项目先行",
+    "ai_status": "商业材料与代码权限待核",
+    "ai_scope": "未核覆盖计划书、代码和数据的统一AI准入；真实运营、融资、用户与股权事实由团队承担。",
+    "tool_permission": "unknown",
+    "fit": "条件高",
+    "human_threshold": [
+      "客户访谈与业务试点",
+      "真实运营与财务假设",
+      "合作、团队与现场交流"
+    ],
+    "evidence_level": "规则适配；缺Agent省奖",
+    "evidence_boundary": "缺Agent与本赛省奖绑定；主体赛、专项赛和“大挑”不能串用。",
+    "edition": "2026周期（既有资料）",
+    "current_status": "新一届全国章程、资格与具体赛程待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "挑战杯2026创业计划竞赛校方通知",
+        "url": "https://www.hfuu.edu.cn/tw/77/d4/c284a161748/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "挑战杯官方平台",
+        "url": "http://www.tiaozhanbei.net/",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.hfuu.edu.cn/tw/77/d4/c284a161748/page.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "已有真实项目再考虑",
+    "decision_code": "existing_project",
+    "decision_note": "先确认真实需求、数据或研究积累，再按具体赛项核工具与提交范围；只生成文稿不够。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "客户访谈与业务试点；真实运营与财务假设；合作、团队与现场交流",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "180-500+人时"
+    },
+    "card_path": "docs/contests/N32.md",
+    "evidence_label": "规则适配；缺Agent省奖",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "挑战杯2026创业计划竞赛校方通知",
+          "url": "https://www.hfuu.edu.cn/tw/77/d4/c284a161748/page.htm"
+        },
+        {
+          "label": "挑战杯官方平台",
+          "url": "http://www.tiaozhanbei.net/"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 24,
+    "name": "全国大学生市场调查与分析大赛",
+    "verdict": "分析适配，拿样本最费人",
+    "evidence": "F16有获奖访谈，但为研究生历史样本、未披露Agent",
+    "award_path": "省/全国阶段以组别为准；真实样本另算成本",
+    "sources": "F16、T29",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N21",
+    "track": "团队实践赛对应学历组；个人知识赛单列",
+    "ai_status": "允许辅助不等于核心代做",
+    "ai_scope": "既有校方通知要求合规AI辅助；核心调查、分析及解释由队员独立完成，知识考试不能沿用实践辅助权限。",
+    "tool_permission": "limited_auxiliary_scope",
+    "fit": "中",
+    "human_threshold": [
+      "抽样、问卷与真实招募",
+      "真实采集和调查过程",
+      "核心统计分析与结论解释"
+    ],
+    "evidence_level": "历史获奖访谈；组别不同",
+    "evidence_boundary": "F16为研究生历史样本且未披露Agent，不能外推本科生Agent获奖。",
+    "edition": "第17届（2026—2027）",
+    "current_status": "报名已于2026-10-31截止；后续阶段按组别安排",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "市调大赛2026 AI工具及校赛通知",
+        "url": "https://bs.sztu.edu.cn/info/1022/4269.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "第17届市调大赛2026-2027报名通知",
+        "url": "https://info.zzuli.edu.cn/_t2315/2026/0930/c13520a360736/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://bs.sztu.edu.cn/info/1022/4269.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "核心由人完成，辅助范围另核",
+    "decision_code": "auxiliary",
+    "decision_note": "既有校方通知要求合规AI辅助；核心调查、分析及解释由队员独立完成，知识考试不能沿用实践辅助权限。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "抽样、问卷与真实招募；真实采集和调查过程；核心统计分析与结论解释",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "100-240人时"
+    },
+    "card_path": "docs/contests/N21.md",
+    "evidence_label": "历史获奖访谈；组别不同",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "市调大赛2026 AI工具及校赛通知",
+          "url": "https://bs.sztu.edu.cn/info/1022/4269.htm"
+        },
+        {
+          "label": "第17届市调大赛2026-2027报名通知",
+          "url": "https://info.zzuli.edu.cn/_t2315/2026/0930/c13520a360736/page.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 25,
+    "name": "全国大学生能源经济学术创意大赛",
+    "verdict": "第13届禁止AI自动生成作品参赛",
+    "evidence": "F19获奖代表分享未披露Agent",
+    "award_path": "省/全国奖看当届，另核论文AI条款",
+    "sources": "F19",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "N24",
+    "track": "研究论文/调研报告/创新创业三类；研究方法不是工具许可",
+    "ai_status": "第13届禁止AI自动生成作品",
+    "ai_scope": "不得使用生成式AI自动生成的作品参赛；辅助代码及其他边界未获明确条款，不推定允许核心代做。",
+    "tool_permission": "generated_work_prohibited",
+    "fit": "中",
+    "human_threshold": [
+      "能源经济核心问题与研究设计",
+      "真实数据和专业解释",
+      "独立写作及答辩"
+    ],
+    "evidence_level": "获奖分享；未披露Agent",
+    "evidence_boundary": "F19获奖代表分享未披露Agent；“泛能源大数据与人工智能”方法类别不等于AI代写许可。",
+    "edition": "第13届（2026启动、2027评审）",
+    "current_status": "2026-11-17至12-16报名；2027-02-22至03-13交作品",
+    "rules_checked_through": "2026-11-16",
+    "rule_sources": [
+      {
+        "label": "第十三届能源经济大赛参赛通知（校方正式发布）",
+        "url": "https://jw.dhu.edu.cn/_t1379/2026/1103/c9979a384086/page.htm",
+        "checked_through": "2026-11-16",
+        "basis": "本轮读取完整通知，含报名日期和禁止AI自动生成作品条款",
+        "supports": "以链接正文实际条款为准；未明确部分仍为待核"
+      }
+    ],
+    "entry": {
+      "label": "第13届官方报名/投稿系统",
+      "url": "https://energy.qibebt.ac.cn/eneco/contribution/index.html#/index",
+      "kind": "registration",
+      "registration_status": "通知安排：2026-11-17至12-16报名",
+      "status_checked_through": "2026-11-16"
+    },
+    "start_mode": "practice_or_permitted_scope",
+    "start_label": "正式赛受限：先读规则",
+    "dates": {
+      "registration_start": "2026-11-17",
+      "registration_deadline": "2026-12-16",
+      "submission_start": "2027-02-22",
+      "submission_deadline": "2027-03-13"
+    },
+    "decision_label": "不适合AI自动生成作品参赛",
+    "decision_code": "restricted",
+    "decision_note": "第13届禁止使用生成式AI自动生成的作品参赛；不能把代码能力当作正式许可。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "既有第13届通知：免收费；其他成本另算",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "能源经济核心问题与研究设计；真实数据和专业解释；独立写作及答辩",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "120-260人时"
+    },
+    "card_path": "docs/contests/N24.md",
+    "evidence_label": "获奖分享；未披露Agent",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "第十三届能源经济大赛参赛通知（校方正式发布）",
+          "url": "https://jw.dhu.edu.cn/_t1379/2026/1103/c9979a384086/page.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 26,
+    "name": "华数杯全国大学生数学建模竞赛",
+    "verdict": "方法可迁移，本轮结果证据较薄",
+    "evidence": "X44提到参加与用AI，但没有绑定本杯奖项",
+    "award_path": "社会赛事；先核本校认定与当届规则",
+    "sources": "X44",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "E03",
+    "track": "国内赛与国际赛分别核；不混同同名杯赛",
+    "ai_status": "当届完整AI章程待核",
+    "ai_scope": "仅核到2026第七届存在及主办信息，缺完整当届AI条款；数模制作能力不等于全程Codex获准。",
+    "tool_permission": "unknown",
+    "fit": "高",
+    "human_threshold": [
+      "核心建模与检验",
+      "杯赛/组别资格核对",
+      "本校认定与AI披露规则"
+    ],
+    "evidence_level": "AI使用线索；奖项未绑定",
+    "evidence_boundary": "X44提到参赛及使用AI，但没有本杯奖项绑定，不迁移国赛省一。",
+    "edition": "2026第7届（既有资料）",
+    "current_status": "国内/国际赛与下一届AI章程待核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "2026第七届华数杯获奖与主办信息",
+        "url": "https://www.hfuu.edu.cn/75/ce/c58a161230/page.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.hfuu.edu.cn/75/ce/c58a161230/page.htm",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核具体赛项与工具范围",
+    "decision_code": "rule_check",
+    "decision_note": "仅核到2026第七届存在及主办信息，缺完整当届AI条款；数模制作能力不等于全程Codex获准。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "核心建模与检验；杯赛/组别资格核对；本校认定与AI披露规则",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "60-140人时"
+    },
+    "card_path": "docs/contests/E03.md",
+    "evidence_label": "AI使用线索；奖项未绑定",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "2026第七届华数杯获奖与主办信息",
+          "url": "https://www.hfuu.edu.cn/75/ce/c58a161230/page.htm"
+        }
+      ]
+    }
+  },
+  {
+    "rank": 27,
+    "name": "“华为杯”中国研究生数学建模竞赛",
+    "verdict": "本科生先核资格，不能默认报名",
+    "evidence": "本轮缺Agent与奖项绑定的亲历；不同于华为ICT",
+    "award_path": "研究生赛事；资格与奖项名称另核",
+    "sources": "待补",
+    "rank_basis": "制作适配榜的编辑顺序；不表示获奖概率、当届Codex许可或学校认定。正式开打先核AI权限、资格与当前赛程。",
+    "catalog_id": "G01",
+    "track": "研究生数模对应组；本科生资格先核",
+    "ai_status": "2026AI仅辅助，不能主导答题",
+    "ai_scope": "2026明确AI仅作辅助、不能主导答题；队员须掌握核心建模与分析，按当届要求披露。",
+    "tool_permission": "auxiliary_only",
+    "fit": "高",
+    "human_threshold": [
+      "核实学历与组队资格",
+      "核心模型与分析判断",
+      "复现、匿名和最终文件冻结"
+    ],
+    "evidence_level": "规则材料；缺亲历",
+    "evidence_boundary": "缺本赛Agent与奖项绑定；与华为ICT创新赛分开。",
+    "edition": "2026",
+    "current_status": "2026-09-23至27已结束；下一届资格和AI条款另核",
+    "rules_checked_through": "2026-11-12",
+    "rule_sources": [
+      {
+        "label": "华为杯 2026 开赛公告（完整转载）",
+        "url": "https://www.cmathc.org.cn/cpmcm/news/642.html",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      },
+      {
+        "label": "华为杯 2026：培养单位通知及附件",
+        "url": "https://gs.bigc.edu.cn/yjspy/jwxx/c3d4acea32064c70b3cca72407335b2f.htm",
+        "checked_through": "2026-11-12",
+        "basis": "既有目录来源；本轮未重新打开",
+        "supports": "继承目录中的赛事/规则依据；未核实的AI权限不因有链接而视为允许"
+      }
+    ],
+    "entry": {
+      "label": "查看当届通知/规则",
+      "url": "https://www.cmathc.org.cn/cpmcm/news/642.html",
+      "kind": "notice",
+      "registration_status": "待核（不以通知链接表示正在报名）"
+    },
+    "start_mode": "verify_rules_before_formal_entry",
+    "start_label": "正式赛先核对应赛项规则",
+    "decision_label": "先核研究生资格；AI仅辅助",
+    "decision_code": "auxiliary",
+    "decision_note": "普通本科生不能默认报名；核心答题须队员主导，按当届要求披露。",
+    "cost_summary": {
+      "team": "人数与组队方式待逐赛项核",
+      "time": "完整备赛工时未作可比测量；旧估算见依据",
+      "registration_fee": "当届报名费待核",
+      "model_fee": "模型/订阅用量未测；不得按免费推算",
+      "hardware": "设备、软件授权和算力需求待具体题目核",
+      "human": "核实学历与组队资格；核心模型与分析判断；复现、匿名和最终文件冻结",
+      "basis": "人时为旧版编辑估算，不是完成时限或获奖统计；已知费用注明年度，未知项保持待核。",
+      "legacy_estimate": "未做可信工时测量",
+      "legacy_cost_note": "2026 比赛 9 月 23-27 日，已结束；建议提前练旧题。"
+    },
+    "card_path": "docs/contests/G01.md",
+    "evidence_label": "规则材料；缺亲历",
+    "entry_links": {
+      "homepage": null,
+      "registration": null,
+      "rules": [
+        {
+          "label": "华为杯 2026 开赛公告（完整转载）",
+          "url": "https://www.cmathc.org.cn/cpmcm/news/642.html"
+        },
+        {
+          "label": "华为杯 2026：培养单位通知及附件",
+          "url": "https://gs.bigc.edu.cn/yjspy/jwxx/c3d4acea32064c70b3cca72407335b2f.htm"
+        }
+      ]
+    }
+  }
+]

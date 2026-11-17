@@ -1,0 +1,117 @@
+{
+  "status": "verified",
+  "date": "2026-11-16",
+  "driver": "Codex CLI 0.167.0-alpha.3.2",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "skill": {
+    "repository": "jihe520/MathModelAgent",
+    "commit": "03f4eb388b3862b7bde55b508dceaf3d6b39d5ac"
+  },
+  "paper_pages": 17,
+  "paper_sha256": "384b0ec0d89adb8c0d55aaf37e16d9162e832d4941230c19c4b4716da70f0f95",
+  "elapsed_active_minutes": 35.52,
+  "elapsed_scope": "两个CLI尝试的墙钟时长相加，不含两次之间的停顿、外部审计与打包时间；不是纯计算耗时",
+  "interruption": "首次因workspace credits中断，恢复同一会话继续；有后续版式与验收反馈，非无中断一键",
+  "attempts": [
+    {
+      "started_utc": "2026-11-16T03:00:56Z",
+      "finished_utc": "2026-11-16T03:12:25Z",
+      "exit_code": 1,
+      "reason": "workspace credits exhausted"
+    },
+    {
+      "started_utc": "2026-11-16T03:21:53Z",
+      "finished_utc": "2026-11-16T03:45:55Z",
+      "exit_code": 0
+    }
+  ],
+  "usage_resumed_turn_only": {
+    "input_tokens": 5928424,
+    "cached_input_tokens": 5700992,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 71373,
+    "reasoning_output_tokens": 16682
+  },
+  "usage_scope": "恢复轮CLI报告值；首次失败未报告完整usage，不是全流程总用量或账单",
+  "cost": {
+    "auth_mode": "已有ChatGPT登录",
+    "per_run_invoice": null,
+    "claim": "不可分摊；未写成免费"
+  },
+  "checks": {
+    "agent": 211,
+    "agent_passed": 211,
+    "automatic_acceptance": 20,
+    "independent": 242,
+    "independent_passed": 242,
+    "production_mc_groups": 79,
+    "q1_mc_groups": 3,
+    "boundary_mc_groups": 1,
+    "visual_pages": 17,
+    "public_clean_reproduction": "passed after packaging fixes"
+  },
+  "q2_summary": [
+    {
+      "case": 1,
+      "policy": "1101",
+      "cost": 38.444444444444436,
+      "profit": 17.555555555555564
+    },
+    {
+      "case": 2,
+      "policy": "1101",
+      "cost": 45.25,
+      "profit": 10.75
+    },
+    {
+      "case": 3,
+      "policy": "1101",
+      "cost": 41.11111111111111,
+      "profit": 14.888888888888893
+    },
+    {
+      "case": 4,
+      "policy": "1111",
+      "cost": 41.75,
+      "profit": 14.25
+    },
+    {
+      "case": 5,
+      "policy": "0100",
+      "cost": 44.012345679012334,
+      "profit": 11.987654320987666
+    },
+    {
+      "case": 6,
+      "policy": "0000",
+      "cost": 34.32132963988921,
+      "profit": 21.678670360110793
+    }
+  ],
+  "q3": {
+    "policy": "1111111111111101",
+    "cost": 142.33333333333334,
+    "profit": 57.66666666666666,
+    "enumerated": 65536,
+    "proper": 17060
+  },
+  "limitations": [
+    "固定工位决策、拆回直系子件复检的策略类；不证明无约束自适应全局最优",
+    "第四问为假想固定n=100/400，非真实采样；95%按单个目标内节点联合解释",
+    "第一问p=.1且最大n2000时未决率86.407%，无真实批次结论",
+    "Claude兼容安装与Modex官方教程均不算本轮端到端实测",
+    "保留便于学习的目录；正式参赛须核当届格式和工具权限"
+  ],
+  "reproduce_command": "python code/run_all.py",
+  "compile_command": "typst compile --root . paper/main.typ paper/main.pdf",
+  "input_pdf_sha256": "f54529dd15d729b046e248ea41033b4f66ef68333be2bee912b0c54eafd227ab",
+  "original_manifest_sha256": "34f27e328eb41503cb1c6a2000ef45e3eb3eadb508b621ca657b9d80ca36a776",
+  "packaging_changes": [
+    "run_all.py增加可移植环境元数据采集",
+    "独立审计路径改为当前示例目录并补齐oracle输入",
+    "分析报告早期13字段笔误改为12，澄清q_i条件表达；不改求解公式",
+    "原始检查命令的本机绝对路径改为可移植路径；原始逐页PNG仅分发联系表和hash",
+    "公开文本统一LF行尾，确保仓库与ZIP的SHA256一致"
+  ]
+}

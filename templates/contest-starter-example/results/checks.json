@@ -1,0 +1,13 @@
+{
+  "purpose": "fixed_fixture_acceptance",
+  "passed": true,
+  "checks": {
+    "row_accounting": true,
+    "expected_valid_and_rejected": true,
+    "unique_valid_ids": true,
+    "known_fixture_total": true,
+    "known_fixture_means": true,
+    "source_unchanged": true,
+    "chart_marks_synthetic": true
+  }
+}

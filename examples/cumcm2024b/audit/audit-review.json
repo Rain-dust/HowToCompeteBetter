@@ -1,0 +1,3274 @@
+{
+  "status": "passed_with_explicit_model_scope",
+  "audit_method": "Independent scalar enumeration, integer-barrier sequential recursion, binomial-tail CI inversion, and new physical event simulations. No solution modules imported.",
+  "pass_count": 242,
+  "check_count": 242,
+  "q1": {
+    "at_p0": {
+      "p": 0.1,
+      "accept": 0.09717280417604218,
+      "reject": 0.03875697601331905,
+      "inconclusive": 0.8640702198106867,
+      "expected_tests_capped": 1744.5729177752446
+    },
+    "max_exact_OC_difference": 0,
+    "independent_simulations": [
+      {
+        "p": 0.05,
+        "trials": 25000,
+        "seed": 198721,
+        "inconclusive": 0.0,
+        "accept": 0.9998,
+        "reject": 0.0002,
+        "mean_tests": 138.3604
+      },
+      {
+        "p": 0.1,
+        "trials": 25000,
+        "seed": 198722,
+        "inconclusive": 0.8618,
+        "accept": 0.098,
+        "reject": 0.0402,
+        "mean_tests": 1740.08
+      },
+      {
+        "p": 0.2,
+        "trials": 25000,
+        "seed": 198723,
+        "inconclusive": 0.0,
+        "accept": 0.00012,
+        "reject": 0.99988,
+        "mean_tests": 73.22884
+      }
+    ],
+    "risk_proof": "For p<=.1, E[2^X(8/9)^(1-X)]<=1. For p>=.1, E[(1/2)^X(19/18)^(1-X)]<=1. Ville bounds are .05 and .1; intersecting stopping rules cannot increase either error.",
+    "limits": [
+      "p_reject_alternative=.2 and p_accept_alternative=.05 are design choices, not data.",
+      "No uniformly minimum sample-size claim is justified.",
+      "At n=2000 the procedure retains an inconclusive outcome; near p=.1 most batches remain inconclusive."
+    ]
+  },
+  "policy_tables": [
+    {
+      "target": "q2:1",
+      "best_policy": 11,
+      "best_cost": 38.44444444444444,
+      "best_profit": 17.555555555555557,
+      "proper": 10,
+      "max_error": 4.4444448121794267e-11
+    },
+    {
+      "target": "q2:2",
+      "best_policy": 11,
+      "best_cost": 45.25,
+      "best_profit": 10.75,
+      "proper": 10,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "target": "q2:3",
+      "best_policy": 11,
+      "best_cost": 41.111111111111114,
+      "best_profit": 14.888888888888886,
+      "proper": 10,
+      "max_error": 3.623057409640751e-11
+    },
+    {
+      "target": "q2:4",
+      "best_policy": 15,
+      "best_cost": 41.75,
+      "best_profit": 14.25,
+      "proper": 10,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "target": "q2:5",
+      "best_policy": 2,
+      "best_cost": 44.01234567901234,
+      "best_profit": 11.987654320987659,
+      "proper": 10,
+      "max_error": 4.196465397399152e-11
+    },
+    {
+      "target": "q2:6",
+      "best_policy": 0,
+      "best_cost": 34.3213296398892,
+      "best_profit": 21.6786703601108,
+      "proper": 10,
+      "max_error": 4.8473225433554035e-11
+    },
+    {
+      "target": "q3",
+      "best_policy": 49151,
+      "best_cost": 142.33333333333334,
+      "best_profit": 57.66666666666666,
+      "proper": 17060,
+      "max_error": 4.998810254619457e-10
+    }
+  ],
+  "q4": [
+    {
+      "target": "q2:1",
+      "N": 100,
+      "best_policy": 11,
+      "worst_cost": 44.80790971388488,
+      "worst_profit": 11.192090286115118,
+      "exact_independent_joint_coverage": 0.9632089251528971,
+      "max_CI_error": 8.326672684688674e-17
+    },
+    {
+      "target": "q2:2",
+      "N": 100,
+      "best_policy": 11,
+      "worst_cost": 55.26773338101226,
+      "worst_profit": 0.7322666189877367,
+      "exact_independent_joint_coverage": 0.9651458166931164,
+      "max_CI_error": 5.551115123125783e-17
+    },
+    {
+      "target": "q2:3",
+      "N": 100,
+      "best_policy": 15,
+      "worst_cost": 47.08497646609601,
+      "worst_profit": 8.915023533903991,
+      "exact_independent_joint_coverage": 0.9632089251528971,
+      "max_CI_error": 8.326672684688674e-17
+    },
+    {
+      "target": "q2:4",
+      "N": 100,
+      "best_policy": 15,
+      "worst_cost": 49.72329799713221,
+      "worst_profit": 6.276702002867793,
+      "exact_independent_joint_coverage": 0.9651458166931164,
+      "max_CI_error": 5.551115123125783e-17
+    },
+    {
+      "target": "q2:5",
+      "N": 100,
+      "best_policy": 11,
+      "worst_cost": 55.75549269841628,
+      "worst_profit": 0.2445073015837167,
+      "exact_independent_joint_coverage": 0.9638541233886324,
+      "max_CI_error": 8.326672684688674e-17
+    },
+    {
+      "target": "q2:6",
+      "N": 100,
+      "best_policy": 1,
+      "worst_cost": 43.808353829338266,
+      "worst_profit": 12.191646170661734,
+      "exact_independent_joint_coverage": 0.9697266018207558,
+      "max_CI_error": 8.326672684688674e-17
+    },
+    {
+      "target": "q3",
+      "N": 100,
+      "best_policy": 65535,
+      "worst_cost": 173.0908729647018,
+      "worst_profit": 26.909127035298212,
+      "exact_independent_joint_coverage": 0.9539214494234589,
+      "max_CI_error": 6.439293542825908e-15
+    },
+    {
+      "target": "q2:1",
+      "N": 400,
+      "best_policy": 11,
+      "worst_cost": 41.073324648099174,
+      "worst_profit": 14.926675351900826,
+      "exact_independent_joint_coverage": 0.964261562922095,
+      "max_CI_error": 2.886579864025407e-15
+    },
+    {
+      "target": "q2:2",
+      "N": 400,
+      "best_policy": 11,
+      "worst_cost": 49.523936182373156,
+      "worst_profit": 6.476063817626844,
+      "exact_independent_joint_coverage": 0.9636724510721495,
+      "max_CI_error": 1.3322676295501878e-15
+    },
+    {
+      "target": "q2:3",
+      "N": 400,
+      "best_policy": 15,
+      "worst_cost": 43.57903946556249,
+      "worst_profit": 12.420960534437512,
+      "exact_independent_joint_coverage": 0.964261562922095,
+      "max_CI_error": 2.886579864025407e-15
+    },
+    {
+      "target": "q2:4",
+      "N": 400,
+      "best_policy": 15,
+      "worst_cost": 45.15170430841945,
+      "worst_profit": 10.848295691580553,
+      "exact_independent_joint_coverage": 0.9636724510721495,
+      "max_CI_error": 1.3322676295501878e-15
+    },
+    {
+      "target": "q2:5",
+      "N": 400,
+      "best_policy": 11,
+      "worst_cost": 50.327233116025624,
+      "worst_profit": 5.672766883974376,
+      "exact_independent_joint_coverage": 0.9640651523012461,
+      "max_CI_error": 2.886579864025407e-15
+    },
+    {
+      "target": "q2:6",
+      "N": 400,
+      "best_policy": 1,
+      "worst_cost": 38.145204383887126,
+      "worst_profit": 17.854795616112874,
+      "exact_independent_joint_coverage": 0.9676742217600522,
+      "max_CI_error": 4.718447854656915e-16
+    },
+    {
+      "target": "q3",
+      "N": 400,
+      "best_policy": 65535,
+      "worst_cost": 156.09973063620112,
+      "worst_profit": 43.900269363798884,
+      "exact_independent_joint_coverage": 0.9600178926475761,
+      "max_CI_error": 3.608224830031759e-16
+    }
+  ],
+  "simulations": [
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 116781,
+      "exact": 40.639231824417,
+      "mean": 40.9285,
+      "standard_error": 0.38608676186114066,
+      "z": 0.7492310127096111,
+      "target": "q2:1"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 116782,
+      "exact": 39.267489711934154,
+      "mean": 39.4605,
+      "standard_error": 0.3195802212543108,
+      "z": 0.6039494162320473,
+      "target": "q2:1"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 116783,
+      "exact": 42.559670781893,
+      "mean": 42.5545,
+      "standard_error": 0.3543381454456032,
+      "z": 0.014592789287467779,
+      "target": "q2:1"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 116784,
+      "exact": 40.666666666666664,
+      "mean": 40.395,
+      "standard_error": 0.26199337564568415,
+      "z": 1.0369218916208747,
+      "target": "q2:1"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 116785,
+      "exact": 42.52400548696844,
+      "mean": 41.91975,
+      "standard_error": 0.33541907216625033,
+      "z": 1.8014941221617293,
+      "target": "q2:1"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 116786,
+      "exact": 41.563786008230444,
+      "mean": 41.39625,
+      "standard_error": 0.29186166207952524,
+      "z": 0.5740254031198956,
+      "target": "q2:1"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 116787,
+      "exact": 44.855967078189295,
+      "mean": 45.086,
+      "standard_error": 0.34596072494692437,
+      "z": 0.6649105092666063,
+      "target": "q2:1"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 116788,
+      "exact": 43.333333333333336,
+      "mean": 43.185,
+      "standard_error": 0.24909652952270345,
+      "z": 0.5954853470562458,
+      "target": "q2:1"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 116792,
+      "exact": 38.44444444444444,
+      "mean": 38.35,
+      "standard_error": 0.17057116881497802,
+      "z": 0.5536952411159662,
+      "target": "q2:1"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 116796,
+      "exact": 41.111111111111114,
+      "mean": 41.26525,
+      "standard_error": 0.16193564739688868,
+      "z": 0.9518527351245147,
+      "target": "q2:1"
+    },
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 216781,
+      "exact": 60.40624999999998,
+      "mean": 59.9855,
+      "standard_error": 0.743683039710728,
+      "z": 0.565765221919861,
+      "target": "q2:2"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 216782,
+      "exact": 52.593749999999986,
+      "mean": 52.638,
+      "standard_error": 0.5790838225320921,
+      "z": 0.07641380794670716,
+      "target": "q2:2"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 216783,
+      "exact": 60.015624999999986,
+      "mean": 59.92425,
+      "standard_error": 0.6635403713719951,
+      "z": 0.13770827509869524,
+      "target": "q2:2"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 216784,
+      "exact": 51.1875,
+      "mean": 50.59125,
+      "standard_error": 0.4472123858849364,
+      "z": 1.3332591377587815,
+      "target": "q2:2"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 216785,
+      "exact": 60.546874999999986,
+      "mean": 59.9695,
+      "standard_error": 0.6712911442791398,
+      "z": 0.8600962561780827,
+      "target": "q2:2"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 216786,
+      "exact": 53.90624999999999,
+      "mean": 54.63075,
+      "standard_error": 0.5230580737800647,
+      "z": 1.385123442917437,
+      "target": "q2:2"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 216787,
+      "exact": 61.328124999999986,
+      "mean": 61.08925,
+      "standard_error": 0.6243549878851767,
+      "z": 0.3825948452964337,
+      "target": "q2:2"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 216788,
+      "exact": 53.4375,
+      "mean": 53.5935,
+      "standard_error": 0.4404529647318034,
+      "z": 0.35418083766331077,
+      "target": "q2:2"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 216792,
+      "exact": 45.25,
+      "mean": 44.94175,
+      "standard_error": 0.2724796332242201,
+      "z": 1.1312772127315143,
+      "target": "q2:2"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 216796,
+      "exact": 47.5,
+      "mean": 47.451,
+      "standard_error": 0.2575567580571421,
+      "z": 0.1902493274477707,
+      "target": "q2:2"
+    },
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 316781,
+      "exact": 49.56104252400547,
+      "mean": 49.025,
+      "standard_error": 0.6414286409456288,
+      "z": 0.8357009490801829,
+      "target": "q2:3"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 316782,
+      "exact": 44.89711934156377,
+      "mean": 45.198,
+      "standard_error": 0.5353497444075316,
+      "z": 0.5620263418061597,
+      "target": "q2:3"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 316783,
+      "exact": 48.189300411522616,
+      "mean": 48.61975,
+      "standard_error": 0.5522944615668751,
+      "z": 0.7793842206133833,
+      "target": "q2:3"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 316784,
+      "exact": 43.333333333333336,
+      "mean": 43.12125,
+      "standard_error": 0.38335460385581566,
+      "z": 0.5532301717526769,
+      "target": "q2:3"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 316785,
+      "exact": 42.52400548696844,
+      "mean": 42.284,
+      "standard_error": 0.34385101334712537,
+      "z": 0.6979926702328823,
+      "target": "q2:3"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 316786,
+      "exact": 41.563786008230444,
+      "mean": 42.141,
+      "standard_error": 0.3049877606290676,
+      "z": 1.892580838585105,
+      "target": "q2:3"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 316787,
+      "exact": 44.855967078189295,
+      "mean": 44.905,
+      "standard_error": 0.34530428974040894,
+      "z": 0.14199916788629563,
+      "target": "q2:3"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 316788,
+      "exact": 43.333333333333336,
+      "mean": 42.85275,
+      "standard_error": 0.2409095290968737,
+      "z": 1.9948705853809747,
+      "target": "q2:3"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 316792,
+      "exact": 41.111111111111114,
+      "mean": 41.60775,
+      "standard_error": 0.29656189863889476,
+      "z": 1.674655075949643,
+      "target": "q2:3"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 316796,
+      "exact": 41.111111111111114,
+      "mean": 41.0535,
+      "standard_error": 0.15895864682473265,
+      "z": 0.3624282935337041,
+      "target": "q2:3"
+    },
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 416781,
+      "exact": 83.28124999999999,
+      "mean": 83.8105,
+      "standard_error": 1.255667729855096,
+      "z": 0.4214888918592296,
+      "target": "q2:4"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 416782,
+      "exact": 64.14062499999999,
+      "mean": 64.41175,
+      "standard_error": 0.90580774720859,
+      "z": 0.2993184821343521,
+      "target": "q2:4"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 416783,
+      "exact": 69.60937499999999,
+      "mean": 70.0245,
+      "standard_error": 0.9958366570875968,
+      "z": 0.4168605333469883,
+      "target": "q2:4"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 416784,
+      "exact": 52.5,
+      "mean": 52.99025,
+      "standard_error": 0.6297141603261783,
+      "z": 0.7785278319707218,
+      "target": "q2:4"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 416785,
+      "exact": 58.593749999999986,
+      "mean": 58.2525,
+      "standard_error": 0.650181509223566,
+      "z": 0.5248534373232209,
+      "target": "q2:4"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 416786,
+      "exact": 50.39062499999999,
+      "mean": 49.6355,
+      "standard_error": 0.47161718122743074,
+      "z": 1.6011397168243624,
+      "target": "q2:4"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 416787,
+      "exact": 55.859374999999986,
+      "mean": 56.27,
+      "standard_error": 0.5718718469660296,
+      "z": 0.718036745782328,
+      "target": "q2:4"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 416788,
+      "exact": 47.5,
+      "mean": 47.34425,
+      "standard_error": 0.3930509607529438,
+      "z": 0.39625904921244004,
+      "target": "q2:4"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 416792,
+      "exact": 46.75,
+      "mean": 47.24225,
+      "standard_error": 0.43149601787007774,
+      "z": 1.140798476958862,
+      "target": "q2:4"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 416796,
+      "exact": 41.75,
+      "mean": 41.51175,
+      "standard_error": 0.21451886879862728,
+      "z": 1.1106249130170935,
+      "target": "q2:4"
+    },
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 516781,
+      "exact": 48.64197530864197,
+      "mean": 49.337,
+      "standard_error": 0.5537547009436617,
+      "z": 1.255112941115685,
+      "target": "q2:5"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 516782,
+      "exact": 55.740740740740726,
+      "mean": 55.7855,
+      "standard_error": 0.5679594104427513,
+      "z": 0.07880714437741376,
+      "target": "q2:5"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 516783,
+      "exact": 44.01234567901234,
+      "mean": 43.46725,
+      "standard_error": 0.4110344805432068,
+      "z": 1.3261556020603542,
+      "target": "q2:5"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 516784,
+      "exact": 48.981481481481474,
+      "mean": 48.72475,
+      "standard_error": 0.34286350885709815,
+      "z": 0.7487862512323427,
+      "target": "q2:5"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 516785,
+      "exact": 46.29629629629628,
+      "mean": 46.425,
+      "standard_error": 0.43705273998040683,
+      "z": 0.29448094458687885,
+      "target": "q2:5"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 516786,
+      "exact": 54.62962962962962,
+      "mean": 53.946,
+      "standard_error": 0.4557457592224664,
+      "z": 1.500024116068442,
+      "target": "q2:5"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 516787,
+      "exact": 44.1358024691358,
+      "mean": 44.452,
+      "standard_error": 0.3629936157720585,
+      "z": 0.871082898225839,
+      "target": "q2:5"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 516788,
+      "exact": 50.09259259259259,
+      "mean": 50.11725,
+      "standard_error": 0.3159421710902856,
+      "z": 0.07804405256291079,
+      "target": "q2:5"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 516792,
+      "exact": 46.416666666666664,
+      "mean": 46.2105,
+      "standard_error": 0.23911627210500824,
+      "z": 0.8622025797396284,
+      "target": "q2:5"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 516796,
+      "exact": 47.52777777777777,
+      "mean": 47.541,
+      "standard_error": 0.21886766667070415,
+      "z": 0.060411948568532776,
+      "target": "q2:5"
+    },
+    {
+      "policy": 0,
+      "trials": 4000,
+      "seed": 616781,
+      "exact": 34.3213296398892,
+      "mean": 34.6215,
+      "standard_error": 0.2792036409250002,
+      "z": 1.0750947198121588,
+      "target": "q2:6"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 616782,
+      "exact": 34.671234873888324,
+      "mean": 34.716,
+      "standard_error": 0.22234139273588022,
+      "z": 0.20133509807080355,
+      "target": "q2:6"
+    },
+    {
+      "policy": 2,
+      "trials": 4000,
+      "seed": 616783,
+      "exact": 36.65403119988337,
+      "mean": 36.76525,
+      "standard_error": 0.2464192894761518,
+      "z": 0.4513396672519636,
+      "target": "q2:6"
+    },
+    {
+      "policy": 3,
+      "trials": 4000,
+      "seed": 616784,
+      "exact": 36.7590027700831,
+      "mean": 37.03625,
+      "standard_error": 0.1949085845299172,
+      "z": 1.422447505765693,
+      "target": "q2:6"
+    },
+    {
+      "policy": 4,
+      "trials": 4000,
+      "seed": 616785,
+      "exact": 36.156874179909614,
+      "mean": 35.929,
+      "standard_error": 0.20954526254311637,
+      "z": 1.0874699677962163,
+      "target": "q2:6"
+    },
+    {
+      "policy": 5,
+      "trials": 4000,
+      "seed": 616786,
+      "exact": 36.915002186907714,
+      "mean": 36.95925,
+      "standard_error": 0.1888450104420745,
+      "z": 0.2343075572327924,
+      "target": "q2:6"
+    },
+    {
+      "policy": 6,
+      "trials": 4000,
+      "seed": 616787,
+      "exact": 38.89779851290276,
+      "mean": 38.7925,
+      "standard_error": 0.20683219243255294,
+      "z": 0.5091011784207656,
+      "target": "q2:6"
+    },
+    {
+      "policy": 7,
+      "trials": 4000,
+      "seed": 616788,
+      "exact": 39.390581717451525,
+      "mean": 39.39975,
+      "standard_error": 0.1595990458876151,
+      "z": 0.05744572279541379,
+      "target": "q2:6"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 616792,
+      "exact": 37.63157894736842,
+      "mean": 37.48875,
+      "standard_error": 0.2417704626262783,
+      "z": 0.5907626010924063,
+      "target": "q2:6"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 616796,
+      "exact": 40.26315789473684,
+      "mean": 40.18125,
+      "standard_error": 0.21080016315594172,
+      "z": 0.388557074674803,
+      "target": "q2:6"
+    },
+    {
+      "policy": 0,
+      "trials": 8000,
+      "seed": 1016781,
+      "exact": 441.53603796021207,
+      "mean": 434.606,
+      "standard_error": 4.504003424882847,
+      "z": 1.5386395849360022,
+      "target": "q3"
+    },
+    {
+      "policy": 49151,
+      "trials": 8000,
+      "seed": 1065932,
+      "exact": 142.33333333333334,
+      "mean": 142.491875,
+      "standard_error": 0.3293217721344082,
+      "z": 0.4814187219967459,
+      "target": "q3"
+    },
+    {
+      "policy": 65535,
+      "trials": 8000,
+      "seed": 1082316,
+      "exact": 144.55555555555557,
+      "mean": 144.310625,
+      "standard_error": 0.2284380580857087,
+      "z": 1.0721968029674254,
+      "target": "q3"
+    },
+    {
+      "policy": 18431,
+      "trials": 8000,
+      "seed": 1035212,
+      "exact": 162.88065843621396,
+      "mean": 162.877625,
+      "standard_error": 0.657197297967649,
+      "z": 0.004615716198695732,
+      "target": "q3"
+    },
+    {
+      "policy": 40959,
+      "trials": 8000,
+      "seed": 1057740,
+      "exact": 144.17283950617283,
+      "mean": 144.495,
+      "standard_error": 0.3631189681745241,
+      "z": 0.887203704743761,
+      "target": "q3"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 87912,
+      "exact": 44.80790971388488,
+      "mean": 44.53925,
+      "standard_error": 0.2611834490504509,
+      "z": 1.0286245735003852,
+      "target": "q2:1 N=100"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 87913,
+      "exact": 55.26773338101226,
+      "mean": 55.45475,
+      "standard_error": 0.4086154729823201,
+      "z": 0.4576836447792216,
+      "target": "q2:2 N=100"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 87914,
+      "exact": 47.08497646609601,
+      "mean": 46.69975,
+      "standard_error": 0.24082415587496245,
+      "z": 1.599617217369256,
+      "target": "q2:3 N=100"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 87915,
+      "exact": 49.72329799713221,
+      "mean": 49.6955,
+      "standard_error": 0.31734149010621937,
+      "z": 0.08759647886855118,
+      "target": "q2:4 N=100"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 87916,
+      "exact": 55.75549269841628,
+      "mean": 56.24025,
+      "standard_error": 0.3724908654525456,
+      "z": 1.30139379658285,
+      "target": "q2:5 N=100"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 87917,
+      "exact": 43.808353829338266,
+      "mean": 43.4435,
+      "standard_error": 0.40241435270789777,
+      "z": 0.9066620682963158,
+      "target": "q2:6 N=100"
+    },
+    {
+      "policy": 65535,
+      "trials": 4000,
+      "seed": 87931,
+      "exact": 173.0908729647018,
+      "mean": 173.05325,
+      "standard_error": 0.5553609952707718,
+      "z": 0.06774506136040945,
+      "target": "q3 N=100"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 88212,
+      "exact": 41.073324648099174,
+      "mean": 41.079,
+      "standard_error": 0.21811684595560796,
+      "z": 0.026019777958745417,
+      "target": "q2:1 N=400"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 88213,
+      "exact": 49.523936182373156,
+      "mean": 49.884,
+      "standard_error": 0.3293653083987355,
+      "z": 1.093205047542363,
+      "target": "q2:2 N=400"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 88214,
+      "exact": 43.57903946556249,
+      "mean": 43.15975,
+      "standard_error": 0.19295625284829024,
+      "z": 2.172976824400437,
+      "target": "q2:3 N=400"
+    },
+    {
+      "policy": 15,
+      "trials": 4000,
+      "seed": 88215,
+      "exact": 45.15170430841945,
+      "mean": 44.7055,
+      "standard_error": 0.25504157305917224,
+      "z": 1.7495355877369934,
+      "target": "q2:4 N=400"
+    },
+    {
+      "policy": 11,
+      "trials": 4000,
+      "seed": 88216,
+      "exact": 50.327233116025624,
+      "mean": 49.8685,
+      "standard_error": 0.2934236720176562,
+      "z": 1.563381416609167,
+      "target": "q2:5 N=400"
+    },
+    {
+      "policy": 1,
+      "trials": 4000,
+      "seed": 88217,
+      "exact": 38.145204383887126,
+      "mean": 37.859,
+      "standard_error": 0.2995662944010646,
+      "z": 0.9553958146704883,
+      "target": "q2:6 N=400"
+    },
+    {
+      "policy": 65535,
+      "trials": 4000,
+      "seed": 88231,
+      "exact": 156.09973063620112,
+      "mean": 156.87125,
+      "standard_error": 0.44167925409764275,
+      "z": 1.7467865122510973,
+      "target": "q3 N=400"
+    }
+  ],
+  "scope_counterexamples": [
+    {
+      "case": 1,
+      "fixed_station_policy": 11,
+      "fixed_station_cost": 38.444444444444436,
+      "known_good_reinspection_omitted_feasible_cost": 37.88888888888888,
+      "saving": 0.5555555555555556
+    },
+    {
+      "case": 2,
+      "fixed_station_policy": 11,
+      "fixed_station_cost": 45.25,
+      "known_good_reinspection_omitted_feasible_cost": 44.0,
+      "saving": 1.25
+    },
+    {
+      "case": 3,
+      "fixed_station_policy": 11,
+      "fixed_station_cost": 41.11111111111111,
+      "known_good_reinspection_omitted_feasible_cost": 40.55555555555555,
+      "saving": 0.5555555555555556
+    },
+    {
+      "case": 4,
+      "fixed_station_policy": 15,
+      "fixed_station_cost": 41.75,
+      "known_good_reinspection_omitted_feasible_cost": 41.25,
+      "saving": 0.5
+    }
+  ],
+  "limits": [
+    "Only fixed station tests/disassembly with mandatory return through direct-child stations were audited. No claim of optimality over arbitrary history-dependent, pooled-inventory, or known-good-exemption policies.",
+    "Assembly defect rates are conditional on all direct children being good; recovered item qualities persist; process failures redraw at new assembly.",
+    "Price is received once per fulfilled order. L is an extra return/replacement loss; new-production costs are charged separately.",
+    "Q4 has no actual observed n/k. Counts 100/400 per node are hypothetical; the confidence guarantee is per target and assumes prespecified fixed n and representative binomial data for each conditional defect rate.",
+    "Bonferroni simultaneous coverage does not require independent node samples; the product coverage calculation additionally assumes independent samples.",
+    "Upper-corner robustness is conditional on the specified rectangular confidence set and monotone cost within the audited proper-policy class; it is not a probability that a numerical profit will be realized.",
+    "Monte Carlo 5-standard-error comparisons are numerical diagnostics, not theorem proofs or prizes."
+  ],
+  "checks": [
+    {
+      "name": "Q1 all 2000 sequential count barriers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q1 31 exact OC rows recomputed via integer barriers",
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0
+      }
+    },
+    {
+      "name": "Q1 fixed sample exact tests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q1 anytime risk at boundary",
+      "pass": true,
+      "detail": {
+        "p": 0.1,
+        "accept": 0.09717280417604218,
+        "reject": 0.03875697601331905,
+        "inconclusive": 0.8640702198106867,
+        "expected_tests_capped": 1744.5729177752446
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.05 inconclusive",
+      "pass": true,
+      "detail": {
+        "simulation": 0.0,
+        "exact": 3.050752814474366e-06
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.05 accept",
+      "pass": true,
+      "detail": {
+        "simulation": 0.9998,
+        "exact": 0.9997771385751657
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.05 reject",
+      "pass": true,
+      "detail": {
+        "simulation": 0.0002,
+        "exact": 0.00021981067201383363
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.05 stopping mean",
+      "pass": true,
+      "detail": {
+        "simulation": 138.3604,
+        "exact": 139.4455688268998,
+        "standard_error": 0.7219348674719311
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.1 inconclusive",
+      "pass": true,
+      "detail": {
+        "simulation": 0.8618,
+        "exact": 0.8640702198106867
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.1 accept",
+      "pass": true,
+      "detail": {
+        "simulation": 0.098,
+        "exact": 0.09717280417604218
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.1 reject",
+      "pass": true,
+      "detail": {
+        "simulation": 0.0402,
+        "exact": 0.03875697601331905
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.1 stopping mean",
+      "pass": true,
+      "detail": {
+        "simulation": 1740.08,
+        "exact": 1744.5729177752446,
+        "standard_error": 4.112985273048549
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.2 inconclusive",
+      "pass": true,
+      "detail": {
+        "simulation": 0.0,
+        "exact": 3.386366609403038e-11
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.2 accept",
+      "pass": true,
+      "detail": {
+        "simulation": 0.00012,
+        "exact": 0.00012027446946278041
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.2 reject",
+      "pass": true,
+      "detail": {
+        "simulation": 0.99988,
+        "exact": 0.9998797254966793
+      }
+    },
+    {
+      "name": "Q1 independent MC p=0.2 stopping mean",
+      "pass": true,
+      "detail": {
+        "simulation": 73.22884,
+        "exact": 73.52686084435656,
+        "standard_error": 0.3920476182092855
+      }
+    },
+    {
+      "name": "q2:1 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 4.4444448121794267e-11
+      }
+    },
+    {
+      "name": "q2:1 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:1 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 116781,
+        "exact": 40.639231824417,
+        "mean": 40.9285,
+        "standard_error": 0.38608676186114066,
+        "z": 0.7492310127096111,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 116782,
+        "exact": 39.267489711934154,
+        "mean": 39.4605,
+        "standard_error": 0.3195802212543108,
+        "z": 0.6039494162320473,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 116783,
+        "exact": 42.559670781893,
+        "mean": 42.5545,
+        "standard_error": 0.3543381454456032,
+        "z": 0.014592789287467779,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 116784,
+        "exact": 40.666666666666664,
+        "mean": 40.395,
+        "standard_error": 0.26199337564568415,
+        "z": 1.0369218916208747,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 116785,
+        "exact": 42.52400548696844,
+        "mean": 41.91975,
+        "standard_error": 0.33541907216625033,
+        "z": 1.8014941221617293,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 116786,
+        "exact": 41.563786008230444,
+        "mean": 41.39625,
+        "standard_error": 0.29186166207952524,
+        "z": 0.5740254031198956,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 116787,
+        "exact": 44.855967078189295,
+        "mean": 45.086,
+        "standard_error": 0.34596072494692437,
+        "z": 0.6649105092666063,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 116788,
+        "exact": 43.333333333333336,
+        "mean": 43.185,
+        "standard_error": 0.24909652952270345,
+        "z": 0.5954853470562458,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 116792,
+        "exact": 38.44444444444444,
+        "mean": 38.35,
+        "standard_error": 0.17057116881497802,
+        "z": 0.5536952411159662,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:1 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 116796,
+        "exact": 41.111111111111114,
+        "mean": 41.26525,
+        "standard_error": 0.16193564739688868,
+        "z": 0.9518527351245147,
+        "target": "q2:1"
+      }
+    },
+    {
+      "name": "q2:2 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 2.1316282072803006e-14
+      }
+    },
+    {
+      "name": "q2:2 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:2 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 216781,
+        "exact": 60.40624999999998,
+        "mean": 59.9855,
+        "standard_error": 0.743683039710728,
+        "z": 0.565765221919861,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 216782,
+        "exact": 52.593749999999986,
+        "mean": 52.638,
+        "standard_error": 0.5790838225320921,
+        "z": 0.07641380794670716,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 216783,
+        "exact": 60.015624999999986,
+        "mean": 59.92425,
+        "standard_error": 0.6635403713719951,
+        "z": 0.13770827509869524,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 216784,
+        "exact": 51.1875,
+        "mean": 50.59125,
+        "standard_error": 0.4472123858849364,
+        "z": 1.3332591377587815,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 216785,
+        "exact": 60.546874999999986,
+        "mean": 59.9695,
+        "standard_error": 0.6712911442791398,
+        "z": 0.8600962561780827,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 216786,
+        "exact": 53.90624999999999,
+        "mean": 54.63075,
+        "standard_error": 0.5230580737800647,
+        "z": 1.385123442917437,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 216787,
+        "exact": 61.328124999999986,
+        "mean": 61.08925,
+        "standard_error": 0.6243549878851767,
+        "z": 0.3825948452964337,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 216788,
+        "exact": 53.4375,
+        "mean": 53.5935,
+        "standard_error": 0.4404529647318034,
+        "z": 0.35418083766331077,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 216792,
+        "exact": 45.25,
+        "mean": 44.94175,
+        "standard_error": 0.2724796332242201,
+        "z": 1.1312772127315143,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:2 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 216796,
+        "exact": 47.5,
+        "mean": 47.451,
+        "standard_error": 0.2575567580571421,
+        "z": 0.1902493274477707,
+        "target": "q2:2"
+      }
+    },
+    {
+      "name": "q2:3 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 3.623057409640751e-11
+      }
+    },
+    {
+      "name": "q2:3 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:3 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 316781,
+        "exact": 49.56104252400547,
+        "mean": 49.025,
+        "standard_error": 0.6414286409456288,
+        "z": 0.8357009490801829,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 316782,
+        "exact": 44.89711934156377,
+        "mean": 45.198,
+        "standard_error": 0.5353497444075316,
+        "z": 0.5620263418061597,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 316783,
+        "exact": 48.189300411522616,
+        "mean": 48.61975,
+        "standard_error": 0.5522944615668751,
+        "z": 0.7793842206133833,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 316784,
+        "exact": 43.333333333333336,
+        "mean": 43.12125,
+        "standard_error": 0.38335460385581566,
+        "z": 0.5532301717526769,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 316785,
+        "exact": 42.52400548696844,
+        "mean": 42.284,
+        "standard_error": 0.34385101334712537,
+        "z": 0.6979926702328823,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 316786,
+        "exact": 41.563786008230444,
+        "mean": 42.141,
+        "standard_error": 0.3049877606290676,
+        "z": 1.892580838585105,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 316787,
+        "exact": 44.855967078189295,
+        "mean": 44.905,
+        "standard_error": 0.34530428974040894,
+        "z": 0.14199916788629563,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 316788,
+        "exact": 43.333333333333336,
+        "mean": 42.85275,
+        "standard_error": 0.2409095290968737,
+        "z": 1.9948705853809747,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 316792,
+        "exact": 41.111111111111114,
+        "mean": 41.60775,
+        "standard_error": 0.29656189863889476,
+        "z": 1.674655075949643,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:3 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 316796,
+        "exact": 41.111111111111114,
+        "mean": 41.0535,
+        "standard_error": 0.15895864682473265,
+        "z": 0.3624282935337041,
+        "target": "q2:3"
+      }
+    },
+    {
+      "name": "q2:4 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 1.4210854715202004e-14
+      }
+    },
+    {
+      "name": "q2:4 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:4 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 416781,
+        "exact": 83.28124999999999,
+        "mean": 83.8105,
+        "standard_error": 1.255667729855096,
+        "z": 0.4214888918592296,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 416782,
+        "exact": 64.14062499999999,
+        "mean": 64.41175,
+        "standard_error": 0.90580774720859,
+        "z": 0.2993184821343521,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 416783,
+        "exact": 69.60937499999999,
+        "mean": 70.0245,
+        "standard_error": 0.9958366570875968,
+        "z": 0.4168605333469883,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 416784,
+        "exact": 52.5,
+        "mean": 52.99025,
+        "standard_error": 0.6297141603261783,
+        "z": 0.7785278319707218,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 416785,
+        "exact": 58.593749999999986,
+        "mean": 58.2525,
+        "standard_error": 0.650181509223566,
+        "z": 0.5248534373232209,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 416786,
+        "exact": 50.39062499999999,
+        "mean": 49.6355,
+        "standard_error": 0.47161718122743074,
+        "z": 1.6011397168243624,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 416787,
+        "exact": 55.859374999999986,
+        "mean": 56.27,
+        "standard_error": 0.5718718469660296,
+        "z": 0.718036745782328,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 416788,
+        "exact": 47.5,
+        "mean": 47.34425,
+        "standard_error": 0.3930509607529438,
+        "z": 0.39625904921244004,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 416792,
+        "exact": 46.75,
+        "mean": 47.24225,
+        "standard_error": 0.43149601787007774,
+        "z": 1.140798476958862,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:4 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 416796,
+        "exact": 41.75,
+        "mean": 41.51175,
+        "standard_error": 0.21451886879862728,
+        "z": 1.1106249130170935,
+        "target": "q2:4"
+      }
+    },
+    {
+      "name": "q2:5 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 4.196465397399152e-11
+      }
+    },
+    {
+      "name": "q2:5 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:5 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 516781,
+        "exact": 48.64197530864197,
+        "mean": 49.337,
+        "standard_error": 0.5537547009436617,
+        "z": 1.255112941115685,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 516782,
+        "exact": 55.740740740740726,
+        "mean": 55.7855,
+        "standard_error": 0.5679594104427513,
+        "z": 0.07880714437741376,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 516783,
+        "exact": 44.01234567901234,
+        "mean": 43.46725,
+        "standard_error": 0.4110344805432068,
+        "z": 1.3261556020603542,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 516784,
+        "exact": 48.981481481481474,
+        "mean": 48.72475,
+        "standard_error": 0.34286350885709815,
+        "z": 0.7487862512323427,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 516785,
+        "exact": 46.29629629629628,
+        "mean": 46.425,
+        "standard_error": 0.43705273998040683,
+        "z": 0.29448094458687885,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 516786,
+        "exact": 54.62962962962962,
+        "mean": 53.946,
+        "standard_error": 0.4557457592224664,
+        "z": 1.500024116068442,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 516787,
+        "exact": 44.1358024691358,
+        "mean": 44.452,
+        "standard_error": 0.3629936157720585,
+        "z": 0.871082898225839,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 516788,
+        "exact": 50.09259259259259,
+        "mean": 50.11725,
+        "standard_error": 0.3159421710902856,
+        "z": 0.07804405256291079,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 516792,
+        "exact": 46.416666666666664,
+        "mean": 46.2105,
+        "standard_error": 0.23911627210500824,
+        "z": 0.8622025797396284,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:5 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 516796,
+        "exact": 47.52777777777777,
+        "mean": 47.541,
+        "standard_error": 0.21886766667070415,
+        "z": 0.060411948568532776,
+        "target": "q2:5"
+      }
+    },
+    {
+      "name": "q2:6 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 16,
+        "proper": 10,
+        "max_abs_error": 4.8473225433554035e-11
+      }
+    },
+    {
+      "name": "q2:6 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q2:6 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 4000,
+        "seed": 616781,
+        "exact": 34.3213296398892,
+        "mean": 34.6215,
+        "standard_error": 0.2792036409250002,
+        "z": 1.0750947198121588,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 1",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 616782,
+        "exact": 34.671234873888324,
+        "mean": 34.716,
+        "standard_error": 0.22234139273588022,
+        "z": 0.20133509807080355,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 2",
+      "pass": true,
+      "detail": {
+        "policy": 2,
+        "trials": 4000,
+        "seed": 616783,
+        "exact": 36.65403119988337,
+        "mean": 36.76525,
+        "standard_error": 0.2464192894761518,
+        "z": 0.4513396672519636,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 3",
+      "pass": true,
+      "detail": {
+        "policy": 3,
+        "trials": 4000,
+        "seed": 616784,
+        "exact": 36.7590027700831,
+        "mean": 37.03625,
+        "standard_error": 0.1949085845299172,
+        "z": 1.422447505765693,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 4",
+      "pass": true,
+      "detail": {
+        "policy": 4,
+        "trials": 4000,
+        "seed": 616785,
+        "exact": 36.156874179909614,
+        "mean": 35.929,
+        "standard_error": 0.20954526254311637,
+        "z": 1.0874699677962163,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 5",
+      "pass": true,
+      "detail": {
+        "policy": 5,
+        "trials": 4000,
+        "seed": 616786,
+        "exact": 36.915002186907714,
+        "mean": 36.95925,
+        "standard_error": 0.1888450104420745,
+        "z": 0.2343075572327924,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 6",
+      "pass": true,
+      "detail": {
+        "policy": 6,
+        "trials": 4000,
+        "seed": 616787,
+        "exact": 38.89779851290276,
+        "mean": 38.7925,
+        "standard_error": 0.20683219243255294,
+        "z": 0.5091011784207656,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 7",
+      "pass": true,
+      "detail": {
+        "policy": 7,
+        "trials": 4000,
+        "seed": 616788,
+        "exact": 39.390581717451525,
+        "mean": 39.39975,
+        "standard_error": 0.1595990458876151,
+        "z": 0.05744572279541379,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 11",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 616792,
+        "exact": 37.63157894736842,
+        "mean": 37.48875,
+        "standard_error": 0.2417704626262783,
+        "z": 0.5907626010924063,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q2:6 independent physical MC policy 15",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 616796,
+        "exact": 40.26315789473684,
+        "mean": 40.18125,
+        "standard_error": 0.21080016315594172,
+        "z": 0.388557074674803,
+        "target": "q2:6"
+      }
+    },
+    {
+      "name": "q3 all policy cost rows",
+      "pass": true,
+      "detail": {
+        "encodings": 65536,
+        "proper": 17060,
+        "max_abs_error": 4.998810254619457e-10
+      }
+    },
+    {
+      "name": "q3 minimizer and tie set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "q3 independent physical MC policy 0",
+      "pass": true,
+      "detail": {
+        "policy": 0,
+        "trials": 8000,
+        "seed": 1016781,
+        "exact": 441.53603796021207,
+        "mean": 434.606,
+        "standard_error": 4.504003424882847,
+        "z": 1.5386395849360022,
+        "target": "q3"
+      }
+    },
+    {
+      "name": "q3 independent physical MC policy 49151",
+      "pass": true,
+      "detail": {
+        "policy": 49151,
+        "trials": 8000,
+        "seed": 1065932,
+        "exact": 142.33333333333334,
+        "mean": 142.491875,
+        "standard_error": 0.3293217721344082,
+        "z": 0.4814187219967459,
+        "target": "q3"
+      }
+    },
+    {
+      "name": "q3 independent physical MC policy 65535",
+      "pass": true,
+      "detail": {
+        "policy": 65535,
+        "trials": 8000,
+        "seed": 1082316,
+        "exact": 144.55555555555557,
+        "mean": 144.310625,
+        "standard_error": 0.2284380580857087,
+        "z": 1.0721968029674254,
+        "target": "q3"
+      }
+    },
+    {
+      "name": "q3 independent physical MC policy 18431",
+      "pass": true,
+      "detail": {
+        "policy": 18431,
+        "trials": 8000,
+        "seed": 1035212,
+        "exact": 162.88065843621396,
+        "mean": 162.877625,
+        "standard_error": 0.657197297967649,
+        "z": 0.004615716198695732,
+        "target": "q3"
+      }
+    },
+    {
+      "name": "q3 independent physical MC policy 40959",
+      "pass": true,
+      "detail": {
+        "policy": 40959,
+        "trials": 8000,
+        "seed": 1057740,
+        "exact": 144.17283950617283,
+        "mean": 144.495,
+        "standard_error": 0.3631189681745241,
+        "z": 0.887203704743761,
+        "target": "q3"
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 44.80790971388488
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 44.126530548373566,
+        "upper_cost": 44.80790971388488
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9632089251528971,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:1 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 87912,
+        "exact": 44.80790971388488,
+        "mean": 44.53925,
+        "standard_error": 0.2611834490504509,
+        "z": 1.0286245735003852,
+        "target": "q2:1 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 55.26773338101226
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 54.90891722301399,
+        "upper_cost": 55.26773338101226
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9651458166931164,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:2 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 87913,
+        "exact": 55.26773338101226,
+        "mean": 55.45475,
+        "standard_error": 0.4086154729823201,
+        "z": 0.4576836447792216,
+        "target": "q2:2 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "cost": 47.08497646609601
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 46.65955824826288,
+        "upper_cost": 47.08497646609601
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9632089251528971,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:3 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 87914,
+        "exact": 47.08497646609601,
+        "mean": 46.69975,
+        "standard_error": 0.24082415587496245,
+        "z": 1.599617217369256,
+        "target": "q2:3 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "cost": 49.72329799713221
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 49.40806847689008,
+        "upper_cost": 49.72329799713221
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9651458166931164,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:4 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 87915,
+        "exact": 49.72329799713221,
+        "mean": 49.6955,
+        "standard_error": 0.31734149010621937,
+        "z": 0.08759647886855118,
+        "target": "q2:4 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 55.75549269841628
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 55.08175322973925,
+        "upper_cost": 55.75549269841628
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9638541233886324,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:5 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 87916,
+        "exact": 55.75549269841628,
+        "mean": 56.24025,
+        "standard_error": 0.3724908654525456,
+        "z": 1.30139379658285,
+        "target": "q2:5 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 8.326672684688674e-17
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "cost": 43.808353829338266
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 43.17128753208245,
+        "upper_cost": 43.808353829338266
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9697266018207558,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:6 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 87917,
+        "exact": 43.808353829338266,
+        "mean": 43.4435,
+        "standard_error": 0.40241435270789777,
+        "z": 0.9066620682963158,
+        "target": "q2:6 N=100"
+      }
+    },
+    {
+      "name": "Q4 q3 N=100 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 6.439293542825908e-15
+      }
+    },
+    {
+      "name": "Q4 q3 N=100 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 65535,
+        "cost": 173.0908729647018
+      }
+    },
+    {
+      "name": "Q4 q3 N=100 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 162.68304068829556,
+        "upper_cost": 173.0908729647018
+      }
+    },
+    {
+      "name": "Q4 q3 N=100 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9539214494234589,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q3 N=100 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q3 N=100 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 65535,
+        "trials": 4000,
+        "seed": 87931,
+        "exact": 173.0908729647018,
+        "mean": 173.05325,
+        "standard_error": 0.5553609952707718,
+        "z": 0.06774506136040945,
+        "target": "q3 N=100"
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 2.886579864025407e-15
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 41.073324648099174
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 40.850404575350886,
+        "upper_cost": 41.073324648099174
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.964261562922095,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:1 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:1 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 88212,
+        "exact": 41.073324648099174,
+        "mean": 41.079,
+        "standard_error": 0.21811684595560796,
+        "z": 0.026019777958745417,
+        "target": "q2:1 N=400"
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 1.3322676295501878e-15
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 49.523936182373156
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 49.27001827481625,
+        "upper_cost": 49.523936182373156
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9636724510721495,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:2 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:2 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 88213,
+        "exact": 49.523936182373156,
+        "mean": 49.884,
+        "standard_error": 0.3293653083987355,
+        "z": 1.093205047542363,
+        "target": "q2:2 N=400"
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 2.886579864025407e-15
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "cost": 43.57903946556249
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 43.50182906684894,
+        "upper_cost": 43.57903946556249
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.964261562922095,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:3 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:3 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 88214,
+        "exact": 43.57903946556249,
+        "mean": 43.15975,
+        "standard_error": 0.19295625284829024,
+        "z": 2.172976824400437,
+        "target": "q2:3 N=400"
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 1.3322676295501878e-15
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "cost": 45.15170430841945
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 44.86300887389682,
+        "upper_cost": 45.15170430841945
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9636724510721495,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:4 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:4 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 15,
+        "trials": 4000,
+        "seed": 88215,
+        "exact": 45.15170430841945,
+        "mean": 44.7055,
+        "standard_error": 0.25504157305917224,
+        "z": 1.7495355877369934,
+        "target": "q2:4 N=400"
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 2.886579864025407e-15
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "cost": 50.327233116025624
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 49.88195040706748,
+        "upper_cost": 50.327233116025624
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9640651523012461,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:5 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:5 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 11,
+        "trials": 4000,
+        "seed": 88216,
+        "exact": 50.327233116025624,
+        "mean": 49.8685,
+        "standard_error": 0.2934236720176562,
+        "z": 1.563381416609167,
+        "target": "q2:5 N=400"
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 4.718447854656915e-16
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "cost": 38.145204383887126
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 37.9248890243596,
+        "upper_cost": 38.145204383887126
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9676742217600522,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q2:6 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q2:6 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 1,
+        "trials": 4000,
+        "seed": 88217,
+        "exact": 38.145204383887126,
+        "mean": 37.859,
+        "standard_error": 0.2995662944010646,
+        "z": 0.9553958146704883,
+        "target": "q2:6 N=400"
+      }
+    },
+    {
+      "name": "Q4 q3 N=400 inverse binomial CIs",
+      "pass": true,
+      "detail": {
+        "max_abs_error": 3.608224830031759e-16
+      }
+    },
+    {
+      "name": "Q4 q3 N=400 exhaustive upper-corner optimum",
+      "pass": true,
+      "detail": {
+        "policy": 65535,
+        "cost": 156.09973063620112
+      }
+    },
+    {
+      "name": "Q4 q3 N=400 1000 interior points",
+      "pass": true,
+      "detail": {
+        "max_sampled_cost": 151.7458344599418,
+        "upper_cost": 156.09973063620112
+      }
+    },
+    {
+      "name": "Q4 q3 N=400 joint fixed-n coverage under independent samples",
+      "pass": true,
+      "detail": {
+        "joint_exact": 0.9600178926475761,
+        "bonferroni_guarantee": 0.95
+      }
+    },
+    {
+      "name": "Q4 q3 N=400 hypothetical counts labelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Q4 q3 N=400 independent physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 65535,
+        "trials": 4000,
+        "seed": 88231,
+        "exact": 156.09973063620112,
+        "mean": 156.87125,
+        "standard_error": 0.44167925409764275,
+        "z": 1.7467865122510973,
+        "target": "q3 N=400"
+      }
+    },
+    {
+      "name": "Zero quality defects no tests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero quality defects all tests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Persistent untested defect is improper",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-defect untested children recycled without invented tests",
+      "pass": true,
+      "detail": {
+        "closed_form_cost": 29.88888888888889
+      }
+    },
+    {
+      "name": "Zero-defect children process-failure physical MC",
+      "pass": true,
+      "detail": {
+        "policy": 8,
+        "trials": 20000,
+        "seed": 331982,
+        "exact": 29.88888888888889,
+        "mean": 29.90825,
+        "standard_error": 0.0427130286565569,
+        "z": 0.4532834996737576
+      }
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case1 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case2 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case3 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case4 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case5 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 case6 policy7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q2 tested recycle case6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q3 baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q3 all tests no dismantling",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing blind oracle Q3 optimistic bound",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal validation reports internally consistent passing checks",
+      "pass": true,
+      "detail": {
+        "passed": 211,
+        "total": 211
+      }
+    }
+  ],
+  "source_snapshot_sha256": {
+    "inputs\\parameters.json": "2263ff8dddaae83f8705a8dbb420184adf301311f391a67118d2012d39cf0dcf",
+    "results\\all_results.json": "7c62bc8de8080c5b5994995a093fcb58162c253d4b87d074ed52834743627705",
+    "results\\q1.json": "fc2852c34b4e07581f30ca38e9b82cbe718fdc7ff9fb4be82df17e13fc30a4e0",
+    "results\\q1_boundaries.csv": "ae7a8933a2d67dd5edc59cc6f368b142faa2a8b41e282ff6920f918168fe3052",
+    "results\\q1_oc.csv": "402f1d85d3a1d11483a5515e3ad3976c4b686f13b38ba07ca3a2be536e5762e5",
+    "results\\q2.json": "f0f3d8c8fd339fa2f85ca25db7291f00065f2a870c5c79d85061cd6f86ee6ae5",
+    "results\\q2_case1_policies.csv": "658634b706ca0a6f3495d9d19a504cb37ceaf9eadf3d3e30a2fa6f9b7721dc64",
+    "results\\q2_case2_policies.csv": "545ebd3acf8f6273a312488d665cdcfbb7bd6ef7c4244767a18d10514f2e1cf0",
+    "results\\q2_case3_policies.csv": "1ce6820a9fcb8f9c018f0a4fabbe841cffbd5308edccc0d01b3b9199fb3eeffb",
+    "results\\q2_case4_policies.csv": "bb02c536a6125f2fc51c09a0eab89d59e3db16ab8ef972a3359d066701450d90",
+    "results\\q2_case5_policies.csv": "4f854aca8e977b5fe5a8238cba45b0d2c59e0a1dd387e6a7f0c18744653af344",
+    "results\\q2_case6_policies.csv": "3fa28aa174747946b9ffb636427afdd6576e24f9b51d444694b01acd0a37331b",
+    "results\\q2_summary.csv": "8491429eef0d21bb5f6755c31315b3a46584466dc594b961b3f0515556392db3",
+    "results\\q3.json": "fcabf4ce3d53385aa76cfbdeb4105665f2771ec42ea824efd6ad87d0deecd885",
+    "results\\q3_policies.csv": "947351c4c52d765c4b77bc758ac92c47023c353a6a2a3e62f7f7c7b7883a5331",
+    "results\\q4.json": "e5bd04c2f04997aeade5299c2b3ec284d57d8e1d5672ac7c8275c5a88dc59c03",
+    "results\\q4_coverage.csv": "be5418c6bc71d1917d69c4dc262cfcbdd6ce8038ab65bfc5d1aa169e2a7e6ec5",
+    "results\\q4_intervals.csv": "ae96be5409fd978572a25b27c116b74d7599e66e4c63d8570c933fd870f175a6",
+    "results\\q4_summary.csv": "44743db055924c3df4a769221417c08e50aad0c3adea228e3a47d9b837df49df",
+    "results\\sensitivity.csv": "8c1b1dd9c0f92a86962b8624befdbf16adc9e8609080c39c4b991baadda56e07",
+    "results\\sensitivity.json": "ff81db21d284060007d662429550357abacda0a27fc6a35c022814a13c878dc9",
+    "results\\simulations.csv": "89facf036298b4cc4f9d480c0155d6ca6e72b5db2f5adda9582b1af3933667ab",
+    "results\\simulations.json": "d19e7b76f512b29dba5cd9022522d04286e3fb0bfb7b8f456f4b68f4dc8cc0bd",
+    "results\\validation.json": "d7fcee4d00b27a3044e059bfb5e5e56d9c7759c7fbefab17627fd51433b7deb7",
+    "code\\environment_probe.py": "f7c0b4ecebf8b432ee82c852488a144f47125dc3a4079742a1a44c95547ec810",
+    "code\\inspect_inputs.py": "749867a93b32c7d475d1b5b35fdf7dd7b9f9a0fd25691c89724be85b19d4644e",
+    "code\\make_figures.py": "0cdfdffbfcd1a42ce54b0e32421027e826e905ca9447d79ae99f45d24811cbce",
+    "code\\problem1.py": "39cb0528a44e172301cfa98dff2363e5632ffc0d86917939cca4c450cbf6daec",
+    "code\\problem2.py": "aa64b418c765a0f1c98507386321ed45182b1befe2c649f6e9c5ea52f6945955",
+    "code\\problem3.py": "2736f9e2723948febe43d5f3f089106054c49e59d8d0c3f2b0268eab82e620c9",
+    "code\\problem4.py": "2df2c3c85c44958d7d8095a6e53b7176f8977746585007015b8e0e8c6109877a",
+    "code\\production.py": "6a80115d78b873aa928f68a854ee379ff3a3d336dcbc6c71d3a40758a84ffa09",
+    "code\\run_all.py": "84664f2111895c4af01cf4ab4f935bbe546b67668a928d79d6c5480c7914b6ab",
+    "code\\sensitivity.py": "de79ca26f7f2d969ebf717ea6d570401bb4371ef55e0cd34c64290cd0304673c",
+    "code\\simulate.py": "a5f2d01b3419f962c5550d8f4d96a8d4c5aa4a413f8f1b2b8cb7c64c243292dc",
+    "code\\utils.py": "a2b55c1af452ad2863ba189cd71c91ab5e83feb9447d06d015c41da7640aea03",
+    "code\\validate_calculations.py": "9e10381c910ef22ace6dce959fb50b9d3c46c3ef26a1748e3aa45ddaa87d500f",
+    "code\\verify.py": "3f2004a030952ca5e0f2b9ba3fcb8f01ff7f82b0c592f394e50e9319e8a06a6c",
+    "code\\write_results_report.py": "6041c1a36c3f608bfe26f80058c51d999fd6033031f4feb3bd55e9d55eefd4d4"
+  }
+}

@@ -1,0 +1,2 @@
+data_id,publisher,source_url,table_or_page,data_period,retrieved_date,unit_and_definition,usage_terms,raw_file,sha256,processing_script,used_by_figures,verification_status
+SYN01,本项目作者自拟合成数据,https://github.com/Rain-dust/HowToCompeteBetter/blob/main/templates/contest-starter-example/data/raw/tickets.csv,15条记录,不对应真实数据期,2026-11-17,合成响应分钟数；非真实服务数据,来源为本项目教学fixture；非外部调查,data/raw/tickets.csv,85c71e9527b229e9d30b4a92495225911ddb8090746e31cf71000c61bd3a626e,run.py,results/chart.svg,固定输入与结果已复核

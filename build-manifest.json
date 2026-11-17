@@ -1,0 +1,130 @@
+{
+  "version": "0.6.0",
+  "source": "book/ + data/competitions.json + maintained documents",
+  "files": {
+    "index.html": {
+      "bytes": 10993,
+      "sha256": "e393d3acfc46128076a1c8a8dfc94485e4475d364890dda72d8908328045a651"
+    },
+    "style.css": {
+      "bytes": 27211,
+      "sha256": "51c93cfc25c1ba0553df75c5f2bbd6d29abce0f2062a115d2cf75fb59c4993ab"
+    },
+    "app.js": {
+      "bytes": 27277,
+      "sha256": "7ec0c2a59f74e15d34342322727213d219e256d7797e07a5eba8dfa61ad519ec"
+    },
+    "icon.svg": {
+      "bytes": 397,
+      "sha256": "598036127e61da0ffa5ef879f2bda0d3f6ed1f22ac6a4656430c3041888a0b90"
+    },
+    "content.json": {
+      "bytes": 2156049,
+      "sha256": "4efd4c3a22b248c400b843224887d684b42d5ec67e5b3e2325b2946f57775acc"
+    },
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "404.html": {
+      "bytes": 10993,
+      "sha256": "e393d3acfc46128076a1c8a8dfc94485e4475d364890dda72d8908328045a651"
+    },
+    "robots.txt": {
+      "bytes": 91,
+      "sha256": "208050ea4451cc50dbb875841ef0a53c2846a7a6aa3f8e59b32d2d469395b208"
+    },
+    "sitemap.xml": {
+      "bytes": 176,
+      "sha256": "7bfceee434af155eaa805aec0ab33fe387f8ef42d256bca5b96b7c64eccf9cb3"
+    },
+    "data/competitions.json": {
+      "bytes": 621405,
+      "sha256": "da00cab571b398c8f37b84f462f59fef030a35155097d99a536226e39518a2fa"
+    },
+    "data/knowledge-import.json": {
+      "bytes": 26683,
+      "sha256": "58c576b259ef7f95bf4898e005c11b1d18ea0b44c942171916f70d3b10d91b9c"
+    },
+    "data/math-tools.json": {
+      "bytes": 10486,
+      "sha256": "319ae87fcb2388f5215ff1b56ae4d6992308d83b81eaa8838d9d455b6cc473f4"
+    },
+    "data/ranking.json": {
+      "bytes": 104135,
+      "sha256": "bfc8098b4616ab89095c2aefc754db34d64f7502448e1ceeeabff41e8a99356e"
+    },
+    "examples/cumcm2024b-example.zip": {
+      "bytes": 2854064,
+      "sha256": "ab6a55d7e99822bf60ee607773540f2469d7173d48c0e46b256a34001bab65af"
+    },
+    "examples/cumcm2024b/artifact-manifest.json": {
+      "bytes": 15539,
+      "sha256": "8630f33fd7ee0752a8ebf6cd8a36e2446918ae9e5d46d2e537bffbec90017447"
+    },
+    "examples/cumcm2024b/audit/audit-review.json": {
+      "bytes": 83121,
+      "sha256": "17bb5a0ac3aa86168e68f4cf69f86d1d1c6ef6ad4fb7daa955a7f53f10116d80"
+    },
+    "examples/cumcm2024b/paper/main.pdf": {
+      "bytes": 629473,
+      "sha256": "384b0ec0d89adb8c0d55aaf37e16d9162e832d4941230c19c4b4716da70f0f95"
+    },
+    "examples/cumcm2024b/preview.png": {
+      "bytes": 370248,
+      "sha256": "f1a9c188230bd77843ff3dc0d0ef83462bbabe4079b806d6a4e68614e2c13eaf"
+    },
+    "examples/cumcm2024b/run-summary.json": {
+      "bytes": 3849,
+      "sha256": "cc3cf121ed90d74fcb0164adb4780a7138ca225b456dc3f1e8567ddedfc76f84"
+    },
+    "guide.pdf": {
+      "bytes": 475402,
+      "sha256": "4461701b1e1e78f50a04e3fc4016bd5f631c6d53f8d7f4247ef1df989bdad735"
+    },
+    "templates/contest-starter-example/data-provenance.csv": {
+      "bytes": 611,
+      "sha256": "8b8f3303933e554f2239e9c1d915a58a69ec26dce54d068f13a8f3e8849237a8"
+    },
+    "templates/contest-starter-example/results/chart.svg": {
+      "bytes": 1157,
+      "sha256": "6930e37aff98b23ec8abfa933d48bf824237757b6c1f191719e2448f9bc7cae8"
+    },
+    "templates/contest-starter-example/results/checks.json": {
+      "bytes": 323,
+      "sha256": "e4635bdef920200b2dab60b3d3aa3f7a2033810d86a9491720cffa7b28a4afba"
+    },
+    "templates/contest-starter-example/results/rejected.csv": {
+      "bytes": 228,
+      "sha256": "2906ac3f8b1f6421828f4b61f91e6f8333758483b89147fd5588b1ea287589d1"
+    },
+    "templates/contest-starter-example/results/summary.csv": {
+      "bytes": 140,
+      "sha256": "9070abca4003d33e852f7b322ef6f308b6f6905abd36b56250ea2c88e35dc091"
+    },
+    "templates/contest-starter-example/results/summary.json": {
+      "bytes": 766,
+      "sha256": "825599d34dd69c7d89e5ad3e42261d99f02f01e1945305744d35e78e0025f758"
+    },
+    "templates/contest-starter-example/score-evidence.csv": {
+      "bytes": 710,
+      "sha256": "745d46b504a40dfb3d6fc2b086804591a1ce43e36170e6ece963cc832b7c83a9"
+    },
+    "templates/contest-starter.zip": {
+      "bytes": 14688,
+      "sha256": "159d931f87e314a9dee7a57deeba09b228b75087639ac46a061b5662d5fbf104"
+    },
+    "templates/contest-starter/START_PROMPT.txt": {
+      "bytes": 1108,
+      "sha256": "1855d87fd022ad9731115c4feebb018af52cf8c685f59b8f63807152dd5557b4"
+    },
+    "templates/contest-starter/data-provenance.csv": {
+      "bytes": 172,
+      "sha256": "1e5660e9cdbb0c09cdfeb57ce36630756814fe60ca3cec6ab5e2ec8b05b298e6"
+    },
+    "templates/contest-starter/score-evidence.csv": {
+      "bytes": 120,
+      "sha256": "40e3bce2dddbf1f715994c72c06efcb518bb84d341a0cb551e95d73f292774e4"
+    }
+  }
+}

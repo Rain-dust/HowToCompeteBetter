@@ -1,0 +1,33 @@
+{
+  "purpose": "synthetic_practice_not_real_survey",
+  "input_rows": 15,
+  "valid_rows": 10,
+  "rejected_rows": 5,
+  "total_minutes": 450.0,
+  "groups": [
+    {
+      "category": "classroom",
+      "label": "教学楼",
+      "count": 3,
+      "total_minutes": 120.0,
+      "mean_minutes": 40.0
+    },
+    {
+      "category": "dorm",
+      "label": "宿舍",
+      "count": 4,
+      "total_minutes": 240.0,
+      "mean_minutes": 60.0
+    },
+    {
+      "category": "library",
+      "label": "图书馆",
+      "count": 3,
+      "total_minutes": 90.0,
+      "mean_minutes": 30.0
+    }
+  ],
+  "source": "data/raw/tickets.csv",
+  "source_sha256": "85c71e9527b229e9d30b4a92495225911ddb8090746e31cf71000c61bd3a626e",
+  "model_calls": 0
+}
