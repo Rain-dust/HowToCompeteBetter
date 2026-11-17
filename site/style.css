@@ -34,3 +34,13 @@
 
 /* Keep the homepage copy action comfortable on touch screens. */
 .launch-command .launch-copy{min-height:44px}
+
+/* Safe fix for copy button overlap */
+.launch-command pre {
+  padding-top: 65px !important;
+}
+
+.launch-command .copy-button {
+  top: 12px !important;
+  right: 12px !important;
+}
