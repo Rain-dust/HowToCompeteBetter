@@ -33,3 +33,18 @@ python scripts/check_reader.py --pdf
 ~~~
 
 发布前把PDF和SVG渲染成图片检查；程序边界检查不能代替实际视觉检查。若只改资料展示，不必重跑未改变的整套数模计算；历史题结果或求解代码改变时，要重新计算与独立核验，不能只改论文数字。
+
+## 维护在线阅读站
+
+[在线阅读站](https://rain-dust.github.io/HowToCompeteBetter/)读取同一套章节、教程和赛事数据，不另写一套比赛结论。修改网站布局与交互用 `site/`，修改正文仍按上面的事实源与教程源文入口处理。
+
+网站构建使用Node.js，自带已注明MIT许可的Markdown解析器，不需要执行 `npm install`：
+
+~~~text
+node scripts/build_site.mjs
+python -m http.server 8000 --directory _site
+~~~
+
+浏览器打开 `http://localhost:8000/`。`_site/`是生成产物，勿直接编辑；发布前检查搜索、筛选、章节跳转、指令复制和手机布局。
+
+更新源文并完成检查后，运行 `python scripts/deploy_site.py` 构建并发布到`gh-pages`。目前没有自动部署CI；部署路径、首次配置与命令参数见[网站维护说明](docs/website.md)。

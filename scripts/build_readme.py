@@ -4,6 +4,7 @@ import argparse,html,json
 
 ROOT=Path(__file__).resolve().parents[1]
 REPO='https://github.com/Rain-dust/HowToCompeteBetter'
+SITE='https://rain-dust.github.io/HowToCompeteBetter/'
 DATE='2026-11-17'
 CHECK_ONLY=False
 STALE=[]
@@ -44,13 +45,18 @@ def generate_readme(rows,ranked):
         return '['+str(index)+'. '+c['title']+']('+c['file']+')'
     lines=[
         '<div align="center">','',
-        '<a href="guide.pdf"><img src="assets/cover.png" alt="高性价比大学生竞赛指南：选比赛、找工具、跑实战、交作品；点击预览PDF" width="820"></a>','',
+        '<a href="'+SITE+'"><img src="assets/cover.png" alt="高性价比大学生竞赛指南：选比赛、找工具、跑实战、交作品；点击在线阅读" width="820"></a>','',
         '# 高性价比大学生竞赛指南','',
+        '## [打开在线阅读与搜索 ↗]('+SITE+')','',
+        '按章读教程、搜索全文、按条件找比赛，手机直接打开。','',
         '哪些比赛值得打，用什么 Agent，拿到赛题后怎样开始？<br>',
         '把选赛、工具、数模实战和作品交付，写成可以按问题查的十章指南。','',
         '**27项连续参考排名 · '+str(len(rows))+'条赛事参考 · 完整数模教程与复现案例**','',
         '### [从目录开始](#目录) · [直接做数模]('+chapters[3]['file']+') · [预览 PDF](guide.pdf)','',
         '<table>',
+        '<tr><td width="64" align="right"><b>在线</b></td><td align="left">','',
+        '[阅读指南]('+SITE+') · [比赛筛选]('+SITE+'#/contests) · [全文搜索]('+SITE+'#/search)','',
+        '</td></tr>',
         '<tr><td width="64" align="right"><b>下载</b></td><td align="left">','',
         '[PDF 预览](guide.pdf) · [PDF 下载]('+REPO+'/raw/refs/heads/main/guide.pdf) · [离线筛选 HTML]('+REPO+'/releases/latest/download/explorer.html) · [开赛模板 ZIP](templates/contest-starter.zip)','',
         '</td></tr>',
@@ -120,11 +126,11 @@ def generate_readme(rows,ranked):
         '## PDF 预览','',
         '[预览完整 PDF](guide.pdf) · [直接下载]('+REPO+'/raw/refs/heads/main/guide.pdf)','',
         '<a href="guide.pdf"><img src="assets/ranking-preview.png" alt="指南PDF首页预览，点击打开完整文档" width="310"></a>','',
-        'PDF 带可点击目录和章节书签；想在 GitHub 按章阅读，直接打开[全书目录](book/README.md)。','',
+        'PDF 带可点击目录和章节书签；也可以[在线按章阅读]('+SITE+')，或打开 [GitHub 全书目录](book/README.md)。','',
         '## 内容从哪里来','',
         '赛事规则、作者经历、学生复盘和工具实测分别记载。反馈库保留75篇原帖、22份外部材料，二手知识整理另列，不能据此计算获奖率。','',
         '数模实测完成了历史国赛B题的代码、图表和17页论文，经中断恢复与修正；Modex提供官方教程，Claude未做本轮端到端运行。具体过程见[案例记录](examples/cumcm2024b/README.md)。','',
-        '[资料与核查](docs/research/README.md) · [排序怎么定](docs/how-to-read-ranking.md) · [更新记录](CHANGELOG.md) · [如何贡献](CONTRIBUTING.md)','',
+        '[资料与核查](docs/research/README.md) · [排序怎么定](docs/how-to-read-ranking.md) · [更新记录](CHANGELOG.md) · [如何贡献](CONTRIBUTING.md) · [网站维护](docs/website.md)','',
         '## 致谢','',
         '本项目参考了 **[高性价比人生指南 · HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter)** 的书式首页、问题导航和编号章节结构。竞赛资料、工具指令、视觉资产与实战记录由本项目独立整理。','',
         '页面更新：**'+DATE+'**。规则核查日期逐项写在赛事卡，页面更新不表示全部当届规则已重新核查。','',

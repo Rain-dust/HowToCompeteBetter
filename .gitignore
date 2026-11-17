@@ -10,3 +10,5 @@ _private/
 tmp/
 output/
 .venv*/
+/_site/
+/node_modules/

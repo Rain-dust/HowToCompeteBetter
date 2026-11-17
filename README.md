@@ -1,8 +1,12 @@
 <div align="center">
 
-<a href="guide.pdf"><img src="assets/cover.png" alt="高性价比大学生竞赛指南：选比赛、找工具、跑实战、交作品；点击预览PDF" width="820"></a>
+<a href="https://rain-dust.github.io/HowToCompeteBetter/"><img src="assets/cover.png" alt="高性价比大学生竞赛指南：选比赛、找工具、跑实战、交作品；点击在线阅读" width="820"></a>
 
 # 高性价比大学生竞赛指南
+
+## [打开在线阅读与搜索 ↗](https://rain-dust.github.io/HowToCompeteBetter/)
+
+按章读教程、搜索全文、按条件找比赛，手机直接打开。
 
 哪些比赛值得打，用什么 Agent，拿到赛题后怎样开始？<br>
 把选赛、工具、数模实战和作品交付，写成可以按问题查的十章指南。
@@ -12,6 +16,11 @@
 ### [从目录开始](#目录) · [直接做数模](book/04-用Codex完成数模.md) · [预览 PDF](guide.pdf)
 
 <table>
+<tr><td width="64" align="right"><b>在线</b></td><td align="left">
+
+[阅读指南](https://rain-dust.github.io/HowToCompeteBetter/) · [比赛筛选](https://rain-dust.github.io/HowToCompeteBetter/#/contests) · [全文搜索](https://rain-dust.github.io/HowToCompeteBetter/#/search)
+
+</td></tr>
 <tr><td width="64" align="right"><b>下载</b></td><td align="left">
 
 [PDF 预览](guide.pdf) · [PDF 下载](https://github.com/Rain-dust/HowToCompeteBetter/raw/refs/heads/main/guide.pdf) · [离线筛选 HTML](https://github.com/Rain-dust/HowToCompeteBetter/releases/latest/download/explorer.html) · [开赛模板 ZIP](templates/contest-starter.zip)
@@ -268,7 +277,7 @@
 
 <a href="guide.pdf"><img src="assets/ranking-preview.png" alt="指南PDF首页预览，点击打开完整文档" width="310"></a>
 
-PDF 带可点击目录和章节书签；想在 GitHub 按章阅读，直接打开[全书目录](book/README.md)。
+PDF 带可点击目录和章节书签；也可以[在线按章阅读](https://rain-dust.github.io/HowToCompeteBetter/)，或打开 [GitHub 全书目录](book/README.md)。
 
 ## 内容从哪里来
 
@@ -276,7 +285,7 @@ PDF 带可点击目录和章节书签；想在 GitHub 按章阅读，直接打�
 
 数模实测完成了历史国赛B题的代码、图表和17页论文，经中断恢复与修正；Modex提供官方教程，Claude未做本轮端到端运行。具体过程见[案例记录](examples/cumcm2024b/README.md)。
 
-[资料与核查](docs/research/README.md) · [排序怎么定](docs/how-to-read-ranking.md) · [更新记录](CHANGELOG.md) · [如何贡献](CONTRIBUTING.md)
+[资料与核查](docs/research/README.md) · [排序怎么定](docs/how-to-read-ranking.md) · [更新记录](CHANGELOG.md) · [如何贡献](CONTRIBUTING.md) · [网站维护](docs/website.md)
 
 ## 致谢
 
