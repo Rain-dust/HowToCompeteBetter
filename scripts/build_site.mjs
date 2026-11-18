@@ -90,13 +90,13 @@ for(const relative of ['CONTRIBUTING.md','CHANGELOG.md',...await markdownFiles('
 }
 const content={version:manifest.version,updated:'2026-11-17',siteURL,chapters:outputChapters,contests:outputContests,supplements};
 const outputs=new Map();
-for(const name of ['index.html','style.css','app.js','icon.svg'])outputs.set(name,await fs.readFile(path.join(root,'site',name)));
+for(const name of ['index.html','style.css','app.js','icon.svg','flight-cover.webp'])outputs.set(name,await fs.readFile(path.join(root,'site',name)));
 let index=outputs.get('index.html').toString('utf8');
 // The first five ranks are present in the initial HTML too. Readers on a slow
 // connection can see the ranking while the full searchable book is loading.
 const preview=contests.filter(c=>Number.isInteger(c.rank)).sort((a,b)=>a.rank-b.rank).slice(0,5).map(c=>
   '<li class="home-rank-item" data-rank="'+c.rank+'"><a class="home-rank-link" href="#/home/top5-'+c.rank+'">'+
-  '<span class="rank-number">'+c.rank+'</span><span class="rank-main"><strong class="rank-name">'+attribute(c.name)+'</strong><span class="rank-tool">'+attribute(c.homepage_tool_label||c.tool_name)+'</span></span><span class="rank-status">'+attribute(c.decision_label)+'</span></a></li>'
+  '<span class="rank-number">'+c.rank+'</span><span class="rank-main"><strong class="rank-name">'+attribute(c.name)+'</strong><span class="rank-tool">'+attribute(c.homepage_tool_label||c.tool_name)+'</span></span><span class="rank-status" data-decision="'+attribute(c.decision_code||'')+'">'+attribute(c.decision_label)+'</span></a></li>'
 ).join('\n');
 if(!index.includes('<!-- HOME_RANK_PREVIEW -->'))throw Error('Missing initial ranking placeholder');
 index=index.replace('<!-- HOME_RANK_PREVIEW -->',preview);

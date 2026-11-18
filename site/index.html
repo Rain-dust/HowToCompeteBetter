@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1b6554">
+  <meta name="theme-color" content="#f8f6f1">
   <meta name="description" content="大学生用Agent打比赛，从排名直接开始：前五项Agent、GitHub和可复制开打指令，完整27项排名、比赛筛选与数模教程。">
   <meta property="og:title" content="高性价比大学生竞赛指南">
   <meta property="og:description" content="打开先看比赛排名，前五名直接查看Agent、GitHub与开打指令。">
@@ -13,62 +13,252 @@
 </head>
 <body>
 <a class="skip-link" href="#main-content">跳到正文</a>
+
 <header class="site-header">
   <div class="header-inner">
-    <button class="icon-button menu-toggle" id="mobile-menu-toggle" type="button" aria-label="打开章节目录" aria-controls="sidebar" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-    <a class="brand" href="#/" aria-label="高性价比大学生竞赛指南首页"><img src="./icon.svg" width="32" height="32" alt=""><span><strong>高性价比大学生竞赛指南</strong><small>HOW TO COMPETE BETTER</small></span></a>
-    <nav class="primary-nav" aria-label="主要导航"><a class="nav-link" href="#/" data-view="read">比赛排名</a><a class="nav-link" href="#/contests" data-view="contests">找比赛</a></nav>
-    <form class="global-search" id="global-search-form" role="search"><label class="sr-only" for="search-input">搜索指南和比赛</label><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><input id="search-input" type="search" placeholder="搜索指南和比赛…" autocomplete="off" maxlength="160"><button id="search-clear" class="search-clear" type="button" aria-label="清除搜索" hidden>×</button><kbd aria-hidden="true">/</kbd></form>
-    <div class="header-actions"><a class="pdf-link" href="./guide.pdf" download="高性价比大学生竞赛指南.pdf"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PDF</span></a><a class="github-link" href="https://github.com/Rain-dust/HowToCompeteBetter" target="_blank" rel="noopener noreferrer" aria-label="在GitHub查看项目"><svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.08c-3.12.68-3.78-1.33-3.78-1.33-.5-1.29-1.24-1.63-1.24-1.63-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.49-.28-5.1-1.25-5.1-5.54 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.61 5.25-5.11 5.53.4.35.76 1.02.76 2.07v3.07c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg></a></div>
+    <button class="icon-button menu-toggle" id="mobile-menu-toggle" type="button" aria-label="打开章节目录" aria-controls="sidebar" aria-expanded="false">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 6.5h16M4 12h16M4 17.5h16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <a class="brand" href="#/" aria-label="高性价比大学生竞赛指南首页">
+      <img src="./icon.svg" width="32" height="32" alt="">
+      <span>
+        <strong>高性价比大学生竞赛指南</strong>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="主要导航">
+      <a class="nav-link" href="#/" data-view="read">比赛排名</a>
+      <a class="nav-link" href="#/contests" data-view="contests">找比赛</a>
+      <a class="nav-link" href="#/home/home-guide-details" data-view="guide">实战教程</a>
+    </nav>
+    <form class="global-search" id="global-search-form" role="search">
+      <label class="sr-only" for="search-input">搜索指南和比赛</label>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+        <path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <input id="search-input" type="search" placeholder="搜比赛、简称或工具…" autocomplete="off" maxlength="160">
+      <button id="search-clear" class="search-clear" type="button" aria-label="清除搜索" hidden>×</button>
+      <kbd aria-hidden="true">/</kbd>
+    </form>
+    <a class="mobile-filter-link" href="#/contests" aria-label="筛选比赛">筛选比赛</a>
+    <div class="header-actions">
+      <a class="pdf-link" href="./guide.pdf" download="高性价比大学生竞赛指南.pdf">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v11.5m-4-3.8 4 4 4-4M4.5 16.5v4h15v-4" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>PDF</span>
+      </a>
+      <a class="github-link" href="https://github.com/Rain-dust/HowToCompeteBetter" target="_blank" rel="noopener noreferrer" aria-label="在GitHub查看项目">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.08c-3.12.68-3.78-1.33-3.78-1.33-.5-1.29-1.24-1.63-1.24-1.63-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.49-.28-5.1-1.25-5.1-5.54 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.61 5.25-5.11 5.53.4.35.76 1.02.76 2.07v3.07c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>
+
 <button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="关闭章节目录" hidden tabindex="-1"></button>
-<aside class="sidebar" id="sidebar" aria-label="章节目录">
-  <div class="sidebar-heading"><span class="eyebrow">阅读目录</span><a href="#/" class="sidebar-home">排名与开打</a><button class="icon-button drawer-close" id="mobile-menu-close" type="button" aria-label="关闭章节目录"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
+
+<aside class="sidebar" id="sidebar" role="dialog" aria-modal="true" aria-label="章节目录" inert>
+  <div class="sidebar-heading">
+    <h2>章节目录</h2>
+    <button class="icon-button drawer-close" id="mobile-menu-close" type="button" aria-label="关闭章节目录">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
   <nav id="chapter-nav" class="chapter-nav" aria-label="全书章节"></nav>
-  <div class="sidebar-bottom"><a href="#/contests">查看比赛与工具 <span aria-hidden="true">↗</span></a><a href="./guide.pdf" download>下载整本 PDF <span aria-hidden="true">↓</span></a><small>挑需要的章节读，随时回来查。</small></div>
+  <div class="sidebar-bottom">
+    <a href="#/"><span>比赛排名与开打</span><span aria-hidden="true">→</span></a>
+    <a href="#/contests"><span>筛选比赛</span><span aria-hidden="true">→</span></a>
+    <a href="./guide.pdf" download><span>下载整本离线 PDF</span><span aria-hidden="true">↓</span></a>
+  </div>
 </aside>
+
 <main class="main-shell" id="main-content">
+  <div id="copy-feedback" class="sr-only" role="status"></div>
   <div id="site-status" class="site-status" role="status" hidden></div>
+
   <section class="view home-view ranking-home" id="view-home" aria-label="比赛排名与开打">
     <header class="ranking-intro">
-      <h1>用 Agent 打比赛，先看排名</h1>
-      <p>前五项的工具、GitHub 和开打指令都放在这里，选好就能复制。</p>
-      <div class="ranking-shortcuts"><a href="#/contests">按条件找比赛 →</a><a href="./guide.pdf" download>下载 PDF ↓</a><a href="#/chapter/04">数模完整教程 ↗</a></div>
+      <img class="hero-cover" src="./flight-cover.webp" alt="" width="1300" height="460" decoding="async" fetchpriority="high">
+      <div class="hero-copy">
+        <h1>大学生竞赛指南</h1>
+        <p class="hero-description">挑一场适合自己的比赛，找到工具，从第一条指令开始。</p>
+        <nav class="ranking-shortcuts" aria-label="指南入口">
+          <a class="shortcut-pill shortcut-primary" href="#/contests?view=all">筛选 73 条赛事 <span aria-hidden="true">→</span></a>
+          <a class="shortcut-pill" href="#/home/home-guide-details">阅读 10 章教程 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
     </header>
-    <section class="home-overview" aria-labelledby="rank-overview-title">
-      <div class="ranking-section-heading"><h2 id="rank-overview-title">前五名，先挑一个</h2><span>点名字直达开打指令</span></div>
-      <ol id="home-rank-overview" class="home-rank-overview" aria-label="前五名速览"><!-- HOME_RANK_PREVIEW --></ol>
-    </section>
-    <p class="ranking-boundary">序号比较 Agent 制作适配；当届工具范围、报名资格和本校认定分别看。未核实的许可会直接标明。</p>
+
+    <div class="contest-desk">
+      <section class="home-overview" aria-labelledby="rank-overview-title">
+        <div class="ranking-section-heading">
+          <h2 id="rank-overview-title">前五名速览</h2>
+          <a class="section-action-link" href="#/home/ranking-rest">第 6–27 名 <span aria-hidden="true">→</span></a>
+        </div>
+        <ol id="home-rank-overview" class="home-rank-overview" aria-label="前五名速览"><!-- HOME_RANK_PREVIEW --></ol>
+        <p class="ranking-boundary">名次按 Agent 制作适配度排列。报名资格、学校认定和 AI 工具许可请按当届规则核对。<a href="#/chapter/02/s01">排名依据 ↗</a></p>
+        <p class="workspace-note">开打前，把当届题面、规程与附件放入独立项目的 <code>inputs/</code>。</p>
+      </section>
+
     <section class="home-launch-section" aria-labelledby="home-top5-title">
-      <div class="ranking-section-heading"><h2 id="home-top5-title">前五：用什么、怎么打</h2></div>
-      <p class="launch-common-note">先完成对应工具的安装，在对应工作区放好题面、规则和附件，再复制开打指令。第一次使用可看<a href="#/chapter/04/s02">工作区准备</a>。</p>
+      <div class="ranking-section-heading">
+        <div>
+          <h2 id="home-top5-title">参赛与开打</h2>
+
+        </div>
+        <a class="section-action-link" href="#/chapter/04/s02">准备工作区 ↗</a>
+      </div>
       <div id="home-top5" class="home-top5"></div>
     </section>
+
+    </div>
+
     <section class="home-ranking-rest" id="ranking-rest" aria-labelledby="ranking-rest-title">
-      <div class="ranking-section-heading"><h2 id="ranking-rest-title">继续往下看：6–27名</h2><a href="#/contests?view=all">查看全部73条入口 →</a></div>
+      <div class="ranking-section-heading">
+        <h2 id="ranking-rest-title">其余排名 <span>6–27</span></h2>
+        <a class="section-action-link" href="#/contests?view=all">全部 73 条赛事入口 →</a>
+      </div>
       <ol id="home-rest-ranking" class="ranking-list" start="6"></ol>
     </section>
+
     <details class="home-guide-details" id="home-guide-details">
-      <summary>需要详细教程？展开十章目录</summary>
-      <section class="home-section" aria-labelledby="questions-title"><div class="section-heading"><h2 id="questions-title">按问题查教程</h2></div><ul class="question-list" id="question-list"></ul></section>
-      <section class="home-section" aria-labelledby="chapters-title"><div class="section-heading"><h2 id="chapters-title">整本指南，十个章节</h2><a class="text-link" href="#/chapter/01">从第1章开始 →</a></div><div id="chapter-grid" class="chapter-grid"></div></section>
+      <summary>
+        <span class="details-summary-main">
+          <strong>实战教程</strong><span>10 章 · 按问题查</span>
+        </span>
+        <span class="details-summary-cta" aria-hidden="true"></span>
+      </summary>
+      <div class="guide-details-body">
+        <section class="home-section" aria-labelledby="questions-title">
+          <div class="section-heading">
+            <h2 id="questions-title">按当前卡点查章节</h2>
+          </div>
+          <ul class="question-list" id="question-list"></ul>
+        </section>
+        <section class="home-section" aria-labelledby="chapters-title">
+          <div class="section-heading">
+            <h2 id="chapters-title">全书十章导览</h2>
+            <a class="text-link" href="#/chapter/01">从第 1 章开始顺序阅读 →</a>
+          </div>
+          <div id="chapter-grid" class="chapter-grid"></div>
+        </section>
+      </div>
     </details>
-    <section class="download-callout" aria-label="下载指南PDF"><div class="book-mark" aria-hidden="true"><svg width="40" height="46" viewBox="0 0 40 46" fill="none"><path d="M6 4h28v37H9a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5" stroke="currentColor" stroke-width="1.8"/><path d="M6 34h28M12 13h15M12 19h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><div><h2>整本指南，随时查</h2><p>PDF包含完整排名、工具教程与实战记录。</p></div><a class="button button-primary" href="./guide.pdf" download="高性价比大学生竞赛指南.pdf">下载 PDF <span aria-hidden="true">↓</span></a></section>
+
+    <section class="download-callout" aria-label="下载指南PDF">
+      <div class="book-mark" aria-hidden="true">
+        <svg width="38" height="44" viewBox="0 0 40 46" fill="none">
+          <path d="M7 4h26v37H10a5 5 0 0 1-5-5V9a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.9"/>
+          <path d="M6 34h27M13 13h14M13 19h10M13 25h7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="download-copy">
+        <h2>离线排版 PDF，随时备查</h2>
+        <p>收录完整 1–27 连续排名、Modex 与 Codex 双路线数模教程、赛事规则边界与核查记录。</p>
+      </div>
+      <a class="button button-primary" href="./guide.pdf" download="高性价比大学生竞赛指南.pdf">下载整本 PDF <span aria-hidden="true">↓</span></a>
+    </section>
   </section>
+
   <section class="view chapter-view" id="view-chapter" hidden aria-label="章节正文">
-    <div class="reading-layout"><div class="reading-column"><header class="reading-header"><a class="back-link" href="#/">← 回全书导览</a><p id="chapter-meta" class="reading-meta"></p><h1 id="chapter-title"></h1></header><article id="chapter-content" class="prose" tabindex="-1"></article><nav id="chapter-navigation" class="chapter-navigation" aria-label="前后章节"><a id="chapter-prev" class="chapter-turn" href="#/">← 上一章</a><a id="chapter-next" class="chapter-turn" href="#/">下一章 →</a></nav></div><nav id="chapter-toc" class="chapter-toc" aria-label="本章目录"></nav></div>
+    <div class="reading-layout">
+      <div class="reading-column">
+        <header class="reading-header">
+          <a class="back-link" id="reading-back" href="#/">← 返回比赛排名</a>
+          <p id="chapter-meta" class="reading-meta"></p>
+          <h1 id="chapter-title"></h1>
+        </header>
+        <div id="chapter-toc" class="chapter-toc"></div>
+        <article id="chapter-content" class="prose" tabindex="-1"></article>
+        <nav id="chapter-navigation" class="chapter-navigation" aria-label="前后章节">
+          <a id="chapter-prev" class="chapter-turn" href="#/">← 上一章</a>
+          <a id="chapter-next" class="chapter-turn" href="#/">下一章 →</a>
+        </nav>
+      </div>
+    </div>
   </section>
+
   <section class="view contests-view" id="view-contests" hidden aria-label="比赛筛选">
-    <header class="view-header"><p class="eyebrow">按条件缩小范围</p><h1>找一场适合你的比赛</h1><p>先筛身份、设备和当届建议，再点开看工具、交付与依据。</p></header>
-    <form class="contest-filters" id="contest-filters" role="search" aria-label="筛选比赛"><label class="filter-query" for="contest-query"><span>搜索比赛</span><input id="contest-query" type="search" placeholder="比赛名、简称或工具，例如：数模 / RST" autocomplete="off"></label><div class="filter-grid"><label for="filter-view"><span>查阅范围</span><select id="filter-view"><option value="rank">连续排名 1–27</option><option value="all">全部赛事入口</option></select></label><label for="filter-education"><span>参赛身份</span><select id="filter-education"><option value="all">不限学历</option></select></label><label for="filter-equipment"><span>设备与作品</span><select id="filter-equipment"><option value="all">不限设备</option></select></label><label for="filter-decision"><span>当届建议</span><select id="filter-decision"><option value="all">全部建议</option></select></label></div><div class="filter-bottom"><p>包含母赛分支、平台和境外入口。未标明的资格与费用保留待核。</p><button class="button button-small button-secondary" id="filters-reset" type="button">重置筛选</button></div></form>
-    <div class="results-heading"><p id="contest-count" role="status" aria-live="polite"></p><span>点开比赛，查看完整做法</span></div><div class="empty-state" id="contest-empty" hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h2>暂时没找到匹配的比赛</h2><p>试试换个关键词、减少条件，或点上方「重置筛选」。</p></div><div id="contest-results" class="contest-grid"></div>
+    <header class="view-header">
+      <a class="back-link" href="#/">← 返回比赛排名</a>
+      <h1>筛选比赛</h1>
+      <p>按参赛身份、设备与当届建议缩小范围，再查看每项的工具与规则。</p>
+    </header>
+    <form class="contest-filters" id="contest-filters" role="search" aria-label="筛选比赛">
+      <label class="filter-query" for="contest-query">
+        <span>关键词</span>
+        <input id="contest-query" type="search" placeholder="比赛名、简称或工具，如 RST" maxlength="160" autocomplete="off">
+      </label>
+      <div class="filter-grid">
+        <label for="filter-view">
+          <span>查阅范围</span>
+          <select id="filter-view">
+            <option value="rank">连续排名 1–27</option>
+            <option value="all">全部赛事入口（73）</option>
+          </select>
+        </label>
+        <label for="filter-education">
+          <span>参赛身份</span>
+          <select id="filter-education"><option value="all">不限学历</option></select>
+        </label>
+        <label for="filter-equipment">
+          <span>设备与作品</span>
+          <select id="filter-equipment"><option value="all">不限设备</option></select>
+        </label>
+        <label for="filter-decision">
+          <span>当届建议</span>
+          <select id="filter-decision"><option value="all">全部建议</option></select>
+        </label>
+      </div>
+      <div class="filter-bottom">
+        <p>全部入口含母赛分支、专项平台与境外赛。未标明的资格与费用仍待核。</p>
+        <button class="button button-small button-secondary" id="filters-reset" type="button">重置条件</button>
+      </div>
+    </form>
+    <div class="results-heading">
+      <p id="contest-count" role="status" aria-live="polite"></p>
+    </div>
+    <div class="empty-state" id="contest-empty" hidden>
+      <span class="empty-symbol" aria-hidden="true">⌕</span>
+      <h2>暂时没找到匹配的比赛</h2>
+      <p>试试换个简称、放宽筛选条件，或点击上方「重置条件」。</p>
+    </div>
+    <div id="contest-results" class="contest-grid"></div>
   </section>
-  <section class="view search-view" id="view-search" hidden aria-label="全站搜索结果"><header class="view-header"><p class="eyebrow">在整本指南里查</p><h1>搜索结果</h1><p id="search-count" role="status" aria-live="polite"></p></header><div id="search-results" class="search-results"></div></section>
-  <footer class="site-footer"><div><strong>高性价比大学生竞赛指南</strong><p>从问题开始，找到工具，做出可以核对的成果。</p></div><p><a href="https://github.com/Rain-dust/HowToCompeteBetter" target="_blank" rel="noopener noreferrer">GitHub 项目</a><span aria-hidden="true"> · </span><a href="./guide.pdf" download>下载 PDF</a><span aria-hidden="true"> · </span><a href="https://github.com/Rain-dust/HowToCompeteBetter/issues/new?template=correction.yml" target="_blank" rel="noopener noreferrer">纠错与补充</a></p><small>阅读框架参考 <a href="https://github.com/eternity4719/HowToLiveBetter" target="_blank" rel="noopener noreferrer">高性价比人生指南</a>；竞赛资料与实战记录由本项目独立整理。</small></footer>
+
+  <section class="view search-view" id="view-search" hidden aria-label="全站搜索结果">
+    <header class="view-header">
+      <a class="back-link" href="#/">← 返回比赛排名</a>
+      <h1>搜索指南</h1>
+      <p id="search-count" role="status" aria-live="polite"></p>
+    </header>
+    <div id="search-results" class="search-results"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <strong>高性价比大学生竞赛指南</strong>
+    </div>
+    <p class="footer-links">
+      <a href="https://github.com/Rain-dust/HowToCompeteBetter" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+      <span aria-hidden="true">·</span>
+      <a href="./guide.pdf" download>下载 PDF</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/Rain-dust/HowToCompeteBetter/issues/new?template=correction.yml" target="_blank" rel="noopener noreferrer">纠错与补充</a>
+    </p>
+    <small>阅读与章节组织参考 <a href="https://github.com/eternity4719/HowToLiveBetter" target="_blank" rel="noopener noreferrer">高性价比人生指南</a>；全部竞赛事实、排名拆解与实跑记录由本项目独立核查整理。</small>
+  </footer>
 </main>
-<noscript><div class="noscript-message">本网站的搜索与筛选需要 JavaScript。你仍可在 <a href="https://github.com/Rain-dust/HowToCompeteBetter/blob/main/book/README.md">GitHub 阅读完整章节</a>，或 <a href="./guide.pdf">打开 PDF</a>。</div></noscript>
+
+<noscript>
+  <div class="noscript-message">本网站的搜索与筛选需要 JavaScript。你仍可在 <a href="https://github.com/Rain-dust/HowToCompeteBetter/blob/main/book/README.md">GitHub 阅读完整章节</a>，或 <a href="./guide.pdf">打开 PDF</a>。</div>
+</noscript>
 <script src="./app.js" defer></script>
 </body>
 </html>
